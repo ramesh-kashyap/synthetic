@@ -128,11 +128,13 @@
             <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-6df716d9="" data-v-cfc9a7fc="" class="userHead flex">
                     <div data-v-6df716d9="" data-v-cfc9a7fc="" class="photo"><img data-v-6df716d9="" data-v-cfc9a7fc=""
-                            src="{{ asset('') }}assets/static/upload/455d37717182b4260d303348e269b4bc.png">
+                            src="{{ asset('') }}assets/static/img/logo1.png">
                     </div>
                     <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">
-                        <div data-v-6df716d9="" data-v-cfc9a7fc="" class="n">Welcom to BitGrid</div>
-                        <div data-v-6df716d9="" data-v-cfc9a7fc="" class="nickname"> riteshkk </div>
+                    <!-- <div data-v-6df716d9="" data-v-cfc9a7fc="" class="n">Welcom to </div>
+                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="nickname"> riteshkk </div>
+                       
+                        -->
                     </div>
                     <div data-v-6df716d9="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.meassage')}}"><img data-v-6df716d9="" data-v-cfc9a7fc=""
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAANlBMVEUAAADMzMzOzs7Ozs7Ozs7Nzc3Ly8vNzc3Hx8fPz8/Ozs7Nzc3Ozs7Nzc3Ozs7Nzc3Pz8/Ozs5GhKiSAAAAEXRSTlMAQO9g33AwgCAQv5DPn7CPIKRmiGQAAAC7SURBVEjH7dTLEoMgDEDREHmLj/z/z9YF7dSCSZjpwoVnf0eRRHh8+DVHGLBbIkwDgaGDAa3kCh3spHwrh/QWQGGhLwuINjrZQDDRiXx0+xtk8XuOPWJug5kNShtYNqCOxM1cL4j8mVtmNJi4a7tfEHpB0F+0POK5FxRmN6kr8WduOWkZ1Cvh6IJjJ089Th6vA/TyAeQtQi5A9ofXQgd/FU0VlUFg5pRfVKMMkm2+pcBjvS21fc5riPCoXlqeKN947yKJAAAAAElFTkSuQmCC"></a>
@@ -216,7 +218,7 @@
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240305/48b209d9e0c8b108911785e5a136c405.png">
-                                       <p data-v-6df716d9="" data-v-cfc9a7fc="" ><a href="{{route('user.invest')}}" style="color:white;">Deposit</a></p>
+                                       <p data-v-6df716d9="" data-v-cfc9a7fc="" ><a href="{{route('user.strategy')}}" style="color:white;">Deposit</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
@@ -276,12 +278,12 @@
                                         <div role="tablist"
                                             class="van-tabs__nav van-tabs__nav--line van-tabs__nav--complete">
                                             <div role="tab" aria-selected="true" class="van-tab van-tab--active"><span
-                                                    class="van-tab__text">Strategy</span></div>
+                                                    class="van-tab__text"></span></div>
                                             <div role="tab" class="van-tab"><span
-                                                    class="van-tab__text">Investment</span></div>
-                                            <div role="tab" class="van-tab"><span class="van-tab__text">Pledge</span>
+                                                    class="van-tab__text"></span></div>
+                                            <div role="tab" class="van-tab"><span class="van-tab__text"></span>
                                             </div>
-                                            <div role="tab" class="van-tab"><span class="van-tab__text">Exchange</span>
+                                            <div role="tab" class="van-tab"><span class="van-tab__text"></span>
                                             </div>
                                             <div class="van-tabs__line"
                                                 style="transform: translateX(52.5px) translateX(-50%); transition-duration: 0.3s;">
@@ -296,7 +298,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="clBox">
+                            <!-- <div data-v-6df716d9="" data-v-cfc9a7fc="" class="clBox">
                                 <ul data-v-6df716d9="" data-v-cfc9a7fc="" class="cllist">
                                     <li data-v-6df716d9="" data-v-cfc9a7fc="" class="">
                                         <div data-v-6df716d9="" data-v-cfc9a7fc="" class="title">VIP1</div>
@@ -395,7 +397,7 @@
                                             class="img">
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="quotes">
                                 <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">Transactions</div>

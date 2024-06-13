@@ -1,359 +1,248 @@
-<html lang="en" class="van-theme-light pc" style="font-size: 50px;">
+<html lang="en" class="pc" style="font-size: 50px;">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="{{ asset('') }}assets/images/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <link rel="icon" href="/logo1.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="renderer" content="webkit">
     <meta name="robots" content="noindex, nofollow">
-    <title>Register</title>
-    <!-- <script type="module" crossorigin="" src="{{ asset('') }}assets/js/H65jKJPy.js"></script> -->
-    <!-- Include the CSS for intlTelInput -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
-
-<!-- Include the JavaScript for intlTelInput -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-
-<!-- Optionally include the utils.js for additional functionality -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
-
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/vant-CKdp23cx.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/vuei18n-CuXg3buO.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/corejs-C4iS2aBk.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/qrcodejs2fix-CnmRM6Pf.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/vueclipboard3-C7DdPEQF.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/uaParserJs-QZjeYS1Z.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/vuex-Bs0GV8-d.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/vuerouter-CVr71rqU.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/axios-Cm0UX6qg.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/cryptojs-BILcvZe1.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/swiper-C1TWdcvt.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/bignumberjs-DOH-f-tm.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/validator-DnYg83Z5.js">
-    <link rel="modulepreload" crossorigin="" href="{{ asset('') }}assets/js/vanttouchemulator-Cv_in60N.js">
-    <link rel="stylesheet" crossorigin="" href="{{ asset('') }}assets/css/DlTOjm5D.css">
-
-    <link rel="modulepreload" as="script" crossorigin="" href="{{ asset('') }}assets/js/PageScroll-FXSyIjvF.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/PageScroll-B0U5qQ_M.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{ asset('') }}assets/js/MainHeader-CcsZql5t.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/H65jKJPy.css">
-    <link rel="modulepreload" as="script" crossorigin=""
-        href="{{ asset('') }}assets/js/FloatingBubble-BQUsBjwb.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/FloatingBubble-Dntr2w2Z.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{ asset('') }}assets/js/MainFooter-D5SgpBNL.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/MainFooter-KaNE-uqv.css">
-    <link rel="modulepreload" as="script" crossorigin=""
-        href="{{ asset('') }}assets/js/NoticePopup-8URqE4Dx.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/NoticePopup-SnqEssf-.css">
-    <link rel="modulepreload" as="script" crossorigin=""
-        href="{{ asset('') }}assets/js/CustomerService-BbmzK9rb.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/CustomerService-D5uG7YzE.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{ asset('') }}assets/js/ComImage-hDAidJ_D.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/ComImage-C3FUzSnY.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{ asset('') }}assets/js/PhoneInp-lYWUgbIe.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/PhoneInp-Bfqy-ryz.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{ asset('') }}assets/js/PsdInp-DTmI6_SR.js">
-    <link rel="modulepreload" as="script" crossorigin=""
-        href="{{ asset('') }}assets/js/eye_close-DJdVF6pM.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/PsdInp-B2SSuLGr.css">
-    <link rel="modulepreload" as="script" crossorigin=""
-        href="{{ asset('') }}assets/js/ComCheckbox-CmgGg7Ee.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/ComCheckbox-DzGBGsDX.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{ asset('') }}assets/js/ComBtn-0bgjX6rp.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/ComBtn-CgiT3mnI.css">
-    <link rel="modulepreload" as="script" crossorigin=""
-        href="{{ asset('') }}assets/js/AreaPopup-DEXeHN4I.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/AreaPopup-wBjKIUoJ.css">
-    <link rel="modulepreload" as="script" crossorigin=""
-        href="{{ asset('') }}assets/js/ListEmpty-CVrQxVWf.js">
-    <link rel="stylesheet" href="{{ asset('') }}assets/css/ListEmpty-BnV8Jpo-.css">
-    
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script> 
-    
-</head>
-<style>
-    .form-control2 {
-        display: block;
-        width: 100%;
-        padding: 0.175rem .75rem;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 1.5;
-        color: var(--bs-body-color);
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-color: var(--bs-body-bg);
-        background-clip: padding-box;
-        border: var(--bs-border-width) solid var(--bs-border-color);
-        border-radius: 10px;
-        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        /* border: 1px solid #887f7f; */
-        
-    }
-    
-        .iti {
-            width: 100%; /* Make the telephone input span the full width of its container */
-        }
-
-        .iti__flag-container {
-            width: 24.67%; /* Adjust the width of the country code dropdown to be about 1/6 */
-            
-        }.iti--separate-dial-code .iti__selected-flag {
-    background-color: rgb(255 255 255);
-}
-
-        .iti input[type="tel"] {
-            width: 83.33%; /* Remaining width for the input field */
-        }
-        .iti--separate-dial-code .iti__selected-dial-code{
-            margin-left: -1px;
-        }
-        .iti__selected-flag {
-            z-index: 1;
-    position: relative;
-    display: flex;
-    /* align-items: center; */
-    height: 100%;
-    padding: 0px;
-    /* width: 189px; */
-    margin-left: -24px;
-    padding-left: 12px;
+    <meta name="google" content="notranslate">
+    <script>
+        window.addEventListener("error", function (event) {
+            if (event.message.indexOf("Unexpected token '<'") > -1) {
+                location.reload();
             }
-            
-</style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        });
+        window.onload = function () {
+            document.addEventListener("touchstart", function (event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            });
+            var lastTouchEnd = 0;
+            document.addEventListener(
+                "touchend",
+                function (event) {
+                    var now = new Date().getTime();
+                    if (now - lastTouchEnd <= 300) {
+                        event.preventDefault();
+                    }
+                    lastTouchEnd = now;
+                },
+                false
+            );
+            document.addEventListener("gesturestart", function (event) {
+                event.preventDefault();
+            });
+        };
 
-<body class="">
-    <div id="app" data-v-app="">
-        <div class="van-config-provider"><!----></div><img data-v-336fb872="" class="bj_log"
-            src="{{ asset('') }}assets/images/bi2-CoBPuOf9.png" alt=""
-            style="height: 5rem; width: 100%;">
-        <div data-v-e85f0186="" data-v-336fb872="" class="page" style="background-color: rgb(254, 254, 251);">
-            <div data-v-e85f0186="" class="headers">
-                <div data-v-446624d4="" data-v-336fb872="" class="user-header">
-                    <div data-v-446624d4="" class="left">
-                        <div data-v-446624d4="" class="back"> <a href="{{route('login')}}"> <img data-v-446624d4=""
-                                src="{{asset('')}}assets/images/righta.png"
-                                class="icon"></a></div>
-                    </div>
-                    <div data-v-446624d4="" class="right">
-                        <div data-v-446624d4="" class="lang"><img data-v-446624d4=""
-                                src="{{asset('')}}assets/images/icons8-telegram-48.png">
+        if ("standalone" in window.navigator && window.navigator.standalone) {
+            var noddy,
+                remotes = false;
+            document.addEventListener(
+                "click",
+                function (event) {
+                    noddy = event.target;
+                    while (noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+                        noddy = noddy.parentNode;
+                    }
+                    if (
+                        "href" in noddy &&
+                        noddy.href.indexOf("http") !== -1 &&
+                        (noddy.href.indexOf(document.location.host) !== -1 || remotes)
+                    ) {
+                        event.preventDefault();
+                        document.location.href = noddy.href;
+                    }
+                },
+                false
+            );
+        }
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            background-color: #000;
+        }
+
+    </style>
+    <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="preload" as="style">
+    <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="preload" as="style">
+    <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="preload" as="style">
+    <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
+    <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
+    <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-4db5803f.b52e0b88.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-4db5803f.7cdcd357.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a0b1332.9f52f39a.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-273ce16e.debfb5de.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-73ab94aa.2e0ec155.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-73ab94aa.70e0e268.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-443d6c51.69a31eff.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-443d6c51.4a84b438.1717187934571.chunk.js"></script>
+</head>
+
+<body class="main_en">
+    <div id="app" class="applang">
+        <div data-v-cfc9a7fc="" data-v-607a0cfb="" class="page">
+            <div data-v-cfc9a7fc="" class="headers">
+                <div data-v-397da544="" data-v-607a0cfb="" class="head head_isModule" is-left="true" data-v-cfc9a7fc="">
+                    <div data-v-397da544="" class="container flex">
+                        <!---->
+                        <div data-v-397da544="" class="left_title"> Registration </div>
+                        <!---->
+                        <div data-v-397da544="" class="flex1"></div>
+                        <div data-v-397da544="" class="lang"><img data-v-397da544=""
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAZlBMVEUAAAAVFRUWFhYQEBAVFRUWFhYVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUYGBgQEBAWFhbOzs5ycnK3t7ctLS1bW1tmZmYhISHDw8N+fn6goKBERESsrKyJiYmUlJQ4ODhQUFA5OTlkLOJfAAAAEHRSTlMA7+AQz7CggHBAkI/AYCAgGfxI1gAAAitJREFUWMPll9miqiAUhhE1tREC1Jyq93/JI4tD6LZdTHf7u8jVhV+sXxlCa6oyxwn5SpLlRYV+JS0S4gDeXd5rDsSZd6oyIR7g00/PgXhyWLd1JN5kKTJkJIDjpq/g7k4kkBIBFxwqSlRMOwIEN3chEUhhQBEoZhGOIUoQqkgUKlTEEZUojyPKURZHhFESR5Qg8gFxl5/PlsG1F+QDH0Q9Y/LCGaUtl1XLhIeouVF6lcVIZ26yus7XxlXEh/l2LgsqaRvpngvGnUTQD+0gJwrUsu7A5CJq2OvmSYkmWdeyGhoH0Q1u7iFhJWohfihvliLTjizv9D/cWHtrETSmInpokVAhSZitCAZkHrniCi1rqZ1oWDyoUYtGlTbQ2Yk4VTx0M8C0bJRbiWqq6PXoALaMvrYSTcufZSsR131aicRV0UDYGhhEY75sRV78dVG9DLt+G7awEo3fH//k9ELeV6IB1hGnF5Jv5rukc58ipPs2aQe3ZWQMW0ZMMIOWAg/Xhc1k2urATPStGlDw4n93XfxJM+hYttsRa/w2yFrn675BGhPs07I3s3sP3PsQcXu9CsL9EAEIpp5bq/thrPdcRgTc+GTtE66CfCDe0Q/HEWXxjsdlHFER7y9EnLQxQnH+jOxmURpDdEYz+xgDkqTBKeEzAspQ0Qk04c3t0Ytj2OwwpJm/55iiJfvAvgwn7KNJSrThvPMYjmprq8JOoymMZkNV5Fli4cB5WaEV/wDnFTWJG/z43wAAAABJRU5ErkJggg==">
                         </div>
-                        <div data-v-446624d4="" class="CS">
-                            <img data-v-446624d4=""
-                                src="{{asset('')}}assets/images/headphone.png">
-                        </div>
+                        <!---->
+                        <!---->
+                        <div data-v-397da544="" class="head_right"></div>
                     </div>
                 </div>
             </div>
-            <div data-v-e85f0186="" class="page-container">
-                <div data-v-e85f0186="" class="scroll">
-                    <div data-v-336fb872="" class="user">
-                        <form action="{{ route('registers') }}" method="POST" name="login_frm"  id="form-id">
-                            {{ csrf_field() }}
-                        <div data-v-336fb872="" class="welcome-text"><img data-v-336fb872=""
-                                src="{{ asset('') }}assets\images\logo-2.png" alt="">
-                        </div>
-                          @php
+            <form action="{{ route('registers') }}" method="POST" name="login_frm"  id="form-id">
+            {{ csrf_field() }}
+
+            @php
                                       $sponsor = @$_GET['ref'];
                                       $name = \App\Models\User::where('username', $sponsor)->first();
                                       @endphp
                                       
-                        <div data-v-336fb872="" class="user-con">
-                            <div data-v-336fb872="" class="boxs">
-                                <div data-v-336fb872="" class="item">
-                                    <div data-v-336fb872="" class="title">Phone Number</div>
-                                    <div data-v-3976fdc1="" class="inp-con">
-                                        <div data-v-3976fdc1="" class="inp">
-                                               <input type="hidden"  id="country-name" name ="country" value="" >
+            <div data-v-cfc9a7fc="" id="scroll" class="content-container">
+                <div data-v-cfc9a7fc="" id="content" class="content-scroll">
+                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="container">
+                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="item">
+                            <!-- <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Username</div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
+                                            data-v-cfc9a7fc="" type="text"  name="username" placeholder="Enter username"></div>
+                                </div>
+                            </div> -->
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Mobile phone</div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="area"><span data-v-607a0cfb=""
+                                            data-v-cfc9a7fc="">+91</span>
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="j"></div>
+                                    </div>
+                                    <input type="hidden"  id="country-name" name ="country" value="" >
                                                <input type="hidden"  id="dial-code" name ="dialCode" value="" >
                                                <input type="hidden"  id="country_iso" name ="country_iso" value="" >
-                                               
-                                            <div data-v-3976fdc1="" class="set_area">
-                                         
-                                            </div><input id="phone" data-v-3976fdc1=""  name="phone" type="text"   placeholder="Enter Your Number">
-                                        </div>
-                                    </div>
-                                </div>  
-                                <!-- <div data-v-336fb872="" class="title">Email ID</div>
-                                    <div data-v-3976fdc1="" class="inp-con">
-                                        <div data-v-3976fdc1="" class="inp">
-                                            <div data-v-3976fdc1="" class="set_area">
-
-                                            </div><input data-v-3976fdc1=""  name="email" type="text" placeholder="Email ID">
-                                        </div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex flex1">
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
+                                                data-v-607a0cfb="" name="phone" data-v-cfc9a7fc="" type="text"
+                                                placeholder="Please enter your phone number"></div>
                                     </div>
                                 </div>
-                                 -->
-                                <!-- sponsor name -->
-                                <div data-v-336fb872="" class="item">
-                                    <div data-v-336fb872="" class="title">Invitation Code</div>
-                                    <div data-v-0a0a182e="" data-v-336fb872="" class="inp-con">
-                                        <div data-v-0a0a182e="" class="inp">
-                                            <input data-v-0a0a182e="" name="sponsor" type="text" value="{{$sponsor}}" placeholder="Enter your Sponsor">
-                                            <div data-v-0a0a182e="" class="icon"> 
-                                                　
-                                        </div>
-                                        </div>
+                            </div>
+                            <!-- <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Email</div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
+                                            data-v-cfc9a7fc=""  name="email" type="text"
+                                            placeholder="Please enter your email address"></div>
+                                </div>
+                            </div> -->
+                           
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">invitation code</div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
+                                            data-v-cfc9a7fc="" type="text"
+                                          value="{{$sponsor}}" name="sponsor" placeholder="Enter your Sponsor"></div>
+                                </div>
+                            </div>
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n"> password</div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
+                                            data-v-cfc9a7fc="" name="password" placeholder="Enter password" type="password"></div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><img data-v-607a0cfb=""
+                                            data-v-cfc9a7fc=""
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAANlBMVEUAAACSkpKSkpKPj4+SkpKSkpKPj4+Pj4+SkpKSkpKSkpKSkpKPj4+RkZGTk5OPj4+SkpKSkpIEtTlrAAAAEXRSTlMAgN8g73AwEJ+PYL9AkM9Qrxj6kssAAADtSURBVDjLjdLREsMQEAVQ7CJCkvr/n+2K6h02nem+1HD0kmXuIt9/Szq5Vs7pMqrIVWtMtAJGOUsL8jK7+U7A9kXZzwLbi+Qvy+Fq2xeVmvfujTnSaptmjr+Un1Q8w6MKLGqc61X5t8oI8s+J+1giGVjwpE7fUpwEGwNlJ5Vl9Z5nXFQp4jbheqpW+BBsGAhqRg5xWiGu5WXzrHCt0O6tFYY0erQ/Kw+eZVi06iGv0WAJ5qDV1GBDoqpXir9PBSrFVcFA4fmi21PF7d6ZSpQdJYX1e+Hpo3govyiyYP1Wth1K1XVkrpXPo3y6280b7tQSh+p/Pg0AAAAASUVORK5CYII=">
                                     </div>
-                                    <!-- <div data-v-336fb872="" class="title">Telegram Profile</div>
-                                    <div data-v-3976fdc1="" class="inp-con">
-                                        <div data-v-3976fdc1="" class="inp">
-                                            <div data-v-3976fdc1="" class="set_area">
-
-                                            </div><input data-v-3976fdc1="" type="text" name="telegram" value="" placeholder="Your Telegram">
-                                        </div>
+                                </div>
+                            </div>
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="doc"> The password should be a combination
+                                of 6-20 letters and numbers </div>
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Confirm password</div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
+                                            data-v-cfc9a7fc=""  name="password_confirmation"placeholder="Please enter your password again"
+                                            type="password"></div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><img data-v-607a0cfb=""
+                                            data-v-cfc9a7fc=""
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAANlBMVEUAAACSkpKSkpKPj4+SkpKSkpKPj4+Pj4+SkpKSkpKSkpKSkpKPj4+RkZGTk5OPj4+SkpKSkpIEtTlrAAAAEXRSTlMAgN8g73AwEJ+PYL9AkM9Qrxj6kssAAADtSURBVDjLjdLREsMQEAVQ7CJCkvr/n+2K6h02nem+1HD0kmXuIt9/Szq5Vs7pMqrIVWtMtAJGOUsL8jK7+U7A9kXZzwLbi+Qvy+Fq2xeVmvfujTnSaptmjr+Un1Q8w6MKLGqc61X5t8oI8s+J+1giGVjwpE7fUpwEGwNlJ5Vl9Z5nXFQp4jbheqpW+BBsGAhqRg5xWiGu5WXzrHCt0O6tFYY0erQ/Kw+eZVi06iGv0WAJ5qDV1GBDoqpXir9PBSrFVcFA4fmi21PF7d6ZSpQdJYX1e+Hpo3govyiyYP1Wth1K1XVkrpXPo3y6280b7tQSh+p/Pg0AAAAASUVORK5CYII=">
                                     </div>
-                                </div> -->
-                                <!-- password -->
-                                <div data-v-336fb872="" class="item">
-                                    <div data-v-336fb872="" class="title">Password</div>
-                                    <div data-v-0a0a182e="" data-v-336fb872="" class="inp-con">
-                                        <div data-v-0a0a182e="" class="inp"><input data-v-0a0a182e=""  id="test-input" name="password"
-                                                type="password" placeholder="Enter your password">
-                                            <div data-v-0a0a182e="" onclick="togglePasswordVisibility()" class="icon">  <i id="check" class="fa fa-eye" style="font-size:16px"></i>
-                                            </div>                                            
-                                        </div>
-                                    </div>
-                                    
-                                    <div data-v-336fb872="" class="title">Confirm Password</div>
-                                    <div data-v-0a0a182e="" data-v-336fb872="" class="inp-con">
-                                        <div data-v-0a0a182e="" class="inp"><input data-v-0a0a182e="" name="password_confirmation"
-                                                type="password" placeholder="Confirm your password">
-                                            <div data-v-0a0a182e="" class="icon"> 　
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div data-v-336fb872="" class="save-forgot">
-                                        <div data-v-3db4245c="" data-v-336fb872="" role="checkbox"
-                                            class="van-checkbox" tabindex="0" aria-checked="false">
-                                            <div class="van-checkbox__icon van-checkbox__icon--square"
-                                                style="font-size: 0.36rem;">
-                                            </div>
-                                            <label class="van-checkbox__label" style="display: flex; align-items: center;">
-                                             <input type="checkbox" id="rememberPassword" name="rememberPassword" data-v-336fb872>
-                                               <span style="margin-left: 8px; color: rgb(0, 0, 0);">Remember password</span>
-                                            </label>
-                                        </div>
-                                        <div data-v-336fb872="" class="forgot">Forgot password？ </div>
-                                    </div>
-                                </div>    
-                                   </div>
-                            
-
-                          
-
-
-                            <div data-v-336fb872="" class="bot"><button data-v-359df9df="" data-v-336fb872=""
-                                    type="submit"
-                                    class="van-button van-button--default van-button--normal van-button com-btn on">
-                                    <div class="van-button__content"><!----><span
-                                            class="van-button__text">Register</span><!----></div>
-                                </button>
-                                <p data-v-336fb872="">Already have an account? <a href="{{route('login')}}"> <span data-v-336fb872="">Login
-                                        now</span> </a></p>
-                                <div data-v-8b363259="" data-v-db34f896="" data-v-336fb872="" class="touch-move-con"
-                                    style="top: 2.55rem; right: -0.02rem;">
-                                    <!-- <div data-v-db34f896="" class="app-down"><img data-v-db34f896=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJrSURBVHgB7Zg7bBMxGMf/voRIVFAqMaEiNYUKKQvPiaVJgRURlY0OlA2WBnYEAjEjmokxDHSMUrFUqkgTGBBdWhg4CVXiKlE60CHl0SFpzvi7qg/u0evZbmC4n3SKY/vk332Wv/OZIYA5nu/phlHgnOfAWQ77AGd8ntts/FSyXArqw/wqTZ5Pp2xjhgNpdAAhYTWb9lDmYMVytxl+N8jIfbXWkD0xhezJKaccBRorlTJmaNYQJvh5PT8qE7nyi0UsLa5hSchROSo05qF14y7CBBMsUYAE12/2obevC73pLqcsA0vwrKfOXbHQHub4hwwkyn85GfjPiQVViQVV0Sr4o9FyLp1oE5ye/IbzR185V2l8AbrQJ1hZ3i4LWV3Ei0SVWFCVWFAVaUFKyO9r30P7mfONyDvsnUgJfhKD0tZ+5PJb3Bl+h58Bb48n9z7i6oUqcqKvbG6UEpytr2xJTU8u48alN2K7/3urnaJ7W4iXittvlNnaCmSQ2lGTwIiQMj+sYi/QZ8DE60HnNwwtO+rungN4WR3ElWvHQvtmzhzZs5wf0ouEJJ+XL2K0MBDYhx5goiovRyinmftPT2PsYcZTf0uI0wMcFg+iQhIaGHuwIVh8ZG78F8Kbdapo/eyklb0qruMKU+peJFoiuAlNp+qUuonfxarEgqooLxJKLcXHpm8bpRq/HBkFbwQZryECQXJhbX7QkbC7ziPI26yOCOwWoajRo/Nqd50nUX8Rx7Bt25hDh86nd2CJJN3vrvREsJ9VGi3DHqIb0DmsVtMZ0wPb7S46r04wVuBgZ7EfcF7jnNV/Je1n50Rg/Lr8AR8G3sg0z+bsAAAAAElFTkSuQmCC">
-                                        <div data-v-db34f896="" class="name">Download App</div>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
-                    </form>
+                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="go">
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="box3">
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="cache_account"
+                                    style="display: flex; align-items: center;">
+                                    <div data-v-607a0cfb="" role="checkbox" tabindex="0" aria-checked="true"
+                                        class="van-checkbox" data-v-cfc9a7fc="">
+                                        <div
+                                            class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
+                                            <i class="van-icon van-icon-success"
+                                                style="border-color: rgb(113, 219, 129); background-color: rgb(113, 219, 129);">
+                                                <!----></i></div>
+                                    </div><span data-v-607a0cfb="" data-v-cfc9a7fc="" style="margin-left: 0.14rem;">I
+                                        have read the privacy agreement</span>
+                                </div>
+                            </div><button data-v-607a0cfb="" data-v-cfc9a7fc="" type="submit" class="btn2"> Registration </button>
+                            <p data-v-607a0cfb="" data-v-cfc9a7fc=""> Already have an account? <span data-v-607a0cfb=""
+                                    data-v-cfc9a7fc="" ><a href="{{route('login')}}" style="color:#ebd100;">Log in now</a></span></p>
+                            <!---->
+    </form>
+                        </div>
                     </div>
+                    <!---->
                 </div>
-                <div data-v-8b363259="" data-v-e85f0186="" class="touch-move-con"
-                    style="top: 1.88rem; right: 0.2rem;"></div>
-            </div><!---->
+            </div>
+            <!---->
         </div>
+        <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
+            <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAMAAAA0X5qLAAAAh1BMVEUAAAAAv44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av46sPT54AAAALHRSTlMA+wXZ+J87JB7ux4lDNRQPCvLq39PNp5BpWRmxgnAvvrnlw5RhT0sqwHRxeP/zXbkAAAGcSURBVDjLjZTXcqtAEAVnyUGIJBAKKFqS7dv//30XsHFJxrD0C0XRxc45TCEDvFsdrvfhxnGWMk1S7c70nI+bZFxdXFC8YG5GVNemxTdte7+3yxUdq4MMMaocsMza6CeSqLRo2A3dffvguPh1WEiDcuWFeN24mSNDdjS85Exs4OLJX7wpyOWJT8A25G+iFMyn2za1jOIAV+kxIU9knDUQ9d8C/EimyH9OXgawNiblrepfXSn8WKax+4wnCEWDC6ptNk5RC9GxgqqNZ1EstXL1tSP/oBQtS1DN5Qp7vbz1sdwu30b0pNAkPIOrd4131E2kAEf0rDqtaJvTY3YDvM+aOS5IH91KrWdUl2LGIhsI9PIDLm2DFmmslT++FyiDu7a5ANV1FoKpkw/gfwUFddDIO7Cl4wqBMf1iRRZJxxb86d5OYCf9fyS/TaYrFcqVeYQK6nmqEQLFPNc7AuZ2lrtYAcEs936kdZdjE97rSAxDEvG8j8wC/E8Zo1Yo/CAv0oyOYKKzN55QWTm9B9WpyGiwyMvFnLbih+M5xjDWf6S2MlzIf04ZAAAAAElFTkSuQmCC"
+                    alt=""></div>
+        </div>
+        <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
+                src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
     </div>
-    @include('partials.notify')
-    
-      <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
-
-    <script>
-      $(document).ready(function() {
-  
-  $('#check').click(function(){
-       
-        if($(this).hasClass('fa-eye-slash')){
-           
-          $(this).removeClass('fa-eye-slash');
-          
-          $(this).addClass('fa-eye');
-          
-          $('#test-input').attr('type','text');
-            
-        }else{
-         
-          $(this).removeClass('fa-eye');
-          
-          $(this).addClass('fa-eye-slash');  
-          
-          $('#test-input').attr('type','password');
-        }
-    });
-    
-});
-    </script>
-    
-    <script>
-function togglePasswordVisibility() {
-    var passwordInput = document.getElementById('passwordInput');
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-    } else {
-        passwordInput.type = 'password';
-    }
-}
-
-
-
-</script>
-
-    <script>
-        var input = document.querySelector('#phone');
-        var info = document.querySelector('#info');
-        var status = document.getElementById('status');
-        var iti = window.intlTelInput(input, {
-            initialCountry: "auto",
-            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // Load the utilities script
-        });
-
-        input.addEventListener('blur', function() {
-            if (iti.isValidNumber()) {
-                status.textContent = 'Valid number';
-                status.className = 'valid-number';
-            } else {
-                status.textContent = 'Invalid number';
-                status.className = 'invalid-number';
-            }
-        });
-
-        input.addEventListener('countrychange', function() {
-            updateCountryInfo(); // Update the information displayed when the country changes
-        });
-
-        function updateCountryInfo() {
-            var countryData = iti.getSelectedCountryData();
-            console.log(countryData)
-            
-            $('#country-name').val(countryData.name)
-            $('#dial-code').val(countryData.dialCode)
-            $('#country_iso').val(countryData.iso2)
-           
-        }
-
-        // Initialize with the current selected country's info
-        document.addEventListener('DOMContentLoaded', updateCountryInfo);
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
+    <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>
+    <script src="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js"></script>
+    <script src="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js"></script>
+    <script src="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js"></script>
+    <script src="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js"></script>
 </body>
 
 </html>
