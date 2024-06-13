@@ -113,7 +113,7 @@
                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="container">
                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="head">
                                 <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
-                                <div data-v-6df716d9="" data-v-cfc9a7fc="" class="photo"><img data-v-6df716d9="" data-v-cfc9a7fc=""
+                                <div data-v-6df716d9="" data-v-cfc9a7fc="" ><img data-v-6df716d9="" data-v-cfc9a7fc=""
                             src="{{ asset('') }}assets/static/img/logo1.png" style="width:195px;">
                     </div>
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1">
@@ -160,7 +160,7 @@
                                 <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="str"><img data-v-3d4e4f5e=""
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAMAAABjROYVAAAAUVBMVEWm/3oAAACn/3ym/32k/32m/32m/3yl/32l/32l/3yl/32n/3ym/32m/32m/3yn/32l/3um/3yf/3in/4Cf/3im/32l/3yo/3yp/32l/3ym/32b0CplAAAAGnRSTlMuAJblO/C+gNhgl2LgzqKJU0gQICCwkG87bzKpl8UAAAIbSURBVGje7dtbbqQwEIXhAlwmjm0w987Z/0KHzigpNfSM5gFXjyL/G/gk4AmdourY6NYlMK4p2NXNJ4IOYmtxefHo0iPJANt+Gwxdkkm+twygm/+E3snoDV3dZgG0T9E5AnagLA0LEOYz6hiNp2ylBpyOaAt0hjJ26+QR07dZU+beP1VBU15TVCfozHlNUXn+RgM6UqlD/EJbNIZUujVof6MzkEgpDx4/0Q4LqWXR3tEZGEitATzuqIMlxSLaHY3YSDEPW9EMJs1ujJHk6Spl4WhFT6r1WHfYk2obFgpIpNqAQIAh1W5gAkg5oKBSQQta0II+7X9ATa+PmjfUaqiYeFR9Xdd9JlTMg1oDaPKgYoqqgIopqgIqpqg5UTFFVUDFFDUzKjXCFbSgBS1oQQta0IIWtKAF/UnoOx57MwqoqGLmRUUVUwEVVUwFVFQxc6KiipkP7eu69nRQxcyCSqKKqYdSb37mD8mCFrSgf6+gBf0XlPUnB6CAgVRLCLRgI9U87EsGM6+ZBo1gQ5oxJqqUt0EbYkVVi0iKWbgdHVl3wodpR6tW81Na0FV3dGS9t5qASXuAar4GqHtRb2obqi900hsVTzKfdlrz6fSKobjyJN6cJvF7idEkypZvwO585jAFYMl15mCBOD0/6ABgPy4XjY8AHw46pKkDwLb3yVzkDR+95Ts5VidUWBdxeVZIQY/uagOuicOyuvFE/AKpVXipvA5deAAAAABJRU5ErkJggg=="><span
-                                        data-v-3d4e4f5e="" data-v-cfc9a7fc=""><a href="{{route('user.invest')}}" style="color:#fff;">Deposit</a></span></div>
+                                        data-v-3d4e4f5e="" data-v-cfc9a7fc=""><a href="{{route('user.profile')}}" style="color:#fff;">Profile</a></span></div>
                             </div>
                         </div>
                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="container">

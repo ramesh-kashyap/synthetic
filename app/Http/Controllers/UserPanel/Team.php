@@ -248,34 +248,8 @@ class Team extends Controller
     
         public function leftteam(Request $request)
     {  
-      $user=Auth::user();
-      // print_r($user->username);die();
-      $ids=$this->team_by_position($user->id,'Left');
-       
-        $limit = $request->limit ? $request->limit : 10;
-            $status = $request->status ? $request->status : null;
-            $search = $request->search ? $request->search : null;
-            // $notes = User::where('sponsor',$user->username);
-          $notes = User::whereIn('id',$ids);
-        if($search <> null && $request->reset!="Reset"){
-          $notes = $notes->where(function($q) use($search){
-            $q->orWhere('name', 'LIKE', '%' . $search . '%')          
-            ->orWhere('username', 'LIKE', '%' . $search . '%')
-            ->orWhere('email', 'LIKE', '%' . $search . '%')
-            ->orWhere('phone', 'LIKE', '%' . $search . '%')
-            ->orWhere('jdate', 'LIKE', '%' . $search . '%')
-            ->orWhere('active_status', 'LIKE', '%' . $search . '%');
-          });
       
-        }
-            $notes = $notes->paginate($limit)
-                ->appends([
-                    'limit' => $limit
-                ]);
-       
-          $this->data['direct_team'] =$notes;
-          $this->data['search'] =$search;
-          $this->data['page'] = 'user.team.left-team';
+          $this->data['page'] = 'user.team.Mine';
           return $this->dashboard_layout();
 
     }
