@@ -170,7 +170,7 @@
                                             data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAYAAAC4wJK5AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEPSURBVHgB7ZnhDYIwEIWfxgE6Qjezm8gmuglugBt0BNygNhESQKnXWu0B9yXvH5e+1x4QDkAQBGGJKK+TV+3lCqnxMkhEe1kAjols5ykKTgGGQRSIGAClDc+pApFmUniJ2YGM6G7toZeaWjxNr1EOhVc/I3YzhY543b8I+tljBUgILhyI1zkwRtqJC5u6J7i9J0ZIO3FBQnBBQnBBQnBh0yGOXi3CU4ljxrokgt+0oI1z2ox1QT+pJ0GZfNwz1iXx6SQMwrva4v3oMbVOph2LgBqixPSvRyORGuMePKPMFFB1aw+9NNTiCt8Pfn8lg4gdsEBxw1NZRKKxgp8sPcbrBqCU+Sue7V3y4SIIgpDAA7aaiV7MDIgbAAAAAElFTkSuQmCC"></a>
                                     </div>
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">My Strategy</div>
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n"><a href="{{route('user.strategy')}}" style="color:#fff;">My Strategy</a></div>
                                 </li>
                                 <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.reward-bonus')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
