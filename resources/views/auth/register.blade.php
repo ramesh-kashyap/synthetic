@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Registration</title>
+    <title>{{siteName()}}</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -188,8 +188,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="doc"> The password should be a combination
-                                of 6-20 letters and numbers </div>
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="doc"> 
+                                </div>
                             <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Confirm password</div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">

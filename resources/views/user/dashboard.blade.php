@@ -205,7 +205,7 @@
                                         <!----></i>
                                     <div role="marquee" class="van-notice-bar__wrap">
 
-                                    <marquee direction="left" scrollamount="5" behavior="scroll">Welcome to BitGrid - Your Ultimate Platform for
+                                    <marquee direction="left" scrollamount="5" behavior="scroll">Welcome Synthetic ventures - Your Ultimate Platform for
             Everything!
         </marquee>
                                       

@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Bitgrid</title>
+    <title>{{siteName()}}</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -117,7 +117,7 @@
                         <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo"><img data-v-a34da882=""
                                 data-v-cfc9a7fc=""
                                 src="{{asset('')}}assets/static/img/logo1.png">
-                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s">Welcome BitGrid</div>
+                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s">WELCOME SYNTHETIC VENTURES</div>
                         </div>
                         <form action="{{route('login')}}" method="POST">
     {{ csrf_field() }}
