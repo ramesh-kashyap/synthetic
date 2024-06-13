@@ -113,16 +113,15 @@
                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="container">
                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="head">
                                 <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="photo"><img data-v-3d4e4f5e=""
-                                            data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/upload/455d37717182b4260d303348e269b4bc.png">
-                                    </div>
+                                <div data-v-6df716d9="" data-v-cfc9a7fc="" class="photo"><img data-v-6df716d9="" data-v-cfc9a7fc=""
+                            src="{{ asset('') }}assets/static/img/logo1.png" style="width:195px;">
+                    </div>
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1">
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n"> riteshkk <img
+                                        <!-- <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n"> <img
                                                 data-v-3d4e4f5e="" data-v-cfc9a7fc=""
-                                                src="{{asset('')}}assets/static/img/lv0.853a541e.png"></div>
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="cid"> UID: <span
-                                                data-v-3d4e4f5e="" data-v-cfc9a7fc="">119103</span></div>
+                                                src=""></div> -->
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="cid">  <span
+                                                data-v-3d4e4f5e="" data-v-cfc9a7fc=""></span></div>
                                     </div>
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.setting')}}"><img data-v-3d4e4f5e=""
                                             data-v-cfc9a7fc=""

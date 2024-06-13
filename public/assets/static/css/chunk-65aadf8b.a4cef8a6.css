@@ -510,7 +510,9 @@
 .userHead .photo img[data-v-6df716d9] {
     width: .8rem;
     height: .8rem;
-    border-radius: .2rem
+    border-radius: .2rem;
+    width: 202px;
+    height: 70px;
 }
 
 .userHead .flex1[data-v-6df716d9] {
