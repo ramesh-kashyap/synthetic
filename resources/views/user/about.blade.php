@@ -135,7 +135,7 @@
                         <div data-v-1d560bae="" data-v-cfc9a7fc="" class="box">
                             <div data-v-1d560bae="" data-v-cfc9a7fc="" class="img-con">
                                 <p><span style="color:#ffffff"><img
-                                            src="{{asset('')}}assets/static/upload/9ef0d09e4e948de3ba834e73b2c24161.png"
+                                            src="{{asset('')}}assets/static/img/22.png"
                                             style="height:660px; width:510px"></span></p>
 
                                 <p> </p>

@@ -27,7 +27,7 @@
                             <div data-v-6049d237="" class="">
                                 <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAJ1BMVEUAAAD///////////////////////////////////////////////+uPUo5AAAADXRSTlMAgHgQYD9wSCAIUDBoFctLawAAAL1JREFUOMtjoBVgjjllgE2cw1FQMBmHuKA4pjg3SFxQDEN8qiJQ2FVQEKu4BwOGhDlEHEOiBSgsVMwAksAUj2TAkNgCEceQaAOKi2xgwJBgFUQDKlBFhoLoQAwSYAsFMUAmWOIgpoQo1L7FqJ6yEhSBShigxYqgEKbToSKDTIJVqQC7RKGgKHYJRUEhEiUCBcWxS7ArBQzCIEEWUcQVtY64EkMgZvKRBktMw5RIgBiZiCOJMnA7oSXqSAb6AADSxiaTuz9TTgAAAABJRU5ErkJggg=="
-                                        alt=""></div><a href="{{route('user.strategy')}}"><span data-v-6049d237="">Deposit</span>
+                                        alt=""></div><a href="{{route('user.profile')}}"><span data-v-6049d237="">Profile</span>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
