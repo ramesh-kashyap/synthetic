@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BitGrid Strategy</title>
+    <title>{{siteName()}}</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -210,7 +210,7 @@
         </marquee>
                                       
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <ul data-v-6df716d9="" data-v-cfc9a7fc="" class="nav1">
@@ -402,7 +402,7 @@
                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="quotes">
                                 <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">Transactions</div>
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="view"> view all </div>
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="view" style="color:#fff;"> view all </div>
                                 </div>
                                 <table data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <tr data-v-6df716d9="" data-v-cfc9a7fc="">
