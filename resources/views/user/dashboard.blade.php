@@ -218,28 +218,28 @@
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240305/48b209d9e0c8b108911785e5a136c405.png">
+                                            src="{{asset('')}}assets/static/img/48b209d9e0c8b108911785e5a136c405.png">
                                        <p data-v-6df716d9="" data-v-cfc9a7fc="" ><a href="{{route('user.strategy')}}" style="color:white;">Deposit</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240305/54ac7efb773104922091b6f8d46d487c.png">
+                                            src="{{asset('')}}assets/static/img/54ac7efb773104922091b6f8d46d487c.png">
                                              <p data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.Withdraw')}}" style="color:white;">Withdraw</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240305/eaa31429797c1a02783fc21aaafb140d.png">
+                                            src="{{asset('')}}assets/static/img/eaa31429797c1a02783fc21aaafb140d.png">
                                         <p data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.about')}}" style="color:white;">About</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240305/5b0695f769089437fccc9fd7b5f0ff47.png">
+                                            src="{{asset('')}}assets/static/img/5b0695f769089437fccc9fd7b5f0ff47.png">
                                         <p data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.helpcenter')}}" style="color:white;">Help Center</a></p>
                                     </div>
                                 </li>
@@ -408,7 +408,7 @@
                                     <tr data-v-6df716d9="" data-v-cfc9a7fc="">
                                         <td data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
                                                 data-v-cfc9a7fc=""
-                                                src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/1972eff0dd4ca2c8671a653a0d6f80ff.png"><span
+                                                src="{{asset('')}}assets/static/upload/1972eff0dd4ca2c8671a653a0d6f80ff.png"><span
                                                 data-v-6df716d9="" data-v-cfc9a7fc="" class="buyCoinName"
                                                 style="display: inline-block;">BTC<br data-v-6df716d9=""
                                                     data-v-cfc9a7fc=""><span data-v-6df716d9="" data-v-cfc9a7fc=""
@@ -421,7 +421,7 @@
                                     <tr data-v-6df716d9="" data-v-cfc9a7fc="">
                                         <td data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
                                                 data-v-cfc9a7fc=""
-                                                src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/9e96d563eec7f2217c5479d95d98ea14.png"><span
+                                                src="{{asset('')}}assets/static/upload/9e96d563eec7f2217c5479d95d98ea14.png"><span
                                                 data-v-6df716d9="" data-v-cfc9a7fc="" class="buyCoinName"
                                                 style="display: inline-block;">ETH<br data-v-6df716d9=""
                                                     data-v-cfc9a7fc=""><span data-v-6df716d9="" data-v-cfc9a7fc=""
@@ -434,7 +434,7 @@
                                     <tr data-v-6df716d9="" data-v-cfc9a7fc="">
                                         <td data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
                                                 data-v-cfc9a7fc=""
-                                                src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/14187531babdf7b88ad8849de4f402b3.png"><span
+                                                src="{{asset('')}}assets/static/upload/14187531babdf7b88ad8849de4f402b3.png"><span
                                                 data-v-6df716d9="" data-v-cfc9a7fc="" class="buyCoinName"
                                                 style="display: inline-block;">FIL<br data-v-6df716d9=""
                                                     data-v-cfc9a7fc=""><span data-v-6df716d9="" data-v-cfc9a7fc=""
@@ -447,7 +447,7 @@
                                     <tr data-v-6df716d9="" data-v-cfc9a7fc="">
                                         <td data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
                                                 data-v-cfc9a7fc=""
-                                                src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/1300dfbf56cae29948a5162db60d7b8b.png"><span
+                                                src="{{asset('')}}assets/static/upload/1300dfbf56cae29948a5162db60d7b8b.png"><span
                                                 data-v-6df716d9="" data-v-cfc9a7fc="" class="buyCoinName"
                                                 style="display: inline-block;">BNB<br data-v-6df716d9=""
                                                     data-v-cfc9a7fc=""><span data-v-6df716d9="" data-v-cfc9a7fc=""

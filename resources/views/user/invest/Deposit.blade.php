@@ -377,41 +377,41 @@
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/848c7f5604a34a54494ac281cb6ad948.png">
+                                            src="{{asset('')}}assets/static/upload/848c7f5604a34a54494ac281cb6ad948.png">
                                     </div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Spot Grid</div><img
                                         data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240304/eb8efa21009c40364f790b0fff9763f9.png"
+                                        src="{{asset('')}}assets/static/upload/eb8efa21009c40364f790b0fff9763f9.png"
                                         class="kimageUrl">
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/a2676d23a66645f52ecf7292fa040164.png">
+                                            src="{{asset('')}}assets/static/upload/a2676d23a66645f52ecf7292fa040164.png">
                                     </div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Martingale</div><img
                                         data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240304/84d52ad9bd37687470cd78b7581e106b.png"
+                                        src="{{asset('')}}assets/static/upload/84d52ad9bd37687470cd78b7581e106b.png"
                                         class="kimageUrl">
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/0e082935ea46d96dcf2df1b31a099ab2.png">
+                                            src="{{asset('')}}assets/static/upload/0e082935ea46d96dcf2df1b31a099ab2.png">
                                     </div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Contract Grid</div><img
                                         data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240304/b65770384d7807fcb22691682fa31832.png"
+                                        src="{{asset('')}}assets/static/upload/b65770384d7807fcb22691682fa31832.png"
                                         class="kimageUrl">
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/ade106f86322db554a19a20424e91ff7.png">
+                                            src="{{asset('')}}assets/static/upload/ade106f86322db554a19a20424e91ff7.png">
                                     </div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Infinite Grid</div><img
                                         data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240401/dd31dffb566324b6f1d8496bbcf13242.png"
+                                        src="{{asset('')}}assets/static/upload/dd31dffb566324b6f1d8496bbcf13242.png"
                                         class="kimageUrl">
                                 </li>
                             </ul>
