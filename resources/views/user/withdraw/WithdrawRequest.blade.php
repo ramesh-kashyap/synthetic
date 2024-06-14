@@ -145,20 +145,20 @@
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="container">
                         <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Email</div>
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Amount</div>
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
-                                    data-v-cfc9a7fc="" type="text" placeholder="email" ></div>
+                                    data-v-cfc9a7fc="" type="text" placeholder="Amount" name="amount"></div>
                         </div>
                         <!---->
                         <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Funding password</div>
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Payment Mode</div>
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
                                     data-v-cfc9a7fc="" type="password"
-                                    placeholder="Please enter the transaction password" maxlength="6"
+                                    placeholder="Please enter the transaction password" name="PSys" maxlength="6"
                                     aria-autocomplete="list"></div>
                         </div>
                         <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Confirm password</div>
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname"></div>
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val inp"><input data-v-9d2ee7be=""
                                     data-v-cfc9a7fc="" type="password" placeholder="Enter the password again to confirm"
                                     maxlength="6"></div>
