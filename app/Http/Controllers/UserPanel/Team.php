@@ -533,4 +533,12 @@ class Team extends Controller
       return $this->dashboard_layout();
   } 
 
+
+  public function totalteam()
+  {
+      
+   
+      $this->data['page'] = 'user.team.totalteam';
+      return $this->dashboard_layout();
+  } 
 }

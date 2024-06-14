@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Team</title>
+    <title>Team data overview</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -80,74 +80,6 @@
         }
 
     </style>
-    <style>
-blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, menu, ol, p, pre, td, textarea, th, ul {
-    margin: 0;
-    padding: 0;
-}
-* {
-    border: none;
-    background: none;
-    box-sizing: border-box;
-    vertical-align: top;
-}
-#app {
-    max-width: 8.5rem;
-    width: 100%;
-    min-height: 100%;
-    word-wrap: break-word;
-    word-break: normal;
-    font-family: Poppins, PingFang SC, Microsoft Yahei, sans-serif;
-}
-.tame .tab[data-v-273cf854] {
-    padding: 0 0 .24rem 0;
-    font-size: .32rem;
-    font-weight: 600;
-}
-.tame .it[data-v-273cf854] {
-    margin-bottom: 1.24rem;
-}
-.tame .name[data-v-273cf854] {
-    border-bottom: .02rem solid hsla(0, 0%, 100%, .1);
-    margin-bottom: .24rem;
-    padding-bottom: .24rem;
-}
-.tame .name img[data-v-273cf854] {
-    height: .32rem;
-    vertical-align: middle;
-    margin-left: .14rem;
-}
-.tame .it .db[data-v-273cf854] {
-    text-align: center;
-}
-.tame .it .db li[data-v-273cf854] {
-    padding: 0 .1rem;
-}
-.tame .it .db .s[data-v-273cf854] {
-    font-size: .28rem;
-    margin-bottom: .16rem;
-    font-weight: 600;
-}
-.tame .it .db li[data-v-273cf854] {
-    padding: 0 .1rem;
-}
-.tame .it .db .s[data-v-273cf854] {
-    font-size: .28rem;
-    margin-bottom: .16rem;
-    font-weight: 600;
-}
-.tame .it .db .n[data-v-273cf854] {
-    color: #929292;
-    font-size: .22rem;
-}
-.tame .it .db li[data-v-273cf854] {
-    padding: 0 .1rem;
-}
-.tame .it[data-v-273cf854] {
-    margin-bottom: 1.24rem;
-}
-
-    </style>
     <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload" as="script">
@@ -171,30 +103,24 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-aef56f2a.b3c068cc.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-21a2b91c.0ed7b871.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-73ab94aa.2e0ec155.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-73ab94aa.70e0e268.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-65aadf8b.a4cef8a6.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-65aadf8b.59fb6a2e.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-67098c77.8b942857.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-67098c77.b8c94109.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-3cbe2e96.30f94eac.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-3cbe2e96.e797acf7.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-17b291de.e7b989c3.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-17b291de.8772eeeb.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-93492616.436323ed.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-93492616.2e0d86fe.1717187934571.chunk.js"></script>
 </head>
 
-<body class="mein_cn">
+<body class="main_en">
     <div id="app" class="applang">
-        <div data-v-757d6f7f="" class="home">
-            <div data-v-cfc9a7fc="" data-v-757d6f7f="" class="page">
+        <div data-v-273cf854="" class="home">
+            <div data-v-cfc9a7fc="" data-v-273cf854="" class="page">
                 <div data-v-cfc9a7fc="" class="headers">
-                    <div data-v-397da544="" data-v-757d6f7f="" class="head" data-v-cfc9a7fc="">
+                    <div data-v-397da544="" data-v-273cf854="" class="head" data-v-cfc9a7fc="">
                         <div data-v-397da544="" class="container flex">
-                            <div data-v-397da544="" class="back"><a href="{{route('user.Mine')}}" style="color:#fff;"><i data-v-397da544=""
+                            <div data-v-397da544="" class="back"><i data-v-397da544=""
                                     class="van-icon van-icon-arrow-left">
-                                    <!----></i></a></div>
+                                    <!----></i></div>
                             <!---->
-                            <div data-v-397da544="" class="name tac"> My team </div>
+                            <div data-v-397da544="" class="name tac"> Team data overview </div>
                             <div data-v-397da544="" class="flex1"></div>
                             <!---->
                             <!---->
@@ -205,95 +131,26 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                 </div>
                 <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                     <div data-v-cfc9a7fc="" id="content" class="content-scroll">
-                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="container">
-                            <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="totalBox">
-                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Total Earning</div>
-                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0 USDT </div>
-                            </div>
-                            <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="sjfxBox">
-                                <!-- <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="cname">
-                                    <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Data Analysis</div>
-                                    <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> Daily Earning: <span
-                                            data-v-757d6f7f="" data-v-cfc9a7fc="">0</span></div>
-                                </div> -->
-                                <!-- <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-1">
-                                    <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="col-1">
-                                        <li data-v-757d6f7f="" data-v-cfc9a7fc=""><img data-v-757d6f7f=""
-                                                data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAMFBMVEUAAAAAw8cAxMkAw8cAxMkAxMoAxMYAxMgAxMgAw88AxMkAxMkAxcgAxMkAwskAxMlKOZAbAAAAD3RSTlMAgO8g4MBwv3AQ97ifoKDWAa9OAAAAk0lEQVQoz2OgGuAU9/9UZoDgM9f/B4I/CJGk/2CgBuMz/ocCAahAPkzgG9QEfZjAJ4gpfP/hIAAsYI8Q+AnkCgruRwh8FxQECvgjBL6ABdYjBD6BBf4jAewC+gj+L+yGxiMEfgMFGBjmIwQ+g13KihA4gN1zDP0wgR+4AoihCcLXQATyfRD/K3Kwp+p/CZxAtVgFAJoc3L76oBkgAAAAAElFTkSuQmCC">New
-                                            member </li>
-                                    </ul>
-                                    <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="days"> Today <img
-                                            data-v-757d6f7f="" data-v-cfc9a7fc=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkAgMAAACcbnALAAAADFBMVEUAAAD///////////84wDuoAAAABHRSTlMAzGZMZ+vIJAAAAEdJREFUGNNjGDhgA8YgcA2Ip4NZVxsYmMLBLNUEBs4IEANIgTggwBTGMLUBonlqUxjUGNXMCCiLMzQBymIKbYDZMg3JvgEEAG9+C4cqfDR2AAAAAElFTkSuQmCC">
-                                    </div>
-                                </div> -->
-                                <!-- <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="tuBiao">
-                                    <div data-v-757d6f7f="" data-v-cfc9a7fc="" _echarts_instance_="ec_1718094184764"
-                                        style="width: 100%; height: 5rem; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;">
-                                        <div
-                                            style="position: relative; width: 385px; height: 250px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
-                                            <canvas data-zr-dom-id="zr_0" width="770" height="500"
-                                                style="position: absolute; left: 0px; top: 0px; width: 385px; height: 250px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-                                            <div
-                                                style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px auto auto 0px !important;">
-                                            </div>
-                                            <div
-                                                style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px 0px auto auto !important;">
-                                            </div>
-                                            <div
-                                                style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto auto 0px 0px !important;">
-                                            </div>
-                                            <div
-                                                style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto 0px 0px auto !important;">
-                                            </div>
-                                        </div>
-                                        <div class=""
-                                            style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1) 0s, visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1) 0s, transform 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgb(0, 0, 0); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px sans-serif; padding: 10px; top: 0px; left: 0px; transform: translate3d(196px, 139px, 0px); border-color: rgb(0, 0, 0); pointer-events: none; visibility: hidden; opacity: 0;">
-                                            <span style="color:#fff;">
-                                                New member</span>
-                                            <p style="color:#fff">0 People</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-2">
-                                    <li data-v-757d6f7f="" data-v-cfc9a7fc="">
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">New revenue </div>
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s">0 U</div>
+                        <div data-v-273cf854="" data-v-cfc9a7fc="" class="container">
+                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="income">
+                                <div data-v-273cf854="" data-v-cfc9a7fc="" class="name"><span data-v-273cf854=""
+                                        data-v-cfc9a7fc="">clearly indicate：</span>Community teams with 100 or more
+                                    members can apply for community team building funds </div>
+                                <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
+                                    <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                        <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">10%</div>
+                                        <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">1st Generation Member
+                                            Rebate</div>
                                     </li>
-                                    <li data-v-757d6f7f="" data-v-cfc9a7fc="">
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">New member</div>
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0<a href="{{route('user.list')}}"><img data-v-757d6f7f=""
-                                                data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAM1BMVEWl/30AAACn/32k/32m/36m/36d/3al/3+n/4Cn/3ym/32m/36n/4CZ/4Cl/32q/46m/325gAPAAAAAEHRSTlMzAJks5U0GMCAc8lkTCrMJhzE5swAAALVJREFUOMuNk1EOhCAMBR8LtEVx1/ufdvtBUlsNOL8zShMK0oJr0CUzwFn6U0CNYQjFoCHQXEAZNzJZcAwfimME9n0saATmY6ESYb76qX5SJMKVcm47DNJAQuCKpgEc1Rec0DEtOgTTQpAxLTLGFe0f43tawTZ9YIPxGBTA/aOGI0od+nFI86pl6lX34Pft6lUnnnkkhG0s3sv9up0HrRZmtXLLpV2s/W/9cN4/PYUEBjd6/fz/ZucIv4aUi7oAAAAASUVORK5CYII="></a>
-                                        </div>
+                                    <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                        <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">5%</div>
+                                        <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">2nd Generation Member
+                                            Rebate</div>
                                     </li>
-                                    <li data-v-757d6f7f="" data-v-cfc9a7fc="">
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Vaild</div>
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0 </div>
-                                    </li>
-                                </ul> -->
-                            </div>
-                            <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="teamData">
-                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="cname">
-                                    <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Team data</div>
-                                    <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"><span data-v-757d6f7f=""
-                                            data-v-cfc9a7fc=""><a href="{{route('user.list')}}" style="color:#fff;">Team List</a></span></div>
-                                </div>
-                                <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-2">
-                                    <li data-v-757d6f7f="" data-v-cfc9a7fc="">
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Total member</div>
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0<img data-v-757d6f7f=""
-                                                data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAM1BMVEWl/30AAACn/32k/32m/36m/36d/3al/3+n/4Cn/3ym/32m/36n/4CZ/4Cl/32q/46m/325gAPAAAAAEHRSTlMzAJks5U0GMCAc8lkTCrMJhzE5swAAALVJREFUOMuNk1EOhCAMBR8LtEVx1/ufdvtBUlsNOL8zShMK0oJr0CUzwFn6U0CNYQjFoCHQXEAZNzJZcAwfimME9n0saATmY6ESYb76qX5SJMKVcm47DNJAQuCKpgEc1Rec0DEtOgTTQpAxLTLGFe0f43tawTZ9YIPxGBTA/aOGI0od+nFI86pl6lX34Pft6lUnnnkkhG0s3sv9up0HrRZmtXLLpV2s/W/9cN4/PYUEBjd6/fz/ZucIv4aUi7oAAAAASUVORK5CYII=">
-                                        </div>
-                                    </li>
-                                    <li data-v-757d6f7f="" data-v-cfc9a7fc="">
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Total vaild</div>
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0<img data-v-757d6f7f=""
-                                                data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAM1BMVEWl/30AAACn/32k/32m/36m/36d/3al/3+n/4Cn/3ym/32m/36n/4CZ/4Cl/32q/46m/325gAPAAAAAEHRSTlMzAJks5U0GMCAc8lkTCrMJhzE5swAAALVJREFUOMuNk1EOhCAMBR8LtEVx1/ufdvtBUlsNOL8zShMK0oJr0CUzwFn6U0CNYQjFoCHQXEAZNzJZcAwfimME9n0saATmY6ESYb76qX5SJMKVcm47DNJAQuCKpgEc1Rec0DEtOgTTQpAxLTLGFe0f43tawTZ9YIPxGBTA/aOGI0od+nFI86pl6lX34Pft6lUnnnkkhG0s3sv9up0HrRZmtXLLpV2s/W/9cN4/PYUEBjd6/fz/ZucIv4aUi7oAAAAASUVORK5CYII=">
-                                        </div>
+                                    <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                        <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">2%</div>
+                                        <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">3rd Generation Member
+                                            Rebate</div>
                                     </li>
                                 </ul>
                             </div>
@@ -388,9 +245,6 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                                 </div>
                             </div>
                         </div>
-                        <div data-v-4c14e1cc="" data-v-757d6f7f="" data-v-cfc9a7fc="">
-                            <!---->
-                        </div>
                     </div>
                 </div>
-            @include('layouts.upnl.footer')
+                @include('layouts.upnl.footer')
