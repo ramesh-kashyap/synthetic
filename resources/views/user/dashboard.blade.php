@@ -219,21 +219,21 @@
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/12.png">
-                                       <p data-v-6df716d9="" data-v-cfc9a7fc="" >Deposit</a></p>
+                                       <p data-v-6df716d9="" data-v-cfc9a7fc="" ><a href="{{route('user.strategy')}}" style="color:white;">Deposit</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.Withdraw')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/14.png">
-                                             <p data-v-6df716d9="" data-v-cfc9a7fc="">Withdraw</a></p>
+                                             <p data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.Withdraw')}}" style="color:white;">Withdraw</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.about')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/15.png">
-                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">About</a></p>
+                                        <p data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.about')}}" style="color:white;">About</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
