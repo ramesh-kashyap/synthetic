@@ -5,7 +5,7 @@
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <div data-v-6049d237="" class="icon"> <a href="{{route('user.strategy')}}"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/deposit.png"><alt=""></a></div><span data-v-6049d237="">AI Strategy</span>
+                                        src="{{ asset('') }}assets/static/img/deposit.png" alt=""></a></div><span data-v-6049d237="">AI Strategy</span>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
