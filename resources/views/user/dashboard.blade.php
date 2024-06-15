@@ -140,7 +140,7 @@
                             src="{{ asset('') }}assets/static/img/bell.png">
                     </div>
                     <div data-v-6df716d9="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.lang')}}"><img data-v-6df716d9="" data-v-cfc9a7fc=""
-                            src="{{ asset('') }}assets/static/img/earth.png"></a> </div>
+                            src="{{ asset('') }}assets/static/img/earth.png"></div>
                 </div>
             </div>
             <div data-v-cfc9a7fc="" id="scroll" class="content-container">
