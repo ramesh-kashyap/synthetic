@@ -5,7 +5,7 @@
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <div data-v-6049d237="" class="icon"> <a href="{{route('user.strategy')}}"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/deposit.png"><alt=""></a></div><span data-v-6049d237="">AI Strategy</span>
+                                        src="{{ asset('') }}assets/static/img/deposit.png" alt=""></a></div><span data-v-6049d237="">AI Strategy</span>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
@@ -23,14 +23,14 @@
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
-                                <div data-v-6049d237="" class="icon"><a href="{{route('user.wallet')}}"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/1222.png"  alt=""></a></div><span data-v-6049d237="">Wallet</span>
+                                <div data-v-6049d237="" class="icon"><a href="{{route('user.profile')}}"><img data-v-6049d237=""
+                                        src="{{ asset('') }}assets/static/img/wallet.png"  alt=""></a></div><span data-v-6049d237="">Profile</span>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <div data-v-6049d237="" class="icon"><a href="{{route('user.Mine')}}"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/p.png" alt=""></a></div><span data-v-6049d237="">Mine</span>
+                                        src="{{ asset('') }}assets/static/img/a.png" alt=""></a></div><span data-v-6049d237="">Mine</span>
                             </div>
                         </div>
                     </div>
