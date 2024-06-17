@@ -183,7 +183,7 @@
 .tjList li .info button[data-v-7f6bcdef] {
     height: .64rem;
     border-radius: .64rem;
-    color: #a0d211;
+    color: #ebd103;
     background: #fff;
     font-size: .28rem;
     border: .02rem solid #ebebeb;
@@ -278,9 +278,10 @@ button[data-v-7f6bcdef] {
 
 .itemBox .val[data-v-b3422e30] {
     border-radius: .24rem;
-    background: #131118;
+    background: #2c2c2a;
     align-items: center;
-    padding: .28rem
+    padding: .28rem;
+    border: .00862rem solid #ebd103;
 }
 
 .itemBox .val img[data-v-b3422e30] {
@@ -319,7 +320,7 @@ button[data-v-7f6bcdef] {
 
 .address_box[data-v-b3422e30] {
     border-radius: .2rem;
-    border: .01724rem dashed var(--Secondary-100, #82cb55);
+    border: .01724rem dashed var(--Secondary-100, #ebd103);
     background: #1f222a;
     display: flex;
     align-items: center;
@@ -355,7 +356,7 @@ button[data-v-7f6bcdef] {
 
 .mbox #qrcode[data-v-b3422e30] {
     border-radius: .6rem;
-    border: .01724rem solid #82cb55;
+    border: .01724rem solid #ebd103;
     background: #333;
     width: 5.2rem;
     height: 5.2rem;
