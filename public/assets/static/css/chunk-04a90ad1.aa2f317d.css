@@ -3,7 +3,7 @@
 }
 
 .totalBox[data-v-167ffb9b] {
-    background: url(../../images/bg1.png) no-repeat;
+    background: url(../../images/1.png) no-repeat;
     background-size: 100% 100%;
     padding: .28rem
    
@@ -91,7 +91,7 @@
 
 .orderList .list>li[data-v-167ffb9b] {
     margin-top: .3rem;
-    background: url(../../static/img/quant_bg2.933cdf8d.png);
+    background: url(../../static/img/21.png);
     background-size: 100% 100%;
     padding: .28rem
 }
@@ -251,8 +251,8 @@
 }
 
 .popBox .cllist li[data-v-167ffb9b]:first-child {
-    /* background-image: url(../../static/img/quant_bg3.1ee962b7.png) */
-    background-color:#ebd100;
+    background-image: url(../../static/img/11.png);
+    /* background-color:#ebd100; */
     border-radius: 15px;
 }
 
