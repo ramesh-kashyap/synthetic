@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{siteName()}}</title>
+    <title>BitGrid</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -125,7 +125,7 @@
                         <div data-v-397da544="" class="flex1"></div>
 
                         <div data-v-397da544="" class="head_right">
-                            <a href="{{ route('user.roi-bonus') }}">
+                            <a href="{{ route('user.tree-view') }}">
                                 <img data-v-167ffb9b="" data-v-397da544="" src="/assets/images/list.png" class="record_icon">
                             </a>
                         </div>
@@ -136,20 +136,16 @@
             <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="container">
-                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border-color: black;">
+                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;
+    border-color: black;">
                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="name flex">
                                 <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex1">Total Balance</div>
-                                <a href="{{route('user.wallet')}}">
-                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style=""> My Wallet
-                                  
-                                    <img
+                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style=""> My Wallet<img
                                         data-v-167ffb9b="" data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAANlBMVEXS/9IAAADS/9LU/9TU/9TV/9XQ/9DA/Kyr/HvU/9TT/9Pa/9qu+4Kv+4S5/Zus+3ut+36q+3jdZBpaAAAAEXRSTlMzAC0GFCEZTeUoHA6zpmbZzB36ToMAAAFKSURBVFjDtZdLdsMgDEUf+rWIpq33v9mmg5wkjkHGcu5c9wASIKF0YHGthCtU1RqXDtuC5oQVpG2vgA3bkPAOARsGOEcCwRiSoYArQoj7AsEeSHoCx05sW6DYjW4JKiaorwLFFLoWGCbxZ4FgGnkUMOYhfhAQDlDvAsEh5CZgAnB0EwgqMKxIBCcYLgHBCYRLwCAFMfQvaEjQCsJLcFl+PgYFjWgH38uyfHYNVMCIBEMDoyHga2gQGFIGhyJlUFSkDBWElIF6uV+zMoSp2+byDkF6C+lDTKcxX0ieiodBUvFo6eucf1CKhzXx242HnvGoFiSf9WI4jJzytSWW4LfvPbGAUxqMKxUHoGSTBU62efbcaPp0fLbVTTfb57f7MxXpuZEHNhi6CCGVx2NfpLBw8PQoPB59haLwePjWFwd5MHyv4Wb38d+FS4c/ZqkSYvi2fKYAAAAASUVORK5CYII=">
-                                  
                                 </div>
-                            </a>
                             </div>
-                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="amount" style=""> {{number_format(Auth::user()->available_balance(),2)}} <span
+                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="amount" style=""> 6.1642 <span
                                     data-v-167ffb9b="" data-v-cfc9a7fc="">USDT</span></div>
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="">
                                 <li data-v-167ffb9b="" data-v-cfc9a7fc="">
@@ -157,12 +153,12 @@
                                     </div>
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
                                         style="> 0 <span data-v-167ffb9b=""
-                                            data-v-cfc9a7fc="">{{currency()}} {{number_format($todaysIncome,2)}}</span></div>
+                                            data-v-cfc9a7fc="">U</span></div>
                                 </li>
                                 <li data-v-167ffb9b="" data-v-cfc9a7fc="">
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class=" n" style=""> Total revenue</div>
-                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style=""> {{currency()}} {{number_format($totalRoi,2)}} <span
-                                            data-v-167ffb9b="" data-v-cfc9a7fc="" style=""></span></div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style=""> 6.1642 <span
+                                            data-v-167ffb9b="" data-v-cfc9a7fc="" style="">U</span></div>
                                 </li>
                             </ul>
                         </div>
