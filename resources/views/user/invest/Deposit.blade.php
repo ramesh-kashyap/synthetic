@@ -269,9 +269,7 @@
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAS1BMVEUAAACj/3ym/32m/3ym/36m/32l/3yf/4Cf/3Cl/3um/32m/3ym/32l/32n/3qm/30NDQ1ZhUUgKxtGaDeT4W+T4G9tpFNjlEwzSSmgfRuoAAAAD3RSTlMAIO+g39+QEBBg0M+PMGAvI4cvAAAA4ElEQVQ4y63TS5KDMAwEUJCIP3ymPQyT5P4nDSbEVpBxZZFev2oJSm5ynOeBABrYu6aU1hByuFXAjThkdIeKC1Qub0VTFNpMqqPS45JQ5rXPiNOM+xhU8hzFNWKisCjl74otFLfxRRHCbnyao0T4xRZeyVAV6FdC2LMsBQFaSRLzvGgBCHIPYTVKQAz6n6NRgvZ1s8lCrMuQRoj80R7CSJF/nSVpjgLbORgIczsI/vQYGlO/hRjbnYnOpvPuTkQrHklXFFMCqUd3yFijNrX62TNyyIgK2eS5J4B6/rHN1/MAcuUvL+WPD1EAAAAASUVORK5CYII=">
                                             </div>
                                         </div>
-                                        <!-- <div data-v-cc3ce6d2=""> balance: 67.3519/300U <img data-v-cc3ce6d2=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAOVBMVEX///8AAAAODg7////////////h4eH///////////+FhYUsLCxqamr///////////+lpaWVlZVKSko8tlaaAAAAE3RSTlOAAIBwEAiAeFBIgICAaDAYgICAwZP9dQAAAMtJREFUOMuV1NEWgyAIBmAyCVzTtr3/w06XR1h4sv6bbr7DoYBgasHEkQAocsJJpREfCCTsDcEAhwT8J34Gk9lrsonQZhMiNUydSrAJY7AS6dQk7MTDSfyP8BkJhSD08nztT8JMUlc4V03KhPvCPeokMomnAmImbXjL0hFAmTSxrosSLYp8nCtGhBBqVYoxgmq7YkSodhm0UUJeOoEyWsinQ9LmKADLGAMo8z4IvrIM45UaL+Z4vcdHMj61Owdb4xkkFMzZj38eNjfJF4TTBjZGDKh+AAAAAElFTkSuQmCC">
-                                        </div> -->
+                                        
                                     </div>
                                 </li>
                             </ul>
@@ -297,53 +295,30 @@
                                 </li>
                             </ul>
 							
-							 <form method="post" name="add" action="{{ route('user.confirmDeposit') }}">
-                                  {{ csrf_field() }}
-                                  <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
-                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
-                    <input data-v-1fa86597="" data-v-cfc9a7fc="" name="Sum"
-                    type="text" style="color:white;" placeholder="Enter Amont"></div>
-              </div>
-    </br></br>
-              <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices" style="height:47px;">
-                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
-                
-                <select data-v-1fa86597="" data-v-cfc9a7fc="" name="PSys" style="color:white;width:318px;">
-                    <option value="USDT BEP20">USDT BEP20</option>
-                    <option value="USDT .TRC20">USDT TRC20</option>
-                </select>
-                </div>
-              </div>
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style="">
-                                
-                                <!-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 0% </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 50% </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 75% </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 100% </div>
-                                </div> -->
-                            </div>
-                            <!-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prompt">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Available investment amount</div>
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"><span data-v-1fa86597=""
-                                        data-v-cfc9a7fc="">0</span>/ 67.3519 </div>
-                            </div>
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="fot">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="flex">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Pending release details</div>
-                                    <img data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAMAAADEfo0+AAAAPFBMVEUAAAC+vr69vb23t7e9vb28vLy9vb2/v7+/v7+7u7u+vr68vLy8vLy/v7+8vLy9vb28vLy8vLy5ubm9vb0vD2FiAAAAE3RSTlMA3+8gj3CAIBBAv7CgMM+vn29Qy54UlQAAAGNJREFUGNONkEkKgDAQBM2+uff//+oIQnqCiH2rgqRCpve5/dCiAV6JGUBgkY2YwiZZwDo2BYDJbIKYOvE8xlT9mWLhRBjm+8hCYn0u5WwkjsIb8dmf3gNpDHx9UFMBWfLMehdSXwVxnLXHTQAAAABJRU5ErkJggg==">
+                            <form method="post" name="add" action="{{ route('user.confirmDeposit') }}" onsubmit="return validateForm()">
+                                {{ csrf_field() }}
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
+                                        <input data-v-1fa86597="" data-v-cfc9a7fc="" id="amount" name="Sum" type="text" style="color:white;" placeholder="Enter Amount">
+                                    </div>
+                                    <input data-v-1fa86597="" data-v-cfc9a7fc="" id="plan" name="plan" type="hidden" value={{ $profile->id }}>
+
                                 </div>
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="flex">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Order records</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAMAAADEfo0+AAAAPFBMVEUAAAC+vr69vb23t7e9vb28vLy9vb2/v7+/v7+7u7u+vr68vLy8vLy/v7+8vLy9vb28vLy8vLy5ubm9vb0vD2FiAAAAE3RSTlMA3+8gj3CAIBBAv7CgMM+vn29Qy54UlQAAAGNJREFUGNONkEkKgDAQBM2+uff//+oIQnqCiH2rgqRCpve5/dCiAV6JGUBgkY2YwiZZwDo2BYDJbIKYOvE8xlT9mWLhRBjm+8hCYn0u5WwkjsIb8dmf3gNpDHx9UFMBWfLMehdSXwVxnLXHTQAAAABJRU5ErkJggg==">
+                                </br></br>
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices" style="height:47px;">
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
+                                        <select data-v-1fa86597="" data-v-cfc9a7fc="" id="payment-system" name="PSys" style="color:white;width:318px;">
+                                            <option value="USDT BEP20">USDT BEP20</option>
+                                            <option value="USDT .TRC20">USDT TRC20</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div> --></br></br></br>
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf"><button data-v-1fa86597=""
-                                    data-v-cfc9a7fc="" class="btn2" type="submit"> Create </button></div>
-	</form>
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress"></div>
+                                </br></br></br>
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf">
+                                    <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit"> Create </button>
+                                </div>
+                            </form>
                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="check">
                                 <div data-v-1fa86597="" role="checkbox" tabindex="0" aria-checked="true"
                                     class="van-checkbox" data-v-cfc9a7fc="">
@@ -404,9 +379,30 @@
                             </ul>
                         </div>
                     </div>
-                    <!---->
-                    <!---->
+                    
                 </div>
             </div>
+
+            <script>
+                function validateForm() {
+                    var amount = document.getElementById('amount').value;
+                    var minAmount = {{ $profile->min }};
+                    var maxAmount = {{ $profile->mix }};
+            
+                    if (amount === "") {
+                        alert("Amount cannot be empty");
+                        return false;
+                    }
+            
+                    amount = parseFloat(amount);
+            
+                    if (isNaN(amount) || amount < minAmount || amount > maxAmount) {
+                        alert("Amount must be between " + minAmount + " and " + maxAmount);
+                        return false;
+                    }
+            
+                    return true;
+                }
+            </script>
          
             @include('layouts.upnl.footer')
