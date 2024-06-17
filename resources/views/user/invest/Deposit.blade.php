@@ -333,7 +333,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="arcList">
+                        <!-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="arcList">
                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="cname">Strategy includes strategies</div>
                             <ul data-v-1fa86597="" data-v-cfc9a7fc="">
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
@@ -377,7 +377,7 @@
                                         class="kimageUrl">
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                     
                 </div>

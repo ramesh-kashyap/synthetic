@@ -422,7 +422,7 @@ class Team extends Controller
        
           $this->data['direct_team'] =$notes;
           $this->data['search'] =$search;
-          $this->data['page'] = 'user.team.right-team';
+          $this->data['page'] = 'user.team.market';
           return $this->dashboard_layout();
 
     }
