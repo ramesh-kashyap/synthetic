@@ -122,13 +122,13 @@
                         <form action="{{route('login')}}" method="POST">
     {{ csrf_field() }}
                         <ul data-v-a34da882="" data-v-cfc9a7fc="" class="tab">
-                            <li data-v-a34da882="" data-v-cfc9a7fc="" class=""> Email </li>
-                            <li data-v-a34da882="" data-v-cfc9a7fc="" class="on"> Username </li>
+                            <li data-v-a34da882="" data-v-cfc9a7fc="" class="email-tab"> Email </li>
+                            <li data-v-a34da882="" data-v-cfc9a7fc="" class="username-tab on"> Username </li>
                         </ul>
                         <div data-v-a34da882="" data-v-cfc9a7fc="" class="item">
                             <!---->
-                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-a34da882="" data-v-cfc9a7fc="" class="n" >Username</div>
+                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="it input-container">
+                                <div data-v-a34da882="" data-v-cfc9a7fc="" class="n">Username</div>
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="val inp flex">
                                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="ico"></div>
                                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex1"><input data-v-a34da882=""
@@ -194,12 +194,47 @@
         <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
                 src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
     </div>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Your other scripts -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js"></script>
     <script src="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js"></script>
+
+    <!-- Your custom script -->
+    <script>
+        $(document).ready(function() {
+            $('.email-tab').click(function() {
+                $('.input-container').html(`
+                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="n">Email</div>
+                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="val inp flex">
+                        <div data-v-a34da882="" data-v-cfc9a7fc="" class="ico"></div>
+                        <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex1"><input data-v-a34da882="" data-v-cfc9a7fc="" type="email" placeholder="Enter email" name="username"></div>
+                    </div>
+                `);
+                $('.email-tab').addClass('on');
+                $('.username-tab').removeClass('on');
+            });
+
+            $('.username-tab').click(function() {
+                $('.input-container').html(`
+                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="n">Username</div>
+                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="val inp flex">
+                        <div data-v-a34da882="" data-v-cfc9a7fc="" class="ico"></div>
+                        <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex1"><input data-v-a34da882="" data-v-cfc9a7fc="" type="text" placeholder="Enter username" name="username"></div>
+                    </div>
+                `);
+                $('.username-tab').addClass('on');
+                $('.email-tab').removeClass('on');
+            });
+        });
+    </script>
 </body>
+
+
 
 </html>
