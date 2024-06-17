@@ -113,7 +113,7 @@
             <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-397da544="" data-v-c079ad96="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
-                        <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                        <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></div>
                         <!---->
                         <div data-v-397da544="" class="name tac"> Market </div>
