@@ -178,7 +178,7 @@ public function viewdetail($txnId)
 
     $min_amount = $request->minimum_deposit;
     $max_amount = $request->maximum_deposit;
-    $plan = $request->Plan;
+    $plan = $request->plan;
     $paymentMode = $request->PSys;
     $amount = $request->Sum;
 
@@ -195,7 +195,7 @@ public function viewdetail($txnId)
     $amountTotal= $request->Sum;
   
   
-    if($paymentMode=="USDT.BEP20")
+    if($paymentMode=="USDT BEP20")
     {
        $paymentMode= "USDT_BSC"; 
     }
