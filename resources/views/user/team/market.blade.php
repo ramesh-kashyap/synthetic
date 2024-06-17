@@ -123,7 +123,7 @@
             <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-397da544="" data-v-c079ad96="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
-                        <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                        <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:white;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></div>
                         <!---->
                         <div data-v-397da544="" class="name tac"> Market </div>
@@ -178,15 +178,29 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
+                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/f64e173775c5555566d6e1b28436dd13.png"><span
+                                            data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
+                                            style="display: inline-block;">XRP<br data-v-c079ad96=""
+                                                data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
+                                                class="sellCoinName"
+                                                style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0.4973</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
+                                            class="">+1.67%</var></td>
+                                </tr>
+                                <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""
+                                        style="display: flex; align-items: center;"><img data-v-c079ad96=""
+                                            data-v-cfc9a7fc=""
                                             src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/1972eff0dd4ca2c8671a653a0d6f80ff.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">BTC<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
                                                 class="sellCoinName"
                                                 style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
-                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$65734</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$65876.01</td>
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
-                                            class="on">-1.15%</var></td>
+                                            class="on">-1.20%</var></td>
                                 </tr>
                                 <tr data-v-c079ad96="" data-v-cfc9a7fc="">
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -198,37 +212,9 @@
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
                                                 class="sellCoinName"
                                                 style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
-                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$596.4</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$598.3</td>
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
-                                            class="on">-1.30%</var></td>
-                                </tr>
-                                <tr data-v-c079ad96="" data-v-cfc9a7fc="">
-                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""
-                                        style="display: flex; align-items: center;"><img data-v-c079ad96=""
-                                            data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/9e96d563eec7f2217c5479d95d98ea14.png"><span
-                                            data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
-                                            style="display: inline-block;">ETH<br data-v-c079ad96=""
-                                                data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
-                                                class="sellCoinName"
-                                                style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
-                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$3451.88</td>
-                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
-                                            class="on">-1.69%</var></td>
-                                </tr>
-                                <tr data-v-c079ad96="" data-v-cfc9a7fc="">
-                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""
-                                        style="display: flex; align-items: center;"><img data-v-c079ad96=""
-                                            data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/f64e173775c5555566d6e1b28436dd13.png"><span
-                                            data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
-                                            style="display: inline-block;">XRP<br data-v-c079ad96=""
-                                                data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
-                                                class="sellCoinName"
-                                                style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
-                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0.4935</td>
-                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
-                                            class="on">-2.23%</var></td>
+                                            class="on">-2.06%</var></td>
                                 </tr>
                                 <tr data-v-c079ad96="" data-v-cfc9a7fc="">
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -240,9 +226,93 @@
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
                                                 class="sellCoinName"
                                                 style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
-                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$73.57</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$77.34</td>
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
-                                            class="on">-3.95%</var></td>
+                                            class="on">-2.08%</var></td>
+                                </tr>
+                                <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""
+                                        style="display: flex; align-items: center;"><img data-v-c079ad96=""
+                                            data-v-cfc9a7fc=""
+                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240307/ff75f2401df30d56ad4e9145a1a34540.png"><span
+                                            data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
+                                            style="display: inline-block;">DOGE<br data-v-c079ad96=""
+                                                data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
+                                                class="sellCoinName"
+                                                style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0.13386</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
+                                            class="on">-2.38%</var></td>
+                                </tr>
+                                <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""
+                                        style="display: flex; align-items: center;"><img data-v-c079ad96=""
+                                            data-v-cfc9a7fc=""
+                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/9e96d563eec7f2217c5479d95d98ea14.png"><span
+                                            data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
+                                            style="display: inline-block;">ETH<br data-v-c079ad96=""
+                                                data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
+                                                class="sellCoinName"
+                                                style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$3523.39</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
+                                            class="on">-2.78%</var></td>
+                                </tr>
+                                <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""
+                                        style="display: flex; align-items: center;"><img data-v-c079ad96=""
+                                            data-v-cfc9a7fc=""
+                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/1a90e27ee0ab2ef54368e6dd95a3142e.png"><span
+                                            data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
+                                            style="display: inline-block;">BCH<br data-v-c079ad96=""
+                                                data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
+                                                class="sellCoinName"
+                                                style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$414.3</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
+                                            class="on">-3.31%</var></td>
+                                </tr>
+                                <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""
+                                        style="display: flex; align-items: center;"><img data-v-c079ad96=""
+                                            data-v-cfc9a7fc=""
+                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/08e86e3e02f72fe838cd13b92cfa8791.png"><span
+                                            data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
+                                            style="display: inline-block;">DOT<br data-v-c079ad96=""
+                                                data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
+                                                class="sellCoinName"
+                                                style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$6.175</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
+                                            class="on">-3.47%</var></td>
+                                </tr>
+                                <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""
+                                        style="display: flex; align-items: center;"><img data-v-c079ad96=""
+                                            data-v-cfc9a7fc=""
+                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/14187531babdf7b88ad8849de4f402b3.png"><span
+                                            data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
+                                            style="display: inline-block;">FIL<br data-v-c079ad96=""
+                                                data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
+                                                class="sellCoinName"
+                                                style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$5.055</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
+                                            class="on">-3.53%</var></td>
+                                </tr>
+                                <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""
+                                        style="display: flex; align-items: center;"><img data-v-c079ad96=""
+                                            data-v-cfc9a7fc=""
+                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/d0338a4fd6430124d021b4d1dc0688dd.png"><span
+                                            data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
+                                            style="display: inline-block;">LINK<br data-v-c079ad96=""
+                                                data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
+                                                class="sellCoinName"
+                                                style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$14.332</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc=""
+                                            class="on">-5.34%</var></td>
                                 </tr>
                                 <tr data-v-c079ad96="" data-v-cfc9a7fc="">
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
