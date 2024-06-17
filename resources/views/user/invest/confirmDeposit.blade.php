@@ -117,7 +117,7 @@
             <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-397da544="" data-v-b3422e30="" class="head" title1="Recharge Details" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
-                        <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                        <div data-v-397da544="" class="back"><a href="{{route('user.strategy')}}" style="color:white;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></div>
                         <!---->
                         <div data-v-397da544="" class="name tac"> Deposit </div>
@@ -129,30 +129,31 @@
                     </div>
                 </div>
             </div>
+            <form method="post" action="{{ route('user.fundActivation') }}" name="balance/oper_frm" data-v-56930b78="" class="container">
+            {{ csrf_field() }}
+            <input name="paymentMode" value="{{$paymentMode}}" type="hidden">
+                        <input name="amount" value="{{$amount}}" type="hidden">
+                        <input name="orderId" value="{{$orderId}}" id="orderId" type="hidden">
+                        <input name="transaction_id" value="{{$transaction_id}}" type="hidden">
             <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-b3422e30="" data-v-cfc9a7fc="" class="container">
                         <div data-v-b3422e30="" data-v-cfc9a7fc="" class="itemBox">
-                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">Select currency</div>
-                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="val flex"><img data-v-b3422e30=""
-                                    data-v-cfc9a7fc=""
-                                    src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/bf0d2144a057c38b170af0abdc0b4b43.png"
-                                    class="coinIcon">
-                                <div data-v-b3422e30="" data-v-cfc9a7fc="" class="flex1">USDT</div><i data-v-b3422e30=""
-                                    data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
-                                    <!----></i>
+                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">Amount</div>
+                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="val flex">
+                                    
+                                <div data-v-b3422e30="" data-v-cfc9a7fc="" class="flex1"><input name="amount" value="{{$amount}}" ></div>
+                               
                             </div>
                         </div>
                         <div data-v-b3422e30="" data-v-cfc9a7fc="" class="itemBox">
-                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">Select network</div>
-                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="val flex"><img data-v-b3422e30=""
-                                    data-v-cfc9a7fc=""
-                                    src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/bf0d2144a057c38b170af0abdc0b4b43.png"
-                                    class="coinIcon">
-                                <div data-v-b3422e30="" data-v-cfc9a7fc="" class="flex1">TRC20</div><i
-                                    data-v-b3422e30="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
-                                    <!----></i>
+                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">Payment Mode</div>
+                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="val flex">
+                                    
+                                <div data-v-b3422e30="" data-v-cfc9a7fc="" class="flex1"><input name="paymentMode" value="{{$paymentMode}}" ></div>
+                               
                             </div>
+                        </div>
                             <div data-v-b3422e30="" data-v-cfc9a7fc="" class="mbox">
                                 <p data-v-b3422e30="" data-v-cfc9a7fc="">Scan this QR code or Save pictures locally</p>
                                 <div data-v-b3422e30="" data-v-cfc9a7fc="" id="qrcode"
@@ -205,6 +206,7 @@
                     </div>
                 </div>
             </div>
+    </form>
             <div data-v-cfc9a7fc="" class="footer"></div>
         </div>
         <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">

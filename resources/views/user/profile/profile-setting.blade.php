@@ -225,6 +225,16 @@
                                 <!---->
                                 <!---->
                             </li>
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.ChangePass')}}" style="color:white;"><img data-v-636522ac=""
+                                        data-v-cfc9a7fc=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAALVBMVEUAAACVmp+VmJ6Ump+Tl5+Tn5+Ump+Tmp+Ump+TmZ6TmZ+Ump+Tmp6VmZ+Ump+VBBQqAAAADnRSTlMA32DvIBDA78+AoJ/Qf3/KEYwAAACxSURBVDjLYxhWQP0dEhBCkpBDlniMJPEOBRAngWDTUkId4gdMCTmIHzAl7EASD7FIKIIkjCh0VWweqqteKEDEWeTeIbsK5AQHsAQjkInsKiAQBUvogZgIV4Gol2CJvndLUS33evcMynJAlWCFcoEUWkQRIWGHLP4QSUIRWcIISQIV0EQiAFWcBSqR924LqkT0uxdget47DPAILBGIKSGAiCgEQEQUA9M5VPFnUxkGKwAA4rZAp3H3Bf8AAAAASUVORK5CYII=">
+                                </div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Change Password</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></a></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"></div>
+                                <!---->
+                            </li>
                         </ul>
                     </div>
                 </div>
