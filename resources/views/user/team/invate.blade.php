@@ -138,9 +138,9 @@
                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="container">
                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="text_box">
                                 <div data-v-422886cf="" data-v-cfc9a7fc="" class="flex">
-                                    <div data-v-422886cf="" data-v-cfc9a7fc="" class="photo"><img data-v-422886cf=""
+                                    <div data-v-422886cf="" data-v-cfc9a7fc="" ><img data-v-422886cf=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240305/455d37717182b4260d303348e269b4bc.png">
+                                            src="{{ asset('') }}assets/static/img/logo2.png" style="width:80px;"> 
                                     </div>
                                     <div data-v-422886cf="" data-v-cfc9a7fc="" class="info">
                                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="n"> riteshkk <img

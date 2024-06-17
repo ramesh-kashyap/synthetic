@@ -1,8 +1,8 @@
-<html lang="en" class="pc" style="font-size: 50px;">
+<html lang="en" style="font-size: 50px;" class="pc">
 
 <head>
     <meta charset="utf-8">
-    <title>Set fund password</title>
+    <title>Withdrawal</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -91,48 +91,26 @@
     <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
     <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
     <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-04a90ad1.aa2f317d.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-04a90ad1.28c21b1a.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-494d233b.50573298.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-494d233b.77bc554e.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a0b1332.9f52f39a.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-273ce16e.debfb5de.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-67098c77.8b942857.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-67098c77.b8c94109.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-21a2b91c.0ed7b871.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-aef56f2a.f587d975.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-aef56f2a.b3c068cc.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-8c0c3ac6.27e1c228.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-8c0c3ac6.576dd3c7.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-65aadf8b.a4cef8a6.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-65aadf8b.59fb6a2e.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8870696.ba836efa.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8870696.d3c72f4a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-198acc81.38a789e9.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-198acc81.12c44c37.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-494d233b.50573298.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-494d233b.77bc554e.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-0830ec22.59462d6e.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-0830ec22.94ec9a30.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-43a21247.c7b442a8.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-43a21247.bd486532.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-66c4c188.61a42d60.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-66c4c188.806de089.1717187934571.chunk.js"></script>
 </head>
 
-<body class="mein_cn">
+<body class="main_en">
     <div id="app" class="applang">
-        <div data-v-cfc9a7fc="" data-v-9d2ee7be="" class="page">
+        <div data-v-cfc9a7fc="" data-v-7bab1ac4="" class="page">
             <div data-v-cfc9a7fc="" class="headers">
-                <div data-v-397da544="" data-v-9d2ee7be="" class="head" data-v-cfc9a7fc="">
+                <div data-v-397da544="" data-v-7bab1ac4="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> withdrawal </div>
+                        <div data-v-397da544="" class="name tac"> Withdrawal </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -143,37 +121,132 @@
             </div>
             <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
-                    <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="container">
-                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Email</div>
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
-                                    data-v-cfc9a7fc="" type="text" placeholder="email" ></div>
+                    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="container">
+                    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
+                                  
+                                        <select  data-v-7bab1ac4=""
+                                        data-v-cfc9a7fc="" name="paymentMode" 
+                                                autocomplete="off" type="text" class="uni-input-input" style="color:white;">
+                                                <option value="TRC20">TRC20</option>
+                                                <option value="BEP20">BEP20</option>
+                                            </select>
+                                    </div>
+                            </div>
                         </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">currency</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
+                                        data-v-cfc9a7fc="" type="text" placeholder="currency" name="paymentmode" valu=""
+                                        ></div>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str">  </div>
+                            </div>
+                        </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
+                                        data-v-cfc9a7fc="" type="text"
+                                        placeholder="Please enter the withdrawal address" name="walletAddress"></div>
+                            </div>
+                        </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal amount</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
+                                        data-v-cfc9a7fc="" type="text" placeholder="Please enter the withdrawal amount"
+                                         name="amount"></div>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str">  </div>
+                            </div>
+                        </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tips">
+                                <ul data-v-7bab1ac4="" data-v-cfc9a7fc="">
+                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Arrived quantity</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s blue"><span
+                                                data-v-7bab1ac4="" data-v-cfc9a7fc="">0 USDT</span></div>
+                                    </li>
+                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n"> Withdrawal fee 0 % </div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s">0 USDT</div>
+                                    </li>
+                                    <!---->
+                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">On-chain handling fee</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s">1 USDT</div>
+                                    </li>
+                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Minimum withdrawal amount
+                                        </div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"> USDT</div>
+                                    </li>
+                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Maximum withdrawal amount
+                                        </div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4=""
+                                                data-v-cfc9a7fc=""> USDT</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item"><button data-v-7bab1ac4=""
+                                data-v-cfc9a7fc="" class="btn2"> Confirm </button></div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tipss">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Note</div>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="p">
+                                    <p><span style="color:#ffffff">1, the minimum withdrawal for valid members: 50USDT
+                                        </span></p>
+
+                                    <p><span style="color:#ffffff">2. No payment will be made on U.S. statutory holidays
+                                            and weekends </span></p>
+
+                                    <p><span style="color:#ffffff">3. Taxes for each withdrawal: 5% tax&nbsp;</span></p>
+
+                                    <p><span style="color:#ffffff">4, the handling fee on the chain for a single
+                                            withdrawal is 1 USDT. </span></p>
+
+                                    <p><span style="color:#ffffff">5, only supports USDT-TRON withdrawals </span></p>
+
+                                    <p><span style="color:#ffffff">6. Withdrawals need to be confirmed and reviewed by
+                                            multiple nodes, and the withdrawal time will be within 72 hours. Withdrawals
+                                            are only allowed in the capital account. If the account has insufficient
+                                            funds, please transfer the quantitative funds to the capital account and
+                                            then initiate a withdrawal again.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-4c14e1cc="" data-v-7bab1ac4="" data-v-cfc9a7fc="">
                         <!---->
-                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Funding password</div>
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
-                                    data-v-cfc9a7fc="" type="password"
-                                    placeholder="Please enter the transaction password" maxlength="6"
-                                    aria-autocomplete="list"></div>
+                    </div>
+                    <div data-v-2ca52d3c="" data-v-7bab1ac4="" data-v-cfc9a7fc="">
+                        <!---->
+                    </div>
+                    <!---->
+                    <div data-v-4c14e1cc="" data-v-7bab1ac4="" data-v-cfc9a7fc="">
+                        <div class="van-overlay" style="z-index: 2001; display: none;"></div>
+                        <div data-v-4c14e1cc="" class="van-popup van-popup--round van-popup--bottom"
+                            style="background: none; z-index: 2002; display: none;">
+                            <div data-v-4c14e1cc="" class="popup_box">
+                                <div data-v-4c14e1cc="" class="scroll">
+                                    <div data-v-4c14e1cc="" class="ul">
+                                        <div data-v-4c14e1cc="">
+                                            <div data-v-4c14e1cc="" class="item active"> TRC20 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-4c14e1cc="" class="esc">Cancel</div>
+                            </div>
                         </div>
-                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Confirm password</div>
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val inp"><input data-v-9d2ee7be=""
-                                    data-v-cfc9a7fc="" type="password" placeholder="Enter the password again to confirm"
-                                    maxlength="6"></div>
-                        </div>
-                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="err" style="color: red;"> Incorrect password
-                            format </div>
                     </div>
                 </div>
             </div>
-            <div data-v-cfc9a7fc="" class="footer">
-                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="container">
-                    <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="go"><button data-v-9d2ee7be="" data-v-cfc9a7fc=""
-                            class="btn2">Confirm</button></div>
-                </div>
-            </div>
+            <!---->
         </div>
         <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
             <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
@@ -181,7 +254,7 @@
                     alt=""></div>
         </div>
         <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
-                src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
+                src="/static/img/start.0aabcda5.gif"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>

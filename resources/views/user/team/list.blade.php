@@ -91,50 +91,16 @@
     <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
     <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
     <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-aef56f2a.f587d975.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-aef56f2a.b3c068cc.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-64987b26.5bff7a5a.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-64987b26.1b0de86e.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a0b1332.9f52f39a.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-21a2b91c.0ed7b871.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-4d56d011.d2239d8d.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-4d56d011.55574f9a.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-273ce16e.debfb5de.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-a46085d6.d2823003.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-a46085d6.6a4896cb.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-97c0768a.2ab4315e.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-97c0768a.b8196644.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f31ad6d4.2882463c.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f31ad6d4.836d485b.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-0830ec22.59462d6e.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-0830ec22.94ec9a30.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-73ab94aa.2e0ec155.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-73ab94aa.70e0e268.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-65aadf8b.a4cef8a6.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-65aadf8b.59fb6a2e.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-67098c77.8b942857.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-67098c77.b8c94109.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-529a9802.d4a866bb.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-529a9802.18a0309a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a326f81.d6e1e630.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a326f81.29676938.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-04a90ad1.aa2f317d.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-04a90ad1.28c21b1a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-11fdeb57.9da27de0.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-11fdeb57.5252596d.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8870696.ba836efa.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8870696.d3c72f4a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-8ea63dfa.b7fc1269.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-8ea63dfa.a6b9af6e.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-5109cffc.e3562785.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-5109cffc.3f1196fb.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-17b291de.e7b989c3.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-17b291de.8772eeeb.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-64987b26.5bff7a5a.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-64987b26.1b0de86e.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-21a2b91c.0ed7b871.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
 </head>
 
 <body class="main_en">
@@ -144,7 +110,7 @@
                 <div data-v-cfc9a7fc="" class="headers">
                     <div data-v-397da544="" data-v-a5a9abc4="" class="head" data-v-cfc9a7fc="">
                         <div data-v-397da544="" class="container flex">
-                            <div data-v-397da544="" class="back"><i data-v-397da544=""
+                            <div data-v-397da544="" class="back"><a href="{{route('user.Mine')}}" style="color:white"><i data-v-397da544=""
                                     class="van-icon van-icon-arrow-left">
                                     <!----></i></div>
                             <!---->
@@ -160,74 +126,97 @@
                 <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                     <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                         <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="container">
-                            <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="box1">
+                            <!-- <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="box1">
                                 <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="totalBox">
-                                    <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="n">Total：0</div>
+                                    <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="n">Total：1</div>
                                     <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="lvSet"> First generation data <img
                                             data-v-a5a9abc4="" data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkAgMAAACcbnALAAAADFBMVEUAAAD///////////84wDuoAAAABHRSTlMAzGZMZ+vIJAAAAEdJREFUGNNjGDhgA8YgcA2Ip4NZVxsYmMLBLNUEBs4IEANIgTggwBTGMLUBonlqUxjUGNXMCCiLMzQBymIKbYDZMg3JvgEEAG9+C4cqfDR2AAAAAElFTkSuQmCC">
                                     </div>
                                 </div>
                                 <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="lvList">
-                                    <div data-v-a5a9abc4="" data-v-cfc9a7fc="" _echarts_instance_="ec_1718101505441"
+                                    <div data-v-a5a9abc4="" data-v-cfc9a7fc="" _echarts_instance_="ec_1718361639824"
                                         style="width: 100%; height: 6rem; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;">
                                         <div
-                                            style="position: relative; width: 353px; height: 300px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                                            style="position: relative; width: 353px; height: 300px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;">
                                             <canvas data-zr-dom-id="zr_0" width="706" height="600"
                                                 style="position: absolute; left: 0px; top: 0px; width: 353px; height: 300px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-                                            <div
-                                                style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px auto auto 0px !important;">
-                                            </div>
-                                            <div
-                                                style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px 0px auto auto !important;">
-                                            </div>
-                                            <div
-                                                style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto auto 0px 0px !important;">
-                                            </div>
-                                            <div
-                                                style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto 0px 0px auto !important;">
+                                        </div>
+                                        <div class=""
+                                            style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px sans-serif; padding: 10px; top: 0px; left: 0px; transform: translate3d(188px, 146px, 0px); border-color: rgb(249, 199, 79); pointer-events: none; visibility: hidden; opacity: 0;">
+                                            <div style="margin: 0px 0 0;line-height:1;">
+                                                <div style="margin: 0px 0 0;line-height:1;"><span
+                                                        style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:#F9C74F;"></span><span
+                                                        style="font-size:14px;color:#666;font-weight:400;margin-left:2px">LV0</span><span
+                                                        style="float:right;margin-left:20px;font-size:14px;color:#666;font-weight:900">1</span>
+                                                    <div style="clear:both"></div>
+                                                </div>
+                                                <div style="clear:both"></div>
                                             </div>
                                         </div>
-                                        <div class=""></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="empty db" style="">
+                            </div> -->
+                            <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="empty db" style="display: none;">
                                 <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="flexs">
                                     <div data-v-a5a9abc4="" class="custom-image van-empty" data-v-cfc9a7fc="">
-                                        <div class="van-empty__image"><img src="{{asset('')}}assets/static/img/none.66fca9cb.png"></div>
+                                        <div class="van-empty__image"><img src="/static/img/none.66fca9cb.png"></div>
                                         <p class="van-empty__description">No record yet</p>
                                     </div>
                                 </div>
                             </div>
-                            <!---->
-                        </div>
-                        <div data-v-4c14e1cc="" data-v-a5a9abc4="" data-v-cfc9a7fc="">
-                            <div class="van-overlay" style="z-index: 2005; display: none;"></div>
-                            <div data-v-4c14e1cc="" class="van-popup van-popup--round van-popup--bottom"
-                                style="background: none; z-index: 2006; display: none;">
-                                <div data-v-4c14e1cc="" class="popup_box">
-                                    <div data-v-4c14e1cc="" class="scroll">
-                                        <div data-v-4c14e1cc="" class="ul">
-                                            <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> All </div>
-                                            </div>
-                                            <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item active"> First generation data
+                            <div data-v-a5a9abc4="" class="van-pull-refresh" data-v-cfc9a7fc="">
+                                <div class="van-pull-refresh__track" style="transition-duration: 0ms;">
+                                    <div class="van-pull-refresh__head" style="height: 50px;"></div>
+                                    <div data-v-a5a9abc4="" role="feed" class="van-list">
+                                        <ul data-v-a5a9abc4="" class="list">
+                                            <li data-v-a5a9abc4="">
+                                                <div data-v-a5a9abc4="" class="flex">
+                                                    <!-- <div data-v-a5a9abc4="" class="ico"><img data-v-a5a9abc4=""
+                                                            src="{{asset('')}}{{asset('')}}assets/static/img/logo2.png">
+                                                    </div> -->
+                                                    <div data-v-a5a9abc4="" class="flex1">
+                                                        <div data-v-a5a9abc4="" class="n1 flex">
+                                                            <div data-v-a5a9abc4="" class="n"> Rameshk <span
+                                                                    data-v-a5a9abc4="">LV0</span></div>
+                                                            <div data-v-a5a9abc4="" class="s"><span
+                                                                    data-v-a5a9abc4="">invalid</span></div>
+                                                        </div>
+                                                        <div data-v-a5a9abc4="" class="n2 flex">
+                                                            <div data-v-a5a9abc4="" class="n"> Join in:14/06/2024
+                                                                02:37:05 </div>
+                                                            <div data-v-a5a9abc4="" class="s"> 0 members </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Second generation data </div>
-                                            </div>
-                                            <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Third generation data </div>
-                                            </div>
-                                        </div>
+                                           
+                                            </li>
+                                        </ul>
+                                      
+                                        <div class="van-list__placeholder"></div>
                                     </div>
-                                    <div data-v-4c14e1cc="" class="esc">Cancel</div>
                                 </div>
                             </div>
                         </div>
+                        <div data-v-4c14e1cc="" data-v-a5a9abc4="" data-v-cfc9a7fc="">
+                            <!---->
+                        </div>
                     </div>
                 </div>
-           @include('layouts.upnl.footer')
+                <script>
+        $(".n").click(function()
+        {
+            // alert("hi");
+        // $(".van-overlay").toggleClass("van-overlay-active");
+        $('.u1').toggle().css('display','block');
+
+        });
+        $(".close-btn").click(function()
+        {
+            // alert("hi");
+        // $(".van-overlay").toggleClass("van-overlay-active");
+        $('.van-popup--bottom').toggle().css('display','none');
+
+        });
+        </script>
+                @include('layouts.upnl.footer')

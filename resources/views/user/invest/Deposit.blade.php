@@ -246,18 +246,18 @@
                             </div>
                             <ul data-v-cc3ce6d2="">
                                 <li data-v-cc3ce6d2="">
-                                    <div data-v-cc3ce6d2="" class="flex1">Level1</div>
-                                    <div data-v-cc3ce6d2="" class="s"> {{ $profile->level1}}</div>
+                                    <div data-v-cc3ce6d2="" class="flex1">Earning Range</div>
+                                    <div data-v-cc3ce6d2="" class="s"> {{ $profile->profit}}%</div>
                                 </li>
                                 <li data-v-cc3ce6d2="">
-                                    <div data-v-cc3ce6d2="" class="flex1">level2</div>
-                                    <div data-v-cc3ce6d2="" class="s">{{ $profile->level2}}</div>
+                                    <div data-v-cc3ce6d2="" class="flex1">Team Rewards</div>
+                                    <div data-v-cc3ce6d2="" class="s">{{ $profile->level1}}%|{{ $profile->level2}}%|{{ $profile->level1}}%|</div>
                                 </li>
                                 <li data-v-cc3ce6d2="" class="next-level">
-                                    <div data-v-cc3ce6d2="" class="flex1">level3</div>
+                                    <div data-v-cc3ce6d2="" class="flex1">Investment range</div>
                                     <div data-v-cc3ce6d2="" class="s">
                                         <div data-v-cc3ce6d2="" class="teamCount">
-                                            <div data-v-cc3ce6d2=""> {{ $profile->level3}}<img data-v-cc3ce6d2=""
+                                            <div data-v-cc3ce6d2=""> ${{ $profile->min}} -${{ $profile->mix}}<img data-v-cc3ce6d2=""
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAOVBMVEX///8AAAAODg7////////////h4eH///////////+FhYUsLCxqamr///////////+lpaWVlZVKSko8tlaaAAAAE3RSTlOAAIBwEAiAeFBIgICAaDAYgICAwZP9dQAAAMtJREFUOMuV1NEWgyAIBmAyCVzTtr3/w06XR1h4sv6bbr7DoYBgasHEkQAocsJJpREfCCTsDcEAhwT8J34Gk9lrsonQZhMiNUydSrAJY7AS6dQk7MTDSfyP8BkJhSD08nztT8JMUlc4V03KhPvCPeokMomnAmImbXjL0hFAmTSxrosSLYp8nCtGhBBqVYoxgmq7YkSodhm0UUJeOoEyWsinQ9LmKADLGAMo8z4IvrIM45UaL+Z4vcdHMj61Owdb4xkkFMzZj38eNjfJF4TTBjZGDKh+AAAAAElFTkSuQmCC">
                                             </div>
                                             <div data-v-cc3ce6d2="" style="display: none;"> B: 0 People 0/0 <img
@@ -269,9 +269,9 @@
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAS1BMVEUAAACj/3ym/32m/3ym/36m/32l/3yf/4Cf/3Cl/3um/32m/3ym/32l/32n/3qm/30NDQ1ZhUUgKxtGaDeT4W+T4G9tpFNjlEwzSSmgfRuoAAAAD3RSTlMAIO+g39+QEBBg0M+PMGAvI4cvAAAA4ElEQVQ4y63TS5KDMAwEUJCIP3ymPQyT5P4nDSbEVpBxZZFev2oJSm5ynOeBABrYu6aU1hByuFXAjThkdIeKC1Qub0VTFNpMqqPS45JQ5rXPiNOM+xhU8hzFNWKisCjl74otFLfxRRHCbnyao0T4xRZeyVAV6FdC2LMsBQFaSRLzvGgBCHIPYTVKQAz6n6NRgvZ1s8lCrMuQRoj80R7CSJF/nSVpjgLbORgIczsI/vQYGlO/hRjbnYnOpvPuTkQrHklXFFMCqUd3yFijNrX62TNyyIgK2eS5J4B6/rHN1/MAcuUvL+WPD1EAAAAASUVORK5CYII=">
                                             </div>
                                         </div>
-                                        <div data-v-cc3ce6d2=""> balance: 67.3519/300U <img data-v-cc3ce6d2=""
+                                        <!-- <div data-v-cc3ce6d2=""> balance: 67.3519/300U <img data-v-cc3ce6d2=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAOVBMVEX///8AAAAODg7////////////h4eH///////////+FhYUsLCxqamr///////////+lpaWVlZVKSko8tlaaAAAAE3RSTlOAAIBwEAiAeFBIgICAaDAYgICAwZP9dQAAAMtJREFUOMuV1NEWgyAIBmAyCVzTtr3/w06XR1h4sv6bbr7DoYBgasHEkQAocsJJpREfCCTsDcEAhwT8J34Gk9lrsonQZhMiNUydSrAJY7AS6dQk7MTDSfyP8BkJhSD08nztT8JMUlc4V03KhPvCPeokMomnAmImbXjL0hFAmTSxrosSLYp8nCtGhBBqVYoxgmq7YkSodhm0UUJeOoEyWsinQ9LmKADLGAMo8z4IvrIM45UaL+Z4vcdHMj61Owdb4xkkFMzZj38eNjfJF4TTBjZGDKh+AAAAAElFTkSuQmCC">
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </li>
                             </ul>
@@ -285,50 +285,37 @@
                             <ul data-v-1fa86597="" data-v-cfc9a7fc="" class="com-1">
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily arbitrage earnings</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> +2% </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> {{ $profile->profit}}% </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Investment range</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 50 - 500 </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> ${{ $profile->min}} -${{ $profile->mix}} </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily execution</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 1 times </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Duration</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> {{ $profile->days}} Days</div>
                                 </li>
                             </ul>
 							
-							<form method="POST"  action="">
+							 <form method="post" name="add" action="{{ route('user.confirmDeposit') }}">
                                   {{ csrf_field() }}
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
-									
-						
-									<select data-v-1fa86597=""
-    data-v-cfc9a7fc="">
-										<option value="50">$50</option>
-										<option value="100">$100</option>
-										<option value="250">$250</option>
-										<option value="500">$500</option>
-										<option value="1000">$1000</option>
-										<option value="2000">$2000</option>
-										<option value="3000">$3000</option>
-										<option value="4999">$4999</option>
-										
-									</select></div><button data-v-1fa86597=""
-                                    data-v-cfc9a7fc="" class="n">Max</button>
-                            </div>
+                                  <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
+                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
+                    <input data-v-1fa86597="" data-v-cfc9a7fc="" name="Sum"
+                    type="text" style="color:white;" placeholder="Enter Amont"></div>
+              </div>
+    </br></br>
+              <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices" style="height:47px;">
+                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
+                
+                <select data-v-1fa86597="" data-v-cfc9a7fc="" name="PSys" style="color:white;width:318px;">
+                    <option value="USDT BEP20">USDT BEP20</option>
+                    <option value="USDT .TRC20">USDT TRC20</option>
+                </select>
+                </div>
+              </div>
                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style="">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons">
-                                    <div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 10px;">
-                                        <div class="van-slider__bar" style="background: rgb(0, 0, 0); width: 0%;">
-                                            <div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="0"
-                                                aria-valuemax="67.3519" aria-orientation="horizontal"
-                                                class="van-slider__button-wrapper">
-                                                <!-- <div class="van-slider__button"></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 <!-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 0% </div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div>
@@ -337,7 +324,7 @@
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 100% </div>
                                 </div> -->
                             </div>
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prompt">
+                            <!-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prompt">
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Available investment amount</div>
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"><span data-v-1fa86597=""
                                         data-v-cfc9a7fc="">0</span>/ 67.3519 </div>
@@ -353,7 +340,7 @@
                                         data-v-1fa86597="" data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAMAAADEfo0+AAAAPFBMVEUAAAC+vr69vb23t7e9vb28vLy9vb2/v7+/v7+7u7u+vr68vLy8vLy/v7+8vLy9vb28vLy8vLy5ubm9vb0vD2FiAAAAE3RSTlMA3+8gj3CAIBBAv7CgMM+vn29Qy54UlQAAAGNJREFUGNONkEkKgDAQBM2+uff//+oIQnqCiH2rgqRCpve5/dCiAV6JGUBgkY2YwiZZwDo2BYDJbIKYOvE8xlT9mWLhRBjm+8hCYn0u5WwkjsIb8dmf3gNpDHx9UFMBWfLMehdSXwVxnLXHTQAAAABJRU5ErkJggg==">
                                 </div>
-                            </div>
+                            </div> --></br></br></br>
                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf"><button data-v-1fa86597=""
                                     data-v-cfc9a7fc="" class="btn2" type="submit"> Create </button></div>
 	</form>
@@ -377,41 +364,41 @@
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/848c7f5604a34a54494ac281cb6ad948.png">
+                                            src="{{asset('')}}assets/static/upload/848c7f5604a34a54494ac281cb6ad948.png">
                                     </div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Spot Grid</div><img
                                         data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240304/eb8efa21009c40364f790b0fff9763f9.png"
+                                        src="{{asset('')}}assets/static/upload/eb8efa21009c40364f790b0fff9763f9.png"
                                         class="kimageUrl">
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/a2676d23a66645f52ecf7292fa040164.png">
+                                            src="{{asset('')}}assets/static/upload/a2676d23a66645f52ecf7292fa040164.png">
                                     </div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Martingale</div><img
                                         data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240304/84d52ad9bd37687470cd78b7581e106b.png"
+                                        src="{{asset('')}}assets/static/upload/84d52ad9bd37687470cd78b7581e106b.png"
                                         class="kimageUrl">
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/0e082935ea46d96dcf2df1b31a099ab2.png">
+                                            src="{{asset('')}}assets/static/upload/0e082935ea46d96dcf2df1b31a099ab2.png">
                                     </div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Contract Grid</div><img
                                         data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240304/b65770384d7807fcb22691682fa31832.png"
+                                        src="{{asset('')}}assets/static/upload/b65770384d7807fcb22691682fa31832.png"
                                         class="kimageUrl">
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/ade106f86322db554a19a20424e91ff7.png">
+                                            src="{{asset('')}}assets/static/upload/ade106f86322db554a19a20424e91ff7.png">
                                     </div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Infinite Grid</div><img
                                         data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240401/dd31dffb566324b6f1d8496bbcf13242.png"
+                                        src="{{asset('')}}assets/static/upload/dd31dffb566324b6f1d8496bbcf13242.png"
                                         class="kimageUrl">
                                 </li>
                             </ul>

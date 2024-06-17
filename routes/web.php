@@ -63,6 +63,7 @@ Route::get('/contact-us', [App\Http\Controllers\FrontController::class, 'contact
 Route::get('/faq', [App\Http\Controllers\FrontController::class, 'faq'])->name('faq');
 Route::get('/tutorial', [App\Http\Controllers\FrontController::class, 'tutorial'])->name('tutorial');
 Route::get('/team', [App\Http\Controllers\FrontController::class, 'team'])->name('team');
+
 Route::get('/privacy-policy', [App\Http\Controllers\FrontController::class, 'termcandition'])->name('privacy-policy');
 Route::get('/news', [App\Http\Controllers\FrontController::class, 'news'])->name('news');
 Route::get('/change/{lang?}', [App\Http\Controllers\FrontController::class, 'changeLanguage'])->name('lang');
@@ -184,6 +185,8 @@ Route::get('/tree-view', [App\Http\Controllers\UserPanel\Team::class, 'genealogy
 Route::get('/team', [App\Http\Controllers\UserPanel\Team::class, 'team'])->name('user.team');
 Route::get('/invate', [App\Http\Controllers\UserPanel\Team::class, 'invate'])->name('user.invate');
 Route::get('/list', [App\Http\Controllers\UserPanel\Team::class, 'list'])->name('user.list');
+Route::get('/totalteam', [App\Http\Controllers\UserPanel\Team::class, 'totalteam'])->name('totalteam');
+
 
 Route::any('/UsrBinaryReport',[App\Http\Controllers\UserPanel\BinaryReport::class,'userReport'])->name('UsrBinaryReport');
 //end team

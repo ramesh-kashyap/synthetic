@@ -148,17 +148,17 @@
                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="container">
                         <div data-v-636522ac="" data-v-cfc9a7fc="" class="heads">
                             <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="photo"><img data-v-636522ac=""
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" ><img data-v-636522ac=""
                                         data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240305/455d37717182b4260d303348e269b4bc.png">
+                                        src="{{ asset('') }}assets/static/img/logo1.png" style="width:250px;">
                                 </div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1">
+                                <!-- <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1">
                                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="n"> riteshkk <img
                                             data-v-636522ac="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/img/lv1.0c323966.png">
                                     </div>
                                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="cid"> UID: <span
                                             data-v-636522ac="" data-v-cfc9a7fc="">119103</span></div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div data-v-636522ac="" data-v-cfc9a7fc="" class="incomeBox">
@@ -223,6 +223,16 @@
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Phone number</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">728367262</div>
                                 <!---->
+                                <!---->
+                            </li>
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.ChangePass')}}" style="color:white;"><img data-v-636522ac=""
+                                        data-v-cfc9a7fc=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAALVBMVEUAAACVmp+VmJ6Ump+Tl5+Tn5+Ump+Tmp+Ump+TmZ6TmZ+Ump+Tmp6VmZ+Ump+VBBQqAAAADnRSTlMA32DvIBDA78+AoJ/Qf3/KEYwAAACxSURBVDjLYxhWQP0dEhBCkpBDlniMJPEOBRAngWDTUkId4gdMCTmIHzAl7EASD7FIKIIkjCh0VWweqqteKEDEWeTeIbsK5AQHsAQjkInsKiAQBUvogZgIV4Gol2CJvndLUS33evcMynJAlWCFcoEUWkQRIWGHLP4QSUIRWcIISQIV0EQiAFWcBSqR924LqkT0uxdget47DPAILBGIKSGAiCgEQEQUA9M5VPFnUxkGKwAA4rZAp3H3Bf8AAAAASUVORK5CYII=">
+                                </div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Change Password</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></a></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"></div>
                                 <!---->
                             </li>
                         </ul>
