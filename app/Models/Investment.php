@@ -9,6 +9,10 @@ class Investment extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'plan', 'orderId', 'user_id_fk','user_id','amount','sdate','status','transaction_id','payment_mode','active_from','roiCandition','created_at','updated_at',
+    ];
+
 
     public function user()
     {

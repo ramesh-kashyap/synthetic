@@ -12,6 +12,7 @@ use App\Models\Reward;
 use App\Models\Withdraw;
 use Illuminate\Support\Facades\URL;
 use App\Models\Trade;
+use App\Models\plan;
 use Illuminate\Support\Facades\Http;
 use DateTime;
 use DateInterval;
@@ -284,7 +285,122 @@ if ($allResult)
   }
 
 
+  public function calculateRoi()
+{
+    $investments = Investment::where('roiCandition', 0)->where('status', 'Active')->get();
 
+    foreach ($investments as $investment) {
+        $plan = plan::find($investment->plan);
+        
+        if (!$plan) {
+            continue; // Skip if plan not found
+        }
+
+        $days = $plan->days;
+        $profit = $plan->profit;
+        
+        $roiCount = Income::where('invest_id', $investment->id)
+                          ->where('remarks', 'ROI Bonus')
+                          ->count();
+
+        // Check if an income record for the current day already exists
+        $todayRoiCount = Income::where('invest_id', $investment->id)
+                               ->where('remarks', 'ROI Bonus')
+                               ->whereDate('created_at', '=', now()->toDateString())
+                               ->count();
+
+        if ($roiCount < $days && $todayRoiCount == 0) {
+            $bonus = ($investment->amount * $profit) / 100;
+
+            Income::create([
+                'user_id' => $investment->user_id,
+                'amt' => $investment->amount,
+                'comm' => $bonus,
+                'invest_id' => $investment->id,
+                'remarks' => 'ROI Bonus'
+            ]);
+
+            $newRoiCount = $roiCount + 1;
+            
+            if ($newRoiCount >= $days) {
+                $investment->roiCandition = 1;
+                $investment->save();
+            }
+
+            $this->add_level_income($investment->user_id, $bonus, $investment->plan);
+        }
+    }
+}
+
+public function add_level_income($user_id, $bonus, $plan_id)
+{
+    $plan = plan::find($plan_id);
+    
+    if (!$plan) {
+        return false; // Skip if plan not found
+    }
+
+    $level1 = $plan->level1;
+    $level2 = $plan->level2;
+    $level3 = $plan->level3;
+
+    $data = User::where('id', $user_id)->first();
+    $rname = $data->username;
+    $fullname = $data->name;
+    $user_mid = $data->id;
+
+    $cnt = 1;
+
+    while ($user_mid != "" && $user_mid != "1") {
+        $sponsorData = User::where('id', $user_mid)->first();
+        $sponsor = $sponsorData->sponsor;
+
+        if (!empty($sponsor)) {
+            $sponsorStatus = User::where('id', $sponsor)->first();
+            $sp_status = $sponsorStatus->active_status;
+        } else {
+            $sp_status = "Pending";
+        }
+
+        $pp = 0;
+        if ($sp_status == "Active") {
+            if ($cnt == 1) {
+                $pp = ($bonus * $level1) / 100;
+            } elseif ($cnt == 2) {
+                $pp = ($bonus * $level2) / 100;
+            } elseif ($cnt == 3) {
+                $pp = ($bonus * $level3) / 100;
+            }
+        }
+
+        $user_mid = $sponsor;
+        $spid = $sponsor;
+        $idate = date("Y-m-d");
+
+        if ($spid > 0 && $cnt <= 3) {
+            if ($pp > 0) {
+                Income::create([
+                    'user_id' => $spid,
+                    'user_id_fk' => $sponsorStatus->username,
+                    'amt' => $bonus,
+                    'comm' => $pp,
+                    'remarks' => 'Level Income',
+                    'level' => $cnt,
+                    'rname' => $rname,
+                    'fullname' => $fullname,
+                    'ttime' => date("Y-m-d"),
+                ]);
+            }
+        }
+
+        $cnt++;
+    }
+
+    return true;
+}
+
+  
+  
 
 
  public function reward_bonus()
