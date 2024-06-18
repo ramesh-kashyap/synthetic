@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 use Log;
 use Redirect;
 use Hash;
@@ -71,6 +72,17 @@ class Invest extends Controller
         $this->data['page'] = 'user.invest.Deposit';
         return $this->dashboard_layout();
     }
+    
+
+    public function depositList()
+    {
+        $user=Auth::user();
+        $invest_check=Investment::where('user_id',$user->id)->where('status','==','Active')->orderBy('id','desc');
+
+        $this->data['records'] = ($invest_check)?$invest_check:[];
+        $this->data['page'] = 'user.invest.strategy';
+        return $this->dashboard_layout();
+    }
 
 
     public function package()
@@ -83,12 +95,44 @@ class Invest extends Controller
 
     public function strategy()
     {
-      $notes= DB::table('plans')->get();
-
-      $this->data['data'] =  $notes;
+        $user = Auth::user();
+        $invest_check = Investment::where('user_id', $user->id)
+                                   ->where('status', 'Active')
+                                   ->orderBy('id', 'desc')
+                                   ->get();
+    
+        foreach ($invest_check as $investment) {
+            // Get today's earnings
+            $todayEarning = DB::table('incomes')
+                            ->where('invest_id', $investment->id)
+                            ->where('remarks', 'ROI Bonus')
+                            ->orderBy('created_at', 'desc')
+                            ->value('comm');
+    
+            // Get rate of return
+            $rateOfReturn = DB::table('plans')
+                            ->where('id', $investment->plan)
+                            ->value('profit');
+    
+            // Calculate remaining time
+            $planDays = DB::table('plans')
+                        ->where('id', $investment->plan)
+                        ->value('days');
+            $remainingTime = Carbon::parse($investment->created_at)->addDays($planDays)->format('d M Y');
+    
+            $investment->todayEarning = $todayEarning;
+            $investment->rateOfReturn = $rateOfReturn;
+            $investment->remainingTime = $remainingTime;
+        }
+    
+        $notes = DB::table('plans')->get();
+    
+        $this->data['recharges'] = ($invest_check) ? $invest_check : [];
+        $this->data['data'] = $notes;
         $this->data['page'] = 'user.invest.strategy';
         return $this->dashboard_layout();
     }
+    
 
 
 
