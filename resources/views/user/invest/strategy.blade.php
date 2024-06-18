@@ -123,13 +123,12 @@
                         <div data-v-397da544="" class="left_title"> Strategy </div>
 
                         <div data-v-397da544="" class="flex1"></div>
-
-                        <div data-v-397da544="" class="head_right">
-                            <a href="{{ route('user.roi-bonus') }}">
-                                <img data-v-167ffb9b="" data-v-397da544="" src="/assets/images/list.png" class="record_icon">
-                            </a>
-                        </div>
-                        
+                        <!---->
+                        <!---->
+                        <!---->
+                        <div data-v-397da544="" class="head_right"><img data-v-167ffb9b="" data-v-397da544=""
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAPFBMVEUAAAD////////////////////////////////////////////////////////////////////////////YSWgTAAAAE3RSTlMAv8Ag30Bg76AQMHDPkICwn1DQSxq5iQAAAYFJREFUSMfdlUG2gyAMRdUYIyBi6/73+oOk5KDA+ZNO+iZV8m4IQcrwQzLuGBvyWPHb+ezoMA8/nV1tdyDmp6mudyT20r/w0GiGhpA4WxkNPAJDUzvnKxc+nucUO2XxppQFGFhqQKVT2ANsraE9wDxmEJ/hh1etJHgtN6Gs+r0PT6Cv7wDo/OEdmv8B4Cm3ChoALCzQ3WUp0m4rRnQT5/z5hfbGLey/fJODa9opvpCtlLSlXPK1uxx+zTL+WDSwpH6Nfyocm12C7OfS4jyyPGwBa/7WPJNyhmWKKjBn2ypPkgXqAF4TKKCjrg44DtkHMBBvXx3wDOQ6tP+behS4p91PIcTTnIHk0WxCNABdA5SErCH0u6REkI3Y64ChtEdKeNkHVKD4uw1FzPiYGEhbITgUNc23cxlynWqxRXQrCB8N5YFg0Zzkze37hysMak9HTGXT/XJgiu0kB7Eg1lMFnxuM+Iaj9JT9irhVhPEtKK8L7GqZ9IZzfavOGfiKWx0Ov6Y/i5cqRP3WDagAAAAASUVORK5CYII="
+                                class="record_icon"></div>
                     </div>
                 </div>
             </div>
@@ -138,151 +137,51 @@
                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="container">
                         <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border-color: black;">
                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="name flex">
-                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex1">Total Balance</div>
-                                <a href="{{route('user.wallet')}}">
-                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style=""> My Wallet
-                                  
-                                    <img
-                                        data-v-167ffb9b="" data-v-cfc9a7fc=""
+                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex1" >Total Balance</div>
+                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style=""> My Wallet<img data-v-167ffb9b=""
+                                        data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAANlBMVEXS/9IAAADS/9LU/9TU/9TV/9XQ/9DA/Kyr/HvU/9TT/9Pa/9qu+4Kv+4S5/Zus+3ut+36q+3jdZBpaAAAAEXRSTlMzAC0GFCEZTeUoHA6zpmbZzB36ToMAAAFKSURBVFjDtZdLdsMgDEUf+rWIpq33v9mmg5wkjkHGcu5c9wASIKF0YHGthCtU1RqXDtuC5oQVpG2vgA3bkPAOARsGOEcCwRiSoYArQoj7AsEeSHoCx05sW6DYjW4JKiaorwLFFLoWGCbxZ4FgGnkUMOYhfhAQDlDvAsEh5CZgAnB0EwgqMKxIBCcYLgHBCYRLwCAFMfQvaEjQCsJLcFl+PgYFjWgH38uyfHYNVMCIBEMDoyHga2gQGFIGhyJlUFSkDBWElIF6uV+zMoSp2+byDkF6C+lDTKcxX0ieiodBUvFo6eucf1CKhzXx242HnvGoFiSf9WI4jJzytSWW4LfvPbGAUxqMKxUHoGSTBU62efbcaPp0fLbVTTfb57f7MxXpuZEHNhi6CCGVx2NfpLBw8PQoPB59haLwePjWFwd5MHyv4Wb38d+FS4c/ZqkSYvi2fKYAAAAASUVORK5CYII=">
                                   
                                 </div>
                             </a>
                             </div>
-                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="amount" style=""> {{number_format(Auth::user()->available_balance(),2)}} <span
-                                    data-v-167ffb9b="" data-v-cfc9a7fc="">USDT</span></div>
+                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="amount" style=""> 6.1642 <span data-v-167ffb9b=""
+                                    data-v-cfc9a7fc="">USDT</span></div>
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="">
                                 <li data-v-167ffb9b="" data-v-cfc9a7fc="">
-                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=";">Today's earnings
-                                    </div>
-                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
-                                        style="> 0 <span data-v-167ffb9b="
-                                            data-v-cfc9a7fc="">{{currency()}} {{number_format($todaysIncome,2)}}</span></div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=";">Today's earnings</div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style="> 0 <span data-v-167ffb9b=""
+                                            data-v-cfc9a7fc="">U</span></div>
                                 </li>
                                 <li data-v-167ffb9b="" data-v-cfc9a7fc="">
-                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class=" n" style=""> Total revenue</div>
-                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style=""> {{currency()}} {{number_format($totalRoi,2)}} <span
-                                            data-v-167ffb9b="" data-v-cfc9a7fc="" style=""></span></div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=""> Total revenue</div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style=""> 6.1642 <span
+                                            data-v-167ffb9b="" data-v-cfc9a7fc="" style="">U</span></div>
                                 </li>
                             </ul>
                         </div>
-                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="add" style="    padding-top: 1rem;
-"><button data-v-167ffb9b=""
+                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="add" style="    padding-top: 1rem;"><button data-v-167ffb9b=""
                             data-v-cfc9a7fc="" class="btn2"><img data-v-167ffb9b="" data-v-cfc9a7fc=""
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAxAQMAAACmkLhhAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABpJREFUGNNjIAqwP6Anxf4fCB4QQdHZZSQAALGHOjODQZQ0AAAAAElFTkSuQmCC">
                             Add strategy </button></div>
                 </div>
                         <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="orderList">
                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="cname">My Strategy</div>
-                            <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list">
-                                @foreach($recharges as $recharge)
-                                
-                                @php
-                                     $planDetail = \DB::table('plans')->where('id',$recharge->plan)->first(); 
-                                     $todayEarning = \DB::table('incomes')->where('invest_id',$recharge->id)->where('ttime',Date("Y-m-d"))->sum('comm'); 
-
-                                    // dd($planDetail);
-                                @endphp
-
-                                
-                                <?php 
-                                                                    
-                                $date1 = $recharge->created_at;
-                                $date1 = strtotime($date1);
-                                $date1 = strtotime(" + ".($planDetail?$planDetail->days:0)." days", $date1);
-                                $new_date1= date('Y-m-d H:i:s', $date1);
-
-                                //   echo $new_date1;
-                                ?>
-
-                                <script>
-                                // Set the date we're counting down to
-                                var x = setInterval(function() {
-                                    
-                                    var countDownDate = new Date("{{$new_date1}}").getTime();
-                                 
-                                     // Get todays date and time
-                                     // var now = new Date().getTime();
-
-
-                                     var now =  new Date(new Date().toLocaleString('en-US', {timeZone: 'Asia/Kolkata'}))
-
-                                     // Find the distance between now an the count down date
-                                     var distance = countDownDate - now;
-                                     
-                                     // Time calculations for days, hours, minutes and seconds
-                                     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                                     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                                     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                                     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                                     
-                                     // Output the result in an element with id="demo"
-                                     
-                                 
-                                     
-                                     document.getElementById("countdown-{{ $recharge->id }}").innerHTML = "<span>" + days + ":</span><span>" + "<span>" + hours + ":</span><span>" + minutes + ":</span><span>" + seconds + "</span>";
-                                         //   $('#left_time').html('Hello');
-                                     
-                                     // If the count down is over, write some text 
-                                     if (distance < 0) {
-                                     clearInterval(timer);
-                                         document.getElementById("countdown-{{ $recharge->id }}").innerHTML = "EXPIRED";
-                                     }
-                              
-                                 },1000);
-                                </script>
-
-
-
-
-                                <li data-v-167ffb9b="" data-v-cfc9a7fc="">
-                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex">
-                                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="ico">
-                                            <img data-v-167ffb9b="" data-v-cfc9a7fc=""
-                                                data-src="/assets/static/image/image_2024_06_21T10_02_21_507Z.png"
-                                                src="/assets/static/image/image_2024_06_21T10_02_21_507Z.png"
-                                                lazy="loaded"></div>
-                                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex1">
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n1 flex">
-                                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">
-                                                    {{ $recharge->plan == 1 ? "VIP 1" : ($recharge->plan == 2 ? "VIP 2" : ($recharge->plan == 3 ? "VIP 3" : "VIP 4")) }}
-                                                </div>
-                                                                                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="status">
-                                                    <span data-v-167ffb9b="" data-v-cfc9a7fc="">{{ $recharge->roiCandition==0?"Running":"Completed" }}</span></div>
-                                            </div>
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n2 flex">
-                                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="sun"><img
-                                                        data-v-167ffb9b="" data-v-cfc9a7fc=""
-                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAMAAACrZuH4AAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAYJ/fMCDvEHBAwJCvgFDP9KY6pgAAAJNJREFUOMvNktEOwyAIRVUUUdvu/v/XLjFZxOLWZH3peSBijkpA91Aiy4XhEW4YAZpXNsKBmX19vc7+NBJR7OGr4THC2sjEqYcbdQwEzQ4ErJpE8M5QQfFjbyBnSYQBR2eJ2iC/EBgkqS/zUQFZvNFUpTtQzOy3KW+oJwNIU575dEkxRxrk4vMJgjV+7pTRZbXzKN5DrAf2kOJR1wAAAABJRU5ErkJggg==">+4
-                                                </div>
-                                                <!---->
-                                                <!---->
-                                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="time flex" style="font-size: 13px;"> Remaining
-                                                    time: <span id="countdown-{{ $recharge->id }}"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex">
-                                        <li data-v-167ffb9b="" data-v-cfc9a7fc="">
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">Investment</div>
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> {{ $recharge->amount }} <span>
-                                        </li>
-                                        <li data-v-167ffb9b="" data-v-cfc9a7fc="">
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">Today earning</div>
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> {{ number_format($todayEarning,2)  }} 
-                                               
-                                                </div>
-                                        </li>
-                                        <li data-v-167ffb9b="" data-v-cfc9a7fc="">
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">Rate of return</div>
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> {{ $planDetail?$planDetail->profit:0   }} % </div>
-                                        </li>
-                                    </ul><button data-v-167ffb9b="" data-v-cfc9a7fc="" class="btn2"> start </button>
-                                </li>
-                                @endforeach
-                            </ul>
-
+                            <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list"><li data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex"><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="ico">
+                                    <img data-v-167ffb9b="" data-v-cfc9a7fc=""
+                                 data-src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/3dc7be2d187bdf6ff56095aa33e5de43.png" 
+                                 src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/3dc7be2d187bdf6ff56095aa33e5de43.png" lazy="loaded"></div>
+                                 <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex1"><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n1 flex">
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">VIP1</div><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="status">
+                                    <span data-v-167ffb9b="" data-v-cfc9a7fc="">Ended</span></div></div><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n2 flex">
+                                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="sun"><img data-v-167ffb9b="" data-v-cfc9a7fc="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAMAAACrZuH4AAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAYJ/fMCDvEHBAwJCvgFDP9KY6pgAAAJNJREFUOMvNktEOwyAIRVUUUdvu/v/XLjFZxOLWZH3peSBijkpA91Aiy4XhEW4YAZpXNsKBmX19vc7+NBJR7OGr4THC2sjEqYcbdQwEzQ4ErJpE8M5QQfFjbyBnSYQBR2eJ2iC/EBgkqS/zUQFZvNFUpTtQzOy3KW+oJwNIU575dEkxRxrk4vMJgjV+7pTRZbXzKN5DrAf2kOJR1wAAAABJRU5ErkJggg==">+4 </div><!----><!----><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="time flex"> Launch time：00 : 00 : 00 </div></div></div></div><ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex"><li data-v-167ffb9b="" data-v-cfc9a7fc=""><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">Investment</div><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> 64 <span data-v-167ffb9b="" data-v-cfc9a7fc="">u</span></div></li><li data-v-167ffb9b="" data-v-cfc9a7fc=""><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">Expected earnings</div><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> 1.152 <span data-v-167ffb9b="" data-v-cfc9a7fc="">u</span></div></li><li data-v-167ffb9b="" data-v-cfc9a7fc=""><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">Rate of return</div><div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> +1.8% </div></li></ul><button data-v-167ffb9b="" data-v-cfc9a7fc="" class="btn2"> start </button></li></ul>
+                            <!-- <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="rel">
+                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="empty"><img data-v-167ffb9b=""
+                                        data-v-cfc9a7fc="" src="{{asset('')}}assets/static/img/2.png">
+                                    <p data-v-167ffb9b="" data-v-cfc9a7fc="">No record yet</p>
+                                </div>
+                            </div> -->
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list" style="display: none;"></ul>
                         </div>
                         
