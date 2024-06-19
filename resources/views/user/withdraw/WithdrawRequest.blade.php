@@ -111,6 +111,9 @@
                                 <!----></i></a></div>
                         <!---->
                         <div data-v-397da544="" class="name tac"> Withdrawal </div>
+                        <form action="{{ route('user.Withdraw-Request') }}" method="POST">
+                            {{ csrf_field() }}
+
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -123,7 +126,7 @@
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="container">
                     <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Currency</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
                                   
@@ -139,7 +142,8 @@
                        
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex" style="
+    margin-bottom: 13px;>
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1" >
                                     <input data-v-cfc9a7fc="" data-v-7bab1ac4=""  type="text" value="{{Auth::user()->usdtTrc20}}" placeholder="Please enter the withdrawal address" name="walletAddress" id="walletAddress" >
                                 </div>
@@ -186,7 +190,8 @@
                             </div>
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item"><button data-v-7bab1ac4=""
-                                data-v-cfc9a7fc="" class="btn2"> Confirm </button></div>
+                                data-v-cfc9a7fc="" class="btn2" type="submit"> Confirm </button></div>
+                        </form>            
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tipss">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Note</div>

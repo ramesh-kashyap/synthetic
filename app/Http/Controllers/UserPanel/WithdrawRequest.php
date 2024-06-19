@@ -44,7 +44,7 @@ class WithdrawRequest extends Controller
     }
 
 
-    public function WithdrawRequest(Request $request)
+    public function WithdrawRequest1(Request $request)
     {
 
         try{
@@ -212,6 +212,82 @@ class WithdrawRequest extends Controller
 
 
 
+    }
+
+    public function WithdrawRequest(Request $request)
+    {
+        try {
+
+            // Validation
+            $validation = Validator::make($request->all(), [
+                'amount' => 'required|numeric|min:10',
+                'paymentMode' => 'required',
+                'walletAddress' => 'required',
+                'transaction_password' => 'required',
+            ]);
+
+
+    
+            if ($validation->fails()) {
+                Log::info($validation->getMessageBag()->first());
+                return Redirect::back()->withErrors($validation->getMessageBag()->first())->withInput();
+            }
+    
+
+            $user = Auth::user();
+            $balance = $user->available_balance();
+    
+            // Define withdrawal limits and charges
+            $min_withdrawal = 10;
+            $chargeAmt = 5;
+    
+            if ($request->amount < $min_withdrawal) {
+                return Redirect::back()->withErrors(['Minimum withdrawal is ' . $min_withdrawal]);
+            }
+    
+            // Update wallet address
+            $account = $request->walletAddress;
+            if ($request->paymentMode == "USDT.BEP20") {
+                \DB::table('users')->where('id', $user->id)->update(['usdtBep20' => $account]);
+            } else {
+                \DB::table('users')->where('id', $user->id)->update(['usdtTrc20' => $account]);
+            }
+    
+            // Transaction password check
+            if (!Hash::check($request->transaction_password, $user->tpassword)) {
+                return Redirect::back()->withErrors(['Invalid Transaction Password']);
+            }
+    
+            if ($balance < $request->amount) {
+                return Redirect::back()->withErrors(['Insufficient balance in your account']);
+            }
+    
+            // Pending withdrawal check
+            if (Withdraw::where('user_id', $user->id)->where('status', 'Pending')->exists()) {
+                return Redirect::back()->withErrors(['Withdraw Request Already Exists!']);
+            }
+    
+            // Create withdrawal request
+            $data = [
+                'txn_id' => md5(time() . rand()),
+                'user_id' => $user->id,
+                'user_id_fk' => $user->username,
+                'amount' => $request->amount,
+                'payable_amt' => $request->amount - $request->amount * $chargeAmt / 100,
+                'charge' => $request->amount * $chargeAmt / 100,
+                'account' => $account,
+                'payment_mode' => $request->paymentMode,
+                'status' => 'Pending',
+                'walletType' => 1,
+                'wdate' => date("Y-m-d"),
+            ];
+            $payment = Withdraw::Create($data);
+    
+            return redirect()->back()->with('withdrawalId', $payment['id'])->withNotify(['success', 'Withdrawal successfully']);
+        } catch (\Exception $e) {
+            Log::info('Error in WithdrawRequest: ' . $e->getMessage());
+            return redirect()->route('user.WithdrawRequest')->withErrors(['error' => $e->getMessage()])->withInput();
+        }
     }
 
 
