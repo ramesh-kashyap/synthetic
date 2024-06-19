@@ -310,81 +310,11 @@ class Team extends Controller
   public function genealogy(Request $request)
   {
      $user=Auth::user();
-      $tuser=$request->user_id;
-      if($tuser==NULL){
-     $suser = @$request->suser;
-      if($suser==""){
-      $username = $user->username;
-      }
-      else{
-          $session_id = $user->id;
-          $username = $suser;
-           $user_id=User::where('username',$username)->first();
-       if($user_id->id>$session_id)
-       {
-        $username= $suser;  
-       }
-       else
-       {
-         $username = $user->username;   
-       }
-      }
-     }
-     else{
-         $username = $tuser;
-        }
+     $userId=$user->id;
 
-         $check=User::where('username',$username)->count();;
-          if($check>0)
-          {
-             $username = $username;  
-          }
-          else
-          {
-           $username = $user->username;    
-          }
-   
-    $complete_tree = array();
-    $pool='users';
-    $user_id=User::where('username',$username)->first();
-    $user_id=@$user_id->id;
-    $mydata =User::where('id',$user_id)->first(); 
-    if ($user_id!="")
-    {
-    $childs_1 =   $this->find_users(@$user_id,'Left');  
-    $childs_2 =   $this->find_users(@$user_id,'Right');  
-     
-     if (!empty($childs_1))
-      {
-     $childs_3 =   $this->find_users(@$childs_1->id,'Left');  
-     $childs_4 =   $this->find_users(@$childs_1->id,'Right'); 
-      } 
-       else
-      {
-      $childs_3=array();
-      $childs_4=array();
-      }
+     $incomes=Income::where('user_id',$userId)->where('remarks',"ROI Bonus")->get();
 
-      if (!empty($childs_2))
-      {
-     $childs_5 =   $this->find_users(@$childs_2->id,'Left');  
-     $childs_6 =   $this->find_users(@$childs_2->id,'Right'); 
-      }
-      else
-      {
-      $childs_5=array();
-      $childs_6=array();
-      }
-
-    }
-
-  $this->data['childs_1'] =$childs_1;
-  $this->data['childs_2'] =$childs_2;
-  $this->data['childs_3'] =$childs_3;
-  $this->data['childs_4'] =$childs_4;
-  $this->data['childs_5'] =$childs_5;
-  $this->data['childs_6'] =$childs_6;
-  $this->data['mydata'] =$mydata;
+  $this->data['datas'] =$incomes;
   $this->data['page'] = 'user.team.tree-view';
   return $this->dashboard_layout();
 

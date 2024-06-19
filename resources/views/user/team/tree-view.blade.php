@@ -120,7 +120,7 @@
                         <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> BitGridIncome History </div>
+                        <div data-v-397da544="" class="name tac"> ROI Bonus </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -133,56 +133,31 @@
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-3de80214="" data-v-cfc9a7fc="" class="container">
                         <div data-v-3de80214="" data-v-cfc9a7fc="" class="reco_list">
-                            <div data-v-3de80214="" data-v-cfc9a7fc="" class="top">
-                                <div data-v-3de80214="" data-v-cfc9a7fc="" class="left"> Currency： <span
-                                        data-v-3de80214="" data-v-cfc9a7fc="">all</span><img data-v-3de80214=""
-                                        data-v-cfc9a7fc=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMA32CAUO9wEAhFb2gAAAA6SURBVCjPYxj+wLUDCESQBCRAAo1IAhHoAhoggRYkASaQgAIDqpI2FGuYOzoMUC22aENzCXsBw1ADAALjEXDKb6WpAAAAAElFTkSuQmCC">
-                                </div>
-                                <div data-v-3de80214="" data-v-cfc9a7fc="" class="right"> Date： <span data-v-3de80214=""
-                                        data-v-cfc9a7fc="">Please select</span><img data-v-3de80214=""
-                                        data-v-cfc9a7fc=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMA32CAUO9wEAhFb2gAAAA6SURBVCjPYxj+wLUDCESQBCRAAo1IAhHoAhoggRYkASaQgAIDqpI2FGuYOzoMUC22aENzCXsBw1ADAALjEXDKb6WpAAAAAElFTkSuQmCC">
-                                </div>
-                            </div>
+                           
                             <!---->
                             <div data-v-3de80214="" data-v-cfc9a7fc="" class="bott">
                                 <div data-v-3de80214="" role="feed" class="van-list" data-v-cfc9a7fc="">
+                                  @foreach($datas as $data)
                                     <div data-v-3de80214="" class="it ul">
                                         <div data-v-3de80214="" class="li">
                                             <ul data-v-3de80214="">
                                                 <li data-v-3de80214="">
                                                     <div data-v-3de80214="" class="n">Investment amount</div>
-                                                    <div data-v-3de80214="" class="s">64 USDT</div>
-                                                </li>
-                                                <li data-v-3de80214="">
-                                                    <div data-v-3de80214="" class="n">Total revenue</div>
-                                                    <div data-v-3de80214="" class="s">2.3754 USDT</div>
+                                                    <div data-v-3de80214="" class="s">{{ $data->amt }} USDT</div>
                                                 </li>
                                                 <li data-v-3de80214="">
                                                     <div data-v-3de80214="" class="n">User profit</div>
-                                                    <div data-v-3de80214="" class="s">1.1877 USDT</div>
+                                                    <div data-v-3de80214="" class="s">{{ $data->comm }} USDT</div>
                                                 </li>
                                                 <li data-v-3de80214="">
-                                                    <div data-v-3de80214="" class="n">Buy price</div>
-                                                    <div data-v-3de80214="" class="s">67771.62 USDT</div>
-                                                </li>
-                                                <li data-v-3de80214="">
-                                                    <div data-v-3de80214="" class="n">selling price</div>
-                                                    <div data-v-3de80214="" class="s">69029.31301678 USDT</div>
-                                                </li>
-                                                <li data-v-3de80214="">
-                                                    <div data-v-3de80214="" class="n">Input currency</div>
-                                                    <div data-v-3de80214="" class="s">BTC</div>
-                                                </li>
-                                                <li data-v-3de80214="">
-                                                    <div data-v-3de80214="" class="n">Completion time</div>
-                                                    <div data-v-3de80214="" class="s">11/06/2024 04:09:07</div>
+                                                    <div data-v-3de80214="" class="n">Time</div>
+                                                    <div data-v-3de80214="" class="s">{{ $data->created_at }}</div>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <div data-v-3de80214="" class="it ul">
+                                  @endforeach
+                                    {{-- <div data-v-3de80214="" class="it ul">
                                         <div data-v-3de80214="" class="li">
                                             <ul data-v-3de80214="">
                                                 <li data-v-3de80214="">
@@ -215,7 +190,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="van-list__finished-text">No more</div>
                                     <div class="van-list__placeholder"></div>
                                 </div>
