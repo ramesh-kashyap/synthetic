@@ -30,7 +30,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/dltPayout', [App\Http\Controllers\Cron::class, 'dltPayout'])->name('dltPayout');
-Route::get('/generate_roi', [App\Http\Controllers\Cron::class, 'generate_roi'])->name('generate_roi');
+Route::get('/calculateRoi', [App\Http\Controllers\Cron::class, 'calculateRoi'])->name('calculateRoi');
 Route::get('/rank-update', [App\Http\Controllers\Cron::class, 'rank_update'])->name('rank-update');
 Route::get('/reward_bonus', [App\Http\Controllers\Cron::class, 'reward_bonus'])->name('reward_bonus');
 Route::get('/royalty_bonus', [App\Http\Controllers\Cron::class, 'dailyIncentive'])->name('royalty_bonus');
@@ -111,6 +111,7 @@ Route::post('/wallet_change', [App\Http\Controllers\UserPanel\Profile::class, 'w
 Route::post('/sendCode', [App\Http\Controllers\UserPanel\Profile::class, 'sendCode'])->name('user.send_code');
 Route::get('/change-trx-password', [App\Http\Controllers\UserPanel\Profile::class, 'change_trx_password'])->name('user.change-trx-password');
 Route::get('/ChangePass', [App\Http\Controllers\UserPanel\Profile::class, 'change_password'])->name('user.ChangePass');
+Route::get('/tpassword', [App\Http\Controllers\UserPanel\Profile::class, 'tpassword'])->name('user.tpassword');
 Route::get('/security-password', [App\Http\Controllers\UserPanel\Profile::class, 'ChangeSecurityPass'])->name('user.security-password');
 Route::get('/share', [App\Http\Controllers\UserPanel\Profile::class, 'share'])->name('user.share');
 Route::get('/ChangeMail', [App\Http\Controllers\UserPanel\Profile::class, 'ChangeMail'])->name('user.ChangeMail');
