@@ -120,7 +120,7 @@
                         <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> ROI Bonus </div>
+                        <div data-v-397da544="" class="name tac"> Trade Bonus </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
