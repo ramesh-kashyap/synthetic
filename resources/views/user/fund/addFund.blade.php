@@ -91,27 +91,29 @@
     <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
     <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
     <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-aef56f2a.f587d975.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-aef56f2a.b3c068cc.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-65aadf8b.a4cef8a6.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-65aadf8b.59fb6a2e.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a0b1332.9f52f39a.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-21a2b91c.0ed7b871.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-73ab94aa.2e0ec155.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-73ab94aa.70e0e268.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-67098c77.8b942857.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-67098c77.b8c94109.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8870696.ba836efa.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8870696.d3c72f4a.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-273ce16e.debfb5de.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-67098c77.8b942857.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-67098c77.b8c94109.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-04a90ad1.aa2f317d.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-04a90ad1.28c21b1a.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-198acc81.38a789e9.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-198acc81.12c44c37.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-8c0c3ac6.27e1c228.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-8c0c3ac6.576dd3c7.1717187934571.chunk.js"></script>
 </head>
 
-<body class="mein_cn">
+<body class="main_en">
     <div id="app" class="applang">
         <div data-v-cfc9a7fc="" data-v-6df100a6="" class="page">
             <div data-v-cfc9a7fc="" class="headers">
@@ -139,7 +141,7 @@
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAOVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAABra2v4+PgAAAAAAAAAAADk5OQAAADd3d2goKAAAADy8vL///+hq0BzAAAAEnRSTlMzACwYLwYdTOUoIRKzDKZmD9OK32BQAAABUklEQVRYw7WX0XKEIAxFLwlJC9TW+v8f2yk7O26tGE12z3uOERBzkQZI01oIAKhUniUN2BdMSthAOp0WcMYu1MQW9PIhWcUSrOWjLg4FUmBCMhZwxgkyjwSKk/C+QHGauicouED5L1Bcom4FjIvoXwHjMvwokIzLZHkQEByUVdDggu8CIbjId4HCCd8EkuEk3wQNbrgLCG7yr2BCgCnBXMLP5fvt4EDDeoOvZVnehwZKEFiCQ4NghsHHoaGBETIoKkKGioKQoYAQMtBo77dsDObW7fP5CkH4FcKLGN7G+EHSUD0YLVSPOfw5Ry+U6JVWn3Gppgw31P8LDDetC/wtZOkCfwuausDdAkkX+Fto64hT4IDCQ9bTxryOOuu7oFMjo2582O7UwLh/cSX1RZHn5Mxa5DD2NbIebwVP0WyUm9FXGlnldviuofDdkZnX+K9N0oAfKgMTw/lKDHwAAAAASUVORK5CYII=">
                                 </div>
                             </div>
-                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="amount"> 6.1642 <span data-v-6df100a6=""
+                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="amount"> 67.3519 <span data-v-6df100a6=""
                                     data-v-cfc9a7fc="">USDT</span></div>
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-left"><span data-v-6df100a6=""
@@ -152,7 +154,7 @@
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">Strategy account</div>
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> 6.1642 </div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> 67.3519 </div>
                                 </div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">Capital account</div>
@@ -183,15 +185,12 @@
                                     </div>
                                 </div>
                                 <div data-v-ac2db8a0="" class="info">
-                                    <div data-v-ac2db8a0="" class="" id="myChart1" _echarts_instance_="ec_1718013614910"
-                                        style="width: 100%; height: 5.6rem; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                        <div
-                                            style="position: relative; width: 385px; height: 280px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
-                                            <canvas data-zr-dom-id="zr_0" width="770" height="560"
-                                                style="position: absolute; left: 0px; top: 0px; width: 385px; height: 280px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-                                        </div>
-                                    </div>
                                     <!---->
+                                    <div data-v-ac2db8a0="" class="img no_data">
+                                        <p data-v-ac2db8a0=""><img data-v-ac2db8a0=""
+                                                src="{{asset('')}}assets/static/img/none.fe897b1e.png"><span data-v-ac2db8a0="">No data
+                                                yet</span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -200,13 +199,13 @@
                         </div>
                     </div>
                     <div data-v-372e76f5="" data-v-6df100a6="" class="revenue" data-v-cfc9a7fc="">
-                        <div data-v-372e76f5="" class="container">
+                        <!-- <div data-v-372e76f5="" class="container">
                             <div data-v-372e76f5="" class="total-income">
                                 <div data-v-372e76f5="" class="title_box">
                                     <div data-v-372e76f5="" class="title">Asset composition</div>
                                 </div>
                                 <div data-v-372e76f5="" class="info">
-                                    <div data-v-372e76f5="" id="myChart" _echarts_instance_="ec_1718013614911"
+                                    <div data-v-372e76f5="" id="myChart" _echarts_instance_="ec_1718779942243"
                                         style="width: 100%; height: 6rem; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
                                         <div
                                             style="position: relative; width: 385px; height: 300px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
@@ -216,67 +215,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
-            <div data-v-cfc9a7fc="" class="footer">
-                <div data-v-6049d237="" data-v-6df100a6="" class="footers-con" data-v-cfc9a7fc="">
-                    <div data-v-6049d237="" class="footers-h"></div>
-                    <div data-v-6049d237="" class="footers wallet">
-                        <div data-v-6049d237="" class="item">
-                            <div data-v-6049d237="" class="">
-                                <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAAD///////////////////8+Uq06AAAABnRSTlMAgHhwMBDny3G3AAAAf0lEQVQ4y82SwQmAMBAE87GAaAWCDQhWoA3YfzVCVphwgXicn8wjbDIQNlzSsJy5cFRJ7NrOVRL5hfQt7pSmIpQQWklO0b9K+MWq86URl8RmBQQF7VshmIcRZh60Nw+kPcJZ4/9TaW8E7Y2gpE/QPvB9OleRYr+deZDsPEij8gDZrx9ZZoOpVAAAAABJRU5ErkJggg=="
-                                        alt=""></div><span data-v-6049d237="">AI Strategy</span>
-                            </div>
-                        </div>
-                        <div data-v-6049d237="" class="item">
-                            <div data-v-6049d237="" class="">
-                                <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwBAMAAABK7o+KAAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMAgHAQXzAgeGhIUDhAKAgY868QGAAAAM9JREFUOMtjGADA6igSgF1moqCgDHYtgkCQgE2GAyTjgE2GUVA4UVAZh8xFQcG1WGQ2CoKBlgG6G18JQoGEI6ob+RVBolIgEs2N2wUFKx1LEtgWQWQckM2SMACzQgRBblRANmselG0IcqMCLLymCwqWwlSxIEybCHaRAWoowVgQs7arwUMWEV6iIJagENT0EoijGWFuYQbKYIQXpgzCLegyCLegyyDcApeBuxHhFoQMml6EDDOtZLar4ZKBsjBlmIeZDEOhBAYNBUFlGPTgBgBIoCyCCX0TdgAAAABJRU5ErkJggg=="
-                                        alt=""></div><span data-v-6049d237="">Market</span>
-                            </div>
-                        </div>
-                        <div data-v-6049d237="" class="item">
-                            <div data-v-6049d237="" class="">
-                                <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMAgEAfcBAIMHhgUFhIOChorzhHYAAAATlJREFUOMvlk6FPw0AUxi/tKIaJj1TcWBbGCQymJPwDFUySCjQ0WBAjkEyXhGAIAYFHkipmQNegGX/BBP/AHJL2XS7v1qsg2dw+0+++X+7uvZerWERnv/KjKW9nAJ7dPChQKowccArSZj33Y8hdfwx81sAEOBTCA8JkLr8Aumn5/QGO7HxtBvTJxJVhHQAP1lZuwTp6hy7jFt7t8obcglX+sV7pC+VUsArghUyLTmV5QI/MpamDa5QUPNFOu6sMNEvAlMq3fGnAkemlv0og+FZKRQ1gQi8xccA6SAMHtDToOWAfN0rtodsAHoXw0fkfSGug0CBGZANKppoP5kEbSPTp2wkDanWLWt4AOnk+xlsFZJ6/ArcEghlIw9JmxpLOaRGmZmC4M2O+hvnFvcrd8wM8GY2u2KViufoDH3dJdNaCAGAAAAAASUVORK5CYII="
-                                        alt=""></div><span data-v-6049d237="">Home</span>
-                            </div>
-                        </div>
-                        <div data-v-6049d237="" class="item item_active">
-                            <div data-v-6049d237="" class="on">
-                                <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAA6lBMVEUAAACL44x33YOL44u6851124F934a+9KF/34ej65eE4ol+34aj7Jaf6pOG4Yl43oRy3IGL5It03YOA34W/86F23YS38Z+p7Zhy3YK68Z+K44y48p953YW+86Gm65ee6JS986Bwz4CP5I2F4oqL44xx2oFx2oC+86K+8qFw2oBx2IB134OC44q//5+/75++86G78qCI4oqG4oqD4YmK44ty3IKU5pB934a/9KKx8Jx23YOp7ZiY55Gj65af6pR73oV43oSh6pWO5I2A4Ie18J2u7pqb6JKm7JeL5Iy38Z6r7pmd6ZOR5Y6l65fBNM6KAAAAL3RSTlMA/j8gHyDv37+Pf2Dv79/Av6B/EO/v7u7fwL+fkICAgF8Q7+7Pz8/AwJ+Qbz8QEPGBC60AAAHASURBVEjH3ZDpWoJAFIYhd0vL9s2lfQ9UCnMDTVk07v92+obJgz7gwNO/eg8Oc868nwrS3yKze3P7kEmsb+y8MY4zyXXOYxJ9k3T8RKx9sXvQ5Ww/sTWBbna7pmlub0iSiY34xZxnDdM0UNCBga3oSfOGYeio7HmGT3RdNwS6zskW9xYz1q57MflPDtMJNojUn8ttTn5zZc5GUX6x1W63UMDfsB3//HB1uvJFqRZoghYHDS4UgaNySiIqTa2JS8OKO8qHD4OuHDzbtSxrsuZomn8HbHFk2WHFO9lx5CIFxmN5XElJAlIVZ+ycBgEAX5iAckndFxDIYecdCFxyfh/oA4Ebdqx+34oPWEsBax4bsAA1c7DGq5dKhYUzpOkQRPuFEY7qIWc0Gg2iA1vsqOQ7gMYDsCaAE2+LO17geLbtRQdqOLIL3PFsGtu9HppICkdHNX/TAzSlRsAMTtBMZ7PYAKBmCgRu2PkAsQFyxIFoZwIEbtg5nEzctNhPu657SN2J6rpnaaF/BuWE2qqaiAYFXnOKoqqKqnDYnQ9UGoHc8i/mOv6802GXQg0WFCe3+p8bd/sKWMiAciy6f199kf4N34htgOvDL86rAAAAAElFTkSuQmCC"
-                                        alt=""></div><span data-v-6049d237="">Funds</span>
-                            </div>
-                        </div>
-                        <div data-v-6049d237="" class="item">
-                            <div data-v-6049d237="" class="">
-                                <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMAgHAQCDB4YEBIOCBQGFgocCNyLgAAASNJREFUOMtjoCtgWacoVGqARbxNEAgkMCWMBMFAGV2cWREiIYRuGJOgYIYBb5CgoAqaRKOgjAPQoonotjALCk4A0TyCYg4oEqyCQmABlkTBBSgS7IKiMCMfoNktC2EYCiqgSDAKCsAZ+CUQRglDGBfRjOKDuT9QsABFggvqfhZFwQC4INT9B0A0p6CgAXqQSIKC5CBGwDsJCqpeYAbGiQLOYCccUQhbgCDDAVOCOVxR6BVYnP6AeU1RoqD61Avo4jsToR48jCq+XRAOStHEEaAYIe4J5IpVfXZgub0cZOIE5AAU3wJNYIVIAbkNKL4BruqgoGA+VBFQzQaEufxA/QHQ+BecAqIRNkKTpaKgFHoEiIHpRKBO9BQOpoNSkQRhIoMUAAD/bDMrgZ8aDAAAAABJRU5ErkJggg=="
-                                        alt=""></div><span data-v-6049d237="">Mine</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
-            <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAMAAAA0X5qLAAAAh1BMVEUAAAAAv44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av46sPT54AAAALHRSTlMA+wXZ+J87JB7ux4lDNRQPCvLq39PNp5BpWRmxgnAvvrnlw5RhT0sqwHRxeP/zXbkAAAGcSURBVDjLjZTXcqtAEAVnyUGIJBAKKFqS7dv//30XsHFJxrD0C0XRxc45TCEDvFsdrvfhxnGWMk1S7c70nI+bZFxdXFC8YG5GVNemxTdte7+3yxUdq4MMMaocsMza6CeSqLRo2A3dffvguPh1WEiDcuWFeN24mSNDdjS85Exs4OLJX7wpyOWJT8A25G+iFMyn2za1jOIAV+kxIU9knDUQ9d8C/EimyH9OXgawNiblrepfXSn8WKax+4wnCEWDC6ptNk5RC9GxgqqNZ1EstXL1tSP/oBQtS1DN5Qp7vbz1sdwu30b0pNAkPIOrd4131E2kAEf0rDqtaJvTY3YDvM+aOS5IH91KrWdUl2LGIhsI9PIDLm2DFmmslT++FyiDu7a5ANV1FoKpkw/gfwUFddDIO7Cl4wqBMf1iRRZJxxb86d5OYCf9fyS/TaYrFcqVeYQK6nmqEQLFPNc7AuZ2lrtYAcEs936kdZdjE97rSAxDEvG8j8wC/E8Zo1Yo/CAv0oyOYKKzN55QWTm9B9WpyGiwyMvFnLbih+M5xjDWf6S2MlzIf04ZAAAAAElFTkSuQmCC"
-                    alt=""></div>
-        </div>
-        <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
-                src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
-    <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>
-    <script src="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js"></script>
-    <script src="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js"></script>
-    <script src="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js"></script>
-    <script src="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js"></script>
-</body>
-
-</html>
+            @include('layouts.upnl.footer')
