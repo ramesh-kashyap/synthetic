@@ -170,8 +170,8 @@ a{
             <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-397da544="" data-v-65a522d0="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
-                        <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
-                                <!----></i></div>
+                        <div data-v-397da544="" class="back"><a href={{ route('user.wallet') }}><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                                <!----></i></a></div>
                         <!---->
                         <div data-v-397da544="" class="name tac"> Deposits</div>
                         <div data-v-397da544="" class="flex1"></div>
@@ -237,7 +237,7 @@ a{
                                                                         <div data-v-65a522d0="" class="time" style="
                                                                         margin-top: 22px;
                                                                     ">
-                                                                            Pending
+                                                                            {{ $deposit->status }}
                                                                         </div>
                                                                     </div>
                                                                     <!---->
@@ -277,10 +277,10 @@ a{
                                                 <div data-v-4c14e1cc="" class="item "><a href={{ route('user.recharge') }}> Deposits </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Trading Bonus </div>
+                                                <div data-v-4c14e1cc="" class="item"><a href={{ route('user.roi-bonus') }}> Trading Bonus </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Team Commission </div>
+                                                <div data-v-4c14e1cc="" class="item"> <a href={{ route('user.level-income') }}>Team Commission </a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item active"><a href={{ route('user.Withdraw-History') }} class="item active"> Withdrawals</a> </div>

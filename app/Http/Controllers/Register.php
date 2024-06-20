@@ -88,7 +88,7 @@ class Register extends Controller
                 'phone' => 'required|unique:users,phone',
                 'password' => 'required|confirmed|min:5',
                 'sponsor' => 'required|exists:users,username',
-                'emailId' => 'required',
+                'email' => 'required',
                 'code' => 'required',              
             ]);
 
@@ -102,7 +102,7 @@ class Register extends Controller
             //check if email exist
           
             $code = $request->code;
-            if (PasswordReset::where('token', $code)->where('email', $request->emailId)->count() != 1) {
+            if (PasswordReset::where('token', $code)->where('email', $user->email)->count() != 1) {
                 $notify[] = ['error', 'Invalid token'];
                 return redirect()->route('user.change-trx-password')->withNotify($notify);
             }

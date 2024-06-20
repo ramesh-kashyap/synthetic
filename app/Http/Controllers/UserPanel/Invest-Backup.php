@@ -42,7 +42,7 @@ class Invest extends Controller
      ]);
 
 
-    //  dd($request->all());
+     dd($request->all());
     if($validation->fails()) {
         Log::info($validation->getMessageBag()->first());
 

@@ -4,33 +4,33 @@
                     <div data-v-6049d237="" class="footers home">
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
-                                <div data-v-6049d237="" class="icon"> <a href="{{route('user.strategy')}}"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/deposit.png"><alt=""></a></div><span data-v-6049d237="">AI Strategy</span>
+                                <a href="{{route('user.strategy')}}"> <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
+                                        src="{{ asset('') }}assets/static/img/deposit.png"><alt=""></div><span data-v-6049d237="">AI Strategy</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
-                                <div data-v-6049d237="" class="icon"><a href="{{route('user.Market')}}"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/market.png"><alt=""></a></div><span data-v-6049d237="">Market</span>
+                                <a href="{{route('user.Market')}}"> <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
+                                        src="{{ asset('') }}assets/static/img/market.png"><alt=""></div><span data-v-6049d237="">Market</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="on">
-                                <div data-v-6049d237="" class="icon"><a href="{{route('user.dashboard')}}" ><img data-v-6049d237=""
+                                <a href="{{route('user.dashboard')}}" > <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
                                         src="{{ asset('') }}assets/static/img/hicon.png" style="width:65px;"
-                                        alt=""></a></div><span data-v-6049d237="" style="color:white;">Home</span>
+                                        alt=""></div><span data-v-6049d237="" style="color:white;">Home</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
-                                <div data-v-6049d237="" class="icon"><a href="{{route('user.wallet')}}"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/1222.png"  alt=""></a></div><span data-v-6049d237="">Wallet</span>
+                                <a href="{{route('user.wallet')}}">  <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
+                                        src="{{ asset('') }}assets/static/img/1222.png"  alt=""></div><span data-v-6049d237="">Wallet</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
-                                <div data-v-6049d237="" class="icon"><a href="{{route('user.Mine')}}"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/p.png" alt=""></a></div><span data-v-6049d237="">Mine</span>
+                                <a href="{{route('user.Mine')}}"><div data-v-6049d237="" class="icon"><img data-v-6049d237=""
+                                        src="{{ asset('') }}assets/static/img/p.png" alt=""></div><span data-v-6049d237="">Mine</span></a>
                             </div>
                         </div>
                     </div>
@@ -59,5 +59,6 @@
         <div class="van-toast__text">Login successful</div>
     </div>
 </body>
+@include('partials.notify')
 
 </html>
