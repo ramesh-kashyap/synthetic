@@ -59,5 +59,6 @@
         <div class="van-toast__text">Login successful</div>
     </div>
 </body>
+@include('partials.notify')
 
 </html>
