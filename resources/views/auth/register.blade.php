@@ -180,13 +180,13 @@
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Email</div>
                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
-                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc=""
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc="" name="email" id="email"
                       type="text" placeholder="Please enter your email address"></div>
                 </div>
               </div>
               <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
-                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc=""
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc="" name="code" id="code"
                       type="text" placeholder="Please enter the verification code"></div>
                   <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="str"> Send </div>
                   <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="str" style="display: none;">
@@ -198,7 +198,7 @@
               <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">invitation code</div>
                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
-                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc=""
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc="" name="sponsor" id="sponsor"
                       type="text" placeholder="Invitation code cannot be empty"></div>
                 </div>
               </div>
