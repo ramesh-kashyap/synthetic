@@ -237,12 +237,18 @@ input[type="password"] {
                         <form method="post" action="{{ route('user.edit-password') }}">
                         {{ csrf_field() }}
                         <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Email</div>
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
+                                    data-v-cfc9a7fc="" type=""
+                                    placeholder="Please enter the new password" value="{{Auth::user()->email}}"  id="emailId" name="emailId"></div>
+                        </div>
+                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
     <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Verification Code</div>
     <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val">
         <div class="input-container">
-            <input data-v-9d2ee7be="" data-v-cfc9a7fc="" type="password" name="code"
+            <input data-v-9d2ee7be="" data-v-cfc9a7fc="" type="password" name="code" id="code"
                 placeholder="Enter verification code" maxlength="">
-            <button class="code-btn verify-button" style="background:#ebd100;">Verify</button>
+            <button class="code-btn verify-button" style="background:#ebd100;">send</button>
         </div>
     </div>
 </div>
@@ -280,42 +286,54 @@ input[type="password"] {
         <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
                 src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
     </div>
+
     <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+    @include('partials.notify')
 
+    <script>
+    $('.code-btn').click(function(e) {
+        e.preventDefault(); // Prevent the default form submission
+        var emailId = $('#emailId').val();
 
-<script>
-
-        $('.code-btn').click(function(e) {
-            var ths = $(this);
-            var emailId = $('#emailId').val();
-       
-          
-            // alert(sponsor); 
-            $.ajax({
-                type: "POST"
-                , url: "{{ route('user.send_code') }}"
-                , data: {
-                    "emailId": ""
-                    , "_token": "{{ csrf_token() }}"
-                , }
-                , success: function(response) {
-                    // alert(response);      
-                    if (response) {
-                        // alert("hh");
-                        iziToast.success({
-                        message: 'Email send Successfully',
+        if (emailId=="") 
+        {
+            iziToast.error({
+                        message: 'Enter Email ID!',
+                        position: "topRight"
+                });  
+                return false;
+            
+        }
+        $.ajax({
+            type: "POST",
+            url: "{{ route('sendCodeEmail') }}",
+            data: {
+                emailId: emailId,
+                _token: "{{ csrf_token() }}"
+            },
+            success: function(response) {
+                if (response) {
+                    iziToast.success({
+                        message: 'Email sent successfully',
                         position: "topRight"
                     });
-                    } else {
-                        // alert("hi");
-                        iziToast.error({
+                } else {
+                    iziToast.error({
                         message: 'Error!',
                         position: "topRight"
                     });
-                    }
                 }
-            });
+            },
+            error: function(xhr, status, error) {
+                console.error('AJAX Error:', error);
+                iziToast.error({
+                    message: 'Error: ' + xhr.responseText,
+                    position: "topRight"
+                });
+            }
         });
+    });
+</script>
             </script>
     <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>
