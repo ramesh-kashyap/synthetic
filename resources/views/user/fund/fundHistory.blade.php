@@ -178,7 +178,7 @@
                                                             <div data-v-65a522d0="" class="b">
                                                                 <div data-v-65a522d0="" class="db">
                                                                     <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">{{ $deposit->status }}
+                                                                        <div data-v-65a522d0="" class="n">Deposits
                                                                         </div>
                                                                         <div data-v-65a522d0="" class="time">{{ $deposit->updated_at }}</div>
                                                                     </div>
@@ -189,10 +189,7 @@
                                                                         <div data-v-65a522d0="" class="green"
                                                                             style="margin-left: 0.04rem;"> USDT </div>
                                                                         <p data-v-65a522d0="">
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
+                                                                            {{ $deposit->status }}
                                                                         </p>
                                                                     </div>
                                                                     <!---->
@@ -223,27 +220,23 @@
                                 <div data-v-4c14e1cc="" class="popup_box" style="display: none">
                                     <div data-v-4c14e1cc="" class="scroll">
                                         <div data-v-4c14e1cc="" class="ul">
+                                            
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item active"> All </div>
+                                                <div data-v-4c14e1cc="" class="item active"> Deposits </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Recharge </div>
+                                                <div data-v-4c14e1cc="" class="item"> Trading Bonus </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> strategic payment </div>
+                                                <div data-v-4c14e1cc="" class="item"> Team Commission </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Return of Strategic Funds </div>
+                                                <div data-v-4c14e1cc="" class="item"> Withdrawals </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Register and receive free trial bonus </div>
+                                                <div data-v-4c14e1cc="" class="item"> Team Turnover </div>
                                             </div>
-                                            <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Experience gold recovery </div>
-                                            </div>
-                                            <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> strategic gain </div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div data-v-4c14e1cc="" class="esc" id="cancelButton">Cancel</div>
