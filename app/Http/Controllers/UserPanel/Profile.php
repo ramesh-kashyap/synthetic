@@ -495,7 +495,8 @@ public function BankDetail()
 
        return true;
     }
-   
+
+    
 
     public function change_password_post(Request $request)
     {
