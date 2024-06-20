@@ -78,8 +78,17 @@
             width: 100%;
             background-color: #000;
         }
+/* 
+        .popup_box {
+            display: none;
+        }
+        .van-overlay {
+            display: none;
+        }
+        */
 
     </style>
+    
     <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload" as="script">
@@ -122,7 +131,7 @@
                         <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Asset Details </div>
+                        <div data-v-397da544="" class="name tac"> Deposits</div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -132,16 +141,7 @@
                 </div>
                 <div data-v-83cbb658="" data-v-65a522d0="" class="tabs-con" data-v-cfc9a7fc="">
                     <div data-v-83cbb658="" class="van-tabs van-tabs--line">
-                        <div class="van-tabs__wrap van-tabs__wrap--scrollable">
-                            <div role="tablist" class="van-tabs__nav van-tabs__nav--line van-tabs__nav--complete">
-                                <div role="tab" aria-selected="true" class="van-tab van-tab--active"><span
-                                        class="van-tab__text">Strategy account</span></div>
-                                <div role="tab" class="van-tab"><span class="van-tab__text">Capital account</span></div>
-                                <div class="van-tabs__line"
-                                    style="transform: translateX(117px) translateX(-50%); transition-duration: 0.3s;">
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="van-tabs__content">
                             <!---->
                             <!---->
@@ -156,13 +156,10 @@
                             <div data-v-65a522d0="" data-v-cfc9a7fc="" class="itemBox">
                                 <div data-v-65a522d0="" data-v-cfc9a7fc="" class="reco_list">
                                     <div data-v-65a522d0="" data-v-cfc9a7fc="" class="top">
-                                        <div data-v-65a522d0="" data-v-cfc9a7fc="" class="left"> Currency<img
-                                                data-v-65a522d0="" data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMA32CAUO9wEAhFb2gAAAA6SURBVCjPYxj+wLUDCESQBCRAAo1IAhHoAhoggRYkASaQgAIDqpI2FGuYOzoMUC22aENzCXsBw1ADAALjEXDKb6WpAAAAAElFTkSuQmCC">
-                                        </div>
-                                        <div data-v-65a522d0="" data-v-cfc9a7fc="" class="right"> type<img
-                                                data-v-65a522d0="" data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMA32CAUO9wEAhFb2gAAAA6SURBVCjPYxj+wLUDCESQBCRAAo1IAhHoAhoggRYkASaQgAIDqpI2FGuYOzoMUC22aENzCXsBw1ADAALjEXDKb6WpAAAAAElFTkSuQmCC">
+                                        
+                                        <div data-v-65a522d0="" data-v-cfc9a7fc="" class="right" id="typeElement"> 
+                                            type
+                                            <img data-v-65a522d0="" data-v-cfc9a7fc="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMA32CAUO9wEAhFb2gAAAA6SURBVCjPYxj+wLUDCESQBCRAAo1IAhHoAhoggRYkASaQgAIDqpI2FGuYOzoMUC22aENzCXsBw1ADAALjEXDKb6WpAAAAAElFTkSuQmCC">
                                         </div>
                                     </div>
                                 </div>
@@ -172,6 +169,8 @@
                                         <div class="van-pull-refresh__track" style="transition-duration: 0ms;">
                                             <div class="van-pull-refresh__head" style="height: 100px;"></div>
                                             <div data-v-65a522d0="" role="feed" class="van-list">
+
+                                                @foreach($deposits as $deposit)
                                                 <div data-v-65a522d0="" class="it">
                                                     <div data-v-65a522d0="" class="jbox_07">
                                                         <div data-v-65a522d0="" class="jt"></div>
@@ -179,46 +178,13 @@
                                                             <div data-v-65a522d0="" class="b">
                                                                 <div data-v-65a522d0="" class="db">
                                                                     <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">strategic gain
+                                                                        <div data-v-65a522d0="" class="n">{{ $deposit->status }}
                                                                         </div>
-                                                                        <div data-v-65a522d0="" class="time">11/06/2024
-                                                                            04:09:05</div>
+                                                                        <div data-v-65a522d0="" class="time">{{ $deposit->updated_at }}</div>
                                                                     </div>
                                                                     <div data-v-65a522d0="" class="str"
                                                                         style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="green"> +1.1877
-                                                                        </div>
-                                                                        <div data-v-65a522d0="" class="green"
-                                                                            style="margin-left: 0.04rem;"> USDT </div>
-                                                                        <p data-v-65a522d0="">
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                        </p>
-                                                                    </div>
-                                                                    <!---->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-v-65a522d0="" class="jb"></div>
-                                                    </div>
-                                                </div>
-                                                <div data-v-65a522d0="" class="it">
-                                                    <div data-v-65a522d0="" class="jbox_07">
-                                                        <div data-v-65a522d0="" class="jt"></div>
-                                                        <div data-v-65a522d0="" class="jc c">
-                                                            <div data-v-65a522d0="" class="b">
-                                                                <div data-v-65a522d0="" class="db">
-                                                                    <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">Return of
-                                                                            Strategic Funds</div>
-                                                                        <div data-v-65a522d0="" class="time">11/06/2024
-                                                                            04:09:00</div>
-                                                                    </div>
-                                                                    <div data-v-65a522d0="" class="str"
-                                                                        style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="green"> +64
+                                                                        <div data-v-65a522d0="" class="green"> +{{ $deposit->amount }}
                                                                         </div>
                                                                         <div data-v-65a522d0="" class="green"
                                                                             style="margin-left: 0.04rem;"> USDT </div>
@@ -236,194 +202,8 @@
                                                         <div data-v-65a522d0="" class="jb"></div>
                                                     </div>
                                                 </div>
-                                                <div data-v-65a522d0="" class="it">
-                                                    <div data-v-65a522d0="" class="jbox_07">
-                                                        <div data-v-65a522d0="" class="jt"></div>
-                                                        <div data-v-65a522d0="" class="jc c">
-                                                            <div data-v-65a522d0="" class="b">
-                                                                <div data-v-65a522d0="" class="db">
-                                                                    <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">strategic
-                                                                            payment</div>
-                                                                        <div data-v-65a522d0="" class="time">11/06/2024
-                                                                            03:18:07</div>
-                                                                    </div>
-                                                                    <div data-v-65a522d0="" class="str"
-                                                                        style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="red"> -64 </div>
-                                                                        <div data-v-65a522d0="" class="red"
-                                                                            style="margin-left: 0.04rem;"> USDT </div>
-                                                                        <p data-v-65a522d0="">
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                        </p>
-                                                                    </div>
-                                                                    <!---->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-v-65a522d0="" class="jb"></div>
-                                                    </div>
-                                                </div>
-                                                <div data-v-65a522d0="" class="it">
-                                                    <div data-v-65a522d0="" class="jbox_07">
-                                                        <div data-v-65a522d0="" class="jt"></div>
-                                                        <div data-v-65a522d0="" class="jc c">
-                                                            <div data-v-65a522d0="" class="b">
-                                                                <div data-v-65a522d0="" class="db">
-                                                                    <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">Recharge</div>
-                                                                        <div data-v-65a522d0="" class="time">11/06/2024
-                                                                            03:00:00</div>
-                                                                    </div>
-                                                                    <div data-v-65a522d0="" class="str"
-                                                                        style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="green"> +60
-                                                                        </div>
-                                                                        <div data-v-65a522d0="" class="green"
-                                                                            style="margin-left: 0.04rem;"> USDT </div>
-                                                                        <p data-v-65a522d0="">
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                        </p>
-                                                                    </div><img data-v-65a522d0=""
-                                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcBAMAAACaHyIpAAAAIVBMVEUAAADNzc3Ly8vNzc3Ly8vMzMzPz8/Nzc3KysrPz8/MzMza1x5xAAAACnRSTlMAoIB/QFAgYDAQw0A4sgAAADdJREFUCNdjIApwOkAZWYuhjKpVBhAG4yqYkBSpQktgjKUwKQWowCJiBaKgAgxeUAEGtgYGYgEAfJ0VOY0Ia/EAAAAASUVORK5CYII=">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-v-65a522d0="" class="jb"></div>
-                                                    </div>
-                                                </div>
-                                                <div data-v-65a522d0="" class="it">
-                                                    <div data-v-65a522d0="" class="jbox_07">
-                                                        <div data-v-65a522d0="" class="jt"></div>
-                                                        <div data-v-65a522d0="" class="jc c">
-                                                            <div data-v-65a522d0="" class="b">
-                                                                <div data-v-65a522d0="" class="db">
-                                                                    <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">strategic gain
-                                                                        </div>
-                                                                        <div data-v-65a522d0="" class="time">08/06/2024
-                                                                            05:04:55</div>
-                                                                    </div>
-                                                                    <div data-v-65a522d0="" class="str"
-                                                                        style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="green"> +6.1642
-                                                                        </div>
-                                                                        <div data-v-65a522d0="" class="green"
-                                                                            style="margin-left: 0.04rem;"> USDT </div>
-                                                                        <p data-v-65a522d0="">
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                        </p>
-                                                                    </div>
-                                                                    <!---->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-v-65a522d0="" class="jb"></div>
-                                                    </div>
-                                                </div>
-                                                <div data-v-65a522d0="" class="it">
-                                                    <div data-v-65a522d0="" class="jbox_07">
-                                                        <div data-v-65a522d0="" class="jt"></div>
-                                                        <div data-v-65a522d0="" class="jc c">
-                                                            <div data-v-65a522d0="" class="b">
-                                                                <div data-v-65a522d0="" class="db">
-                                                                    <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">Experience
-                                                                            gold recovery</div>
-                                                                        <div data-v-65a522d0="" class="time">08/06/2024
-                                                                            05:04:50</div>
-                                                                    </div>
-                                                                    <div data-v-65a522d0="" class="str"
-                                                                        style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="red"> -300 </div>
-                                                                        <div data-v-65a522d0="" class="red"
-                                                                            style="margin-left: 0.04rem;"> USDT </div>
-                                                                        <p data-v-65a522d0="">
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                        </p>
-                                                                    </div>
-                                                                    <!---->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-v-65a522d0="" class="jb"></div>
-                                                    </div>
-                                                </div>
-                                                <div data-v-65a522d0="" class="it">
-                                                    <div data-v-65a522d0="" class="jbox_07">
-                                                        <div data-v-65a522d0="" class="jt"></div>
-                                                        <div data-v-65a522d0="" class="jc c">
-                                                            <div data-v-65a522d0="" class="b">
-                                                                <div data-v-65a522d0="" class="db">
-                                                                    <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">strategic
-                                                                            payment</div>
-                                                                        <div data-v-65a522d0="" class="time">08/06/2024
-                                                                            04:55:00</div>
-                                                                    </div>
-                                                                    <div data-v-65a522d0="" class="str"
-                                                                        style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="red"> -300 </div>
-                                                                        <div data-v-65a522d0="" class="red"
-                                                                            style="margin-left: 0.04rem;"> USDT </div>
-                                                                        <p data-v-65a522d0="">
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                        </p>
-                                                                    </div>
-                                                                    <!---->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-v-65a522d0="" class="jb"></div>
-                                                    </div>
-                                                </div>
-                                                <div data-v-65a522d0="" class="it">
-                                                    <div data-v-65a522d0="" class="jbox_07">
-                                                        <div data-v-65a522d0="" class="jt"></div>
-                                                        <div data-v-65a522d0="" class="jc c">
-                                                            <div data-v-65a522d0="" class="b">
-                                                                <div data-v-65a522d0="" class="db">
-                                                                    <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">Register and
-                                                                            receive free trial bonus</div>
-                                                                        <div data-v-65a522d0="" class="time">08/06/2024
-                                                                            04:52:59</div>
-                                                                    </div>
-                                                                    <div data-v-65a522d0="" class="str"
-                                                                        style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="green"> +300
-                                                                        </div>
-                                                                        <div data-v-65a522d0="" class="green"
-                                                                            style="margin-left: 0.04rem;"> USDT </div>
-                                                                        <p data-v-65a522d0="">
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                            <!---->
-                                                                        </p>
-                                                                    </div>
-                                                                    <!---->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div data-v-65a522d0="" class="jb"></div>
-                                                    </div>
-                                                </div>
+                                                @endforeach
+
                                                 <div class="van-list__finished-text">No more</div>
                                                 <div class="van-list__placeholder"></div>
                                             </div>
@@ -437,11 +217,10 @@
                         <div data-v-4c14e1cc="" data-v-65a522d0="" data-v-cfc9a7fc="">
                             <!---->
                         </div>
-                        <div data-v-4c14e1cc="" data-v-65a522d0="" data-v-cfc9a7fc="">
-                            <div class="van-overlay" style="z-index: 2017; display: none;"></div>
-                            <div data-v-4c14e1cc="" class="van-popup van-popup--round van-popup--bottom"
-                                style="background: none; z-index: 2018; display: none;">
-                                <div data-v-4c14e1cc="" class="popup_box">
+                        <div data-v-4c14e1cc="" data-v-65a522d0="" data-v-cfc9a7fc="" id="popupElement">
+                            <div class="van-overlay" style="z-index: 2017;display:none"></div>
+                            <div data-v-4c14e1cc="" class="van-popup van-popup--round van-popup--bottom" style="background: none; z-index: 2018;">
+                                <div data-v-4c14e1cc="" class="popup_box" style="display: none">
                                     <div data-v-4c14e1cc="" class="scroll">
                                         <div data-v-4c14e1cc="" class="ul">
                                             <div data-v-4c14e1cc="">
@@ -457,8 +236,7 @@
                                                 <div data-v-4c14e1cc="" class="item"> Return of Strategic Funds </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Register and receive free trial
-                                                    bonus </div>
+                                                <div data-v-4c14e1cc="" class="item"> Register and receive free trial bonus </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item"> Experience gold recovery </div>
@@ -468,7 +246,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div data-v-4c14e1cc="" class="esc">Cancel</div>
+                                    <div data-v-4c14e1cc="" class="esc" id="cancelButton">Cancel</div>
                                 </div>
                             </div>
                         </div>
@@ -498,5 +276,16 @@
         <div class="van-toast__text">Login successful</div>
     </div>
 </body>
+<script>
+    document.getElementById('typeElement').addEventListener('click', function() {
+        document.getElementById('popupElement').querySelector('.popup_box').style.display = 'block';
+        document.getElementById('popupElement').querySelector('.van-overlay').style.display = 'block';
+    });
+
+    document.getElementById('cancelButton').addEventListener('click', function() {
+        document.getElementById('popupElement').querySelector('.popup_box').style.display = 'none';
+        document.getElementById('popupElement').querySelector('.van-overlay').style.display = 'none';
+    });
+</script>
 
 </html>
