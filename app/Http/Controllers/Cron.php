@@ -304,12 +304,12 @@ if ($allResult)
                           ->count();
 
         // Check if an income record for the current day already exists
-        $todayRoiCount = Income::where('invest_id', $investment->id)
-                               ->where('remarks', 'ROI Bonus')
-                               ->whereDate('created_at', '=', now()->toDateString())
-                               ->count();
+        // $todayRoiCount = Income::where('invest_id', $investment->id)
+        //                        ->where('remarks', 'ROI Bonus')
+        //                        ->whereDate('created_at', '=', now()->toDateString())
+        //                        ->count();
 
-        if ($roiCount < $days && $todayRoiCount == 0) {
+        if ($roiCount < $days) {
             $bonus = ($investment->amount * $profit) / 100;
 
             Income::create([
