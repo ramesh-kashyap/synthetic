@@ -121,8 +121,8 @@ class Register extends Controller
            $tpassword =substr(time(),-2).substr(rand(),-2).substr(mt_rand(),-1);
             $post_array  = $request->all();
                 //  
-                $data['email'] = $post_array['emailId'];
-                $data['code'] = $post_array['code'];
+            $data['email'] = $post_array['emailId'];
+            $data['code'] = $post_array['code'];
             $data['phone'] = $post_array['phone'];
             $data['email'] = $post_array['email'];
             $data['username'] = $username;
