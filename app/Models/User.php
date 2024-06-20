@@ -142,7 +142,7 @@ class User extends Authenticatable
     
     public function available_balance()
     {
-    $balance = (Auth::user()->investment->sum('amount')+Auth::user()->users_incomes()+Auth::user()->tradingProfit->sum('profit')) - (Auth::user()->withdraw());
+    $balance = (Auth::user()->releasePrinciple->sum('amount')+Auth::user()->users_incomes()) - (Auth::user()->withdraw());
     return $balance;
     } 
 
@@ -160,7 +160,7 @@ class User extends Authenticatable
 
     public function users_incomes()
     {
-        return  Income::where('user_id',Auth::user()->id)->where('remarks','!=','Quantify Income')->sum('comm');
+        return  Income::where('user_id',Auth::user()->id)->sum('comm');
     } 
     
 
@@ -178,6 +178,9 @@ class User extends Authenticatable
         return $this->hasMany('App\Models\Investment','user_id','id')->where('status','Active');
     }
 
+    public function releasePrinciple(){
+        return $this->hasMany('App\Models\Investment','user_id','id')->where('status','Active')->where('roiCandition',1);
+    }
 
     public function withdrawal(){
         return $this->hasMany('App\Models\Withdraw','user_id','id')->where('walletType',1);

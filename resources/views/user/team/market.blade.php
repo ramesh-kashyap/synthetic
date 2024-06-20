@@ -14,13 +14,13 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="google" content="notranslate">
     <script>
-        window.addEventListener("error", function (event) {
+        window.addEventListener("error", function(event) {
             if (event.message.indexOf("Unexpected token '<'") > -1) {
                 location.reload();
             }
         });
-        window.onload = function () {
-            document.addEventListener("touchstart", function (event) {
+        window.onload = function() {
+            document.addEventListener("touchstart", function(event) {
                 if (event.touches.length > 1) {
                     event.preventDefault();
                 }
@@ -28,7 +28,7 @@
             var lastTouchEnd = 0;
             document.addEventListener(
                 "touchend",
-                function (event) {
+                function(event) {
                     var now = new Date().getTime();
                     if (now - lastTouchEnd <= 300) {
                         event.preventDefault();
@@ -37,7 +37,7 @@
                 },
                 false
             );
-            document.addEventListener("gesturestart", function (event) {
+            document.addEventListener("gesturestart", function(event) {
                 event.preventDefault();
             });
         };
@@ -47,7 +47,7 @@
                 remotes = false;
             document.addEventListener(
                 "click",
-                function (event) {
+                function(event) {
                     noddy = event.target;
                     while (noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
                         noddy = noddy.parentNode;
@@ -64,7 +64,6 @@
                 false
             );
         }
-
     </script>
     <style>
         * {
@@ -78,43 +77,58 @@
             width: 100%;
             background-color: #000;
         }
-
     </style>
-    <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="preload" as="style">
-    <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="preload" as="style">
-    <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="preload" as="style">
-    <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
-    <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
-    <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-65aadf8b.a4cef8a6.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-65aadf8b.59fb6a2e.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a0b1332.9f52f39a.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-21a2b91c.0ed7b871.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-73ab94aa.2e0ec155.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-73ab94aa.70e0e268.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-67098c77.8b942857.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-67098c77.b8c94109.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-04a90ad1.aa2f317d.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-04a90ad1.28c21b1a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-273ce16e.debfb5de.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-6072d8a4.6ac11efd.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-6072d8a4.290faf4b.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-79aa18e0.f843b761.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-79aa18e0.e3404a41.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-5109cffc.e3562785.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-5109cffc.3f1196fb.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8870696.ba836efa.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8870696.d3c72f4a.1717187934571.chunk.js"></script>
+    <link href="{{ asset('') }}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
+    <link href="{{ asset('') }}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload"
+        as="script">
+    <link href="{{ asset('') }}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload"
+        as="script">
+    <link href="{{ asset('') }}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js" rel="preload"
+        as="script">
+    <link href="{{ asset('') }}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js" rel="preload"
+        as="script">
+    <link href="{{ asset('') }}assets/static/css/app.23ae5dc0.css" rel="preload" as="style">
+    <link href="{{ asset('') }}assets/static/css/chunk-vant.d14f5539.css" rel="preload" as="style">
+    <link href="{{ asset('') }}assets/static/css/chunk-vendors.794edbf9.css" rel="preload" as="style">
+    <link href="{{ asset('') }}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
+    <link href="{{ asset('') }}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
+    <link href="{{ asset('') }}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-65aadf8b.a4cef8a6.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-65aadf8b.59fb6a2e.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-2a0b1332.9f52f39a.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-21a2b91c.0ed7b871.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-73ab94aa.2e0ec155.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-73ab94aa.70e0e268.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-67098c77.8b942857.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-67098c77.b8c94109.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-04a90ad1.aa2f317d.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-04a90ad1.28c21b1a.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-273ce16e.debfb5de.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-6072d8a4.6ac11efd.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-6072d8a4.290faf4b.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-79aa18e0.f843b761.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-79aa18e0.e3404a41.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-5109cffc.e3562785.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-5109cffc.3f1196fb.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-f8870696.ba836efa.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-f8870696.d3c72f4a.1717187934571.chunk.js">
+    </script>
 </head>
 
 <body class="main_en">
@@ -123,8 +137,14 @@
             <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-397da544="" data-v-c079ad96="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
-                        <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
-                                <!----></i></div>
+                        <div data-v-397da544="" class="back">
+                            
+                            <a href="{{route('user.dashboard')}}" style="color: #fff">
+                            <i data-v-397da544=""
+                                class="van-icon van-icon-arrow-left">
+                                <!----></i>
+                            </a>
+                            </div>
                         <!---->
                         <div data-v-397da544="" class="name tac"> Market </div>
                         <div data-v-397da544="" class="flex1"></div>
@@ -143,9 +163,10 @@
                                 <div class="van-tabs__wrap van-tabs__wrap--scrollable">
                                     <div role="tablist"
                                         class="van-tabs__nav van-tabs__nav--line van-tabs__nav--complete">
-                                        <div role="tab" aria-selected="true" class="van-tab van-tab--active"><span
-                                                class="van-tab__text">Gainers</span></div>
-                                        <div role="tab" class="van-tab"><span class="van-tab__text">24h Vol</span></div>
+                                        <div role="tab" aria-selected="true" class="van-tab van-tab--active">
+                                            <span class="van-tab__text">Gainers</span></div>
+                                        <div role="tab" class="van-tab"><span class="van-tab__text">24h
+                                                Vol</span></div>
                                         <div class="van-tabs__line"
                                             style="transform: translateX(100.5px) translateX(-50%); transition-duration: 0.3s;">
                                         </div>
@@ -417,4 +438,9 @@
                     </div>
                 </div>
             </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="{{asset('')}}assets/js/crypto.js"></script>
+
+
             @include('layouts.upnl.footer')
