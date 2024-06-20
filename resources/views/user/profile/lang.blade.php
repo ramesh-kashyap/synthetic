@@ -150,46 +150,33 @@
                         <div data-v-03acef9e="" data-v-cfc9a7fc="" class="container">
                             <div data-v-03acef9e="" data-v-cfc9a7fc="" class="list">
                                 <ul data-v-03acef9e="" data-v-cfc9a7fc="">
+                                  
                                     <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Français</div>
+                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">German
+                                        </div>
                                         <!---->
                                     </li>
                                     <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">español</div>
+                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Spanish</div>
                                         <!---->
                                     </li>
                                     <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Português</div>
+                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Portugal</div>
                                         <!---->
                                     </li>
                                     <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Nederland</div>
+                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Russia 
+                                        </div>
                                         <!---->
                                     </li>
                                     <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Bokmål</div>
+                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Türkiye
+
+
+</div>
                                         <!---->
                                     </li>
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">svenska</div>
-                                        <!---->
-                                    </li>
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Polski </div>
-                                        <!---->
-                                    </li>
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Deutsch</div>
-                                        <!---->
-                                    </li>
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Magyar</div>
-                                        <!---->
-                                    </li>
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">中文简体</div>
-                                        <!---->
-                                    </li>
+                                    
                                     <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
                                         <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">English</div>
                                         <div data-v-03acef9e="" data-v-cfc9a7fc="" class="s"><img data-v-03acef9e=""
