@@ -126,6 +126,10 @@
 }
 
 
+a{
+    color:#fff!important;
+}
+
     </style>
 
     <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
@@ -280,7 +284,7 @@
                                                 <div data-v-4c14e1cc="" class="item"> Team Commission </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item active"> Withdrawals </div>
+                                                <div data-v-4c14e1cc="" class="item active"><a href={{ route('user.Withdraw-History') }}> Withdrawals</a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item"> Team Turnover </div>
