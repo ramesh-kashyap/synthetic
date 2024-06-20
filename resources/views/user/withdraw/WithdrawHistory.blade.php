@@ -170,7 +170,7 @@
                         <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Deposits</div>
+                        <div data-v-397da544="" class="name tac"> Withdrawals</div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -210,7 +210,7 @@
                                             <div class="van-pull-refresh__head" style="height: 100px;"></div>
                                             <div data-v-65a522d0="" role="feed" class="van-list">
 
-                                                @foreach($deposits as $deposit)
+                                                @foreach($withdraws as $withdraw)
                                                 <div data-v-65a522d0="" class="it">
                                                     <div data-v-65a522d0="" class="jbox_07">
                                                         <div data-v-65a522d0="" class="jt"></div>
@@ -218,17 +218,17 @@
                                                             <div data-v-65a522d0="" class="b">
                                                                 <div data-v-65a522d0="" class="db">
                                                                     <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">Deposits
+                                                                        <div data-v-65a522d0="" class="n">Withdraw
                                                                         </div>
                                                                         <div data-v-65a522d0="" class="time">
-                                                                            {{ $deposit->updated_at }}</div>
+                                                                            {{ $withdraw->updated_at }}</div>
                                                                     </div>
                                                                     <div data-v-65a522d0="" class="str"
                                                                         style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="green">
-                                                                            +{{ $deposit->amount }}
+                                                                        <div data-v-65a522d0="" class="red">
+                                                                            -{{ $withdraw->amount }}
                                                                         </div>
-                                                                        <div data-v-65a522d0="" class="green"
+                                                                        <div data-v-65a522d0="" class="red"
                                                                             style="margin-left: 0.04rem;height: 20px;margin-right: -49px;">
                                                                             USDT </div>
                                                                         <div data-v-65a522d0="" class="time" style="
@@ -248,7 +248,7 @@
 
                                                 <div class="van-list__finished-text">No more</div>
                                                 <div class="pagination-links">
-                                                    {{ $deposits->withQueryString()->links() }}
+                                                    {{ $withdraws->withQueryString()->links() }}
                                                 </div>
                                                 <div class="van-list__placeholder"></div>
                                             </div>
@@ -271,7 +271,7 @@
                                         <div data-v-4c14e1cc="" class="ul">
 
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item active"> Deposits </div>
+                                                <div data-v-4c14e1cc="" class="item "><a href={{ route('user.recharge') }}> Deposits </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item"> Trading Bonus </div>
@@ -280,7 +280,7 @@
                                                 <div data-v-4c14e1cc="" class="item"> Team Commission </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Withdrawals </div>
+                                                <div data-v-4c14e1cc="" class="item active"> Withdrawals </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item"> Team Turnover </div>
