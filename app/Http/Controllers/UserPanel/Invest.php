@@ -33,7 +33,7 @@ class Invest extends Controller
         $this->data['page'] = 'user.invest.Deposit';
         return $this->dashboard_layout();
     }  
-    public function showrecord1(Request $request)
+    public function showrecord(Request $request)
     {
       $user=Auth::user();
       $limit = $request->limit ? $request->limit : paginationLimit();
@@ -62,7 +62,7 @@ class Invest extends Controller
     }
 
 
-    public function showrecord(Request $request)
+    public function showrecord1(Request $request)
     {
       $user=Auth::user();
       

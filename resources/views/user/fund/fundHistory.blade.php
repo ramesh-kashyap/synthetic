@@ -78,17 +78,56 @@
             width: 100%;
             background-color: #000;
         }
-/* 
-        .popup_box {
-            display: none;
-        }
-        .van-overlay {
-            display: none;
-        }
-        */
+
+        .pagination-links nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-links .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination-links .pagination li {
+    margin: 0 5px;
+}
+
+.pagination-links .pagination li a,
+.pagination-links .pagination li span {
+    display: block;
+    padding: 10px 15px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-links .pagination li a:hover,
+.pagination-links .pagination li span:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination-links .pagination .active span {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination-links .pagination .disabled span {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+
 
     </style>
-    
+
     <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload" as="script">
@@ -141,7 +180,7 @@
                 </div>
                 <div data-v-83cbb658="" data-v-65a522d0="" class="tabs-con" data-v-cfc9a7fc="">
                     <div data-v-83cbb658="" class="van-tabs van-tabs--line">
-                        
+
                         <div class="van-tabs__content">
                             <!---->
                             <!---->
@@ -156,10 +195,11 @@
                             <div data-v-65a522d0="" data-v-cfc9a7fc="" class="itemBox">
                                 <div data-v-65a522d0="" data-v-cfc9a7fc="" class="reco_list">
                                     <div data-v-65a522d0="" data-v-cfc9a7fc="" class="top">
-                                        
-                                        <div data-v-65a522d0="" data-v-cfc9a7fc="" class="right" id="typeElement"> 
+
+                                        <div data-v-65a522d0="" data-v-cfc9a7fc="" class="right" id="typeElement">
                                             type
-                                            <img data-v-65a522d0="" data-v-cfc9a7fc="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMA32CAUO9wEAhFb2gAAAA6SURBVCjPYxj+wLUDCESQBCRAAo1IAhHoAhoggRYkASaQgAIDqpI2FGuYOzoMUC22aENzCXsBw1ADAALjEXDKb6WpAAAAAElFTkSuQmCC">
+                                            <img data-v-65a522d0="" data-v-cfc9a7fc=""
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMA32CAUO9wEAhFb2gAAAA6SURBVCjPYxj+wLUDCESQBCRAAo1IAhHoAhoggRYkASaQgAIDqpI2FGuYOzoMUC22aENzCXsBw1ADAALjEXDKb6WpAAAAAElFTkSuQmCC">
                                         </div>
                                     </div>
                                 </div>
@@ -180,17 +220,22 @@
                                                                     <div data-v-65a522d0="" class="flexs">
                                                                         <div data-v-65a522d0="" class="n">Deposits
                                                                         </div>
-                                                                        <div data-v-65a522d0="" class="time">{{ $deposit->updated_at }}</div>
+                                                                        <div data-v-65a522d0="" class="time">
+                                                                            {{ $deposit->updated_at }}</div>
                                                                     </div>
                                                                     <div data-v-65a522d0="" class="str"
                                                                         style="display: flex;">
-                                                                        <div data-v-65a522d0="" class="green"> +{{ $deposit->amount }}
+                                                                        <div data-v-65a522d0="" class="green">
+                                                                            +{{ $deposit->amount }}
                                                                         </div>
                                                                         <div data-v-65a522d0="" class="green"
-                                                                            style="margin-left: 0.04rem;"> USDT </div>
-                                                                        <p data-v-65a522d0="">
-                                                                            {{ $deposit->status }}
-                                                                        </p>
+                                                                            style="margin-left: 0.04rem;height: 20px;margin-right: -49px;">
+                                                                            USDT </div>
+                                                                        <div data-v-65a522d0="" class="time" style="
+                                                                        margin-top: 22px;
+                                                                    ">
+                                                                            Pending
+                                                                        </div>
                                                                     </div>
                                                                     <!---->
                                                                 </div>
@@ -202,6 +247,9 @@
                                                 @endforeach
 
                                                 <div class="van-list__finished-text">No more</div>
+                                                <div class="pagination-links">
+                                                    {{ $deposits->withQueryString()->links() }}
+                                                </div>
                                                 <div class="van-list__placeholder"></div>
                                             </div>
                                         </div>
@@ -216,11 +264,12 @@
                         </div>
                         <div data-v-4c14e1cc="" data-v-65a522d0="" data-v-cfc9a7fc="" id="popupElement">
                             <div class="van-overlay" style="z-index: 2017;display:none"></div>
-                            <div data-v-4c14e1cc="" class="van-popup van-popup--round van-popup--bottom" style="background: none; z-index: 2018;">
+                            <div data-v-4c14e1cc="" class="van-popup van-popup--round van-popup--bottom"
+                                style="background: none; z-index: 2018;">
                                 <div data-v-4c14e1cc="" class="popup_box" style="display: none">
                                     <div data-v-4c14e1cc="" class="scroll">
                                         <div data-v-4c14e1cc="" class="ul">
-                                            
+
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item active"> Deposits </div>
                                             </div>
@@ -236,7 +285,7 @@
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item"> Team Turnover </div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                     <div data-v-4c14e1cc="" class="esc" id="cancelButton">Cancel</div>
@@ -270,15 +319,16 @@
     </div>
 </body>
 <script>
-    document.getElementById('typeElement').addEventListener('click', function() {
+    document.getElementById('typeElement').addEventListener('click', function () {
         document.getElementById('popupElement').querySelector('.popup_box').style.display = 'block';
         document.getElementById('popupElement').querySelector('.van-overlay').style.display = 'block';
     });
 
-    document.getElementById('cancelButton').addEventListener('click', function() {
+    document.getElementById('cancelButton').addEventListener('click', function () {
         document.getElementById('popupElement').querySelector('.popup_box').style.display = 'none';
         document.getElementById('popupElement').querySelector('.van-overlay').style.display = 'none';
     });
+
 </script>
 
 </html>
