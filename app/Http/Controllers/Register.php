@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
+use App\Models\PasswordReset;
 use Redirect;
 use Carbon\Carbon;
 use Log;
@@ -31,6 +32,38 @@ class Register extends Controller
         return view('auth.verify');
     }
 
+
+    public function sendCodeEmail(Request $request)
+    {
+
+        $code = verificationCode(6);
+      
+        $emailId = $request->emailId;
+        if ($emailId!="") 
+        {
+          $emailId = $emailId;
+        }
+      
+       
+        PasswordReset::where('email', $emailId)->delete();
+
+        $password = new PasswordReset();
+        $password->email = $emailId;
+        $password->token = $code;
+        $password->created_at = \Carbon\Carbon::now();
+        $password->save();
+
+        //    sendEmail($emailId, 'Your One-Time Password', [
+        //     'name' => $user->name,
+        //     'code' => $code,
+        //     'purpose' => 'Change Password',
+        //     'viewpage' => 'one_time_password',
+
+        //  ]);
+
+       return true;
+    }
+   
 
    public function find_position($snode,$pos)
     {
@@ -68,7 +101,11 @@ class Register extends Controller
             }
             //check if email exist
           
-          
+            $code = $request->code;
+            if (PasswordReset::where('token', $code)->where('email', $user->email)->count() != 1) {
+                $notify[] = ['error', 'Invalid token'];
+                return redirect()->route('user.change-trx-password')->withNotify($notify);
+            }
 
             
             $user = User::where('username',$request->sponsor)->first();

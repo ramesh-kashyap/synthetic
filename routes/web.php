@@ -55,6 +55,7 @@ Route::get('resetPassword', [App\Http\Controllers\Login::class, 'resetPassword']
 Route::post('/getUserName', [App\Http\Controllers\Register::class, 'getUserNameAjax'])->name('getUserName');
 Route::post('/registers', [App\Http\Controllers\Register::class, 'register'])->name('registers');
 Route::get('/register_sucess', [App\Http\Controllers\Register::class, 'index'])->name('register_sucess');
+Route::post('/sendCodeEmail', [App\Http\Controllers\Register::class, 'sendCodeEmail'])->name('sendCodeEmail');
 
 Route::get('/Index', [App\Http\Controllers\FrontController::class, 'index'])->name('Index');
 Route::get('/about-us', [App\Http\Controllers\FrontController::class, 'about'])->name('about-us');
@@ -109,6 +110,7 @@ Route::post('/update-wallet', [App\Http\Controllers\UserPanel\Profile::class, 'w
 Route::post('/wallet_change', [App\Http\Controllers\UserPanel\Profile::class, 'wallet_change'])->name('user.wallet_change');
 
 Route::post('/sendCode', [App\Http\Controllers\UserPanel\Profile::class, 'sendCode'])->name('user.send_code');
+
 Route::get('/change-trx-password', [App\Http\Controllers\UserPanel\Profile::class, 'change_trx_password'])->name('user.change-trx-password');
 Route::get('/ChangePass', [App\Http\Controllers\UserPanel\Profile::class, 'change_password'])->name('user.ChangePass');
 Route::get('/tpassword', [App\Http\Controllers\UserPanel\Profile::class, 'tpassword'])->name('user.tpassword');
