@@ -33,7 +33,7 @@ class Invest extends Controller
         $this->data['page'] = 'user.invest.Deposit';
         return $this->dashboard_layout();
     }  
-    public function showrecord(Request $request)
+    public function showrecord1(Request $request)
     {
       $user=Auth::user();
       $limit = $request->limit ? $request->limit : paginationLimit();
@@ -54,9 +54,24 @@ class Invest extends Controller
         $notes = $notes->paginate($limit)->appends(['limit' => $limit ]);
 
       $this->data['search'] =$search;
-      $this->data['deposit_list'] =$notes;
+      $this->data['deposits'] =$notes;
 
-    $this->data['page'] = 'user.invest.records';
+    $this->data['page'] = 'user.fund.fundHistory';
+    return $this->dashboard_layout();
+
+    }
+
+
+    public function showrecord(Request $request)
+    {
+      $user=Auth::user();
+      
+        $notes = Investment::where('user_id',$user->id)->get();
+      
+
+      $this->data['deposits'] =$notes;
+
+    $this->data['page'] = 'user.fund.fundHistory';
     return $this->dashboard_layout();
 
     }
