@@ -66,6 +66,7 @@
         }
 
     </script>
+    
     <style>
         * {
             margin: 0;
@@ -136,7 +137,7 @@
                         <div data-v-6df100a6="" data-v-cfc9a7fc="" class="com-1">
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="n">Total Balance</div>
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s"> <a href="{{ route('user.fundHistory') }}">Detail
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s"> <a href="{{ route('user.recharge') }}">Detail
                                     <img data-v-6df100a6=""
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAOVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAABra2v4+PgAAAAAAAAAAADk5OQAAADd3d2goKAAAADy8vL///+hq0BzAAAAEnRSTlMzACwYLwYdTOUoIRKzDKZmD9OK32BQAAABUklEQVRYw7WX0XKEIAxFLwlJC9TW+v8f2yk7O26tGE12z3uOERBzkQZI01oIAKhUniUN2BdMSthAOp0WcMYu1MQW9PIhWcUSrOWjLg4FUmBCMhZwxgkyjwSKk/C+QHGauicouED5L1Bcom4FjIvoXwHjMvwokIzLZHkQEByUVdDggu8CIbjId4HCCd8EkuEk3wQNbrgLCG7yr2BCgCnBXMLP5fvt4EDDeoOvZVnehwZKEFiCQ4NghsHHoaGBETIoKkKGioKQoYAQMtBo77dsDObW7fP5CkH4FcKLGN7G+EHSUD0YLVSPOfw5Ry+U6JVWn3Gppgw31P8LDDetC/wtZOkCfwuausDdAkkX+Fto64hT4IDCQ9bTxryOOuu7oFMjo2582O7UwLh/cSX1RZHn5Mxa5DD2NbIebwVP0WyUm9FXGlnldviuofDdkZnX+K9N0oAfKgMTw/lKDHwAAAAASUVORK5CYII=">
