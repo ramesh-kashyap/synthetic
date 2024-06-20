@@ -125,6 +125,9 @@
     cursor: default;
 }
 
+a{
+    color:#fff!important;
+}
 
     </style>
 
@@ -271,7 +274,7 @@
                                         <div data-v-4c14e1cc="" class="ul">
 
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item active"> Deposits </div>
+                                                <div data-v-4c14e1cc="" class="item "><a href={{ route('user.recharge') }}> Deposits </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item"> Trading Bonus </div>
@@ -280,7 +283,7 @@
                                                 <div data-v-4c14e1cc="" class="item"> Team Commission </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Withdrawals </div>
+                                                <div data-v-4c14e1cc="" class="item active"><a href={{ route('user.Withdraw-History') }} class="item active"> Withdrawals</a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item"> Team Turnover </div>
