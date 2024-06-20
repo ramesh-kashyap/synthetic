@@ -135,7 +135,7 @@ Route::get('/quality/records', [App\Http\Controllers\UserPanel\Invest::class, 'r
 
 Route::get('/wallet', [App\Http\Controllers\UserPanel\AddFund::class, 'index'])->name('user.wallet');
 Route::get('/fundpass', [App\Http\Controllers\UserPanel\AddFund::class, 'fundpass'])->name('user.fundpass');
-Route::get('/recharge', [App\Http\Controllers\UserPanel\AddFund::class, 'fundHistory'])->name('user.recharge');
+Route::get('/recharge1', [App\Http\Controllers\UserPanel\AddFund::class, 'fundHistory'])->name('user.recharge');
 Route::any('/SubmitBuyFund', [App\Http\Controllers\UserPanel\AddFund::class, 'SubmitBuyFund'])->name('user.SubmitBuyFund');
 // end add fund
 
@@ -146,7 +146,7 @@ Route::any('/SubmitBuyFund', [App\Http\Controllers\UserPanel\AddFund::class, 'Su
 Route::get('/register/{sponsorCode}', [App\Http\Controllers\Register::class, 'showRegistrationForm']);
 // Route::get('/generate-qr-code', [Register::class, 'generateQrCode']);
 
-Route::get('/record', [App\Http\Controllers\UserPanel\Invest::class, 'showrecord'])->name('user.records');
+Route::get('/recharge', [App\Http\Controllers\UserPanel\Invest::class, 'showrecord'])->name('user.records');
 Route::get('/invest', [App\Http\Controllers\UserPanel\Invest::class, 'index'])->name('user.invest');
 Route::get('/edit/{id}', [App\Http\Controllers\UserPanel\Invest::class, 'edit'])->name('edit');
 // Route::get('/packege', [App\Http\Controllers\UserPanel\Invest::class, 'index'])->name('user.invest');
