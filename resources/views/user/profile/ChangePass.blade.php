@@ -294,7 +294,6 @@ input[type="password"] {
     $('.code-btn').click(function(e) {
         e.preventDefault(); // Prevent the default form submission
         var emailId = $('#emailId').val();
-
         if (emailId=="") 
         {
             iziToast.error({
