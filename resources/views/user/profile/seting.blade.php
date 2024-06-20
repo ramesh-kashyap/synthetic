@@ -163,16 +163,16 @@
                                 </div>
                                 <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.lang')}}" style="color:#fff;">Switch Language</a></div><i
                                     data-v-0e1dae04="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
-                                    <!----></i>
+                                    </i>
                             </li>
-                            <!-- <li data-v-0e1dae04="" data-v-cfc9a7fc="" class="flex">
+                            <li data-v-0e1dae04="" data-v-cfc9a7fc="" class="flex">
                                 <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="ico"><img data-v-0e1dae04=""
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAPFBMVEUAAACVmp+Sn5+Ump+VmJ6UmZ6UmJ6Ump+Xl5+Pl5+Ump+Tmp+TmZ+Ump+VmZ+TmZ+Tmp6Tmp6Vmp+Ump/GDkY9AAAAE3RSTlMA3xDvYIBwzyAgoO9QwLCA0JAwb2IvQAAAAQ5JREFUSMftlNFugzAMRW/sBJKslG38/78OWyCXWipGlfbU84JafBIn1wIfYlAZlxBjhtDSEiY1AFIfNwh5uUSB9N8JAWpfSyeIVhGCpFYFBHlboJLWy+4tKgxfi8JDTBjs7sTIq26k7IT2UMDk8mQndF2aaGCNB/wUsRPGrRUUfY3bYQt2LemTLB7H+0KS1vfbGgNC2Q6tzx4QiB+OWLEnYSm44O4m3CGkpxR8S0YBDkkkJ1i9DYclwb6lpv/PFfiddeV2cugu+1YoVYyfE0EGI2Mji/1asJwt69cCH9bk8x1uiTN29l+Of/xqEEI0FSaZnYYA1HXwy3KJDLr2uQdQo4ZNT/4OVfM0Ez6E+ANrlT5UQkWl9AAAAABJRU5ErkJggg==">
                                 </div>
-                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1">Google Authenticator</div><i
+                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.tpassword')}}" style="color:#fff;">create Tranction Password</a></div><i
                                     data-v-0e1dae04="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
-                                    <!---->
+    </i>
                             
                             <li data-v-0e1dae04="" data-v-cfc9a7fc="" class="flex">
                                 <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="ico"><img data-v-0e1dae04=""
@@ -181,7 +181,7 @@
                                 </div>
                                 <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.fundpass')}}" style="color:#fff;">Reset Fund Password</a></div><i
                                     data-v-0e1dae04="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
-                                    <!----></i>
+                                    </i>
                             </li>
                         </ul>
                     </div>
