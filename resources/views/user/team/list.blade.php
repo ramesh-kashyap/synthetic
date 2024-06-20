@@ -110,9 +110,11 @@
                 <div data-v-cfc9a7fc="" class="headers">
                     <div data-v-397da544="" data-v-a5a9abc4="" class="head" data-v-cfc9a7fc="">
                         <div data-v-397da544="" class="container flex">
-                            <div data-v-397da544="" class="back"><a href="{{route('user.Mine')}}" style="color:white"><i data-v-397da544=""
+                            <div data-v-397da544="" class="back"><a href="{{route('user.team')}}" style="color:white"><i data-v-397da544=""
                                     class="van-icon van-icon-arrow-left">
-                                    <!----></i></div>
+                                    <!----></i>
+                                </a>
+                                </div>
                             <!---->
                             <div data-v-397da544="" class="name tac"> Team List </div>
                             <div data-v-397da544="" class="flex1"></div>
@@ -170,28 +172,36 @@
                                     <div class="van-pull-refresh__head" style="height: 50px;"></div>
                                     <div data-v-a5a9abc4="" role="feed" class="van-list">
                                         <ul data-v-a5a9abc4="" class="list">
+
+                                            <?php if(is_array($direct_team) || is_object($direct_team)){ ?>
+
+                                                <?php $cnt = $direct_team->perPage() * ($direct_team->currentPage() - 1); ?>
+                                                @foreach ($direct_team as $value)
+
                                             <li data-v-a5a9abc4="">
                                                 <div data-v-a5a9abc4="" class="flex">
-                                                    <!-- <div data-v-a5a9abc4="" class="ico"><img data-v-a5a9abc4=""
-                                                            src="{{asset('')}}{{asset('')}}assets/static/img/logo2.png">
-                                                    </div> -->
+                                                  
                                                     <div data-v-a5a9abc4="" class="flex1">
                                                         <div data-v-a5a9abc4="" class="n1 flex">
-                                                            <div data-v-a5a9abc4="" class="n"> Rameshk <span
-                                                                    data-v-a5a9abc4="">LV0</span></div>
+                                                            <div data-v-a5a9abc4="" class="n">{{$value->name}} - {{$value->username}}  <span
+                                                                    data-v-a5a9abc4="">LV {{$value->level-Auth::user()->level}}</span></div>
                                                             <div data-v-a5a9abc4="" class="s"><span
-                                                                    data-v-a5a9abc4="">invalid</span></div>
+                                                                    data-v-a5a9abc4="">{{ $value->active_status }}</span></div>
                                                         </div>
                                                         <div data-v-a5a9abc4="" class="n2 flex">
-                                                            <div data-v-a5a9abc4="" class="n"> Join in:14/06/2024
-                                                                02:37:05 </div>
-                                                            <div data-v-a5a9abc4="" class="s"> 0 members </div>
+                                                            <div data-v-a5a9abc4="" class="n"> Join in: {{ date('D, d M Y H:i:s', strtotime($value->created_at)) }} </div>
+                                                            <div data-v-a5a9abc4="" class="s">{{ ($value->investment->sum('amount'))?$value->investment->sum('amount'):0 }} USDT </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                            
                                             </li>
+                                            @endforeach
+                                            <?php }?>
+                                            
+                                        
                                         </ul>
+                                        {{ $direct_team->withQueryString()->links() }}
                                       
                                         <div class="van-list__placeholder"></div>
                                     </div>

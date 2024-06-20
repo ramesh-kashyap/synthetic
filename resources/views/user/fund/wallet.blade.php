@@ -144,7 +144,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="amount"> 67.3519 <span data-v-6df100a6=""
+                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="amount"> {{number_format(Auth::user()->available_balance(),2)}} <span data-v-6df100a6=""
                                     data-v-cfc9a7fc="">USDT</span></div>
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-left"><span data-v-6df100a6=""
@@ -152,27 +152,33 @@
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAD1BMVEUAAAAE3AAD3AAE2wAE3ABuQteJAAAABHRSTlMAgFBAnsFh3gAAADNJREFUKM9jGAXogEkBQ0jEEV2E0cVFAF2Ri4sjhiJ0ZSogIWcUIRNMISZBIDBgGAUoAABJbwaD+etRRAAAAABJRU5ErkJggg==">
                                         0% </span><span data-v-6df100a6="" data-v-cfc9a7fc="">(+$0)</span></div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right"><span data-v-6df100a6=""
-                                        data-v-cfc9a7fc="">Pending： 0 U</span></div>
+                                        data-v-cfc9a7fc="">Pending: 0 U</span></div>
                             </div>
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">Strategy account</div>
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> 67.3519 </div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> {{currency()}} 0</div>
                                 </div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">Capital account</div>
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> 0 </div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val">{{currency()}}  {{number_format(Auth::user()->investment->sum('amount'),2)}}</div>
                                 </div>
                             </div>
                         </div>
                         <ul data-v-6df100a6="" data-v-cfc9a7fc="" class="tab flex">
-                            <li data-v-6df100a6="" data-v-cfc9a7fc=""><img data-v-6df100a6="" data-v-cfc9a7fc=""
+                            <li data-v-6df100a6="" data-v-cfc9a7fc="">
+                                <a href="{{route('user.strategy')}}" style="color: #fff">
+                                <img data-v-6df100a6="" data-v-cfc9a7fc=""
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA0CAMAAAAdZIDnAAAARVBMVEUAAAD///////+n/3z///+f/36m/37///+m/32l/32l/36f/3j///////+m/32k/3yl/3r///////////////////+m/31k9+39AAAAFXRSTlMAYICg4BDP79+AXyBwv+9wUEAgEMCSNQRnAAAAzklEQVRIx+3P3Q6DIAyGYWA6BHH+De7/UmcN+k001iWejTchoU2eg4rcnY1OLdHYGWM6+qxbOeyR036N5kcI4UEfj1SKpEepQn2imkuqSRTtdBHbqGU5X3CgJEYo3JBVVqkqr6i6shtlq5pThEKwX8qGMDFGESIWFaGJlYwqn4Fqo2ppIH2mwMysTESMAnvRA+IUMTQjXoEB8QoMiFdgQLwCA+IVGBCvwIB4BWbEDwr9t9LFWfpANf5K70T1rDi8QfFGO7FrkOo8N4rcbX0AQuU1Y+ttcqkAAAAASUVORK5CYII=">
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">Deposit</div>
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">Deposit    </a></div>
+                        
+
                             </li>
-                            <li data-v-6df100a6="" data-v-cfc9a7fc=""><img data-v-6df100a6="" data-v-cfc9a7fc=""
+                            <li data-v-6df100a6="" data-v-cfc9a7fc="">
+                                <a href="{{route('user.Withdraw')}}" style="color: #fff">
+                                <img data-v-6df100a6="" data-v-cfc9a7fc=""
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA0CAMAAAAdZIDnAAAASFBMVEUAAAD///////+n/3yl/33///////+m/37///////////+l/4Cl/3z///////+j/3z///+f/3jV/8LP/7qj/3z///+m/328/50T1kZbAAAAFXRSTlMAYICgf9/g7+/AcDCQQCAgEBDv70CBqdxqAAAAy0lEQVRIx+3Pyw6DIBRF0YO1Bd/aVv3/P23FxyFovKRx1LAHDC4sCIhdWJsna3Dbpqreo9z0W3DrWeIj1TNfscpTWZDKsMY981iC2zq0PzhQCmepMPX+RaVDGq6IBjJREZGJiohMVERksiIikxURmayINJmkiG43u8zsXBGVsArlzCTV6PnYrJZLdCcoFHpCq7JMF8JblqWg+jKLJIUOVFMNJMWoEFVU/6rM3ek1juPTHZgDlfUhZZ6qgpSCVyIbk2NXrZLz8hax6/oAHTQ1QeutVjYAAAAASUVORK5CYII=">
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">Withdraw</div>
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">Withdraw  </a> </div>
                             </li>
                         </ul>
                     </div>
@@ -209,7 +215,7 @@
                                 </div>
                                 <div data-v-372e76f5="" class="info">
                                     <div data-v-372e76f5="" id="myChart" _echarts_instance_="ec_1718779942243"
-                                        style="width: 100%; height: 6rem; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                        style="width: 100%;  height: 6rem; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
                                         <div
                                             style="position: relative; width: 385px; height: 300px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
                                             <canvas data-zr-dom-id="zr_0" width="770" height="600"

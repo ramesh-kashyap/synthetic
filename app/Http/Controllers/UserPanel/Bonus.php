@@ -231,7 +231,7 @@ class Bonus extends Controller
           $limit = $request->limit ? $request->limit :  paginationLimit();
             $status = $request->status ? $request->status : null;
             $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks',"ROI Bonus")->orderBy('created_at', 'DESC');
+            $notes = Income::where('user_id',$user->id)->where('remarks',"Trading Bonus")->orderBy('created_at', 'DESC');
            if($search <> null && $request->reset!="Reset"){
             $notes = $notes->where(function($q) use($search){
               $q->Where('ttime', 'LIKE', '%' . $search . '%')
@@ -247,7 +247,7 @@ class Bonus extends Controller
                     'limit' => $limit
                 ]);
 
-    $this->data['incomes'] =$notes;
+    $this->data['datas'] =$notes;
     $this->data['search'] =$search;
     $this->data['page'] = 'user.bonus.roi-bonus';
     return $this->dashboard_layout();
