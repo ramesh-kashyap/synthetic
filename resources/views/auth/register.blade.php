@@ -103,8 +103,28 @@
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-73ab94aa.70e0e268.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-443d6c51.69a31eff.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-443d6c51.4a84b438.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script> 
 </head>
 
+<style>
+    .iti__country-list {
+    position: absolute;
+    z-index: 2;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0 0 0 -1px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    background-color: #131118;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    max-height: 200px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+</style>
 <body class="main_en">
     <div id="app" class="applang">
         <div data-v-cfc9a7fc="" data-v-607a0cfb="" class="page">
@@ -124,118 +144,167 @@
                     </div>
                 </div>
             </div>
-            <form action="{{ route('registers') }}" method="POST" name="login_frm"  id="form-id">
-            {{ csrf_field() }}
+            <form action="{{ route('registers') }}" method="POST" name="login_frm" id="form-id">
+                {{ csrf_field() }}
 
-            @php
-                                      $sponsor = @$_GET['ref'];
-                                      $name = \App\Models\User::where('username', $sponsor)->first();
-                                      @endphp
-                                      
-            <div data-v-cfc9a7fc="" id="scroll" class="content-container">
-                <div data-v-cfc9a7fc="" id="content" class="content-scroll">
-                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="container">
-                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="item">
-                            <!-- <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                @php
+                $sponsor = @$_GET['ref'];
+                $name = \App\Models\User::where('username', $sponsor)->first();
+                @endphp
+
+                <div data-v-cfc9a7fc="" id="scroll" class="content-container">
+                    <div data-v-cfc9a7fc="" id="content" class="content-scroll">
+                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="container">
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="item">
+                                <!-- <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Username</div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
                                             data-v-cfc9a7fc="" type="text"  name="username" placeholder="Enter username"></div>
                                 </div>
                             </div> -->
-                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Mobile phone</div>
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="area"><span data-v-607a0cfb=""
-                                            data-v-cfc9a7fc="">+91</span>
-                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="j"></div>
-                                    </div>
-                                    <input type="hidden"  id="country-name" name ="country" value="" >
-                                               <input type="hidden"  id="dial-code" name ="dialCode" value="" >
-                                               <input type="hidden"  id="country_iso" name ="country_iso" value="" >
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex flex1">
-                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
-                                                data-v-607a0cfb="" name="phone" data-v-cfc9a7fc="" type="text"
-                                                placeholder="Please enter your phone number"></div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Mobile phone</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
+                                       
+                                        <input type="hidden" id="country-name" name="country" value="">
+                                        <input type="hidden" id="dial-code" name="dialCode" value="">
+                                        <input type="hidden" id="country_iso" name="country_iso" value="">
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex flex1">
+                                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
+                                                    data-v-607a0cfb="" name="phone" id="phone" data-v-cfc9a7fc="" type="text"
+                                                    placeholder="your phone number"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Email</div>
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
-                                            data-v-cfc9a7fc=""  name="email" type="text"
-                                            placeholder="Please enter your email address"></div>
-                                </div>
-                            </div> -->
-                           
-                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">invitation code</div>
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
-                                            data-v-cfc9a7fc="" type="text"
-                                          value="{{$sponsor}}" name="sponsor" placeholder="Enter your Sponsor"></div>
-                                </div>
-                            </div>
-                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n"> password</div>
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
-                                            data-v-cfc9a7fc="" name="password" placeholder="Enter password" type="password"></div>
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><img data-v-607a0cfb=""
-                                            data-v-cfc9a7fc=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAANlBMVEUAAACSkpKSkpKPj4+SkpKSkpKPj4+Pj4+SkpKSkpKSkpKSkpKPj4+RkZGTk5OPj4+SkpKSkpIEtTlrAAAAEXRSTlMAgN8g73AwEJ+PYL9AkM9Qrxj6kssAAADtSURBVDjLjdLREsMQEAVQ7CJCkvr/n+2K6h02nem+1HD0kmXuIt9/Szq5Vs7pMqrIVWtMtAJGOUsL8jK7+U7A9kXZzwLbi+Qvy+Fq2xeVmvfujTnSaptmjr+Un1Q8w6MKLGqc61X5t8oI8s+J+1giGVjwpE7fUpwEGwNlJ5Vl9Z5nXFQp4jbheqpW+BBsGAhqRg5xWiGu5WXzrHCt0O6tFYY0erQ/Kw+eZVi06iGv0WAJ5qDV1GBDoqpXir9PBSrFVcFA4fmi21PF7d6ZSpQdJYX1e+Hpo3govyiyYP1Wth1K1XVkrpXPo3y6280b7tQSh+p/Pg0AAAAASUVORK5CYII=">
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="doc"> 
-                                </div>
-                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Confirm password</div>
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
-                                            data-v-cfc9a7fc=""  name="password_confirmation"placeholder="Please enter your password again"
-                                            type="password"></div>
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><img data-v-607a0cfb=""
-                                            data-v-cfc9a7fc=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAANlBMVEUAAACSkpKSkpKPj4+SkpKSkpKPj4+Pj4+SkpKSkpKSkpKSkpKPj4+RkZGTk5OPj4+SkpKSkpIEtTlrAAAAEXRSTlMAgN8g73AwEJ+PYL9AkM9Qrxj6kssAAADtSURBVDjLjdLREsMQEAVQ7CJCkvr/n+2K6h02nem+1HD0kmXuIt9/Szq5Vs7pMqrIVWtMtAJGOUsL8jK7+U7A9kXZzwLbi+Qvy+Fq2xeVmvfujTnSaptmjr+Un1Q8w6MKLGqc61X5t8oI8s+J+1giGVjwpE7fUpwEGwNlJ5Vl9Z5nXFQp4jbheqpW+BBsGAhqRg5xWiGu5WXzrHCt0O6tFYY0erQ/Kw+eZVi06iGv0WAJ5qDV1GBDoqpXir9PBSrFVcFA4fmi21PF7d6ZSpQdJYX1e+Hpo3govyiyYP1Wth1K1XVkrpXPo3y6280b7tQSh+p/Pg0AAAAASUVORK5CYII=">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="go">
-                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="box3">
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="cache_account"
-                                    style="display: flex; align-items: center;">
-                                    <div data-v-607a0cfb="" role="checkbox" tabindex="0" aria-checked="true"
-                                        class="van-checkbox" data-v-cfc9a7fc="">
-                                        <div
-                                            class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
-                                            <i class="van-icon van-icon-success"
-                                                style="border-color: rgb(113, 219, 129); background-color: rgb(113, 219, 129);">
-                                                <!----></i></div>
-                                    </div><span data-v-607a0cfb="" data-v-cfc9a7fc="" style="margin-left: 0.14rem;">I
-                                        have read the privacy agreement</span>
-                                </div>
-                            </div><button data-v-607a0cfb="" data-v-cfc9a7fc="" type="submit" class="btn2"> Registration </button>
-                            <p data-v-607a0cfb="" data-v-cfc9a7fc=""> Already have an account? <span data-v-607a0cfb=""
-                                    data-v-cfc9a7fc="" ><a href="{{route('login')}}" style="color:#ebd100;">Log in now</a></span></p>
-                            <!---->
-    </form>
-                        </div>
-                    </div>
-                    <!---->
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Email</div>
+                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc=""
+                      type="text" placeholder="Please enter your email address"></div>
                 </div>
-            </div>
-            <!---->
+              </div>
+              <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc=""
+                      type="text" placeholder="Please enter the verification code"></div>
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="str"> Send </div>
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="str" style="display: none;">
+                    <div data-v-607a0cfb="" class="van-count-down" data-v-cfc9a7fc=""><span data-v-607a0cfb="">0 <var
+                          data-v-607a0cfb="">s</var></span></div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">invitation code</div>
+                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc=""
+                      type="text" placeholder="Invitation code cannot be empty"></div>
+                </div>
+              </div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n"> password</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
+                                                data-v-607a0cfb="" data-v-cfc9a7fc="" name="password"
+                                                placeholder="Enter password" type="password"></div>
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><img data-v-607a0cfb=""
+                                                data-v-cfc9a7fc=""
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAANlBMVEUAAACSkpKSkpKPj4+SkpKSkpKPj4+Pj4+SkpKSkpKSkpKSkpKPj4+RkZGTk5OPj4+SkpKSkpIEtTlrAAAAEXRSTlMAgN8g73AwEJ+PYL9AkM9Qrxj6kssAAADtSURBVDjLjdLREsMQEAVQ7CJCkvr/n+2K6h02nem+1HD0kmXuIt9/Szq5Vs7pMqrIVWtMtAJGOUsL8jK7+U7A9kXZzwLbi+Qvy+Fq2xeVmvfujTnSaptmjr+Un1Q8w6MKLGqc61X5t8oI8s+J+1giGVjwpE7fUpwEGwNlJ5Vl9Z5nXFQp4jbheqpW+BBsGAhqRg5xWiGu5WXzrHCt0O6tFYY0erQ/Kw+eZVi06iGv0WAJ5qDV1GBDoqpXir9PBSrFVcFA4fmi21PF7d6ZSpQdJYX1e+Hpo3govyiyYP1Wth1K1XVkrpXPo3y6280b7tQSh+p/Pg0AAAAASUVORK5CYII=">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="doc">
+                                </div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Confirm password</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
+                                                data-v-607a0cfb="" data-v-cfc9a7fc="" name="password_confirmation"
+                                                placeholder="Please enter your password again" type="password"></div>
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><img data-v-607a0cfb=""
+                                                data-v-cfc9a7fc=""
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAANlBMVEUAAACSkpKSkpKPj4+SkpKSkpKPj4+Pj4+SkpKSkpKSkpKSkpKPj4+RkZGTk5OPj4+SkpKSkpIEtTlrAAAAEXRSTlMAgN8g73AwEJ+PYL9AkM9Qrxj6kssAAADtSURBVDjLjdLREsMQEAVQ7CJCkvr/n+2K6h02nem+1HD0kmXuIt9/Szq5Vs7pMqrIVWtMtAJGOUsL8jK7+U7A9kXZzwLbi+Qvy+Fq2xeVmvfujTnSaptmjr+Un1Q8w6MKLGqc61X5t8oI8s+J+1giGVjwpE7fUpwEGwNlJ5Vl9Z5nXFQp4jbheqpW+BBsGAhqRg5xWiGu5WXzrHCt0O6tFYY0erQ/Kw+eZVi06iGv0WAJ5qDV1GBDoqpXir9PBSrFVcFA4fmi21PF7d6ZSpQdJYX1e+Hpo3govyiyYP1Wth1K1XVkrpXPo3y6280b7tQSh+p/Pg0AAAAASUVORK5CYII=">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="go">
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="box3">
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="cache_account"
+                                        style="display: flex; align-items: center;">
+                                        <div data-v-607a0cfb="" role="checkbox" tabindex="0" aria-checked="true"
+                                            class="van-checkbox" data-v-cfc9a7fc="">
+                                            <div
+                                                class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
+                                                <i class="van-icon van-icon-success"
+                                                    style="border-color: rgb(113, 219, 129); background-color: rgb(113, 219, 129);">
+                                                    <!----></i></div>
+                                        </div><span data-v-607a0cfb="" data-v-cfc9a7fc=""
+                                            style="margin-left: 0.14rem;">I
+                                            have read the privacy agreement</span>
+                                    </div>
+                                </div><button data-v-607a0cfb="" data-v-cfc9a7fc="" type="submit" class="btn2">
+                                    Registration </button>
+                                <p data-v-607a0cfb="" data-v-cfc9a7fc=""> Already have an account? <span
+                                        data-v-607a0cfb="" data-v-cfc9a7fc=""><a href="{{route('login')}}"
+                                            style="color:#ebd100;">Log in now</a></span></p>
+                                <!---->
+            </form>
         </div>
-        <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
-            <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAMAAAA0X5qLAAAAh1BMVEUAAAAAv44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av46sPT54AAAALHRSTlMA+wXZ+J87JB7ux4lDNRQPCvLq39PNp5BpWRmxgnAvvrnlw5RhT0sqwHRxeP/zXbkAAAGcSURBVDjLjZTXcqtAEAVnyUGIJBAKKFqS7dv//30XsHFJxrD0C0XRxc45TCEDvFsdrvfhxnGWMk1S7c70nI+bZFxdXFC8YG5GVNemxTdte7+3yxUdq4MMMaocsMza6CeSqLRo2A3dffvguPh1WEiDcuWFeN24mSNDdjS85Exs4OLJX7wpyOWJT8A25G+iFMyn2za1jOIAV+kxIU9knDUQ9d8C/EimyH9OXgawNiblrepfXSn8WKax+4wnCEWDC6ptNk5RC9GxgqqNZ1EstXL1tSP/oBQtS1DN5Qp7vbz1sdwu30b0pNAkPIOrd4131E2kAEf0rDqtaJvTY3YDvM+aOS5IH91KrWdUl2LGIhsI9PIDLm2DFmmslT++FyiDu7a5ANV1FoKpkw/gfwUFddDIO7Cl4wqBMf1iRRZJxxb86d5OYCf9fyS/TaYrFcqVeYQK6nmqEQLFPNc7AuZ2lrtYAcEs936kdZdjE97rSAxDEvG8j8wC/E8Zo1Yo/CAv0oyOYKKzN55QWTm9B9WpyGiwyMvFnLbih+M5xjDWf6S2MlzIf04ZAAAAAElFTkSuQmCC"
-                    alt=""></div>
-        </div>
-        <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
-                src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
+    </div>
+    <!---->
+    </div>
+    </div>
+    <!---->
+    </div>
+    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+
+    <script>
+        var input = document.querySelector('#phone');
+        var info = document.querySelector('#info');
+        var status = document.getElementById('status');
+        var iti = window.intlTelInput(input, {
+            initialCountry: "us",
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // Load the utilities script
+        });
+
+        input.addEventListener('blur', function() {
+            if (iti.isValidNumber()) {
+                status.textContent = 'Valid number';
+                status.className = 'valid-number';
+            } else {
+                status.textContent = 'Invalid number';
+                status.className = 'invalid-number';
+            }
+        });
+
+        input.addEventListener('countrychange', function() {
+            updateCountryInfo(); // Update the information displayed when the country changes
+        });
+
+        function updateCountryInfo() {
+            var countryData = iti.getSelectedCountryData();
+            console.log(countryData)
+            
+            $('#country-name').val(countryData.name)
+            $('#dial-code').val(countryData.dialCode)
+            $('#country_iso').val(countryData.iso2)
+           
+        }
+
+        // Initialize with the current selected country's info
+        document.addEventListener('DOMContentLoaded', updateCountryInfo);
+    </script>
+
+
+    <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
+        <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAMAAAA0X5qLAAAAh1BMVEUAAAAAv44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av46sPT54AAAALHRSTlMA+wXZ+J87JB7ux4lDNRQPCvLq39PNp5BpWRmxgnAvvrnlw5RhT0sqwHRxeP/zXbkAAAGcSURBVDjLjZTXcqtAEAVnyUGIJBAKKFqS7dv//30XsHFJxrD0C0XRxc45TCEDvFsdrvfhxnGWMk1S7c70nI+bZFxdXFC8YG5GVNemxTdte7+3yxUdq4MMMaocsMza6CeSqLRo2A3dffvguPh1WEiDcuWFeN24mSNDdjS85Exs4OLJX7wpyOWJT8A25G+iFMyn2za1jOIAV+kxIU9knDUQ9d8C/EimyH9OXgawNiblrepfXSn8WKax+4wnCEWDC6ptNk5RC9GxgqqNZ1EstXL1tSP/oBQtS1DN5Qp7vbz1sdwu30b0pNAkPIOrd4131E2kAEf0rDqtaJvTY3YDvM+aOS5IH91KrWdUl2LGIhsI9PIDLm2DFmmslT++FyiDu7a5ANV1FoKpkw/gfwUFddDIO7Cl4wqBMf1iRRZJxxb86d5OYCf9fyS/TaYrFcqVeYQK6nmqEQLFPNc7AuZ2lrtYAcEs936kdZdjE97rSAxDEvG8j8wC/E8Zo1Yo/CAv0oyOYKKzN55QWTm9B9WpyGiwyMvFnLbih+M5xjDWf6S2MlzIf04ZAAAAAElFTkSuQmCC"
+                alt=""></div>
+    </div>
+    <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
+            src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>
