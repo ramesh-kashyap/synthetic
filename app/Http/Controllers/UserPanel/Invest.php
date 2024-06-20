@@ -68,7 +68,6 @@ class Invest extends Controller
       
         $notes = Investment::where('user_id',$user->id)->get();
       
-
       $this->data['deposits'] =$notes;
 
     $this->data['page'] = 'user.fund.fundHistory';
