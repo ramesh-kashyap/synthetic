@@ -111,6 +111,9 @@
                                 <!----></i></a></div>
                         <!---->
                         <div data-v-397da544="" class="name tac"> Withdrawal </div>
+                        <form action="{{ route('user.Withdraw-Request') }}" method="POST">
+                            {{ csrf_field() }}
+
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -123,42 +126,43 @@
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="container">
                     <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Currency</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
                                   
-                                        <select  data-v-7bab1ac4=""
-                                        data-v-cfc9a7fc="" name="paymentMode" 
-                                                autocomplete="off" type="text" class="uni-input-input" style="color:white;">
-                                                <option value="TRC20">TRC20</option>
-                                                <option value="BEP20">BEP20</option>
-                                            </select>
+                                    <select name="paymentMode" autocomplete="off" type="text" class="uni-input-input" style="color: white;
+    width: 100%;
+    background: #131118;">
+                                        <option value="TRC20" id="usdtTrc20" data-icon="usdtTrc20" name="PSys">TRC20</option>
+                                        <option value="BEP20" data-icon="usdtBep20" id="usdtBep20" name="PSys">BEP20</option>
+                                    </select>
                                     </div>
                             </div>
                         </div>
-                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">currency</div>
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
-                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
-                                        data-v-cfc9a7fc="" type="text" placeholder="currency" name="paymentmode" valu=""
-                                        ></div>
-                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str">  </div>
-                            </div>
-                        </div>
+                       
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
-                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
-                                        data-v-cfc9a7fc="" type="text"
-                                        placeholder="Please enter the withdrawal address" name="walletAddress"></div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex" style="
+    margin-bottom: 13px;>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1" >
+                                    <input data-v-cfc9a7fc="" data-v-7bab1ac4=""  type="text" value="{{Auth::user()->usdtTrc20}}" placeholder="Please enter the withdrawal address" name="walletAddress" id="walletAddress" >
+                                </div>
                             </div>
-                        </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal amount</div>
+<div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
+        <input data-v-7bab1ac4="" data-v-cfc9a7fc="" type="text" placeholder="Please enter the withdrawal amount" name="amount" id="withdrawalAmount">
+    </div>
+    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str"></div>
+</div>
+                        </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Transaction Password</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
-                                        data-v-cfc9a7fc="" type="text" placeholder="Please enter the withdrawal amount"
-                                         name="amount"></div>
+                                        data-v-cfc9a7fc="" type="password" placeholder="Please enter the transaction password"
+                                         name="transaction_password"></div>
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str">  </div>
                             </div>
                         </div>
@@ -167,34 +171,27 @@
                                 <ul data-v-7bab1ac4="" data-v-cfc9a7fc="">
                                     <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
                                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Arrived quantity</div>
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s blue"><span
-                                                data-v-7bab1ac4="" data-v-cfc9a7fc="">0 USDT</span></div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s blue"><span data-v-7bab1ac4="" data-v-cfc9a7fc="" id="arrivedQuantity">0 USDT</span></div>
                                     </li>
                                     <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n"> Withdrawal fee 0 % </div>
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s">0 USDT</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Withdrawal fee 5%</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4="" data-v-cfc9a7fc="" id="withdrawalFee">0 USDT</span></div>
                                     </li>
-                                    <!---->
+                                    
                                     <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">On-chain handling fee</div>
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s">1 USDT</div>
-                                    </li>
-                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Minimum withdrawal amount
-                                        </div>
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"> USDT</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Minimum withdrawal amount</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s">10 USDT</div>
                                     </li>
                                     <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Maximum withdrawal amount
-                                        </div>
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4=""
-                                                data-v-cfc9a7fc=""> USDT</span></div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Maximum withdrawal amount</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4="" data-v-cfc9a7fc="">No Limit</span></div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item"><button data-v-7bab1ac4=""
-                                data-v-cfc9a7fc="" class="btn2"> Confirm </button></div>
+                                data-v-cfc9a7fc="" class="btn2" type="submit"> Confirm </button></div>
+                        </form>            
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tipss">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Note</div>
@@ -262,6 +259,130 @@
     <script src="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js"></script>
     <script src="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js"></script>
+    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#withdrawalAmount').on('input', function() {
+                let amount = parseFloat($(this).val());
+                if (isNaN(amount)) {
+                    amount = 0;
+                }
+    
+                let withdrawalFee = amount * 0.05;
+                let arrivedQuantity = amount - withdrawalFee ;
+    
+                if (arrivedQuantity < 0) {
+                    arrivedQuantity = 0;
+                }
+    
+                $('#arrivedQuantity').text(arrivedQuantity.toFixed(2) + ' USDT');
+                $('#withdrawalFee').text(withdrawalFee.toFixed(2) + ' USDT');
+            });
+        });
+    </script>
+    <script>
+        $(function(){
+            $('input[name="amount"]').on('change keyup',function () {
+                let str = $(this).val();
+                str = str.replace(',','.');
+                $(this).val(str);
+                let min =  $('#min_withdrawal').val();
+                let max =  $('#max_withdrawal').val();
+
+                let charge = $('#chargeAmt').val();
+          
+                let amount = parseFloat(str);
+            
+            
+              
+             
+                if (amount>=min && amount<=max) 
+                {
+                   
+                $(".submit-btn").prop("disabled", false);
+                $('.submit-btn').removeClass('van-button van-button--default van-button--disabled van-button--normal com-btn on');         
+                $('.submit-btn').addClass('van-button van-button--default  van-button--normal com-btn on');         
+                }
+                else
+                {
+    
+                $(".submit-btn").prop("disabled", true);  
+                $('.submit-btn').removeClass('van-button van-button--default van-button--normal com-btn on');         
+                $('.submit-btn').addClass('van-button van-button--default van-button--disabled van-button--normal com-btn on');         
+                }
+                
+                if(amount<=10)
+                {
+                      $('#ActualAmount').html(amount-amount*50/100+" USDT");  
+                      $('#chargefee').html("5 USDT");  
+                }
+                else
+                {
+                 $('#ActualAmount').html(amount-amount*charge/100+" USDT");
+                    $('#chargefee').html(charge+" %");  
+                }
+              
+                
+            
+                //console.log(summ_usd);
+            });
+    
+          
+
+            $('.code-btn').click(function(e) {
+    var ths = $(this);
+    var emailId = $('#emailId').val();
+
+    if (!emailId) 
+    {
+        iziToast.error({
+                message: 'Invalid Email!',
+                position: "topRight"
+            });
+            return false;
+    }
+    // alert(sponsor); 
+    $.ajax({
+        type: "POST"
+        , url: "{{ route('user.send_code') }}"
+        , data: {
+            "emailId": emailId
+            , "_token": "{{ csrf_token() }}"
+        , }
+        , success: function(response) {
+            // alert(response);      
+            if (response) {
+                // alert("hh");
+                iziToast.success({
+                message: 'Email send Successfully',
+                position: "topRight"
+            });
+            } else {
+                // alert("hi");
+                iziToast.error({
+                message: 'Error!',
+                position: "topRight"
+            });
+            }
+        }
+    });
+});
+    
+    
+        })
+    
+    </script>
+    <script>
+        $('select[name="paymentMode"]').change(function () {
+            let icon = $(this).find('option:selected').data('icon');
+            if (icon == "usdtTrc20") {
+                $('#walletAddress').val('{{Auth::user()->usdtTrc20}}');
+            } else {
+                $('#walletAddress').val('{{Auth::user()->usdtBep20}}');
+            }
+        });
+    </script>
 </body>
 
 </html>
