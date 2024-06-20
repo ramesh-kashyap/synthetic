@@ -54,7 +54,9 @@ class Register extends Controller
             $validation =  Validator::make($request->all(), [
                 'phone' => 'required|unique:users,phone',
                 'password' => 'required|confirmed|min:5',
-                'sponsor' => 'required|exists:users,username',              
+                'sponsor' => 'required|exists:users,username',
+                'email' => 'required',
+                'code' => 'required',              
             ]);
 
             
@@ -67,12 +69,6 @@ class Register extends Controller
             //check if email exist
           
           
-            if (isset($request->captcha)) {
-                if (!captchaVerify($request->captcha, $request->captcha_secret)) {
-                    $notify[] = ['error', "Invalid Captcha"];
-                    return back()->withNotify($notify)->withInput();
-                }
-            }
 
             
             $user = User::where('username',$request->sponsor)->first();
