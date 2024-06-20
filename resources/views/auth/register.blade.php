@@ -180,15 +180,15 @@
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Email</div>
                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
-                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc="" name="email" id="email"
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc="" name="emailId" id="emailId"
                       type="text" placeholder="Please enter your email address"></div>
                 </div>
               </div>
               <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
-                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc="" name="code" id="code"
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb="" data-v-cfc9a7fc=""  name="code" id="code"
                       type="text" placeholder="Please enter the verification code"></div>
-                  <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="str"> Send </div>
+                  <div data-v-607a0cfb="" data-v-cfc9a7fc=""  class="code-btn verify-button"> Send </div>
                   <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="str" style="display: none;">
                     <div data-v-607a0cfb="" class="van-count-down" data-v-cfc9a7fc=""><span data-v-607a0cfb="">0 <var
                           data-v-607a0cfb="">s</var></span></div>
@@ -258,7 +258,54 @@
     </div>
     <!---->
     </div>
-    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+    @include('partials.notify')
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script>
+    $('.code-btn').click(function(e) {
+        e.preventDefault(); // Prevent the default form submission
+        var emailId = $('#emailId').val();
+
+        if (emailId=="") 
+        {
+            iziToast.error({
+                        message: 'Enter Email ID!',
+                        position: "topRight"
+                });  
+                return false;
+            
+        }
+        $.ajax({
+            type: "POST",
+            url: "{{ route('sendCodeEmail') }}",
+            data: {
+                emailId: emailId,
+                _token: "{{ csrf_token() }}"
+            },
+            success: function(response) {
+                if (response) {
+                    iziToast.success({
+                        message: 'Email sent successfully',
+                        position: "topRight"
+                    });
+                } else {
+                    iziToast.error({
+                        message: 'Error!',
+                        position: "topRight"
+                    });
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('AJAX Error:', error);
+                iziToast.error({
+                    message: 'Error: ' + xhr.responseText,
+                    position: "topRight"
+                });
+            }
+        });
+    });
+</script>
+
 
     <script>
         var input = document.querySelector('#phone');
