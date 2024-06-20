@@ -236,7 +236,7 @@ public function viewdetail($txnId)
     $amountTotal= $request->Sum;
   
   
-    if($paymentMode=="USDT BEP20")
+    if($paymentMode=="USDTBEP20")
     {
        $paymentMode= "USDT_BSC"; 
     }
@@ -245,6 +245,7 @@ public function viewdetail($txnId)
       $paymentMode= "USDT_TRX";    
     }
     
+
        $invoice = substr(str_shuffle("0123456789"), 0, 7);
        $apiURL = 'https://plisio.net/api/v1/invoices/new';
         $postInput = [
@@ -297,7 +298,7 @@ public function viewdetail($txnId)
     $this->data['amount'] =$amount;
     $this->data['invoice_total_sum'] =$resultAarray['data']['invoice_total_sum'];
     $this->data['page'] = 'user.invest.confirmDeposit';
-    return $this->dashboard_layout();
+    return $this->dashboard_layout();  
 
   }
   else

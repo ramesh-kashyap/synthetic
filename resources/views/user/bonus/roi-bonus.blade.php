@@ -174,6 +174,42 @@
                                 </div>
                             </div>
                         </div>
+                        <!---->
+                        <!---->
+                        <div data-v-4c14e1cc="" data-v-65a522d0="" data-v-cfc9a7fc="">
+                            <!---->
+                        </div>
+                        <div data-v-4c14e1cc="" data-v-65a522d0="" data-v-cfc9a7fc="" id="popupElement">
+                            <div class="van-overlay" style="z-index: 2017;display:none"></div>
+                            <div data-v-4c14e1cc="" class="van-popup van-popup--round van-popup--bottom"
+                                style="background: none; z-index: 2018;">
+                                <div data-v-4c14e1cc="" class="popup_box" style="display: none">
+                                    <div data-v-4c14e1cc="" class="scroll">
+                                        <div data-v-4c14e1cc="" class="ul">
+
+                                            <div data-v-4c14e1cc="">
+                                                <div data-v-4c14e1cc="" class="item "><a href={{ route('user.recharge') }}> Deposits </a></div>
+                                            </div>
+                                            <div data-v-4c14e1cc="">
+                                                <div data-v-4c14e1cc="" class="item"><a href={{ route('user.roi-bonus') }}> Trading Bonus </a></div>
+                                            </div>
+                                            <div data-v-4c14e1cc="">
+                                                <div data-v-4c14e1cc="" class="item"> <a href={{ route('user.level-income') }}>Team Commission </a> </div>
+                                            </div>
+                                            <div data-v-4c14e1cc="">
+                                                <div data-v-4c14e1cc="" class="item active"><a href={{ route('user.Withdraw-History') }}> Withdrawals</a> </div>
+                                            </div>
+                                            <div data-v-4c14e1cc="">
+                                                <div data-v-4c14e1cc="" class="item"> Team Turnover </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div data-v-4c14e1cc="" class="esc" id="cancelButton">Cancel</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
                     </div>
                
                     <div class="van-overlay" style="z-index: 2004; display: none;"></div>

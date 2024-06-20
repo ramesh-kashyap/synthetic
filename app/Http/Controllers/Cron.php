@@ -334,7 +334,7 @@ if ($allResult)
 
 public function add_level_income($user_id, $bonus, $plan_id)
 {
-    $plan = plan::find($plan_id);
+    $plan = Plan::find($plan_id);
     
     if (!$plan) {
         return false; // Skip if plan not found
@@ -344,24 +344,31 @@ public function add_level_income($user_id, $bonus, $plan_id)
     $level2 = $plan->level2;
     $level3 = $plan->level3;
 
-    $data = User::where('id', $user_id)->first();
-    $rname = $data->username;
-    $fullname = $data->name;
-    $user_mid = $data->id;
+    $user = User::find($user_id);
+    if (!$user) {
+        return false; // Skip if user not found
+    }
+
+    $sponsor = $user->sponsor;
+    $fullname = $user->name;
+    $rname = $user->username;
+    $user_mid = $user->id;
 
     $cnt = 1;
-
-    while ($user_mid != "" && $user_mid != "1") {
-        $sponsorData = User::where('id', $user_mid)->first();
-        $sponsor = $sponsorData->sponsor;
-
-        if (!empty($sponsor)) {
-            $sponsorStatus = User::where('id', $sponsor)->first();
-            $sp_status = $sponsorStatus->active_status;
+    
+    while ($user_mid != "" && $user_mid != "1" && $cnt <= 3) {
+        $sponsorData = User::where('id', $sponsor)->first();
+        
+        if (!$sponsorData) {
+            break; // Break the loop if no sponsor is found
+        }
+        
+        if ($sponsorData) {
+            $sp_status = $sponsorData ? $sponsorData->active_status : "Pending";
         } else {
             $sp_status = "Pending";
         }
-
+        
         $pp = 0;
         if ($sp_status == "Active") {
             if ($cnt == 1) {
@@ -372,27 +379,25 @@ public function add_level_income($user_id, $bonus, $plan_id)
                 $pp = ($bonus * $level3) / 100;
             }
         }
-
-        $user_mid = $sponsor;
-        $spid = $sponsor;
-        $idate = date("Y-m-d");
-
-        if ($spid > 0 && $cnt <= 3) {
-            if ($pp > 0) {
-                Income::create([
-                    'user_id' => $spid,
-                    'user_id_fk' => $sponsorStatus->username,
-                    'amt' => $bonus,
-                    'comm' => $pp,
-                    'remarks' => 'Level Income',
-                    'level' => $cnt,
-                    'rname' => $rname,
-                    'fullname' => $fullname,
-                    'ttime' => date("Y-m-d"),
-                ]);
-            }
+        
+        $user_mid = $sponsorData->id;
+        $spid = $sponsorData->id;
+        
+        if ($spid > 0 && $cnt <= 3 && $pp > 0) {
+            Income::create([
+                'user_id' => $spid,
+                'user_id_fk' => $user->username,
+                'amt' => $bonus,
+                'comm' => $pp,
+                'remarks' => 'Level Income',
+                'level' => $cnt,
+                'rname' => $rname,
+                'fullname' => $fullname,
+                'ttime' => date("Y-m-d"),
+            ]);
         }
-
+        
+        $sponsor = $sponsorData->username; // Update $rname to get the next sponsor in the hierarchy
         $cnt++;
     }
 

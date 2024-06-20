@@ -308,8 +308,8 @@
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices" style="height:47px;">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
                                         <select data-v-1fa86597="" data-v-cfc9a7fc="" id="payment-system" name="PSys" style="color:white;width:318px;">
-                                            <option value="USDT BEP20">USDT BEP20</option>
-                                            <option value="USDT .TRC20">USDT TRC20</option>
+                                            <option value="USDTBEP20">USDT BEP20</option>
+                                            <option value="USDTTRC20">USDT TRC20</option>
                                         </select>
                                     </div>
                                 </div>
