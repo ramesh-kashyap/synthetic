@@ -143,7 +143,7 @@
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">Strategy account：</div>
-                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">6.1642 USDT</div>
+                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->available_balance(),2)}} USDT</div>
                                         </div>
                                     </li>
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
@@ -153,7 +153,7 @@
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">Capital account：</div>
-                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">0 USDT</div>
+                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->investment->sum('amount'),2)}} USDT</div>
                                         </div>
                                     </li>
                                 </ul>
