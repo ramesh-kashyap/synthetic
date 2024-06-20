@@ -178,7 +178,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/1972eff0dd4ca2c8671a653a0d6f80ff.png"><span
+                                            src="{{asset('')}}assets/static/upload/1972eff0dd4ca2c8671a653a0d6f80ff.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">BTC<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -192,7 +192,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/1300dfbf56cae29948a5162db60d7b8b.png"><span
+                                            src="{{asset('')}}assets/static/upload/1300dfbf56cae29948a5162db60d7b8b.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">BNB<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -206,7 +206,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/9e96d563eec7f2217c5479d95d98ea14.png"><span
+                                            src="{{asset('')}}assets/static/upload/9e96d563eec7f2217c5479d95d98ea14.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">ETH<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -220,7 +220,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/f64e173775c5555566d6e1b28436dd13.png"><span
+                                            src="{{asset('')}}assets/static/upload/f64e173775c5555566d6e1b28436dd13.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">XRP<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -234,7 +234,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/ccd0e9f8df029ee7b372504f9207e20e.png"><span
+                                            src="{{asset('')}}assets/static/upload/ccd0e9f8df029ee7b372504f9207e20e.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">LTC<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -248,7 +248,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/08e86e3e02f72fe838cd13b92cfa8791.png"><span
+                                            src="{{asset('')}}assets/static/upload/08e86e3e02f72fe838cd13b92cfa8791.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">DOT<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -262,7 +262,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/d0338a4fd6430124d021b4d1dc0688dd.png"><span
+                                            src="{{asset('')}}assets/static/upload/d0338a4fd6430124d021b4d1dc0688dd.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">LINK<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -276,7 +276,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240307/ff75f2401df30d56ad4e9145a1a34540.png"><span
+                                            src="{{asset('')}}assets/static/upload/ff75f2401df30d56ad4e9145a1a34540.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">DOGE<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -290,7 +290,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/1a90e27ee0ab2ef54368e6dd95a3142e.png"><span
+                                            src="{{asset('')}}assets/static/upload/1a90e27ee0ab2ef54368e6dd95a3142e.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">BCH<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
@@ -304,7 +304,7 @@
                                     <td data-v-c079ad96="" data-v-cfc9a7fc=""
                                         style="display: flex; align-items: center;"><img data-v-c079ad96=""
                                             data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240306/14187531babdf7b88ad8849de4f402b3.png"><span
+                                            src="{{asset('')}}assets/static/upload/14187531babdf7b88ad8849de4f402b3.png"><span
                                             data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName"
                                             style="display: inline-block;">FIL<br data-v-c079ad96=""
                                                 data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc=""
