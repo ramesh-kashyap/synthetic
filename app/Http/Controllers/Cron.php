@@ -304,20 +304,22 @@ if ($allResult)
                           ->count();
 
         // Check if an income record for the current day already exists
-        $todayRoiCount = Income::where('invest_id', $investment->id)
-                               ->where('remarks', 'ROI Bonus')
-                               ->whereDate('created_at', '=', now()->toDateString())
-                               ->count();
+        // $todayRoiCount = Income::where('invest_id', $investment->id)
+        //                        ->where('remarks', 'ROI Bonus')
+        //                        ->whereDate('created_at', '=', now()->toDateString())
+        //                        ->count();
 
-        if ($roiCount < $days && $todayRoiCount == 0) {
+        if ($roiCount < $days) {
             $bonus = ($investment->amount * $profit) / 100;
 
             Income::create([
                 'user_id' => $investment->user_id,
                 'amt' => $investment->amount,
                 'comm' => $bonus,
+                'level' => 0,
+                'ttime' => Date("Y-m-d"),
                 'invest_id' => $investment->id,
-                'remarks' => 'ROI Bonus'
+                'remarks' => 'Trading Bonus'
             ]);
 
             $newRoiCount = $roiCount + 1;
@@ -389,7 +391,7 @@ public function add_level_income($user_id, $bonus, $plan_id)
                 'user_id_fk' => $user->username,
                 'amt' => $bonus,
                 'comm' => $pp,
-                'remarks' => 'Level Income',
+                'remarks' => 'Team Commission',
                 'level' => $cnt,
                 'rname' => $rname,
                 'fullname' => $fullname,

@@ -687,7 +687,7 @@ if($gen_team2->isNotEmpty())
   {
     $user=Auth::user();
    
-    $my_level_team=$this->my_level_team_count($user->id);
+    $gen_team=$this->my_level_team($user->id);
 
 
     // print_r($ids);die;
@@ -696,13 +696,6 @@ if($gen_team2->isNotEmpty())
           
       $search = $request->search ? $request->search : null;
       // $notes = User::where('sponsor',$user->username);
-  $gen_team =  (array_key_exists($selected_level,$my_level_team) ? $my_level_team[$selected_level]:array());
-     end($my_level_team);        
-        $key = key($my_level_team);
-        $max_lenght=$key;
-        
-  ($selected_level)?Session::put('selected_level',$selected_level):"";
-
           // $notes = User::where('sponsor',$user->username);
         $notes = User::where(function($query) use($gen_team)
             {
@@ -733,8 +726,6 @@ if($gen_team2->isNotEmpty())
 
       $this->data['direct_team'] =$notes;
       $this->data['search'] =$search;
-     $this->data['max_lenght'] =$max_lenght;
-
       $this->data['page'] = 'user.team.list';
       return $this->dashboard_layout();
   } 

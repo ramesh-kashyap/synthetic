@@ -157,7 +157,7 @@
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">Strategy account</div>
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> {{currency()}} 0</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> {{currency()}}  {{number_format(Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}}</div>
                                 </div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">Capital account</div>

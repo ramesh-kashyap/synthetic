@@ -179,6 +179,7 @@
                                 
                                 @php
                                      $planDetail = \DB::table('plans')->where('id',$recharge->plan)->first(); 
+                                     $todayEarning = \DB::table('incomes')->where('invest_id',$recharge->id)->where('ttime',Date("Y-m-d"))->sum('comm'); 
 
                                     // dd($planDetail);
                                 @endphp
@@ -269,7 +270,7 @@
                                         </li>
                                         <li data-v-167ffb9b="" data-v-cfc9a7fc="">
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">Today earning</div>
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> {{ $recharge->todayEarning ?? 0   }} 
+                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> {{ number_format($todayEarning,2)  }} 
                                                
                                                 </div>
                                         </li>
