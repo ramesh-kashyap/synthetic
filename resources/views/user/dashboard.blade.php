@@ -230,10 +230,10 @@
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.about')}}" style="color:white;"><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.team')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/15.png">
-                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">About</a></p>
+                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">Team</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">

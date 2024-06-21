@@ -156,7 +156,7 @@
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=";">Today's earnings
                                     </div>
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
-                                        style="> 0 <span data-v-167ffb9b=""
+                                        style="> 0 <span data-v-167ffb9b="
                                             data-v-cfc9a7fc="">{{currency()}} {{number_format($todaysIncome,2)}}</span></div>
                                 </li>
                                 <li data-v-167ffb9b="" data-v-cfc9a7fc="">
@@ -300,12 +300,12 @@
                                             class="van-tabs__nav van-tabs__nav--line van-tabs__nav--complete">
                                             <div role="tab" aria-selected="true" class="van-tab van-tab--active"><span
                                                     class="van-tab__text">Strategy</span></div>
-                                            <div role="tab" class="van-tab"><span
+                                            <!-- <div role="tab" class="van-tab"><span
                                                     class="van-tab__text">Investment</span></div>
                                             <div role="tab" class="van-tab"><span class="van-tab__text">Pledge</span>
                                             </div>
                                             <div role="tab" class="van-tab"><span class="van-tab__text">Exchange</span>
-                                            </div>
+                                            </div> -->
                                             <div class="van-tabs__line"
                                                 style="transform: translateX(53.5px) translateX(-50%); transition-duration: 0.3s;">
                                             </div>
