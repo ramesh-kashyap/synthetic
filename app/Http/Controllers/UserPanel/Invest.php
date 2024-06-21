@@ -253,7 +253,7 @@ public function viewdetail($txnId)
     $amountTotal= $request->Sum;
   
   
-    if($paymentMode=="USDTBEP20")
+    if($paymentMode=="USDT BEP20")
     {
        $paymentMode= "USDT_BSC"; 
     }

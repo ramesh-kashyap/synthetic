@@ -130,20 +130,19 @@
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
                                   
-                                    <select name="paymentMode" autocomplete="off" type="text" class="uni-input-input" style="color: white;
-    width: 100%;
-    background: #131118;">
-                                        <option value="TRC20" id="usdtTrc20" data-icon="usdtTrc20" name="PSys">TRC20</option>
-                                        <option value="BEP20" data-icon="usdtBep20" id="usdtBep20" name="PSys">BEP20</option>
-                                    </select>
+                                        <select  data-v-7bab1ac4=""
+                                        data-v-cfc9a7fc="" name="paymentMode" 
+                                                autocomplete="off" type="text" class="uni-input-input" style="color:white;width: 100%;">
+                                                <option value="TRC20">TRC20</option>
+                                                <option value="BEP20">BEP20</option>
+                                            </select>
                                     </div>
                             </div>
                         </div>
                        
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex" style="
-    margin-bottom: 13px;>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1" >
                                     <input data-v-cfc9a7fc="" data-v-7bab1ac4=""  type="text" value="{{Auth::user()->usdtTrc20}}" placeholder="Please enter the withdrawal address" name="walletAddress" id="walletAddress" >
                                 </div>
