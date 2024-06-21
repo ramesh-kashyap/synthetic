@@ -119,10 +119,10 @@
                         <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo"><img data-v-a34da882=""
                                 data-v-cfc9a7fc=""
                                 src="{{asset('')}}assets/static/img/logo1.png">
-                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s">WELCOME SYNTHETIC VENTURES</div>
+                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s">WELCOME TO SYNTHETIC VENTURES</div>
                         </div>
                         <form action="{{route('login')}}" method="POST">
-    {{ csrf_field() }}
+                                {{ csrf_field() }}
                         <ul data-v-a34da882="" data-v-cfc9a7fc="" class="tab">
                             <li data-v-a34da882="" data-v-cfc9a7fc="" class="email-tab"> Email </li>
                             <li data-v-a34da882="" data-v-cfc9a7fc="" class="username-tab on"> Username </li>
@@ -157,8 +157,7 @@
                                             class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
                                             <i class="van-icon van-icon-success"
                                                 style="border-color: rgb(113, 219, 129); background-color: rgb(113, 219, 129);">
-                                                <!----></i></div><span class="van-checkbox__label">Remember account
-                                            password </span>
+                                                <!----></i></div><span class="van-checkbox__label">Remember account password </span>
                                     </div>
                                 </div>
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="kfBox"> Forgot password? </div>
