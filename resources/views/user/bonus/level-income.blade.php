@@ -125,7 +125,6 @@
     cursor: default;
 }
 
-
 a{
     color:#fff!important;
 }
@@ -172,9 +171,9 @@ a{
                 <div data-v-397da544="" data-v-65a522d0="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <div data-v-397da544="" class="back"><a href={{ route('user.wallet') }}><i data-v-397da544="" class="van-icon van-icon-arrow-left">
-                            <!----></i></a></div>
+                                <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Team Bonus</div>
+                        <div data-v-397da544="" class="name tac"> Team Commission</div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -199,7 +198,8 @@ a{
                             <div data-v-65a522d0="" data-v-cfc9a7fc="" class="itemBox">
                                 <div data-v-65a522d0="" data-v-cfc9a7fc="" class="reco_list">
                                     <div data-v-65a522d0="" data-v-cfc9a7fc="" class="top">
-
+                                        <div data-v-65a522d0="" data-v-cfc9a7fc="" class="leift" >
+                                        </div>
                                         <div data-v-65a522d0="" data-v-cfc9a7fc="" class="right" id="typeElement">
                                             type
                                             <img data-v-65a522d0="" data-v-cfc9a7fc=""
@@ -214,7 +214,12 @@ a{
                                             <div class="van-pull-refresh__head" style="height: 100px;"></div>
                                             <div data-v-65a522d0="" role="feed" class="van-list">
 
-                                                @foreach($incomes as $income)
+                                                <?php if(is_array($level_income) || is_object($level_income)){ ?>
+
+                                                    <?php
+                                                    date_default_timezone_set('UTC');
+                                                    $cnt = 0; ?>
+                                                    @foreach ($level_income as $value)
                                                 <div data-v-65a522d0="" class="it">
                                                     <div data-v-65a522d0="" class="jbox_07">
                                                         <div data-v-65a522d0="" class="jt"></div>
@@ -222,20 +227,28 @@ a{
                                                             <div data-v-65a522d0="" class="b">
                                                                 <div data-v-65a522d0="" class="db">
                                                                     <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">Team Bonus
+                                                                        <div data-v-65a522d0="" class="n">   {{ $value->remarks }}
                                                                         </div>
                                                                         <div data-v-65a522d0="" class="time">
-                                                                            {{ $income->updated_at }}</div>
+                                                                            {{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</div>
                                                                     </div>
                                                                     <div data-v-65a522d0="" class="str"
-                                                                        style="display: flex;">
+                                                                        style="display: inline-block;">
                                                                         <div data-v-65a522d0="" class="green">
-                                                                            +{{ $income->comm }}
+                                                                            +{{ $value->comm }}
                                                                         </div>
+                                                                        <div data-v-65a522d0="" class="time"
+                                                                            style="">
+                                                                            Level {{$value->level}}  </div>
+                                                                       
+                                                                    </div>
+                                                                    <div data-v-65a522d0="" class="str"
+                                                                        style="display: inline-block;">
+                                                                      
                                                                         <div data-v-65a522d0="" class="green"
-                                                                            style="margin-left: 0.04rem;height: 20px;">
+                                                                            style="">
                                                                             USDT </div>
-                                                                        
+                                                                       
                                                                     </div>
                                                                     <!---->
                                                                 </div>
@@ -246,9 +259,12 @@ a{
                                                 </div>
                                                 @endforeach
 
+                                                <?php }?>
+
+
                                                 <div class="van-list__finished-text">No more</div>
                                                 <div class="pagination-links">
-                                                    {{ $incomes->withQueryString()->links() }}
+                                                    {{ $level_income->withQueryString()->links() }}
                                                 </div>
                                                 <div class="van-list__placeholder"></div>
                                             </div>
@@ -274,16 +290,16 @@ a{
                                                 <div data-v-4c14e1cc="" class="item "><a href={{ route('user.recharge') }}> Deposits </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"><a href={{ route('user.roi-bonus') }}> Trading Bonus </a></div>
+                                                <div data-v-4c14e1cc="" class="item"><a href={{ route('user.trading-bonus') }}> Trading Bonus </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item"> <a href={{ route('user.level-income') }}>Team Commission </a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item active"><a href={{ route('user.Withdraw-History') }}> Withdrawals</a> </div>
+                                                <div data-v-4c14e1cc="" class="item active"><a href={{ route('user.Withdraw-History') }} class="item active"> Withdrawals</a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Team Turnover </div>
+                                                <div data-v-4c14e1cc="" class="item"> <a href="{{route('user.teamturnover')}}"> Team Turnover </a></div>
                                             </div>
 
                                         </div>

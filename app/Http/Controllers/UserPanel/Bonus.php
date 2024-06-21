@@ -41,7 +41,7 @@ class Bonus extends Controller
                 ->appends([
                     'limit' => $limit
                 ]);
-        $this->data['incomes'] =$notes;
+        $this->data['level_income'] =$notes;
         $this->data['search'] =$search;
         $this->data['page'] = 'user.bonus.level-income';
         return $this->dashboard_layout();
@@ -56,7 +56,7 @@ class Bonus extends Controller
           $limit = $request->limit ? $request->limit : paginationLimit();
             $status = $request->status ? $request->status : null;
             $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks','Sponsorship Bonus')->orderBy('id', 'DESC');
+            $notes = Income::where('user_id',$user->id)->where('remarks','Trading Bonus')->orderBy('id', 'DESC');
            if($search <> null && $request->reset!="Reset"){
             $notes = $notes->where(function($q) use($search){
               $q->Where('rname', 'LIKE', '%' . $search . '%')
@@ -73,7 +73,7 @@ class Bonus extends Controller
                 ]);
         $this->data['level_income'] =$notes;
         $this->data['search'] =$search;
-        $this->data['page'] = 'user.bonus.cashback-income';
+        $this->data['page'] = 'user.bonus.daily-incentive';
         return $this->dashboard_layout();
 
 
@@ -149,7 +149,7 @@ class Bonus extends Controller
           $limit = $request->limit ? $request->limit : paginationLimit();
             $status = $request->status ? $request->status : null;
             $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks','Leadership Bonus')->orderBy('id', 'DESC');
+            $notes = Income::where('user_id',$user->id)->where('remarks','Team Turnover')->orderBy('id', 'DESC');
            if($search <> null && $request->reset!="Reset"){
             $notes = $notes->where(function($q) use($search){
               $q->Where('rname', 'LIKE', '%' . $search . '%')
@@ -166,7 +166,7 @@ class Bonus extends Controller
                 ]);
         $this->data['level_income'] =$notes;
         $this->data['search'] =$search;
-        $this->data['page'] = 'user.bonus.daily-incentive';
+        $this->data['page'] = 'user.bonus.cashback-income';
         return $this->dashboard_layout();
 
 
