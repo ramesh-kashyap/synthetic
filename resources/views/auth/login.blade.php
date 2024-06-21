@@ -166,7 +166,7 @@
                                     data-v-cfc9a7fc="" type="submit" class="btn2">@lang('Login') </button>
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="wrap bet">
                                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="wr"> @lang('No account') <span
-                                            data-v-a34da882="" data-v-cfc9a7fc=""><a href="{{route('register')}}" style="color:#ebd100;">@land('Register now')</a></span></div>
+                                            data-v-a34da882="" data-v-cfc9a7fc=""><a href="{{route('register')}}" style="color:#ebd100;">@lang('Register now')</a></span></div>
                                 </div>
                             </div>
                             </form>
