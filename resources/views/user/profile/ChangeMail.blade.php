@@ -197,7 +197,12 @@
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-04a90ad1.aa2f317d.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-04a90ad1.28c21b1a.1717187934571.chunk.js"></script>
 </head>
-
+<style>
+   input {
+    text-transform: none;
+    width: 82% !important;
+}
+</style>
 <body class="main_en">
     <div id="app" class="applang">
         <div data-v-cfc9a7fc="" data-v-9d2ee7be="" class="page">
@@ -241,8 +246,7 @@
                                     <div class="input-container">
                                         <input data-v-9d2ee7be="" data-v-cfc9a7fc="" type="" name="first_code"
                                             placeholder="Enter verification code" maxlength="">
-                                        <button class="code-btn first-code-send"
-                                            style="background:#131118;">Get Code</button>
+                                        <span class="code-btn first-code-send">Get Code</span>
                                     </div>
                                 </div>
                             </div>
@@ -261,8 +265,8 @@
                                     <div class="input-container">
                                         <input data-v-9d2ee7be="" data-v-cfc9a7fc="" type="" name="second_code"
                                             placeholder="Enter verification code" maxlength="">
-                                        <button class="code-btn sencond-code-send"
-                                            style="background:#131118;">Get Code</button>
+                                   
+                                            <span class="code-btn sencond-code-send">Get Code</span>
                                     </div>
                                 </div>
                             </div>
@@ -287,7 +291,7 @@
         <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
                 src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
     </div>
-   
+   @include('partials.notify')
     <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
 
 
@@ -295,9 +299,8 @@
 
         $('.first-code-send').click(function(e) {
             var ths = $(this);
+            $(ths).text('waiting');
  
-          
-            // alert(sponsor); 
             $.ajax({
                 type: "POST"
                 , url: "{{ route('user.send_code') }}"
@@ -308,16 +311,16 @@
                 , success: function(response) {
                     // alert(response);      
                     if (response) {
-                        // alert("hh");
+                        $(ths).text('Get Code');
                         iziToast.success({
                         message: 'Email send Successfully',
-                        position: "topRight"
+                        position: "center"
                     });
                     } else {
                         // alert("hi");
                         iziToast.error({
                         message: 'Error!',
-                        position: "topRight"
+                        position: "center"
                     });
                     }
                 }
@@ -326,13 +329,15 @@
 
         $('.sencond-code-send').click(function(e) {
             var ths = $(this);
+            $(ths).text('waiting');
             var emailId = $('#emailId').val();
        
             if (!emailId) 
             {
+                $(ths).text('Get Code');
                 iziToast.error({
                         message: 'Invalid Email!',
-                        position: "topRight"
+                        position: "center"
                     });
                     return false;
             }
@@ -346,17 +351,19 @@
                 , }
                 , success: function(response) {
                     // alert(response);      
+
+                    $(ths).text('Get Code');
                     if (response) {
-                        // alert("hh");
+                     
                         iziToast.success({
                         message: 'Email send Successfully',
-                        position: "topRight"
+                        position: "center"
                     });
                     } else {
                         // alert("hi");
                         iziToast.error({
                         message: 'Error!',
-                        position: "topRight"
+                        position: "center"
                     });
                     }
                 }

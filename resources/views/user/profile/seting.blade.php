@@ -170,7 +170,7 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAPFBMVEUAAACVmp+Sn5+Ump+VmJ6UmZ6UmJ6Ump+Xl5+Pl5+Ump+Tmp+TmZ+Ump+VmZ+TmZ+Tmp6Tmp6Vmp+Ump/GDkY9AAAAE3RSTlMA3xDvYIBwzyAgoO9QwLCA0JAwb2IvQAAAAQ5JREFUSMftlNFugzAMRW/sBJKslG38/78OWyCXWipGlfbU84JafBIn1wIfYlAZlxBjhtDSEiY1AFIfNwh5uUSB9N8JAWpfSyeIVhGCpFYFBHlboJLWy+4tKgxfi8JDTBjs7sTIq26k7IT2UMDk8mQndF2aaGCNB/wUsRPGrRUUfY3bYQt2LemTLB7H+0KS1vfbGgNC2Q6tzx4QiB+OWLEnYSm44O4m3CGkpxR8S0YBDkkkJ1i9DYclwb6lpv/PFfiddeV2cugu+1YoVYyfE0EGI2Mji/1asJwt69cCH9bk8x1uiTN29l+Of/xqEEI0FSaZnYYA1HXwy3KJDLr2uQdQo4ZNT/4OVfM0Ez6E+ANrlT5UQkWl9AAAAABJRU5ErkJggg==">
                                 </div>
-                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.tpassword')}}" style="color:#fff;">create Tranction Password</a></div><i
+                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.tpassword')}}" style="color:#fff;">Change Tranction Password</a></div><i
                                     data-v-0e1dae04="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
     </i>
                             
@@ -179,7 +179,7 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAASFBMVEUAAACUmp+Tm5+Vmp+TmZ6Ul5+UmZ+Pn5+UmZ+Tl52Ump+UmZ2Tmp+Ump+SmZ6UlZ+VmJ6Tmp6Ump+UmZ+Vmp+fn5+Vmp+Ump+ZwjL7AAAAF3RSTlMAv0DfgCCgEI9A73DvsGAwYFDPcDAQz3vS0vQAAAE5SURBVEjH7VVbbsQgDAxvCIXddHfL/W/aOKkKjjFIlfpTdb4S22PDYMPyNxFiUm+lFCX85qbRTkNshQ3jcF8IhOHjI2Sn0Fz8V/rV5udr/31uVp0W1S3ixOmMr8YoBc84XOvjar4rhuG5TCYdnqvAGawffUE0+Pwljar5KSwwAjWxgrt3SIcKILkpbuDPqADO0JVENP+wg/uwZ/AuApwACSKnpJFudkzIaE2JrIjAoEWAardljLXVff3u/dyRVJxN3yYd9f7WzIikBNAOwUD8kCAwIRaOUKUg+j/OD0qoH5gg/wm/QdgIQcE8aK07k3qYdpdHJ61LhcWE0G0NByWYe1cQAsAo9jFwlhIAUu+IsjudEXwKEeYwBY3xHB4JOEVIZXrViYIwLZBpvBkSIvP6snAJZU9y+Sk+AbtVNBMW8XUdAAAAAElFTkSuQmCC">
                                 </div>
-                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.fundpass')}}" style="color:#fff;">Reset Fund Password</a></div><i
+                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.ChangePass')}}" style="color:#fff;">Change Login Password</a></div><i
                                     data-v-0e1dae04="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
                                     </i>
                             </li>

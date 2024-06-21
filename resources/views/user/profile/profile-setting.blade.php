@@ -164,7 +164,7 @@
                         <div data-v-636522ac="" data-v-cfc9a7fc="" class="incomeBox">
                             <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Invitation Code：</div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="right"> 4KLYJQ<img data-v-636522ac=""
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="right" > <span id="clipboardright">{{Auth::user()->username}}</span><img data-v-636522ac="" id="copy-button" 
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAn2DfgCAQ78+/sJCPUIWfNBMAAACISURBVCjPY6AekHv37vExJD7jOyB4iaLAUHDxO4VcJAUCDKzvBOwcYAoeAwUY3gkASagCU5gAzAQnFAEWoA0wAYSdDigCSkpKDCgCQIIOAgEgihUuwPTOShAIxN8pwPwy7x0YvGCACWTbgfjP3aACCMAKF1AUFISaAhUAaoCaAgX7gByIKdQBAOGIZAwmCV4kAAAAAElFTkSuQmCC">
                                 </div>
@@ -197,8 +197,13 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAP1BMVEUAAACUmp+UmZ+TlZ+Ump+Xl5+Pl5+Pn5+Ump+Ump+WmZ6Tmp+UmJ6Vmp6VmZ+Tmp6VmZ+fn5+Vmp+UmZ+Ump9XDmKGAAAAFHRSTlMA34Aw7yAgEKDPX+9wkK+QUBDPjzBvt/oAAADsSURBVEjH7ZRJDoMwDEW/M0OhY+5/1qqJaqNmIF21C94GGf2HLDsEB/+Ev1DsQsFhgz7FXUiDcRQHMJ6FEIdQLEypntFkzk1xHTMaDXTMfAqmYbhTQ4jkqnmKNUGJUcurQkB6NflipTmPUkBIBgSZ4AU1AefXM4DhFZ1RF3z62gNC7vN+qwrS70eeLFoCbDKWIt8UYM3mkMySbwrQhleuZfsdAdcUc+8DcUVXkEaUSvkF+wJU+Qf0BTEUBgQxzIJRAXZe1+WGMUH4teC/EUhGWCKDmzbVEIEFb0byZMFo6mfLW8uGHYVWi4M/4gk7/jGmJvtjTAAAAABJRU5ErkJggg==">
                                 </div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n"><a href="{{route('user.ChangeMail')}}" style="color:white;"> Change Email</a></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">
+                                    <a href="{{route('user.ChangeMail')}}" style="color:white;"> Change Email</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">
+                                    <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><i data-v-636522ac=""
+                                        data-v-cfc9a7fc="" class="van-icon van-icon-arrow" style="color:white;">
+                                        <!----></i></div>
+                                    </a>
                                 </div>
     
                                 <!---->
@@ -222,7 +227,9 @@
                                 </div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Change Password</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></a></div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><i data-v-636522ac=""
+                                    data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
+                                    <!----></i></div>
                                 <!---->
                             </li>
                         </ul>
@@ -231,6 +238,28 @@
             </div>
             <!---->
         </div>
+
+     @include('partials.notify')
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        $('#copy-button').click(function() {
+            var textToCopy = $('#clipboardright').text();
+            var tempTextarea = $('<textarea>');
+            $('body').append(tempTextarea);
+            tempTextarea.val(textToCopy).select();
+            document.execCommand('copy');
+            tempTextarea.remove();
+            iziToast.success({
+                    message: 'Copied Successfully',
+                    position: "center"
+                });
+
+        });
+        });
+    </script>
+
         <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
             <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAMAAAA0X5qLAAAAh1BMVEUAAAAAv44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av46sPT54AAAALHRSTlMA+wXZ+J87JB7ux4lDNRQPCvLq39PNp5BpWRmxgnAvvrnlw5RhT0sqwHRxeP/zXbkAAAGcSURBVDjLjZTXcqtAEAVnyUGIJBAKKFqS7dv//30XsHFJxrD0C0XRxc45TCEDvFsdrvfhxnGWMk1S7c70nI+bZFxdXFC8YG5GVNemxTdte7+3yxUdq4MMMaocsMza6CeSqLRo2A3dffvguPh1WEiDcuWFeN24mSNDdjS85Exs4OLJX7wpyOWJT8A25G+iFMyn2za1jOIAV+kxIU9knDUQ9d8C/EimyH9OXgawNiblrepfXSn8WKax+4wnCEWDC6ptNk5RC9GxgqqNZ1EstXL1tSP/oBQtS1DN5Qp7vbz1sdwu30b0pNAkPIOrd4131E2kAEf0rDqtaJvTY3YDvM+aOS5IH91KrWdUl2LGIhsI9PIDLm2DFmmslT++FyiDu7a5ANV1FoKpkw/gfwUFddDIO7Cl4wqBMf1iRRZJxxb86d5OYCf9fyS/TaYrFcqVeYQK6nmqEQLFPNc7AuZ2lrtYAcEs936kdZdjE97rSAxDEvG8j8wC/E8Zo1Yo/CAv0oyOYKKzN55QWTm9B9WpyGiwyMvFnLbih+M5xjDWf6S2MlzIf04ZAAAAAElFTkSuQmCC"
