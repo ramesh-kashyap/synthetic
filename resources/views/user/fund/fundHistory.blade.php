@@ -198,7 +198,8 @@ a{
                             <div data-v-65a522d0="" data-v-cfc9a7fc="" class="itemBox">
                                 <div data-v-65a522d0="" data-v-cfc9a7fc="" class="reco_list">
                                     <div data-v-65a522d0="" data-v-cfc9a7fc="" class="top">
-
+                                        <div data-v-65a522d0="" data-v-cfc9a7fc="" class="leift" >
+                                        </div>
                                         <div data-v-65a522d0="" data-v-cfc9a7fc="" class="right" id="typeElement">
                                             type
                                             <img data-v-65a522d0="" data-v-cfc9a7fc=""
@@ -232,13 +233,9 @@ a{
                                                                             +{{ $deposit->amount }}
                                                                         </div>
                                                                         <div data-v-65a522d0="" class="green"
-                                                                            style="margin-left: 0.04rem;height: 20px;margin-right: -49px;">
+                                                                            style="">
                                                                             USDT </div>
-                                                                        <div data-v-65a522d0="" class="time" style="
-                                                                        margin-top: 22px;
-                                                                    ">
-                                                                            {{ $deposit->status }}
-                                                                        </div>
+                                                                       
                                                                     </div>
                                                                     <!---->
                                                                 </div>
@@ -277,7 +274,7 @@ a{
                                                 <div data-v-4c14e1cc="" class="item "><a href={{ route('user.recharge') }}> Deposits </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"><a href={{ route('user.roi-bonus') }}> Trading Bonus </a></div>
+                                                <div data-v-4c14e1cc="" class="item"><a href={{ route('user.trading-bonus') }}> Trading Bonus </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
                                                 <div data-v-4c14e1cc="" class="item"> <a href={{ route('user.level-income') }}>Team Commission </a> </div>
@@ -286,7 +283,7 @@ a{
                                                 <div data-v-4c14e1cc="" class="item active"><a href={{ route('user.Withdraw-History') }} class="item active"> Withdrawals</a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Team Turnover </div>
+                                                <div data-v-4c14e1cc="" class="item"> <a href="{{route('user.teamturnover')}}"> Team Turnover </a></div>
                                             </div>
 
                                         </div>

@@ -151,8 +151,10 @@
                                         data-v-cfc9a7fc=""><img data-v-6df100a6="" data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAD1BMVEUAAAAE3AAD3AAE2wAE3ABuQteJAAAABHRSTlMAgFBAnsFh3gAAADNJREFUKM9jGAXogEkBQ0jEEV2E0cVFAF2Ri4sjhiJ0ZSogIWcUIRNMISZBIDBgGAUoAABJbwaD+etRRAAAAABJRU5ErkJggg==">
                                         0% </span><span data-v-6df100a6="" data-v-cfc9a7fc="">(+$0)</span></div>
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right"><span data-v-6df100a6=""
-                                        data-v-cfc9a7fc="">Pending: 0 U</span></div>
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right">
+                                    {{-- <span data-v-6df100a6=""
+                                        data-v-cfc9a7fc="">Pending: 0 U</span> --}}
+                                    </div>
                             </div>
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
@@ -187,11 +189,7 @@
                             <div data-v-ac2db8a0="" class="total-income">
                                 <div data-v-ac2db8a0="" class="title_box">
                                     <div data-v-ac2db8a0="" class="title">Recent Asset</div>
-                                    <div data-v-ac2db8a0="" class="choose_day">
-                                        <div data-v-ac2db8a0="">Last 7 days</div><i data-v-ac2db8a0=""
-                                            class="arrow_down van-icon van-icon-arrow-down">
-                                            <!----></i>
-                                    </div>
+                                   
                                 </div>
 
                                 <style>
@@ -222,6 +220,13 @@
                                 </style>
                                 <div data-v-ac2db8a0=""  data-v-cfc9a7fc="" class="info list">
                                     <!---->
+                                    <?php if(is_array($level_income) || is_object($level_income)){ ?>
+
+                                        <?php
+                                        date_default_timezone_set('UTC');
+                                        $cnt = 0; ?>
+                                        @foreach ($level_income as $value)
+
                                     <div data-v-65a522d0="" class="it">
                                         <div data-v-65a522d0="" class="jbox_07">
                                             <div data-v-65a522d0="" class="jt"></div>
@@ -229,14 +234,14 @@
                                                 <div data-v-65a522d0="" class="b">
                                                     <div data-v-65a522d0="" class="db">
                                                         <div data-v-65a522d0="" class="flexs">
-                                                            <div data-v-65a522d0="" class="n">Deposits
+                                                            <div data-v-65a522d0="" class="n">{{$value->remarks}}
                                                             </div>
-                                                            <div data-v-65a522d0="" class="time">18/09/2024</div>
+                                                            <div data-v-65a522d0="" class="time"> {{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</div>
                                                         </div>
                                                         <div data-v-65a522d0="" class="str"
                                                             style="display: flex;">
                                                             <div data-v-65a522d0="" class="green">
-                                                                +09
+                                                                +{{ $value->comm }}
                                                             </div>
                                                             <div data-v-65a522d0="" class="green"
                                                                 style="margin-left: 0.04rem;height: 20px;margin-right: -49px;">
@@ -244,7 +249,7 @@
                                                             <div data-v-65a522d0="" class="time" style="
                                                             margin-top: 22px;
                                                         ">
-                                                              Pending
+                                                              Received
                                                             </div>
                                                         </div>
                                                         <!---->
@@ -254,6 +259,11 @@
                                             <div data-v-65a522d0="" class="jb"></div>
                                         </div>
                                     </div>
+
+                                    @endforeach
+
+                                    <?php }?>
+
                                 
                                 </div>
                             </div>
