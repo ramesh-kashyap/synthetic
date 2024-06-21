@@ -119,7 +119,7 @@
                         <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo"><img data-v-a34da882=""
                                 data-v-cfc9a7fc=""
                                 src="{{asset('')}}assets/static/img/logo1.png">
-                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s">WELCOME TO SYNTHETIC VENTURES</div>
+                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s">@lang('WELCOME TO SYNTHETIC VENTURES')</div>
                         </div>
                         <form action="{{route('login')}}" method="POST">
                                 {{ csrf_field() }}
