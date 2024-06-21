@@ -149,9 +149,11 @@
                                     data-v-cfc9a7fc="">USDT</span></div>
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="">
                                 <li data-v-167ffb9b="" data-v-cfc9a7fc="">
-                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=";">Today's earnings</div>
-                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style="> 0 <span data-v-167ffb9b=""
-                                            data-v-cfc9a7fc="">U</span></div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=";">Today's earnings
+                                    </div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
+                                        style="> 0 <span data-v-167ffb9b="
+                                            data-v-cfc9a7fc="">{{currency()}} {{number_format($todaysIncome,2)}}</span></div>
                                 </li>
                                 <li data-v-167ffb9b="" data-v-cfc9a7fc="">
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=""> Total revenue</div>
