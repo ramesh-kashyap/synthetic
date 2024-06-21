@@ -197,9 +197,10 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAP1BMVEUAAACUmp+UmZ+TlZ+Ump+Xl5+Pl5+Pn5+Ump+Ump+WmZ6Tmp+UmJ6Vmp6VmZ+Tmp6VmZ+fn5+Vmp+UmZ+Ump9XDmKGAAAAFHRSTlMA34Aw7yAgEKDPX+9wkK+QUBDPjzBvt/oAAADsSURBVEjH7ZRJDoMwDEW/M0OhY+5/1qqJaqNmIF21C94GGf2HLDsEB/+Ev1DsQsFhgz7FXUiDcRQHMJ6FEIdQLEypntFkzk1xHTMaDXTMfAqmYbhTQ4jkqnmKNUGJUcurQkB6NflipTmPUkBIBgSZ4AU1AefXM4DhFZ1RF3z62gNC7vN+qwrS70eeLFoCbDKWIt8UYM3mkMySbwrQhleuZfsdAdcUc+8DcUVXkEaUSvkF+wJU+Qf0BTEUBgQxzIJRAXZe1+WGMUH4teC/EUhGWCKDmzbVEIEFb0byZMFo6mfLW8uGHYVWi4M/4gk7/jGmJvtjTAAAAABJRU5ErkJggg==">
                                 </div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Email</div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">jazm948@gmail.com
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n"><a href="{{route('user.ChangeMail')}}" style="color:white;"> Change Email</a></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">
                                 </div>
+    
                                 <!---->
                                 <!---->
                             </li>
@@ -221,7 +222,7 @@
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAASFBMVEUAAACUmJ6UmZ6Ump+Tl56Xl5+Qn5+Vmp+Ump+UmZ+Ump+Ump+Pl5+UmJ2Ump+Ul5+Tm5+Tmp+UmZ6TmZ+UmZ+SmZ2TmZyUmp9rdcsxAAAAF3RSTlMAYIC/QCAQ3+/foJAgcM8wQO+wUHBwUBLyPPgAAAFGSURBVEjH5VTLdsUgCFRRY8zDvFr//08bhNZ7zj1Rum1ZJCwYZ4BR9bfCxgG0kofOGEZcf2aKU1g/7wwYvQwwYPGFn0newKUM/qyUICrlB6Eoiyc7TISTMoUAY0LE3AXAXfWJCYkCEWB72cfyC0AKdx56gFhOrQsce4DlR/iakaDrQf+9sLnsWrAIYApL/35YpkgoSGQ/IE/4IL0Tjo1qpBRsVKI4+uXVqBdtWto38Ca0BDFRGy68WFzvY4MNqNJmjDjjHovOR7e7gdRoeg00TaI1ZxcIcQaCYDuUpVbjeSEuipBZYef5MwwJSQ+ssINwBQLpziJhpxYCUMG2Ob6FRPLAkUJRYN+Nc7SmW69RRayP013f2lzKpNrWxSNZl6e2XcuJPFX4sFbHPfcN6U2uIXlJ6vhZHeoRQ7h/CWQ5AI5pU/88vgBpTCU42BskqQAAAABJRU5ErkJggg==">
                                 </div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Phone number</div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">728367262</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">{{Auth::user()->phone}}</div>
                                 <!---->
                                 <!---->
                             </li>

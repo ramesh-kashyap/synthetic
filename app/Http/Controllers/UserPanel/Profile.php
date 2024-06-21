@@ -376,11 +376,16 @@ public function BankDetail()
                 'newEmail' => 'required|email|unique:users,email,' . $request->newEmail
 
             ]);
+
+
+
             if($validation->fails()) {
                 Log::info($validation->getMessageBag()->first());
 
                 return Redirect::back()->withErrors($validation->getMessageBag()->first())->withInput();
             }
+
+
 
             $code = $request->first_code;
         
