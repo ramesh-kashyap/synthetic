@@ -316,8 +316,10 @@ if ($allResult)
                 'user_id' => $investment->user_id,
                 'amt' => $investment->amount,
                 'comm' => $bonus,
+                'level' => 0,
+                'ttime' => Date("Y-m-d"),
                 'invest_id' => $investment->id,
-                'remarks' => 'ROI Bonus'
+                'remarks' => 'Trading Bonus'
             ]);
 
             $newRoiCount = $roiCount + 1;
@@ -389,7 +391,7 @@ public function add_level_income($user_id, $bonus, $plan_id)
                 'user_id_fk' => $user->username,
                 'amt' => $bonus,
                 'comm' => $pp,
-                'remarks' => 'Level Income',
+                'remarks' => 'Team Commission',
                 'level' => $cnt,
                 'rname' => $rname,
                 'fullname' => $fullname,
@@ -397,7 +399,7 @@ public function add_level_income($user_id, $bonus, $plan_id)
             ]);
         }
         
-        $sponsor = $sponsorData->username; // Update $rname to get the next sponsor in the hierarchy
+        $sponsor = $sponsorData->sponsor; // Update $rname to get the next sponsor in the hierarchy
         $cnt++;
     }
 
