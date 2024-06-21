@@ -168,14 +168,14 @@
                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="container">
                             <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="item">
                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('Name')</div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('Name')</div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
                                             data-v-cfc9a7fc="" type="text"  name="name" placeholder="Name"></div>
                                 </div>
                             </div> 
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('Mobile phone')</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('Mobile phone')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
 
                                         <input type="hidden" id="country-name" name="country" value="">
@@ -190,7 +190,7 @@
                                     </div>
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('Email')</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('Email')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="email" id="emailId"
@@ -203,7 +203,7 @@
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="code" id="code"
                                                 type="text" placeholder="Please enter the verification code"></div>
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="code-btn verify-button">
-                                           @('Send')</div>
+                                           @lang('Get Code')</div>
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="str"
                                             style="display: none;">
                                             <div data-v-607a0cfb="" class="van-count-down" data-v-cfc9a7fc=""><span
@@ -212,7 +212,7 @@
                                     </div>
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('invitation code')</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('invitation code')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="sponsor" id="sponsor"
@@ -220,7 +220,7 @@
                                     </div>
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n"> @land('password')  </div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n"> @lang('password')  </div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input id="passwordInput"
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="password"
@@ -233,7 +233,7 @@
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="doc">
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('Confirm password')</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('Confirm password')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="password_confirmation" id="passwordInput2"
@@ -258,13 +258,13 @@
                                             </div>
                                         </div><span data-v-607a0cfb="" data-v-cfc9a7fc=""
                                             style="margin-left: 0.14rem;">I
-                                           @land('have read the privacy agreement')</span>
+                                           @lang('have read the privacy agreement')</span>
                                     </div>
                                 </div><button data-v-607a0cfb="" data-v-cfc9a7fc="" type="submit" class="btn2">
-                                   @land('Registration') </button>
-                                <p data-v-607a0cfb="" data-v-cfc9a7fc=""> @land('Already have an account') <span
+                                   @lang('Registration') </button>
+                                <p data-v-607a0cfb="" data-v-cfc9a7fc=""> @lang('Already have an account') <span
                                         data-v-607a0cfb="" data-v-cfc9a7fc=""><a href="{{ route('login') }}"
-                                            style="color:#ebd100;">@land('Log in now')</a></span></p>
+                                            style="color:#ebd100;">@lang('Log in now')</a></span></p>
                                 <!---->
             </form>
         </div>
