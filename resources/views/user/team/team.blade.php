@@ -208,7 +208,7 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="container">
                             <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="totalBox">
                                 <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Total Earning</div>
-                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0 USDT </div>
+                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> {{number_format($totalLevelIncome,2)}} USDT </div>
                             </div>
                             <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="sjfxBox">
                                 <!-- <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="cname">
@@ -283,14 +283,14 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                                 <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-2">
                                     <li data-v-757d6f7f="" data-v-cfc9a7fc="">
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Total member</div>
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0<a href="{{route('user.list')}}" style="color:#fff;"><img data-v-757d6f7f=""
+                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> {{$totalTeam}}<a href="{{route('user.list')}}" style="color:#fff;"><img data-v-757d6f7f=""
                                                 data-v-cfc9a7fc=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAM1BMVEWl/30AAACn/32k/32m/36m/36d/3al/3+n/4Cn/3ym/32m/36n/4CZ/4Cl/32q/46m/325gAPAAAAAEHRSTlMzAJks5U0GMCAc8lkTCrMJhzE5swAAALVJREFUOMuNk1EOhCAMBR8LtEVx1/ufdvtBUlsNOL8zShMK0oJr0CUzwFn6U0CNYQjFoCHQXEAZNzJZcAwfimME9n0saATmY6ESYb76qX5SJMKVcm47DNJAQuCKpgEc1Rec0DEtOgTTQpAxLTLGFe0f43tawTZ9YIPxGBTA/aOGI0od+nFI86pl6lX34Pft6lUnnnkkhG0s3sv9up0HrRZmtXLLpV2s/W/9cN4/PYUEBjd6/fz/ZucIv4aUi7oAAAAASUVORK5CYII="></a>
                                         </div>
                                     </li>
                                     <li data-v-757d6f7f="" data-v-cfc9a7fc="">
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Total vaild</div>
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0<a href="{{route('user.list')}}" style="color:#fff;"><img data-v-757d6f7f=""
+                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> {{$ActivetotalTeam}}<a href="{{route('user.list')}}" style="color:#fff;"><img data-v-757d6f7f=""
                                                 data-v-cfc9a7fc=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAM1BMVEWl/30AAACn/32k/32m/36m/36d/3al/3+n/4Cn/3ym/32m/36n/4CZ/4Cl/32q/46m/325gAPAAAAAEHRSTlMzAJks5U0GMCAc8lkTCrMJhzE5swAAALVJREFUOMuNk1EOhCAMBR8LtEVx1/ufdvtBUlsNOL8zShMK0oJr0CUzwFn6U0CNYQjFoCHQXEAZNzJZcAwfimME9n0saATmY6ESYb76qX5SJMKVcm47DNJAQuCKpgEc1Rec0DEtOgTTQpAxLTLGFe0f43tawTZ9YIPxGBTA/aOGI0od+nFI86pl6lX34Pft6lUnnnkkhG0s3sv9up0HrRZmtXLLpV2s/W/9cN4/PYUEBjd6/fz/ZucIv4aUi7oAAAAASUVORK5CYII="></a>
                                         </div>
@@ -308,21 +308,21 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                                     <!---->
                                     <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">0</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$active_gen_team1total}}/{{$gen_team1total}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Number of users</div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">0</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Recharge,1)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative recharge
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> 0 </div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> {{number_format($gen_team1Withdraw,2)}} </div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative withdrawal
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">0</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> {{number_format($gen_team1Earning,2)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative earnings
                                             </div>
                                         </li>
@@ -337,21 +337,21 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                                     <!---->
                                     <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">0</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$active_gen_team2total}}/{{$gen_team2total}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Number of users</div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">0</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Recharge,1)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative recharge
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> 0 </div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">  {{number_format($gen_team1Withdraw,2)}}  </div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative withdrawal
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">0</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Earning,2)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative earnings
                                             </div>
                                         </li>
@@ -366,21 +366,21 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                                     </div>
                                     <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">0</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$active_gen_team2total}}/{{$gen_team2total}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Number of users</div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">0</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Recharge,1)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative recharge
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> 0 </div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> {{number_format($gen_team1Withdraw,2)}}  </div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative withdrawal
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">0</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Earning,2)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative earnings
                                             </div>
                                         </li>

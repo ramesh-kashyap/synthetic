@@ -92,6 +92,7 @@ class Invest extends Controller
     {
         $user=Auth::user();
         $invest_check=Investment::where('user_id',$user->id)->where('status','==','Active')->orderBy('id','desc');
+            $todaysIncome = Income::where('user_id',$user->id)->where('ttime',Date("Y-m-d"))->sum('comm');
 
         $this->data['records'] = ($invest_check)?$invest_check:[];
         $this->data['page'] = 'user.invest.strategy';
@@ -110,39 +111,21 @@ class Invest extends Controller
     public function strategy()
     {
         $user = Auth::user();
+        $todaysIncome = Income::where('user_id',$user->id)->where('ttime',Date("Y-m-d"))->sum('comm');
+        $totalRoi = Income::where('user_id',$user->id)->where('remarks','Trading Bonus')->sum('comm');
+
         $invest_check = Investment::where('user_id', $user->id)
                                    ->where('status', 'Active')
                                    ->orderBy('id', 'desc')
                                    ->get();
     
-        foreach ($invest_check as $investment) {
-            // Get today's earnings
-            $todayEarning = DB::table('incomes')
-                            ->where('invest_id', $investment->id)
-                            ->where('remarks', 'ROI Bonus')
-                            ->orderBy('created_at', 'desc')
-                            ->value('comm');
-    
-            // Get rate of return
-            $rateOfReturn = DB::table('plans')
-                            ->where('id', $investment->plan)
-                            ->value('profit');
-    
-            // Calculate remaining time
-            $planDays = DB::table('plans')
-                        ->where('id', $investment->plan)
-                        ->value('days');
-            $remainingTime = Carbon::parse($investment->created_at)->addDays($planDays)->format('d M Y');
-    
-            $investment->todayEarning = $todayEarning;
-            $investment->rateOfReturn = $rateOfReturn;
-            $investment->remainingTime = $remainingTime;
-        }
     
         $notes = DB::table('plans')->get();
     
         $this->data['recharges'] = ($invest_check) ? $invest_check : [];
         $this->data['data'] = $notes;
+        $this->data['todaysIncome'] = $todaysIncome;
+        $this->data['totalRoi'] = $totalRoi;
         $this->data['page'] = 'user.invest.strategy';
         return $this->dashboard_layout();
     }

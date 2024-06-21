@@ -14,14 +14,14 @@ use Redirect;
 class AddFund extends Controller
 {
 
-public function index(Request $request)
-{
+  public function index(Request $request)
+  {
 
-$user=Auth::user();
-$this->data['page'] = 'user.fund.addFund';
-return $this->dashboard_layout();
+  $user=Auth::user();
+  $this->data['page'] = 'user.fund.wallet';
+  return $this->dashboard_layout();
 
-}
+  }
 
 
 public function fundHistory(Request $request)

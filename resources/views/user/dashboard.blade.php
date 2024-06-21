@@ -214,31 +214,34 @@
                             <ul data-v-6df716d9="" data-v-cfc9a7fc="" class="nav1">
                                 
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc="">
+                                        <a href="{{route('user.strategy')}}" style="color:white;">
+                                        <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/12.png">
                                        <p data-v-6df716d9="" data-v-cfc9a7fc="" ><a href="{{route('user.strategy')}}" style="color:white;">Deposit</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.Withdraw')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/14.png">
                                              <p data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.Withdraw')}}" style="color:white;">Withdraw</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.about')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/15.png">
                                         <p data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.about')}}" style="color:white;">About</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.helpcenter')}}" style="color:white;">
+                                        <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/5b0695f769089437fccc9fd7b5f0ff47.png">
-                                        <p data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.helpcenter')}}" style="color:white;">Help Center</a></p>
+                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">Help Center</a></p>
                                     </div>
                                 </li>
                             </ul>
@@ -249,7 +252,7 @@
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/122.png">  </div>
                                         <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">
-                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="amount"> $0 </div>
+                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="amount">{{currency()}} {{number_format($todaysIncome,2)}} </div>
                                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">Today's earnings
                                             </div>
                                         </div>
@@ -263,7 +266,7 @@
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/122.png"> </div>
                                         <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">
-                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="amount"> $6.1642 </div>
+                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="amount"> {{currency()}} {{number_format(Auth::user()->available_balance(),2)}} </div>
                                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">Total assets</div>
                                         </div>
                                     </li>
