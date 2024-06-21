@@ -6,7 +6,7 @@
     border-color: rgb(19 17 23);
 }
 
-.iziToast.iziToast-color-success {
+.iziToast.iziToast-color-green {
     background: rgb(19 17 23);
     border-color: rgb(19 17 23);
 }

@@ -748,7 +748,7 @@ public function viewdetail($txnId)
            $profile = DB::table('plans')->where('id',$id)->first();
 
           
-        return view('user.invest.Deposit')->with('profile',$profile);
+           return view('user.invest.Deposit')->with('profile',$profile)->with('id',$id);
         
           }
 

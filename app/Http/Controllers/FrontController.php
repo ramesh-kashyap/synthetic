@@ -14,7 +14,9 @@ class FrontController extends Controller
         $language = Language::where('code', $lang)->first();
         if (!$language) $lang = 'en';
         session()->put('lang', $lang);
-        return redirect()->route('user.profile');
+        $notify[] = ['success', 'Switch Language successfully'];
+        return redirect()->route('home')->withNotify($notify);
+
     }
 
 

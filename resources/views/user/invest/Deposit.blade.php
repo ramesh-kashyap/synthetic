@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BitGrid</title>
+    <title>{{siteName()}}</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -142,7 +142,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.strategy')}}"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> VIP1 </div>
+                        <div data-v-397da544="" class="name tac"> VIP{{$id}} </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -161,8 +161,11 @@
                             <div data-v-cc3ce6d2="" class="levelBox-head">
                                 <div data-v-cc3ce6d2="" class="left"><img data-v-cc3ce6d2=""
                                         src="{{asset('')}}assets/static/img/v1.7b83cd44.png" style="pointer-events: none;"></div>
-                                <div data-v-cc3ce6d2="" class="more"> Teamlist<img data-v-cc3ce6d2=""
+                                <div data-v-cc3ce6d2="" class="more">
+                                    <a href="{{route('user.recharge')}}">
+                                    Package list<img data-v-cc3ce6d2=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWNxwqAAAAB3RSTlMAgECgUJBwE7RqWgAAAFBJREFUKM9joBtgcoAQcKBeCCHgwL1cAELAAGN5IYSAA3GQrDhpSlhBsqzISsxBsuZISpjLy8AEpgCmFkxDMa1FOIywAgzv4w4gJgUIQUcAAPJCHQUHfZ8eAAAAAElFTkSuQmCC">
+                                    </a>
                                 </div>
                             </div>
                             <div data-v-cc3ce6d2="" class="bann">
@@ -217,14 +220,24 @@
                                     </div> <span class="swiper-notification" aria-live="assertive"
                                         aria-atomic="true"></span>
                                 </div>
-                                <div data-v-cc3ce6d2="" class="swiper-next" tabindex="0" role="button"
-                                    aria-label="Next slide" aria-disabled="false"><img data-v-cc3ce6d2=""
+                                <?php 
+                                  $nextSlide = ($id+1>4)?4:$id+1;
+                                  $previousSlide = ($id-1<1)?1:$id-1;
+                                ?>
+                                <div data-v-cc3ce6d2="" class="swiper-next" tabindex="0"  role="button"
+                                    aria-label="Next slide" aria-disabled="false">
+                                     <a href="{{route('edit',['id'=>$nextSlide])}}">
+                                    <img data-v-cc3ce6d2=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAABNVBMVEUAAAD////////////////////////////////////////////////////+//7////////////////////9//3////+//75/fr////+//73/fj////+//75/vrr+u3Y9dzP89TF8czA78fm+em878S27L77//vs+u3u++/3/fjt++/q+uzT9dnb9t7X9dvT9NjI8s+57cHF8cvA8Mjs+fD4//jD8Mvt/O/W9dv0/PXy/PPv/PHv+/Di9+bi9+Tc9+Db9t/N8tLK8dDI8c/Q89ax67q57cHr/e/1/fb+//7z/PTx+/Pf9+Lm+enh9+XS89ff9+Pe9+LK8dG98MWs6rW37b/m9+j1/Pb+//75/vrn+enx+/Pd9uPy/PPj+Obh+ObO8tP5//v9/f2v7Lq768K067zI8sy7MG6gAAAAZ3RSTlMABwoEDA4QEhYUGhgfJR0gJyEcIjAjKT0rLjos+/TZt6iVjdGGez8zJtHCurCknZeGgYB4NzYzKSXr5+Pfy8nAvqKenJBzcC/t1MrIxbKvrqypjnNraC3t4drSz8XEt7WIfnNgS0E8Y/EC1QAAAzdJREFUSMeN1mV36kAQBuBbKAnRTQLBbr0UaEuFGtRdbt2vu/z/n3BndnYrpzB0vuY8553V7Jv2lUwme55UEuvxazeUkKVld4aEqpdgd0dRKKBSqV6ExHilTArKMAyEyr1KGVCmiVA7XhECYmGBhEBw2CajCIFJY/l/l0zMI8ZmpSAJkOM4duv37W3LVHGdVI9SFiLbtqPa3f7+PsUxjBT0ByhyXbd5MDY2dpe2DIPS2A4l8l0h7ucb5fKBjywl0xhlmqAAhZnDuZGRkfnQSVumapJRFiohMnF1dnh4eK4WEUPVjuk5BOW6mdirXu/s7Mw2XWCmoRivRMbzFmaGhob2cq5vO1Z7Rh3iMpMKYy9YmL64qM8UYiFZh2VLgqOBKVWaGhwcnC56IdsjhtHU275Ul5ubm1PZIA6pRx32skk1sEh4Xi7/fWNj4zIbeB70yITJDWzIFjNekJ8cHR09W8wFXkw9UtjLNDky2aLwcpWJgYGBycUCsNC10xaGJdruEDkyCgsqx6urqxOlt8CwRzaMeoSwuDK+vLx8UioC82IRORazHYHhhMDkVz729/eP57NZZBm3C0soVvnQ19f3DhSkBcDkPOLIePaLFDKcER8ZhXVkFrCf1CKwQiGAneWk9eZnWXH8/dHRMTX5LI2dEj/Mf15ZWflagjS9bMzYaN3Sju/G+ZO1tbUJWABiDndEk0+WO0+bhGYyesXgME7EHm7JT2eLuG7Cxy47OnXa9Fb+tr6+fg4HIA5dfW6YLtXZhuN2/uX09AocnFJ9cDqdN31MRQbc1dbW1lRRd0ms471lmOAiAdfWgrwUDoHpS6E9U46u1hDcdL1en8kJ7BLWgBkdDc/C2z+Ey1VeeE1gDrAUXSb89RrhVV7d297e/lHj7klkD9OCeb4QYfV6d3d3tmbT4KjLtnm6TzlAVxzKn0Do0I+KWDcXAbyXvxyfWTnd56Ozo8htzpfL5RsaGzj2100OIFTtptFo/OMZOcqTEKoFv+ElAxn7DlLPEgMC6YXR+rOkw1Dxjp4zSE1TZkn2uieXfjxpBYx3GlKh4hlBciixEkp1ZQC1TCikw3hIjiQhVN3dizf2c/YfUshakhni7aYAAAAASUVORK5CYII=">
+                                    </a>
                                 </div>
                                 <div data-v-cc3ce6d2="" class="swiper-prev swiper-button-disabled" tabindex="0"
-                                    role="button" aria-label="Previous slide" aria-disabled="true"><img
+                                    role="button" aria-label="Previous slide" aria-disabled="true">
+                                    <a href="{{route('edit',['id'=>$previousSlide])}}">
+                                    <img
                                         data-v-cc3ce6d2=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAABNVBMVEUAAAD////////////////////////////////////////////////////+//7////////////////////9//3////+//75/fr////+//73/fj////+//75/vrr+u3Y9dzP89TF8czA78fm+em878S27L77//vs+u3u++/3/fjt++/q+uzT9dnb9t7X9dvT9NjI8s+57cHF8cvA8Mjs+fD4//jD8Mvt/O/W9dv0/PXy/PPv/PHv+/Di9+bi9+Tc9+Db9t/N8tLK8dDI8c/Q89ax67q57cHr/e/1/fb+//7z/PTx+/Pf9+Lm+enh9+XS89ff9+Pe9+LK8dG98MWs6rW37b/m9+j1/Pb+//75/vrn+enx+/Pd9uPy/PPj+Obh+ObO8tP5//v9/f2v7Lq768K067zI8sy7MG6gAAAAZ3RSTlMABwoEDA4QEhYUGhgfJR0gJyEcIjAjKT0rLjos+/TZt6iVjdGGez8zJtHCurCknZeGgYB4NzYzKSXr5+Pfy8nAvqKenJBzcC/t1MrIxbKvrqypjnNraC3t4drSz8XEt7WIfnNgS0E8Y/EC1QAAAzdJREFUSMeN1mV36kAQBuBbKAnRTQLBbr0UaEuFGtRdbt2vu/z/n3BndnYrpzB0vuY8553V7Jv2lUwme55UEuvxazeUkKVld4aEqpdgd0dRKKBSqV6ExHilTArKMAyEyr1KGVCmiVA7XhECYmGBhEBw2CajCIFJY/l/l0zMI8ZmpSAJkOM4duv37W3LVHGdVI9SFiLbtqPa3f7+PsUxjBT0ByhyXbd5MDY2dpe2DIPS2A4l8l0h7ucb5fKBjywl0xhlmqAAhZnDuZGRkfnQSVumapJRFiohMnF1dnh4eK4WEUPVjuk5BOW6mdirXu/s7Mw2XWCmoRivRMbzFmaGhob2cq5vO1Z7Rh3iMpMKYy9YmL64qM8UYiFZh2VLgqOBKVWaGhwcnC56IdsjhtHU275Ul5ubm1PZIA6pRx32skk1sEh4Xi7/fWNj4zIbeB70yITJDWzIFjNekJ8cHR09W8wFXkw9UtjLNDky2aLwcpWJgYGBycUCsNC10xaGJdruEDkyCgsqx6urqxOlt8CwRzaMeoSwuDK+vLx8UioC82IRORazHYHhhMDkVz729/eP57NZZBm3C0soVvnQ19f3DhSkBcDkPOLIePaLFDKcER8ZhXVkFrCf1CKwQiGAneWk9eZnWXH8/dHRMTX5LI2dEj/Mf15ZWflagjS9bMzYaN3Sju/G+ZO1tbUJWABiDndEk0+WO0+bhGYyesXgME7EHm7JT2eLuG7Cxy47OnXa9Fb+tr6+fg4HIA5dfW6YLtXZhuN2/uX09AocnFJ9cDqdN31MRQbc1dbW1lRRd0ms471lmOAiAdfWgrwUDoHpS6E9U46u1hDcdL1en8kJ7BLWgBkdDc/C2z+Ey1VeeE1gDrAUXSb89RrhVV7d297e/lHj7klkD9OCeb4QYfV6d3d3tmbT4KjLtnm6TzlAVxzKn0Do0I+KWDcXAbyXvxyfWTnd56Ozo8htzpfL5RsaGzj2100OIFTtptFo/OMZOcqTEKoFv+ElAxn7DlLPEgMC6YXR+rOkw1Dxjp4zSE1TZkn2uieXfjxpBYx3GlKh4hlBciixEkp1ZQC1TCikw3hIjiQhVN3dizf2c/YfUshakhni7aYAAAAASUVORK5CYII=">
+                                    </a>
                                 </div>
                                 <div data-v-cc3ce6d2=""
                                     class="pagination swiper-pagination-clickable swiper-pagination-bullets"><span
@@ -333,51 +346,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="arcList">
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="cname">Strategy includes strategies</div>
-                            <ul data-v-1fa86597="" data-v-cfc9a7fc="">
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
-                                            data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/upload/848c7f5604a34a54494ac281cb6ad948.png">
-                                    </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Spot Grid</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="{{asset('')}}assets/static/upload/eb8efa21009c40364f790b0fff9763f9.png"
-                                        class="kimageUrl">
-                                </li>
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
-                                            data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/upload/a2676d23a66645f52ecf7292fa040164.png">
-                                    </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Martingale</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="{{asset('')}}assets/static/upload/84d52ad9bd37687470cd78b7581e106b.png"
-                                        class="kimageUrl">
-                                </li>
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
-                                            data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/upload/0e082935ea46d96dcf2df1b31a099ab2.png">
-                                    </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Contract Grid</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="{{asset('')}}assets/static/upload/b65770384d7807fcb22691682fa31832.png"
-                                        class="kimageUrl">
-                                </li>
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
-                                            data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/upload/ade106f86322db554a19a20424e91ff7.png">
-                                    </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Infinite Grid</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="{{asset('')}}assets/static/upload/dd31dffb566324b6f1d8496bbcf13242.png"
-                                        class="kimageUrl">
-                                </li>
-                            </ul>
-                        </div> -->
+                      
                     </div>
                     
                 </div>

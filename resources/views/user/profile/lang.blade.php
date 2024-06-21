@@ -150,40 +150,21 @@
                         <div data-v-03acef9e="" data-v-cfc9a7fc="" class="container">
                             <div data-v-03acef9e="" data-v-cfc9a7fc="" class="list">
                                 <ul data-v-03acef9e="" data-v-cfc9a7fc="">
-                                  
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">German
+                                    @foreach($language as $item)
+                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db langSel" data-response="{{$item->code}}">
+                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">{{ __($item->name) }}
                                         </div>
-                                        <!---->
-                                    </li>
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Spanish</div>
-                                        <!---->
-                                    </li>
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Portugal</div>
-                                        <!---->
-                                    </li>
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Russia 
-                                        </div>
-                                        <!---->
-                                    </li>
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">Türkiye
 
-
-</div>
-                                        <!---->
-                                    </li>
-                                    
-                                    <li data-v-03acef9e="" data-v-cfc9a7fc="" class="db">
-                                        <div data-v-03acef9e="" data-v-cfc9a7fc="" class="flexs">English</div>
+                                        @if(session('lang') == $item->code)  
                                         <div data-v-03acef9e="" data-v-cfc9a7fc="" class="s"><img data-v-03acef9e=""
-                                                data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAxCAMAAACrgNoQAAABd1BMVEUAAAB83oWx8Jt534Sc6ZN13YO48Z6u7pq78qB03IK28Z2K5IuE4YiM4oyG4oqx75yv75911YBXj1iw75uq7pmY6JF53oW98aGb6JK48Z+T5o+C4Iil65ah6pWP5Y2985+e6ZO58p9z24K98p+j6pR03YK58Z6A4YiQ54+o7Je+8qGt75q+86GM44xx2oBx24G78p+R5Y6d6ZO58Z6o7ZiH4oqm65Z+4Yh334Wh7JS//5+/758AAACt7pqj65aL44yI44uX55F+4IaN5I2r7ZmG4oqA4Iey75yV55CQ5Y5734WT5o+k65ea6JKF4Ymo7Jig6pW28Z6p7Zim7Je08J2b6JN13YOS5o+D4YiC4Yiw75t53oW686C48p953YSd6ZSv75tz3IKf6pSP5Y6d6ZN33oSM5Iyz8Jy886AJDgk8Vzg4VjZgkVuQ2olbkFkcKxuEv3qBvXeC1YRLc0g+ZD2SzoSIy4Brq2pqq2lpk19TdkwUHRMTHRJekgU/AAAAPHRSTlMAHyB//t/vgMCfcF/vkH9PEBD+7+/v7+Dg39/fzr+/kJCAcGBfX1AvEO/f18/Pz7+wsK+gn59wb29PEBDYflp6AAADCElEQVRIx6WQB1caURCFh1XA3nvvmt67NbsUQViBXaKALAIiakxR0/PjMzPvrS4ENOfke1PuDHfgKPw/rpnm++59xP2ged4FN9DdgF4n7pnrblzNSWafw5bNrrrfPpBMHiQpuR5gIigboBaL7myWDFls/NKYBAp3jR+ZH0hn0zZkoiJB8RKqaAhdkQ7VoKHa/5YIUYQ46MmCib3i4gXb/ZiVomLR6vh37vr/gbZFsBn17+765ZPQhjsnK/9oNwg6dqI7O5QcDqJRUanQ6wDGFSV8mEJwQUhipaSKrc0FxDMfs+5zEnXuWNJVO//Ael181Yu2JTxoXVtbW8fgQhUbdoL12ZlYM/RX3FNLYlAxpZSjWlJLPUfLFzyqVCcAXCpSKlFFDwp6KnVaFnqWke+qpKS6oLWgFgoFVcUmFVfslB+WiW88sqsV2jevQfgvHJt2mHhnE8bcpIeCsP0nm9JA/RGMhB0Ew06kv2I3AkFJGHPjciAt/Txe0g8bkiBG8Pz3yam9eG/7eeKvow6RjQh2TvZ8PGVt+zciNFKVQH/kivNlcYFIP6/NiAMYMhsbTYTK1yNxYZrCf9zInzkZgseWaRYtyzItq2h9lhfSX2SsoonJmNY4TOXzeStvceTlxS/h500xTwZKrlMwt10BXwj/di1ewdLq6uo2heTTkfTLDTYnCsC4UFt2iotjVBiYDEscxgDg+VYCn4AEXxzbI394xRwedN1KJHQ9geiyf/n5g3RCFFsyCiBeXY/rcQydQyhdNqFI0vwUiK4+La5pOmZci8e5UNJMey2OKXSfAoxX01ZWtBWslFQ0HmVyYbwgGVthNJk57gKnvAM2Si+6cjl0UsXGSgYll14FLulMBVKBQCCVymFBeJCgELoTHLTgAXHIj4LhrZy8UIE3YBiHhmFQOzTQJCaUWBGjBapY8MRihhHjR7DgHsPwdMJfKMMxB3sxJ00K1GJ6eK8mnhaog/LEk6lkL5PxTHdBfZTZpky5TIEPD8pNLW/gBpSFyaa7g+Xy4O2Hk7OvoZo/TgAXIMAz9SsAAAAASUVORK5CYII=">
-                                        </div>
+                                            data-v-cfc9a7fc=""
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAxCAMAAACrgNoQAAABd1BMVEUAAAB83oWx8Jt534Sc6ZN13YO48Z6u7pq78qB03IK28Z2K5IuE4YiM4oyG4oqx75yv75911YBXj1iw75uq7pmY6JF53oW98aGb6JK48Z+T5o+C4Iil65ah6pWP5Y2985+e6ZO58p9z24K98p+j6pR03YK58Z6A4YiQ54+o7Je+8qGt75q+86GM44xx2oBx24G78p+R5Y6d6ZO58Z6o7ZiH4oqm65Z+4Yh334Wh7JS//5+/758AAACt7pqj65aL44yI44uX55F+4IaN5I2r7ZmG4oqA4Iey75yV55CQ5Y5734WT5o+k65ea6JKF4Ymo7Jig6pW28Z6p7Zim7Je08J2b6JN13YOS5o+D4YiC4Yiw75t53oW686C48p953YSd6ZSv75tz3IKf6pSP5Y6d6ZN33oSM5Iyz8Jy886AJDgk8Vzg4VjZgkVuQ2olbkFkcKxuEv3qBvXeC1YRLc0g+ZD2SzoSIy4Brq2pqq2lpk19TdkwUHRMTHRJekgU/AAAAPHRSTlMAHyB//t/vgMCfcF/vkH9PEBD+7+/v7+Dg39/fzr+/kJCAcGBfX1AvEO/f18/Pz7+wsK+gn59wb29PEBDYflp6AAADCElEQVRIx6WQB1caURCFh1XA3nvvmt67NbsUQViBXaKALAIiakxR0/PjMzPvrS4ENOfke1PuDHfgKPw/rpnm++59xP2ged4FN9DdgF4n7pnrblzNSWafw5bNrrrfPpBMHiQpuR5gIigboBaL7myWDFls/NKYBAp3jR+ZH0hn0zZkoiJB8RKqaAhdkQ7VoKHa/5YIUYQ46MmCib3i4gXb/ZiVomLR6vh37vr/gbZFsBn17+765ZPQhjsnK/9oNwg6dqI7O5QcDqJRUanQ6wDGFSV8mEJwQUhipaSKrc0FxDMfs+5zEnXuWNJVO//Ael181Yu2JTxoXVtbW8fgQhUbdoL12ZlYM/RX3FNLYlAxpZSjWlJLPUfLFzyqVCcAXCpSKlFFDwp6KnVaFnqWke+qpKS6oLWgFgoFVcUmFVfslB+WiW88sqsV2jevQfgvHJt2mHhnE8bcpIeCsP0nm9JA/RGMhB0Ew06kv2I3AkFJGHPjciAt/Txe0g8bkiBG8Pz3yam9eG/7eeKvow6RjQh2TvZ8PGVt+zciNFKVQH/kivNlcYFIP6/NiAMYMhsbTYTK1yNxYZrCf9zInzkZgseWaRYtyzItq2h9lhfSX2SsoonJmNY4TOXzeStvceTlxS/h500xTwZKrlMwt10BXwj/di1ewdLq6uo2heTTkfTLDTYnCsC4UFt2iotjVBiYDEscxgDg+VYCn4AEXxzbI394xRwedN1KJHQ9geiyf/n5g3RCFFsyCiBeXY/rcQydQyhdNqFI0vwUiK4+La5pOmZci8e5UNJMey2OKXSfAoxX01ZWtBWslFQ0HmVyYbwgGVthNJk57gKnvAM2Si+6cjl0UsXGSgYll14FLulMBVKBQCCVymFBeJCgELoTHLTgAXHIj4LhrZy8UIE3YBiHhmFQOzTQJCaUWBGjBapY8MRihhHjR7DgHsPwdMJfKMMxB3sxJ00K1GJ6eK8mnhaog/LEk6lkL5PxTHdBfZTZpky5TIEPD8pNLW/gBpSFyaa7g+Xy4O2Hk7OvoZo/TgAXIMAz9SsAAAAASUVORK5CYII=">
+                                    </div>
+                                        @endif
+                                        <!---->
                                     </li>
+                                    @endforeach
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -192,6 +173,22 @@
                 <!---->
             </div>
         </div>
+
+        <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+
+        <script>
+            'use strict';
+            (function ($) {
+                $(document).on("click", ".langSel", function () {
+                    var res_area = $(this).attr('data-response');
+                    window.location.href = "{{ url('/') }}/change/" + res_area;
+                });
+
+            })(jQuery)
+
+        </script>
+
+
         <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
             <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAMAAAA0X5qLAAAAh1BMVEUAAAAAv44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av46sPT54AAAALHRSTlMA+wXZ+J87JB7ux4lDNRQPCvLq39PNp5BpWRmxgnAvvrnlw5RhT0sqwHRxeP/zXbkAAAGcSURBVDjLjZTXcqtAEAVnyUGIJBAKKFqS7dv//30XsHFJxrD0C0XRxc45TCEDvFsdrvfhxnGWMk1S7c70nI+bZFxdXFC8YG5GVNemxTdte7+3yxUdq4MMMaocsMza6CeSqLRo2A3dffvguPh1WEiDcuWFeN24mSNDdjS85Exs4OLJX7wpyOWJT8A25G+iFMyn2za1jOIAV+kxIU9knDUQ9d8C/EimyH9OXgawNiblrepfXSn8WKax+4wnCEWDC6ptNk5RC9GxgqqNZ1EstXL1tSP/oBQtS1DN5Qp7vbz1sdwu30b0pNAkPIOrd4131E2kAEf0rDqtaJvTY3YDvM+aOS5IH91KrWdUl2LGIhsI9PIDLm2DFmmslT++FyiDu7a5ANV1FoKpkw/gfwUFddDIO7Cl4wqBMf1iRRZJxxb86d5OYCf9fyS/TaYrFcqVeYQK6nmqEQLFPNc7AuZ2lrtYAcEs936kdZdjE97rSAxDEvG8j8wC/E8Zo1Yo/CAv0oyOYKKzN55QWTm9B9WpyGiwyMvFnLbih+M5xjDWf6S2MlzIf04ZAAAAAElFTkSuQmCC"

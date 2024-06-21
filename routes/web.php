@@ -81,7 +81,6 @@ Route::get('/helpcenter', [App\Http\Controllers\UserPanel\Dashboard::class, 'hel
 Route::get('/tradeOn', [App\Http\Controllers\UserPanel\Dashboard::class, 'tradeOn'])->name('user.tradeOn');
 Route::get('/close-trade', [App\Http\Controllers\UserPanel\Dashboard::class, 'stop_trade'])->name('user.close-trade');
 
-Route::get('/lang', [App\Http\Controllers\UserPanel\Dashboard::class, 'lang'])->name('user.lang');
 Route::get('/news', [App\Http\Controllers\UserPanel\Dashboard::class, 'news'])->name('user.news');
 Route::get('/activities', [App\Http\Controllers\UserPanel\Dashboard::class, 'activities'])->name('user.activities');
 Route::post('/submitActivity', [App\Http\Controllers\UserPanel\Dashboard::class, 'submitActivity'])->name('user.submitActivity');

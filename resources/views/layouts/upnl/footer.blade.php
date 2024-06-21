@@ -17,7 +17,7 @@
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="on">
                                 <a href="{{route('user.dashboard')}}" > <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/hicon.png" style="width:65px;"
+                                        src="{{ asset('') }}assets/static/img/icons8-home-100.png" style="width:50px;width:50px;"
                                         alt=""></div><span data-v-6049d237="" style="color:white;">Home</span></a>
                             </div>
                         </div>
