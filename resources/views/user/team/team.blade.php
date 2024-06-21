@@ -116,6 +116,7 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
     height: .32rem;
     vertical-align: middle;
     margin-left: .14rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(245deg) brightness(104%) contrast(104%);
 }
 .tame .it .db[data-v-273cf854] {
     text-align: center;
@@ -308,7 +309,7 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                                     <!---->
                                     <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$active_gen_team1total}}/{{$gen_team1total}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$gen_team1total}}/{{$active_gen_team1total}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Number of users</div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
@@ -337,21 +338,21 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                                     <!---->
                                     <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$active_gen_team2total}}/{{$gen_team2total}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$gen_team2total}}/{{$active_gen_team2total}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Number of users</div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Recharge,1)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team2Recharge,1)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative recharge
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">  {{number_format($gen_team1Withdraw,2)}}  </div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">  {{number_format($gen_team2Withdraw,2)}}  </div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative withdrawal
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Earning,2)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team2Earning,2)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative earnings
                                             </div>
                                         </li>
@@ -366,21 +367,21 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                                     </div>
                                     <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$active_gen_team2total}}/{{$gen_team2total}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$gen_team3total}}/{{$active_gen_team3total}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Number of users</div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Recharge,1)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team3Recharge,1)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative recharge
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> {{number_format($gen_team1Withdraw,2)}}  </div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> {{number_format($gen_team3Withdraw,2)}}  </div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative withdrawal
                                             </div>
                                         </li>
                                         <li data-v-273cf854="" data-v-cfc9a7fc="">
-                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Earning,2)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team3Earning,2)}}</div>
                                             <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative earnings
                                             </div>
                                         </li>
