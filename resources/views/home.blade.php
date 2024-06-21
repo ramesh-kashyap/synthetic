@@ -15,7 +15,7 @@
                     @endif
 
                   
-                    {{ __('You are logged in! Demo Changes  Check Changes') }}
+                    {{ __('You are logged in!  Changes  Check Changes') }}
                 </div>
             </div>
         </div>
