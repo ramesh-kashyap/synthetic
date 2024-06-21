@@ -122,10 +122,10 @@
 .list>li .n1 .n span[data-v-a5a9abc4] {
     margin-left: .08rem;
     border-radius: .24rem;
-    border: .01724rem solid rgba(219, 255, 0, .5);
+    border: .01724rem solid rgb(219 255 0 / 50%);
     background: rgba(219, 255, 0, .2);
     height: .4rem;
-    color: #87df42;
+    color: #fff000;
     padding: 0 .2rem;
     font-size: .2rem;
     text-align: center;

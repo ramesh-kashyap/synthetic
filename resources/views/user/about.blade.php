@@ -134,22 +134,20 @@
                     <div data-v-1d560bae="" data-v-cfc9a7fc="" class="about">
                         <div data-v-1d560bae="" data-v-cfc9a7fc="" class="box">
                             <div data-v-1d560bae="" data-v-cfc9a7fc="" class="img-con">
-                                <p><span style="color:#ffffff"><img
-                                            src="{{asset('')}}assets/static/img/22.png"
-                                            style="height:660px; width:510px"></span></p>
+                              
 
                                 <p> </p>
 
                                 <p style="text-align:center"><span style="color:#ffffff"><strong><span
                                                 style="font-size:11pt"><span
-                                                    style="font-family:Arial,sans -serif">BitGrid Corporation is
+                                                    style="font-family:Arial,sans -serif">Synthetic Venture Corporation is
                                                     registered in Colorado, USA and is a licensed AI grid strategy
                                                     income platform. </span></span></strong></span></p>
 
                                 <p> </p>
 
                                 <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                style="font-family:Arial,sans-serif">BitGrid was founded in 2024 and is
+                                                style="font-family:Arial,sans-serif">Synthetic Venture was founded in 2024 and is
                                                 the most Frontier uses one of the self-developed AI financial GPT model
                                                 hedging platforms, focusing on grid strategy capital market research,
                                                 venture capital and risk management. The investment scope involves
@@ -162,8 +160,8 @@
                                 <p> </p>
 
                                 <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                style="font-family:Arial,sans-serif">BitGrid AI is based on grid
-                                                strategy Financial Big Model BitGrid GPT-driven revenue platform,
+                                                style="font-family:Arial,sans-serif">Synthetic Venture AI is based on grid
+                                                strategy Financial Big Model Synthetic Venture GPT-driven revenue platform,
                                                 dedicated to fusing the latest artificial intelligence technology and
                                                 grid strategies. Supports a variety of mainstream digital asset grid
                                                 arbitrage strategies. Use professional arbitrage tools to buy at low
@@ -175,16 +173,16 @@
                                 <p> </p>
 
                                 <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                style="font-family:Arial,sans-serif">The core of the platform is BitGrid
+                                                style="font-family:Arial,sans-serif">The core of the platform is Synthetic Venture
                                                 GPT. A powerful grid strategy financial model that combines the
                                                 advantages of deep learning, algorithmic trading and big data analysis.
-                                                Through this unique technology-driven approach, the BitGrid AI Grid
+                                                Through this unique technology-driven approach, the Synthetic Venture AI Grid
                                                 Strategy Income Platform is designed to provide investors with returns
                                                 that exceed traditional market benchmarks while effectively managing
                                                 risk. The platform uses advanced AI analysis capabilities to
                                                 continuously monitor and analyze the complex dynamics of global
                                                 financial markets, aiming to capture investment opportunities and
-                                                achieve long-term stable growth. The BitGrid AI grid strategy income
+                                                achieve long-term stable growth. The Synthetic Venture AI grid strategy income
                                                 platform represents the forefront of financial technology, providing
                                                 investors with a unique and innovative asset management experience.
                                             </span></span></span></p>

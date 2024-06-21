@@ -107,7 +107,7 @@ class Profile extends Controller
 
     public function tpassword()
     {
-    $this->data['page'] = 'user.withdraw.tpassword';
+    $this->data['page'] = 'user.profile.ChangeSecurityPass';
     return $this->dashboard_layout();
 
     }
