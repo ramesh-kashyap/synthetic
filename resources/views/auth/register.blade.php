@@ -143,7 +143,7 @@
                 <div data-v-397da544="" data-v-607a0cfb="" class="head head_isModule" is-left="true" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <!---->
-                        <div data-v-397da544="" class="left_title"> Registration </div>
+                        <div data-v-397da544="" class="left_title"> @lang('Registration') </div>
                         <!---->
                         <div data-v-397da544="" class="flex1"></div>
                         <div data-v-397da544="" class="lang"><img data-v-397da544=""
@@ -168,14 +168,14 @@
                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="container">
                             <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="item">
                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Name</div>
+                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('Name')</div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
                                             data-v-cfc9a7fc="" type="text"  name="name" placeholder="Name"></div>
                                 </div>
                             </div> 
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Mobile phone</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('Mobile phone')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
 
                                         <input type="hidden" id="country-name" name="country" value="">
@@ -190,7 +190,7 @@
                                     </div>
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Email</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('Email')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="email" id="emailId"
@@ -203,7 +203,7 @@
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="code" id="code"
                                                 type="text" placeholder="Please enter the verification code"></div>
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="code-btn verify-button">
-                                            Send </div>
+                                           @('Send')</div>
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="str"
                                             style="display: none;">
                                             <div data-v-607a0cfb="" class="van-count-down" data-v-cfc9a7fc=""><span
@@ -212,7 +212,7 @@
                                     </div>
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">invitation code</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('invitation code')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="sponsor" id="sponsor"
@@ -220,7 +220,7 @@
                                     </div>
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n"> password</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n"> @land('password')  </div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input id="passwordInput"
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="password"
@@ -233,7 +233,7 @@
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="doc">
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Confirm password</div>
+                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@land('Confirm password')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="password_confirmation" id="passwordInput2"
@@ -258,13 +258,13 @@
                                             </div>
                                         </div><span data-v-607a0cfb="" data-v-cfc9a7fc=""
                                             style="margin-left: 0.14rem;">I
-                                            have read the privacy agreement</span>
+                                           @land('have read the privacy agreement')</span>
                                     </div>
                                 </div><button data-v-607a0cfb="" data-v-cfc9a7fc="" type="submit" class="btn2">
-                                    Registration </button>
-                                <p data-v-607a0cfb="" data-v-cfc9a7fc=""> Already have an account? <span
+                                   @land('Registration') </button>
+                                <p data-v-607a0cfb="" data-v-cfc9a7fc=""> @land('Already have an account') <span
                                         data-v-607a0cfb="" data-v-cfc9a7fc=""><a href="{{ route('login') }}"
-                                            style="color:#ebd100;">Log in now</a></span></p>
+                                            style="color:#ebd100;">@land('Log in now')</a></span></p>
                                 <!---->
             </form>
         </div>

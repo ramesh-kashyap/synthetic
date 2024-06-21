@@ -4,6 +4,26 @@
   "Email":"E-posta",
   "Username":"Kullanıcı adı",
   "Password":"Şifre",
-  "Remember account password":"Hesap şifresini hatırla"
-      
+  "Remember account password":"Hesap şifresini hatırla",
+  "Forgot password":"Parolanızı mı unuttunuz",
+  "Login":"Giriş yapmak",
+   "No account":"Hesap yok",
+  "Register now":"Şimdi üye Ol",
+  "Registration":"Kayıt",
+  "Name":"İsim",
+  "Mobile phone":"Cep telefonu",
+  "Send":"Göndermek",
+  "invitation code":"Davet Kodu",
+  "Confirm password":"Şifreyi Onayla",
+  "have read the privacy agreement":"gizlilik sözleşmesini okudum",
+  "Already have an account":"Zaten hesabınız var mı",
+  "Log in now":"Şimdi giriş yap",
+  "Welcome Synthetic ventures - Your Ultimate Platform for Everything!":"Sentetik girişimlere hoş geldiniz - Her Şey için Nihai Platformunuz!",
+  "Deposit":"Depozito",
+  "Withdraw":"Geri çekilmek",
+  "Team":"Takım"
+
+
+
+
 }
