@@ -5,32 +5,32 @@
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.strategy')}}"> <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/deposit.png"><alt=""></div><span data-v-6049d237="">AI Strategy</span></a>
+                                        src="{{ asset('') }}assets/static/img/deposit.png"><alt=""></div><span data-v-6049d237="">@lang('AI Strategy')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.Market')}}"> <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/market.png"><alt=""></div><span data-v-6049d237="">Market</span></a>
+                                        src="{{ asset('') }}assets/static/img/market.png"><alt=""></div><span data-v-6049d237="">@lang('Market')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="on">
                                 <a href="{{route('user.dashboard')}}" > <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
                                         src="{{ asset('') }}assets/static/img/icons8-home-100.png" style="width:50px;width:50px;"
-                                        alt=""></div><span data-v-6049d237="" style="color:white;">Home</span></a>
+                                        alt=""></div><span data-v-6049d237="" style="color:white;">@lang('Home')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.wallet')}}">  <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/1222.png"  alt=""></div><span data-v-6049d237="">Wallet</span></a>
+                                        src="{{ asset('') }}assets/static/img/1222.png"  alt=""></div><span data-v-6049d237="">@lang('Wallet')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.Mine')}}"><div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/p.png" alt=""></div><span data-v-6049d237="">Mine</span></a>
+                                        src="{{ asset('') }}assets/static/img/p.png" alt=""></div><span data-v-6049d237="">@lang('Mine')</span></a>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
     <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2001; display: none;"><i
             class="van-icon van-icon-success van-toast__icon">
             <!----></i>
-        <div class="van-toast__text">Login successful</div>
+        <div class="van-toast__text">@lang('Login successful')</div>
     </div>
 </body>
 @include('partials.notify')

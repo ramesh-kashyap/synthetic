@@ -203,7 +203,7 @@
                                         <!----></i>
                                     <div role="marquee" class="van-notice-bar__wrap">
 
-                                    <marquee direction="left" scrollamount="5" behavior="scroll">@land('Welcome Synthetic ventures - Your Ultimate Platform for Everything!')
+                                    <marquee direction="left" scrollamount="5" behavior="scroll">@lang('Welcome Synthetic ventures - Your Ultimate Platform for Everything!')
         </marquee>
                                       
                                     </div>
@@ -217,21 +217,21 @@
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/12.png">
-                                       <p data-v-6df716d9="" data-v-cfc9a7fc="" >@land('Deposit')</a></p>
+                                       <p data-v-6df716d9="" data-v-cfc9a7fc="" >@lang('Deposit')</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.Withdraw')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/14.png">
-                                             <p data-v-6df716d9="" data-v-cfc9a7fc="">@land('Withdraw')</a></p>
+                                             <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Withdraw')</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.team')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/15.png">
-                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@land('Team')</a></p>
+                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Team')</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
@@ -239,7 +239,7 @@
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/5b0695f769089437fccc9fd7b5f0ff47.png">
-                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@land('Help Center')</a></p>
+                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Help Center')</a></p>
                                     </div>
                                 </li>
                             </ul>
@@ -251,7 +251,7 @@
                                                 src="{{asset('')}}assets/static/img/122.png">  </div>
                                         <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">
                                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="amount"> {{currency()}} {{number_format(Auth::user()->available_balance(),2)}} </div>
-                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">Total assets</div>
+                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">@lang('Total assets')</div>
                                         </div>
                                     </li>
                                     <li data-v-6df716d9="" data-v-cfc9a7fc="" class="x"><img data-v-6df716d9=""
@@ -265,7 +265,7 @@
                                         <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">
                                           
                                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="amount">{{currency()}} {{number_format($todaysIncome,2)}} </div>
-                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">Today's earnings
+                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">@lang('Todays earnings')
                                             </div>
                                         </div>
                                     </li>
@@ -300,8 +300,8 @@
                          
                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="quotes">
                                 <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">Transactions</div>
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="view"><a  style="color:#fff;" href="{{route('user.Market')}}"> view all </a></div>
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">@lang('Transactions')</div>
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="view"><a  style="color:#fff;" href="{{route('user.Market')}}">@lang('view all') </a></div>
                                 </div>
                                 <table data-v-6df716d9="" data-v-cfc9a7fc="">
 
