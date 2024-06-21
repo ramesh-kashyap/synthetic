@@ -78,6 +78,8 @@
             background-color: #000;
         }
     </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="{{ asset('') }}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
     <link href="{{ asset('') }}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload"
         as="script">
@@ -220,12 +222,11 @@
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n"> password</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
-                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input id="passwordInput"
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="password"
                                                 placeholder="Enter password" type="password"></div>
-                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><img
-                                                data-v-607a0cfb="" data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAANlBMVEUAAACSkpKSkpKPj4+SkpKSkpKPj4+Pj4+SkpKSkpKSkpKSkpKPj4+RkZGTk5OPj4+SkpKSkpIEtTlrAAAAEXRSTlMAgN8g73AwEJ+PYL9AkM9Qrxj6kssAAADtSURBVDjLjdLREsMQEAVQ7CJCkvr/n+2K6h02nem+1HD0kmXuIt9/Szq5Vs7pMqrIVWtMtAJGOUsL8jK7+U7A9kXZzwLbi+Qvy+Fq2xeVmvfujTnSaptmjr+Un1Q8w6MKLGqc61X5t8oI8s+J+1giGVjwpE7fUpwEGwNlJ5Vl9Z5nXFQp4jbheqpW+BBsGAhqRg5xWiGu5WXzrHCt0O6tFYY0erQ/Kw+eZVi06iGv0WAJ5qDV1GBDoqpXir9PBSrFVcFA4fmi21PF7d6ZSpQdJYX1e+Hpo3govyiyYP1Wth1K1XVkrpXPo3y6280b7tQSh+p/Pg0AAAAASUVORK5CYII=">
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><i  onclick="togglePasswordVisibility()" class="fa fa-eye-slash check" style="    font-size: 20px;
+                                            margin-top: -10px;"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -235,11 +236,10 @@
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">Confirm password</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
-                                                data-v-607a0cfb="" data-v-cfc9a7fc="" name="password_confirmation"
+                                                data-v-607a0cfb="" data-v-cfc9a7fc="" name="password_confirmation" id="passwordInput2"
                                                 placeholder="Please enter your password again" type="password"></div>
-                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><img
-                                                data-v-607a0cfb="" data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAANlBMVEUAAACSkpKSkpKPj4+SkpKSkpKPj4+Pj4+SkpKSkpKSkpKSkpKPj4+RkZGTk5OPj4+SkpKSkpIEtTlrAAAAEXRSTlMAgN8g73AwEJ+PYL9AkM9Qrxj6kssAAADtSURBVDjLjdLREsMQEAVQ7CJCkvr/n+2K6h02nem+1HD0kmXuIt9/Szq5Vs7pMqrIVWtMtAJGOUsL8jK7+U7A9kXZzwLbi+Qvy+Fq2xeVmvfujTnSaptmjr+Un1Q8w6MKLGqc61X5t8oI8s+J+1giGVjwpE7fUpwEGwNlJ5Vl9Z5nXFQp4jbheqpW+BBsGAhqRg5xWiGu5WXzrHCt0O6tFYY0erQ/Kw+eZVi06iGv0WAJ5qDV1GBDoqpXir9PBSrFVcFA4fmi21PF7d6ZSpQdJYX1e+Hpo3govyiyYP1Wth1K1XVkrpXPo3y6280b7tQSh+p/Pg0AAAAASUVORK5CYII=">
+                                        <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><i onclick="togglePasswordVisibility()" class="fa fa-eye-slash check" style="    font-size: 20px;
+                                            margin-top: -10px;"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -283,6 +283,54 @@
     </div>
     @include('partials.notify')
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+      
+    <script>
+        $(document).ready(function() {
+    
+    $('.check').click(function(){
+         
+          if($(this).hasClass('fa-eye-slash')){
+             
+            $(this).removeClass('fa-eye-slash');
+            
+            $(this).addClass('fa-eye');
+            
+            $('#test-input').attr('type','text');
+              
+          }else{
+           
+            $(this).removeClass('fa-eye');
+            
+            $(this).addClass('fa-eye-slash');  
+            
+            $('#test-input').attr('type','password');
+          }
+      });
+      
+  });
+      </script>
+      
+      <script>
+  function togglePasswordVisibility() {
+      var passwordInput = document.getElementById('passwordInput');
+      var passwordInput2 = document.getElementById('passwordInput2');
+      if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+      } else {
+          passwordInput.type = 'password';
+      }
+
+      if (passwordInput2.type === 'password') {
+        passwordInput2.type = 'text';
+      } else {
+          passwordInput2.type = 'password';
+      }
+  }
+  
+  
+  
+  </script>
 
     <script>
         $('.code-btn').click(function(e) {

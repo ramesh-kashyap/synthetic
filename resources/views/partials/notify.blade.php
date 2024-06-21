@@ -5,6 +5,11 @@
     background: rgb(19 17 23);
     border-color: rgb(19 17 23);
 }
+
+.iziToast.iziToast-color-success {
+    background: rgb(19 17 23);
+    border-color: rgb(19 17 23);
+}
 .iziToast>.iziToast-body .iziToast-message {
     margin: 0 0 10px;
     color: #ebd100;
@@ -18,7 +23,7 @@
     @foreach(session('notify') as $msg)
         <script>
             "use strict";
-            iziToast.{{ $msg[0] }}({message:"{{ __($msg[1]) }}", position: "topRight"});
+            iziToast.{{ $msg[0] }}({message:"{{ __($msg[1]) }}", position: "center"});
         </script>
     @endforeach
 @endif

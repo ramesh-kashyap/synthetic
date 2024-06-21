@@ -80,6 +80,8 @@
         }
 
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload" as="script">
@@ -139,21 +141,11 @@
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="n">Password</div>
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex inp val">
                                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="ico"></div>
-                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex1"><input data-v-a34da882=""
+                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex1"><input data-v-a34da882="" id="passwordInput"
                                             data-v-cfc9a7fc="" placeholder="Please enter your password" name="password" type="password">
                                     </div>
-                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="yj"><img data-v-a34da882=""
-                                            data-v-cfc9a7fc=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-                                            YQUAAAJjSURBVHgB7VhtdeMwEFwfAjM4QQiDM4QwOEEwA6sIHAYpgyuDhEGuCNwicBlspXr7ulFkfdhy+qOa9/a1
-                                            SWZXY2n0YQEUFBQUFPxkVJAZiFjrP40OoaOmr990/DdRVdVbRA35Ia6qHuEeMKJ1tDpOGIbhSB1iplbHuBK2BAk
-                                            3DY6YjoFyxYz4qAdYbCEq3sOXTTieYbLMC30WFH8cXMN50PFbh2LfP2gLKcgN6vWjo0fPONmo9uQKss+AfijYAiRgc
-                                            FhhD4nwPIiCLTAj/uDr8Yia3XeJN5NWwgp8t/idh/+5pB5xWjJN/CPL1DHiKd+MroA1IDEp4lv0L6mm1mNA/J79dsEVFjX
-                                            Feqsxn/gO06EcdRqL08MS4DTkHG0Cd8BpNBoK18goT73W4qatcnjr+6OHa9vMWKS2OF2seJbDrTZiipWs5AH9m5P0cXHhau
-                                            PomDgrUe9zyAD/iXHbHOJZvj0fmpgk7r9jBP/kagAzrfNW/Zt5+CuQL2BZox3kO5i9JrFThw2v50uLGXdYvF3dRGzigSUN6J
-                                            /E3HLRS2WEBnsSB+1sJ3MxfQJ3tXiqa6+EIiXf3tINfBvZU2bx9kYmYQnw2koGjYPTZRa/s+odYCnIHhdW7Oowt5H40bLO8sM
-                                            cFbWPFSM1dA/xAnIA3W9jOcX/3Uw8a2TuIRQsBE4WtY/s+cWzBvuM4vfoviAQsAUw/Boo0XPjRhzfDd7NMfze4jlOOL0TKwr
-                                            z/wXdWH1BEBIvfeJnODEY6eG26fUZcSrAO0cID97gpSDqbhQTrrtJ2I6CX6+/6DjHXK8XFBQUFBTE4h2QBIpR8NLK1AAAAABJRU5ErkJggg==">
+                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="yj"><i id="check" onclick="togglePasswordVisibility()" class="fa fa-eye-slash" style="    font-size: 20px;
+                                        margin-top: -10px;"></i>
                                     </div>
                                 </div>
                             </div>
@@ -199,6 +191,46 @@
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
+    <script>
+        $(document).ready(function() {
+    
+    $('#check').click(function(){
+         
+          if($(this).hasClass('fa-eye-slash')){
+             
+            $(this).removeClass('fa-eye-slash');
+            
+            $(this).addClass('fa-eye');
+            
+            $('#test-input').attr('type','text');
+              
+          }else{
+           
+            $(this).removeClass('fa-eye');
+            
+            $(this).addClass('fa-eye-slash');  
+            
+            $('#test-input').attr('type','password');
+          }
+      });
+      
+  });
+      </script>
+      
+      <script>
+  function togglePasswordVisibility() {
+      var passwordInput = document.getElementById('passwordInput');
+      if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+      } else {
+          passwordInput.type = 'password';
+      }
+  }
+  
+  
+  
+  </script>
+
     <!-- Your other scripts -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>

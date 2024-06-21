@@ -61,7 +61,8 @@
     display: flex;
     height: .9rem;
     padding: .14rem;
-    margin-top: .64rem
+    margin-top: .64rem;
+    cursor: pointer;
 }
 
 .tab li[data-v-a34da882] {
