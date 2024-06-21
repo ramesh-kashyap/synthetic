@@ -194,6 +194,8 @@
         <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
                 src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
     </div>
+    @include('partials.notify')
+
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
