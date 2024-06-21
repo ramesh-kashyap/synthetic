@@ -32,8 +32,20 @@
    "Home":"Ev",
    "Wallet":"Cüzdan",
    "Mine":"Bana ait",
-   "Login successful":"Giriş başarılı"
-
+   "Login successful":"Giriş başarılı",
+   "Strategy":"Strateji",
+   "Total Balance":"Toplam Bakiye",
+   "My Wallet":"Cüzdanım",
+   "Total revenue":"Toplam gelir",
+   "Add strategy":"Strateji ekle",
+   "My Strategy":"Benim Stratejim",
+   "Remaining time:":"Kalan süre",
+    "Investment":"Yatırım",
+    "Today earning":"Bugün kazanç",
+    "Rate of return":"Getiri oranı",
+    "Daily Profit":"Günlük Kâr",
+    "Days":"Günler",
+    "start":"başlangıç"
 
 
 
