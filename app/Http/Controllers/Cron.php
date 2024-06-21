@@ -397,7 +397,7 @@ public function add_level_income($user_id, $bonus, $plan_id)
             ]);
         }
         
-        $sponsor = $sponsorData->username; // Update $rname to get the next sponsor in the hierarchy
+        $sponsor = $sponsorData->sponsor; // Update $rname to get the next sponsor in the hierarchy
         $cnt++;
     }
 
