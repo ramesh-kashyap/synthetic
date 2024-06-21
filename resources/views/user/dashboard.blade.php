@@ -230,7 +230,7 @@
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.team')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/img/15.png">
+                                            src="{{asset('')}}assets/static/img/5b0695f769089437fccc9fd7b5f0ff47.png">
                                         <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Team')</a></p>
                                     </div>
                                 </li>
@@ -238,7 +238,7 @@
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.helpcenter')}}" style="color:white;">
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/img/5b0695f769089437fccc9fd7b5f0ff47.png">
+                                            src="{{asset('')}}assets/static/img/15.png">
                                         <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Help Center')</a></p>
                                     </div>
                                 </li>

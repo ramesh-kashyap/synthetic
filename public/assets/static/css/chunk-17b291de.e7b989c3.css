@@ -165,7 +165,8 @@
 .com-2 li img[data-v-757d6f7f] {
     height: .32rem;
     vertical-align: middle;
-    margin-left: .1rem
+    margin-left: .1rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(245deg) brightness(104%) contrast(104%);
 }
 
 .teamData[data-v-757d6f7f] {
