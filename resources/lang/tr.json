@@ -45,7 +45,29 @@
     "Rate of return":"Getiri oranı",
     "Daily Profit":"Günlük Kâr",
     "Days":"Günler",
-    "start":"başlangıç"
+    "start":"başlangıç",
+    "Gainers":"Kazananlar",
+    "24h Vol":"24 saat Cilt",
+    "Currency/Name":"Para Birimi/İsim",
+    "Last price":"Son fiyat",
+    "24h change":"24 saat değişim",
+    "Detail":"Detay",
+    "Strategy account":"Strateji hesabı",
+    "Capital account":"Sermaye hesabı",
+    "Recent Asset":"Son Varlık",
+    "Deposits":"Mevduat",
+    "Pending":"Askıda olması",
+    "Profile":"Profil",
+    "Activity":"Aktivite",
+    "My team":"Benim takımım",
+    "Invitation":"Davet",
+    "Customer service":"Müşteri servisi",
+    "support":"Destek",
+    "About us":"Hakkımızda",
+    "Clear cache":"Önbelleği temizle",
+    "Log out":"Çıkış Yap",
+    "Earning Range":"Kazanç Aralığı"
+     
 
 
 
