@@ -126,7 +126,7 @@
                         <div data-v-397da544="" class="back"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Market </div>
+                        <div data-v-397da544="" class="name tac"> @lang('Market') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -144,8 +144,8 @@
                                     <div role="tablist"
                                         class="van-tabs__nav van-tabs__nav--line van-tabs__nav--complete">
                                         <div role="tab" aria-selected="true" class="van-tab van-tab--active"><span
-                                                class="van-tab__text">Gainers</span></div>
-                                        <div role="tab" class="van-tab"><span class="van-tab__text">24h Vol</span></div>
+                                                class="van-tab__text">@lang('Gainers')</span></div>
+                                        <!-- <div role="tab" class="van-tab"><span class="van-tab__text"></span></div> -->
                                         <div class="van-tabs__line"
                                             style="transform: translateX(100.5px) translateX(-50%); transition-duration: 0.3s;">
                                         </div>
@@ -170,9 +170,9 @@
                         <div data-v-c079ad96="" data-v-cfc9a7fc="" class="quotes">
                             <table data-v-c079ad96="" data-v-cfc9a7fc="">
                                 <tr data-v-c079ad96="" data-v-cfc9a7fc="">
-                                    <th data-v-c079ad96="" data-v-cfc9a7fc="">Currency/Name</th>
-                                    <th data-v-c079ad96="" data-v-cfc9a7fc="">Last price</th>
-                                    <th data-v-c079ad96="" data-v-cfc9a7fc="">24h change</th>
+                                    <th data-v-c079ad96="" data-v-cfc9a7fc="">@lang('Currency/Name')</th>
+                                    <th data-v-c079ad96="" data-v-cfc9a7fc="">@lang('Last price')</th>
+                                    <th data-v-c079ad96="" data-v-cfc9a7fc="">@lang('24h change')</th>
                                 </tr>
                                
 

@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Assets</title>
+    <title>@lang('Assets')</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -121,7 +121,7 @@
                 <div data-v-397da544="" data-v-6df100a6="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <!---->
-                        <div data-v-397da544="" class="left_title"> Wallet </div>
+                        <div data-v-397da544="" class="left_title">@lang('Wallet') </div>
                         <!---->
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
@@ -136,8 +136,8 @@
                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="container">
                         <div data-v-6df100a6="" data-v-cfc9a7fc="" class="com-1">
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="n">Total Balance</div>
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s"> <a href="{{ route('user.recharge') }}">Detail
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="n">@lang('Total Balance')</div>
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s"> <a href="{{ route('user.recharge') }}">@lang('Detail')
                                     <img data-v-6df100a6=""
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAOVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAABra2v4+PgAAAAAAAAAAADk5OQAAADd3d2goKAAAADy8vL///+hq0BzAAAAEnRSTlMzACwYLwYdTOUoIRKzDKZmD9OK32BQAAABUklEQVRYw7WX0XKEIAxFLwlJC9TW+v8f2yk7O26tGE12z3uOERBzkQZI01oIAKhUniUN2BdMSthAOp0WcMYu1MQW9PIhWcUSrOWjLg4FUmBCMhZwxgkyjwSKk/C+QHGauicouED5L1Bcom4FjIvoXwHjMvwokIzLZHkQEByUVdDggu8CIbjId4HCCd8EkuEk3wQNbrgLCG7yr2BCgCnBXMLP5fvt4EDDeoOvZVnehwZKEFiCQ4NghsHHoaGBETIoKkKGioKQoYAQMtBo77dsDObW7fP5CkH4FcKLGN7G+EHSUD0YLVSPOfw5Ry+U6JVWn3Gppgw31P8LDDetC/wtZOkCfwuausDdAkkX+Fto64hT4IDCQ9bTxryOOuu7oFMjo2582O7UwLh/cSX1RZHn5Mxa5DD2NbIebwVP0WyUm9FXGlnldviuofDdkZnX+K9N0oAfKgMTw/lKDHwAAAAASUVORK5CYII=">
@@ -151,16 +151,18 @@
                                         data-v-cfc9a7fc=""><img data-v-6df100a6="" data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAD1BMVEUAAAAE3AAD3AAE2wAE3ABuQteJAAAABHRSTlMAgFBAnsFh3gAAADNJREFUKM9jGAXogEkBQ0jEEV2E0cVFAF2Ri4sjhiJ0ZSogIWcUIRNMISZBIDBgGAUoAABJbwaD+etRRAAAAABJRU5ErkJggg==">
                                         0% </span><span data-v-6df100a6="" data-v-cfc9a7fc="">(+$0)</span></div>
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right"><span data-v-6df100a6=""
-                                        data-v-cfc9a7fc="">Pending: 0 U</span></div>
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right">
+                                    <!-- <span data-v-6df100a6=""
+                                        data-v-cfc9a7fc="">Pending: 0 U</span> -->
+                                    </div>
                             </div>
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">Strategy account</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Strategy account')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> {{currency()}}  {{number_format(Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}}</div>
                                 </div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">Capital account</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Capital account')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val">{{currency()}}  {{number_format(Auth::user()->investment->sum('amount'),2)}}</div>
                                 </div>
                             </div>
@@ -170,7 +172,7 @@
                                 <a href="{{route('user.strategy')}}" style="color: #fff">
                                 <img data-v-6df100a6="" data-v-cfc9a7fc=""
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA0CAMAAAAdZIDnAAAARVBMVEUAAAD///////+n/3z///+f/36m/37///+m/32l/32l/36f/3j///////+m/32k/3yl/3r///////////////////+m/31k9+39AAAAFXRSTlMAYICg4BDP79+AXyBwv+9wUEAgEMCSNQRnAAAAzklEQVRIx+3P3Q6DIAyGYWA6BHH+De7/UmcN+k001iWejTchoU2eg4rcnY1OLdHYGWM6+qxbOeyR036N5kcI4UEfj1SKpEepQn2imkuqSRTtdBHbqGU5X3CgJEYo3JBVVqkqr6i6shtlq5pThEKwX8qGMDFGESIWFaGJlYwqn4Fqo2ppIH2mwMysTESMAnvRA+IUMTQjXoEB8QoMiFdgQLwCA+IVGBCvwIB4BWbEDwr9t9LFWfpANf5K70T1rDi8QfFGO7FrkOo8N4rcbX0AQuU1Y+ttcqkAAAAASUVORK5CYII=">
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">Deposit    </a></div>
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">@lang('Deposit')    </a></div>
                         
 
                             </li>
@@ -178,7 +180,7 @@
                                 <a href="{{route('user.Withdraw')}}" style="color: #fff">
                                 <img data-v-6df100a6="" data-v-cfc9a7fc=""
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA0CAMAAAAdZIDnAAAASFBMVEUAAAD///////+n/3yl/33///////+m/37///////////+l/4Cl/3z///////+j/3z///+f/3jV/8LP/7qj/3z///+m/328/50T1kZbAAAAFXRSTlMAYICgf9/g7+/AcDCQQCAgEBDv70CBqdxqAAAAy0lEQVRIx+3Pyw6DIBRF0YO1Bd/aVv3/P23FxyFovKRx1LAHDC4sCIhdWJsna3Dbpqreo9z0W3DrWeIj1TNfscpTWZDKsMY981iC2zq0PzhQCmepMPX+RaVDGq6IBjJREZGJiohMVERksiIikxURmayINJmkiG43u8zsXBGVsArlzCTV6PnYrJZLdCcoFHpCq7JMF8JblqWg+jKLJIUOVFMNJMWoEFVU/6rM3ek1juPTHZgDlfUhZZ6qgpSCVyIbk2NXrZLz8hax6/oAHTQ1QeutVjYAAAAASUVORK5CYII=">
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">Withdraw  </a> </div>
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">@lang('Withdraw')  </a> </div>
                             </li>
                         </ul>
                     </div>
@@ -186,12 +188,12 @@
                         <div data-v-ac2db8a0="" class="container">
                             <div data-v-ac2db8a0="" class="total-income">
                                 <div data-v-ac2db8a0="" class="title_box">
-                                    <div data-v-ac2db8a0="" class="title">Recent Asset</div>
-                                    <div data-v-ac2db8a0="" class="choose_day">
-                                        <div data-v-ac2db8a0="">Last 7 days</div><i data-v-ac2db8a0=""
+                                    <div data-v-ac2db8a0="" class="title">@lang('Recent Asset')</div>
+                                    <!-- <div data-v-ac2db8a0="" class="choose_day">
+                                        <i data-v-ac2db8a0=""
                                             class="arrow_down van-icon van-icon-arrow-down">
-                                            <!----></i>
-                                    </div>
+                                            </i>
+                                    </div> -->
                                 </div>
 
                                 <style>
@@ -222,6 +224,13 @@
                                 </style>
                                 <div data-v-ac2db8a0=""  data-v-cfc9a7fc="" class="info list">
                                     <!---->
+                                    <?php if(is_array($level_income) || is_object($level_income)){ ?>
+
+                                        <?php
+                                        date_default_timezone_set('UTC');
+                                        $cnt = 0; ?>
+                                        @foreach ($level_income as $value)
+
                                     <div data-v-65a522d0="" class="it">
                                         <div data-v-65a522d0="" class="jbox_07">
                                             <div data-v-65a522d0="" class="jt"></div>
@@ -229,14 +238,14 @@
                                                 <div data-v-65a522d0="" class="b">
                                                     <div data-v-65a522d0="" class="db">
                                                         <div data-v-65a522d0="" class="flexs">
-                                                            <div data-v-65a522d0="" class="n">Deposits
+                                                            <div data-v-65a522d0="" class="n">{{$value->remarks}}
                                                             </div>
-                                                            <div data-v-65a522d0="" class="time">18/09/2024</div>
+                                                            <div data-v-65a522d0="" class="time"> {{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</div>
                                                         </div>
                                                         <div data-v-65a522d0="" class="str"
                                                             style="display: flex;">
                                                             <div data-v-65a522d0="" class="green">
-                                                                +09
+                                                                +{{ $value->comm }}
                                                             </div>
                                                             <div data-v-65a522d0="" class="green"
                                                                 style="margin-left: 0.04rem;height: 20px;margin-right: -49px;">
@@ -244,7 +253,7 @@
                                                             <div data-v-65a522d0="" class="time" style="
                                                             margin-top: 22px;
                                                         ">
-                                                              Pending
+                                                              Received
                                                             </div>
                                                         </div>
                                                         <!---->
@@ -254,6 +263,11 @@
                                             <div data-v-65a522d0="" class="jb"></div>
                                         </div>
                                     </div>
+
+                                    @endforeach
+
+                                    <?php }?>
+
                                 
                                 </div>
                             </div>

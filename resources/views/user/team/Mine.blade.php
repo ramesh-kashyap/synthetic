@@ -142,7 +142,7 @@
                                                 src="{{asset('')}}assets/static/img/1212.png">
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
-                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">Strategy account：</div>
+                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Strategy account'):</div>
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->available_balance(),2)}} USDT</div>
                                         </div>
                                     </li>
@@ -152,7 +152,7 @@
                                                 src="{{asset('')}}assets/static/img/w1.png">
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
-                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">Capital account：</div>
+                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Capital account'):</div>
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->investment->sum('amount'),2)}} USDT</div>
                                         </div>
                                     </li>
@@ -160,7 +160,7 @@
                                 <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="str"><a href="{{route('user.profile')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
                                         data-v-cfc9a7fc=""
                                         src="{{asset('')}}assets/static/img/a.png"></a><span
-                                        data-v-3d4e4f5e="" data-v-cfc9a7fc="" style="color:#fff;">Profile</span></div>
+                                        data-v-3d4e4f5e="" data-v-cfc9a7fc="" style="color:#fff;">@lang('Profile')</span></div>
                             </div>
                         </div>
                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="container">
@@ -170,28 +170,28 @@
                                             data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAYAAAC4wJK5AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEPSURBVHgB7ZnhDYIwEIWfxgE6Qjezm8gmuglugBt0BNygNhESQKnXWu0B9yXvH5e+1x4QDkAQBGGJKK+TV+3lCqnxMkhEe1kAjols5ykKTgGGQRSIGAClDc+pApFmUniJ2YGM6G7toZeaWjxNr1EOhVc/I3YzhY543b8I+tljBUgILhyI1zkwRtqJC5u6J7i9J0ZIO3FBQnBBQnBBQnBh0yGOXi3CU4ljxrokgt+0oI1z2ox1QT+pJ0GZfNwz1iXx6SQMwrva4v3oMbVOph2LgBqixPSvRyORGuMePKPMFFB1aw+9NNTiCt8Pfn8lg4gdsEBxw1NZRKKxgp8sPcbrBqCU+Sue7V3y4SIIgpDAA7aaiV7MDIgbAAAAAElFTkSuQmCC"></a>
                                     </div>
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">My Strategy</div>
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('My Strategy')</div>
                                 </li>
                                 <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.reward-bonus')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
                                             data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA0CAYAAAAqunDVAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE9SURBVHgB7dlvrcIwFAXw817e94eEOgAH4AAJ4AAJ4AAcgAUUAA5wQB2AA+iSkUDH+mfdml1yfslNYLtbdkhLBwOIqE0/aG7i2X8zdfb0jEwNPD3n8lydU6buAXUxtS77n4oQS1PXwHMoZKIQdkGv4UZlXSKPVYj0hzyUqUP52jfckrUVSps6vbwvLnyI6rCzFXNlb22bIkPwTxTeh8ixpm+F+mG1qjlGoydz6ujo3aAaaOvo1xAQyu71XahGYqhfdE8HbmuN64tCRez7R9wn2mavtje47ijukKGSIcfwy+4rQ8Usvif0wxgJ7Hu3vrCXhwrOKSkYSgouvlIw1DeZI+wXq4t3wfTYWcfPXc0cflIwlBQMJQVDScFQUjCUFE2eTy1MzZAm9t+pqOdVTUINkP5QTKFDnFNERESU7gFgPHq2yCjE7QAAAABJRU5ErkJggg=="></a>
                                     </div>
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">Activity</div>
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Activity')</div>
                                 </li>
                                 <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.team')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
                                             data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK1SURBVHgB7ZiLkdMwEIZ/0sC5A9TBXQkuASpAVICpwO4g6SDpIEcFDhXcUYHdQdJBsJANQt7VywmXMPpmdmJb0kq/tHoFyGQymUzm7XiHt0cY1g92GuwVd0YxWD1YN9iZsONgW2iRN08F3eBzoClhBW6UNcKFmKZGUuDGSBVjilo8UsqBCpE9/o73F+hQ+BDoR4Ju5GH0L4z6ysF2TP49FiARFuvd2AgXHVGu8ZQpmfpLJFAjPiRqxpdEvJiJkijbIpIUMZNVhL8W8xGNYUPUEzyXJPh9YTOmK9uBDiOVT1g+Q0S7EISP0LlLNlIJKZiK9nCHBNWYEvHYcymoU0rQYny04ENCEGkC8fQInIMr49keRnWmChH0lfgmHfmfEM+D9X7iMpqCHq2079A94+MV88OkGH97ovJYQQLzkO+5zKYgu1DMifeH9f7g8PMFcTt+Q3xj27YCT0yl7x1p3wi/NcJQo/nJ+hYaObPjRotw7FWoMdIK0Du+T1SJhSeFKrFwSDkJ/tik0sSYz3eW2yKCgqlQOMqokDgSZSg2SD+BhLQluNKpF805Nc0DKiRkpP8Yaz3+ZxTgr8WTOFf6i8d/jWWCzHYEH3+eEiuhznETYhR7vrCt7Yrsf32U6i3Sb4b9YJ+hL24TqoNah0+18ap9zN6gVX4BvUg8gkeV+QhiKV96RTatNsRwl8QDdAeGdJ6Ann8d+BD87Uc9tHCH0gF6KW1G243ffOFwZPxVSEOAX9LbKdPaobqCuwcF9KrD9RzlU2A5FeO/UYlUL3J3IA4BvucuLWaiBD36s3CTSKfBvxEzYY/Ur21DQPfuMyLWdgfPmAuSuB4N/ohJuWt5sedThzuG2pQl7hgVsrag1E06iRUuix3DPRz3/2twaUEnz/vdYZ/WJf4DBPRcusoSmslkMpnMLfMTAhsoDtsZ22AAAAAASUVORK5CYII="></a>
                                     </div>
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">My team</div>
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('My team')</div>
                                 </li>
                                 <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.invate')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
                                             data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJGSURBVHgB1ZnhkdowEEZfMvkfl7Al0EHUQeggLoEOQgl0AB2EDnAqoAToICUQ6WzuuLUtS7KFzZvZAcFa+mzvrtYAL8oXXo/C2uorr4ETu7F2svbP2ooFI9Z+U4u9KRMWhrG2s3ahLfZuZ+f4jXl5i1dra2u/mvEQf5kJJ660tqeO11ukGZ6ITq4Qgc5Ph8yFJyD0J5dP7IH6jhTN+8fv92TCNGIvxIndNcfqGNfzGCYWuyMuXq/WtviFGNon+E5KVXFXxVWBH81rSCVwuGpQUd/+a4D/Wo2PJJCSXLdG6Ibwk3tEh8k69EB5EJuaXKmsOub2zmeok+tMnNi+5Eplo9Y4+hxjk+suNgf6wpV9jsJwCauoK4GQF+lYW4YO6BLvPpsqBEIoaV+wQYRu8XumoWD4jp3U2hsCEaYVf2+q/lDnUYl/7agw6ZpgjHhD2kNAqXzPJCCEiy8I2/or/ByV/45ExCM+ZTcdilc9z6hnSyGu2/OZT8iadjUbjRDfql4ihRxIy6fR4q983voPkUL03IYJEbVARR23qwAhvu7OkCFMNMJw9xfb3R3IFCax6O6uGvCPuTtZOSkhpcc3uvfORUHcbrlVvkmPaFNQErdtB/fej+T4tdaose8nM6FdkSoCyCH8pxp/9/gaNXYneWUGXHx3bVJ95S0mibMjhIkX4pL4KQjD4kvikvhpCH7xuvfesiCEfvH6s8X9ryMMt8RZmqopEPzi9ywYoV+8YeEIM/09MgXCZ/GLDhON8CF+tt47FWFEmPwHFfDgYXzA3PsAAAAASUVORK5CYII="></a>
                                     </div>
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">Invitation</div>
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Invitation')</div>
                                 </li>
                             </ul>
                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="line">
@@ -213,8 +213,8 @@
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/121212.png">
                                         </div>
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.GenerateTicket')}}" style="color:#fff;">Customer service
-                                            support</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.GenerateTicket')}}" style="color:#fff;">@lang('Customer service')
+                                        @lang('support')</a></div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
                                             <!---->
                                             <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
@@ -227,7 +227,7 @@
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/abouts.png">
                                         </div>
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.about')}}" style="color:#fff;">About us</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.about')}}" style="color:#fff;">@lang('About us')</a></div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
                                             <!---->
                                             <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
@@ -240,7 +240,7 @@
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/clear.png">
                                         </div>
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.dashboard')}}" style="color:#fff;">Clear cache</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.dashboard')}}" style="color:#fff;">@lang('Clear cache')</a></div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
                                             <!---->
                                             <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
@@ -253,8 +253,7 @@
                                 <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="go"><button href="{{ route('logout') }}" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();" data-v-3d4e4f5e=""
                                         data-v-cfc9a7fc=""><img data-v-3d4e4f5e="" data-v-cfc9a7fc=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAANlBMVEUAAACUmp+Tl5+VmZ+Tmp+TmZ+VmJ+Vmp+Pn5+Ump+UmZ6VlZ+PlZ+fn5+UmZ+TmZ+Ump+Ump9V2x+yAAAAEXRSTlMA7yB/74Bi3xDAsDAwEN+gnxjKr0gAAAC/SURBVEjH7ZVLDoMwDAVtB0KSlo/vf9l29xTASSxV6obZMiNkYoAeHEietEWRkw/dgOuiaJdcBdqHL8G+mgPu+uUSCJmk24Aa/D6Q5AuCamgHrLqdrodmEBeOBBYUYzO+GAUCT4GgXyDwFNehrfUORrCoRTLOwRtE6xbz8NDvCT6CAR+Bw0fQ9+1z2Krlg2+fA5+e8ux5gSL8ZgDWlSr+9NVIti+3wSGWnw7HtoIqyH2/VIGw84dCUtp6FnoY5wNKBCglvweqdgAAAABJRU5ErkJggg==">Log
-                                        out </button>
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAANlBMVEUAAACUmp+Tl5+VmZ+Tmp+TmZ+VmJ+Vmp+Pn5+Ump+UmZ6VlZ+PlZ+fn5+UmZ+TmZ+Ump+Ump9V2x+yAAAAEXRSTlMA7yB/74Bi3xDAsDAwEN+gnxjKr0gAAAC/SURBVEjH7ZVLDoMwDAVtB0KSlo/vf9l29xTASSxV6obZMiNkYoAeHEietEWRkw/dgOuiaJdcBdqHL8G+mgPu+uUSCJmk24Aa/D6Q5AuCamgHrLqdrodmEBeOBBYUYzO+GAUCT4GgXyDwFNehrfUORrCoRTLOwRtE6xbz8NDvCT6CAR+Bw0fQ9+1z2Krlg2+fA5+e8ux5gSL8ZgDWlSr+9NVIti+3wSGWnw7HtoIqyH2/VIGw84dCUtp6FnoY5wNKBCglvweqdgAAAABJRU5ErkJggg==">@lang('Log out') </button>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST"
                             class="d-none">
                             @csrf

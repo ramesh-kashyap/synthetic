@@ -197,10 +197,11 @@ Route::any('/UsrBinaryReport',[App\Http\Controllers\UserPanel\BinaryReport::clas
 //bonus
 Route::get('/level-income', [App\Http\Controllers\UserPanel\Bonus::class, 'index'])->name('user.level-income');
 Route::get('/str', [App\Http\Controllers\UserPanel\Bonus::class, 'str'])->name('user.str');
-Route::get('/', [App\Http\Controllers\UserPanel\Bonus::class, 'cashback_income'])->name('user.');
+Route::get('/trading-bonus', [App\Http\Controllers\UserPanel\Bonus::class, 'cashback_income'])->name('user.trading-bonus');
+
 Route::get('/reward-bonus', [App\Http\Controllers\UserPanel\Bonus::class, 'reward_income'])->name('user.reward-bonus');
 Route::get('/roi-bonus', [App\Http\Controllers\UserPanel\Bonus::class, 'roi_income'])->name('user.roi-bonus');
-Route::get('/dailyIncentive', [App\Http\Controllers\UserPanel\Bonus::class, 'dailyIncentive'])->name('user.dailyIncentive');
+Route::get('/teamturnover', [App\Http\Controllers\UserPanel\Bonus::class, 'dailyIncentive'])->name('user.teamturnover');
 Route::get('/activitiesBonus', [App\Http\Controllers\UserPanel\Bonus::class, 'activitiesBonus'])->name('user.activitiesBonus');
 
 Route::get('/gap-margin-bonus', [App\Http\Controllers\UserPanel\Bonus::class, 'gap_margin_bonus'])->name('user.gap-margin-bonus');

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\UserPanel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\BuyFund;
+use App\Models\Income;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use Hexters\CoinPayment\CoinPayment;
@@ -18,6 +19,8 @@ class AddFund extends Controller
   {
 
   $user=Auth::user();
+  $notes = Income::where('user_id',$user->id)->orderBy('id', 'DESC')->limit(10)->get();
+  $this->data['level_income'] = $notes;
   $this->data['page'] = 'user.fund.wallet';
   return $this->dashboard_layout();
 
