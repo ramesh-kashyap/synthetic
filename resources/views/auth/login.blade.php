@@ -124,13 +124,13 @@
                         <form action="{{route('login')}}" method="POST">
                                 {{ csrf_field() }}
                         <ul data-v-a34da882="" data-v-cfc9a7fc="" class="tab">
-                            <li data-v-a34da882="" data-v-cfc9a7fc="" class="email-tab"> Email </li>
-                            <li data-v-a34da882="" data-v-cfc9a7fc="" class="username-tab on"> Username </li>
+                            <li data-v-a34da882="" data-v-cfc9a7fc="" class="email-tab"> @lang('Email') </li>
+                            <li data-v-a34da882="" data-v-cfc9a7fc="" class="username-tab on"> @lang('Username') </li>
                         </ul>
                         <div data-v-a34da882="" data-v-cfc9a7fc="" class="item">
                             <!---->
                             <div data-v-a34da882="" data-v-cfc9a7fc="" class="it input-container">
-                                <div data-v-a34da882="" data-v-cfc9a7fc="" class="n">Username</div>
+                                <div data-v-a34da882="" data-v-cfc9a7fc="" class="n">@lang('Username')</div>
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="val inp flex">
                                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="ico"></div>
                                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex1"><input data-v-a34da882=""
@@ -138,7 +138,7 @@
                                 </div>
                             </div>
                             <div data-v-a34da882="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-a34da882="" data-v-cfc9a7fc="" class="n">Password</div>
+                                <div data-v-a34da882="" data-v-cfc9a7fc="" class="n">@lang('Password')</div>
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex inp val">
                                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="ico"></div>
                                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex1"><input data-v-a34da882="" id="passwordInput"
@@ -157,16 +157,16 @@
                                             class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
                                             <i class="van-icon van-icon-success"
                                                 style="border-color: rgb(113, 219, 129); background-color: rgb(113, 219, 129);">
-                                                <!----></i></div><span class="van-checkbox__label">Remember account password </span>
+                                                <!----></i></div><span class="van-checkbox__label">@lang('Remember account password') </span>
                                     </div>
                                 </div>
-                                <div data-v-a34da882="" data-v-cfc9a7fc="" class="kfBox"> Forgot password? </div>
+                                <div data-v-a34da882="" data-v-cfc9a7fc="" class="kfBox"> @lang('Forgot password') </div>
                             </div>
                             <div data-v-a34da882="" data-v-cfc9a7fc="" class="go"><button data-v-a34da882=""
-                                    data-v-cfc9a7fc="" type="submit" class="btn2"> Login </button>
+                                    data-v-cfc9a7fc="" type="submit" class="btn2">@lang('Login') </button>
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="wrap bet">
-                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="wr"> No account? <span
-                                            data-v-a34da882="" data-v-cfc9a7fc=""><a href="{{route('register')}}" style="color:#ebd100;">Register now</a></span></div>
+                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="wr"> @lang('No account') <span
+                                            data-v-a34da882="" data-v-cfc9a7fc=""><a href="{{route('register')}}" style="color:#ebd100;">@land('Register now')</a></span></div>
                                 </div>
                             </div>
                             </form>
