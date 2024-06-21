@@ -186,20 +186,75 @@
                         <div data-v-ac2db8a0="" class="container">
                             <div data-v-ac2db8a0="" class="total-income">
                                 <div data-v-ac2db8a0="" class="title_box">
-                                    <div data-v-ac2db8a0="" class="title">Asset Chart</div>
+                                    <div data-v-ac2db8a0="" class="title">Recent Asset</div>
                                     <div data-v-ac2db8a0="" class="choose_day">
                                         <div data-v-ac2db8a0="">Last 7 days</div><i data-v-ac2db8a0=""
                                             class="arrow_down van-icon van-icon-arrow-down">
                                             <!----></i>
                                     </div>
                                 </div>
-                                <div data-v-ac2db8a0="" class="info">
+
+                                <style>
+                                    .list .it .n[data-v-65a522d0], .list .it .str[data-v-65a522d0] {
+                                                font-size: .28rem;
+                                                line-height: 1em;
+                                                font-weight: 500;
+                                            }
+
+                                        .db {
+                                            display: flex;
+                                            display: -webkit-box;
+                                            box-align: center;
+                                            -webkit-box-align: center;
+                                        }
+                                            .list .it .b[data-v-65a522d0] {
+                                            padding: .32rem 0;
+                                        }
+                                        .list .it[data-v-65a522d0] {
+                                        border-bottom: .02rem solid hsla(0, 0%, 100%, .2);
+                                    }
+                                .list .it .time[data-v-65a522d0] {
+                                        margin-top: .16rem;
+                                        color: #929292;
+                                        font-size: .24rem;
+                                        line-height: 1em;
+                                    }
+                                </style>
+                                <div data-v-ac2db8a0=""  data-v-cfc9a7fc="" class="info list">
                                     <!---->
-                                    <div data-v-ac2db8a0="" class="img no_data">
-                                        <p data-v-ac2db8a0=""><img data-v-ac2db8a0=""
-                                                src="{{asset('')}}assets/static/img/none.fe897b1e.png"><span data-v-ac2db8a0="">No data
-                                                yet</span></p>
+                                    <div data-v-65a522d0="" class="it">
+                                        <div data-v-65a522d0="" class="jbox_07">
+                                            <div data-v-65a522d0="" class="jt"></div>
+                                            <div data-v-65a522d0="" class="jc c">
+                                                <div data-v-65a522d0="" class="b">
+                                                    <div data-v-65a522d0="" class="db">
+                                                        <div data-v-65a522d0="" class="flexs">
+                                                            <div data-v-65a522d0="" class="n">Deposits
+                                                            </div>
+                                                            <div data-v-65a522d0="" class="time">18/09/2024</div>
+                                                        </div>
+                                                        <div data-v-65a522d0="" class="str"
+                                                            style="display: flex;">
+                                                            <div data-v-65a522d0="" class="green">
+                                                                +09
+                                                            </div>
+                                                            <div data-v-65a522d0="" class="green"
+                                                                style="margin-left: 0.04rem;height: 20px;margin-right: -49px;">
+                                                                USDT </div>
+                                                            <div data-v-65a522d0="" class="time" style="
+                                                            margin-top: 22px;
+                                                        ">
+                                                              Pending
+                                                            </div>
+                                                        </div>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-v-65a522d0="" class="jb"></div>
+                                        </div>
                                     </div>
+                                
                                 </div>
                             </div>
                         </div>
