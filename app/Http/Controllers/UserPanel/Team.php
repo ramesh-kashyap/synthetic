@@ -651,10 +651,10 @@ if($gen_team2->isNotEmpty())
    }
 
     $teamUserName =$gen_team1->pluck('username');
-    
-      $this->data['gen_team1Recharge'] =$gen_team2Recharge;
-      $this->data['gen_team1Withdraw'] =$gen_team2Withdraw;
-      $this->data['gen_team1Earning'] =$gen_team2Earning;
+
+      $this->data['gen_team1Recharge'] =$gen_team1Recharge;
+      $this->data['gen_team1Withdraw'] =$gen_team1Withdraw;
+      $this->data['gen_team1Earning'] =$gen_team1Earning;
 
       $this->data['gen_team2Recharge'] =$gen_team2Recharge;
       $this->data['gen_team2Withdraw'] =$gen_team2Withdraw;
