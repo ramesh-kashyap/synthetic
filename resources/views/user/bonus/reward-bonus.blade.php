@@ -129,7 +129,7 @@
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-30aca98d="" data-v-cfc9a7fc="" class="container">
                         <div data-v-30aca98d="" data-v-cfc9a7fc="" class="bann"><img data-v-30aca98d=""
-                                data-v-cfc9a7fc="" src="{{asset('')}}assets/static/img/task_bann.65ca57fa.jpg"></div>
+                                data-v-cfc9a7fc="" src="{{asset('')}}assets/static/img/20.jpg"></div>
                         <div data-v-30aca98d="" data-v-cfc9a7fc="" class="title flex">
                             <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n">My Reward：</div>
                             <div data-v-30aca98d="" data-v-cfc9a7fc="" class="s">0 USDT</div>

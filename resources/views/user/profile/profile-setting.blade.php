@@ -148,17 +148,17 @@
                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="container">
                         <div data-v-636522ac="" data-v-cfc9a7fc="" class="heads">
                             <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="photo"><img data-v-636522ac=""
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" ><img data-v-636522ac=""
                                         data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240305/455d37717182b4260d303348e269b4bc.png">
+                                        src="{{ asset('') }}assets/static/img/logo1.png" style="width:250px;">
                                 </div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1">
+                                <!-- <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1">
                                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="n"> riteshkk <img
                                             data-v-636522ac="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/img/lv1.0c323966.png">
                                     </div>
                                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="cid"> UID: <span
                                             data-v-636522ac="" data-v-cfc9a7fc="">119103</span></div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div data-v-636522ac="" data-v-cfc9a7fc="" class="incomeBox">
@@ -197,32 +197,32 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAP1BMVEUAAACUmp+UmZ+TlZ+Ump+Xl5+Pl5+Pn5+Ump+Ump+WmZ6Tmp+UmJ6Vmp6VmZ+Tmp6VmZ+fn5+Vmp+UmZ+Ump9XDmKGAAAAFHRSTlMA34Aw7yAgEKDPX+9wkK+QUBDPjzBvt/oAAADsSURBVEjH7ZRJDoMwDEW/M0OhY+5/1qqJaqNmIF21C94GGf2HLDsEB/+Ev1DsQsFhgz7FXUiDcRQHMJ6FEIdQLEypntFkzk1xHTMaDXTMfAqmYbhTQ4jkqnmKNUGJUcurQkB6NflipTmPUkBIBgSZ4AU1AefXM4DhFZ1RF3z62gNC7vN+qwrS70eeLFoCbDKWIt8UYM3mkMySbwrQhleuZfsdAdcUc+8DcUVXkEaUSvkF+wJU+Qf0BTEUBgQxzIJRAXZe1+WGMUH4teC/EUhGWCKDmzbVEIEFb0byZMFo6mfLW8uGHYVWi4M/4gk7/jGmJvtjTAAAAABJRU5ErkJggg==">
                                 </div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Email</div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">jazm948@gmail.com
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n"><a href="{{route('user.ChangeMail')}}" style="color:white;"> Change Email</a></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">
                                 </div>
+    
                                 <!---->
                                 <!---->
                             </li>
-                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico"><img data-v-636522ac=""
-                                        data-v-cfc9a7fc=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAALVBMVEUAAACVmp+VmJ6Ump+Tl5+Tn5+Ump+Tmp+Ump+TmZ6TmZ+Ump+Tmp6VmZ+Ump+VBBQqAAAADnRSTlMA32DvIBDA78+AoJ/Qf3/KEYwAAACxSURBVDjLYxhWQP0dEhBCkpBDlniMJPEOBRAngWDTUkId4gdMCTmIHzAl7EASD7FIKIIkjCh0VWweqqteKEDEWeTeIbsK5AQHsAQjkInsKiAQBUvogZgIV4Gol2CJvndLUS33evcMynJAlWCFcoEUWkQRIWGHLP4QSUIRWcIISQIV0EQiAFWcBSqR924LqkT0uxdget47DPAILBGIKSGAiCgEQEQUA9M5VPFnUxkGKwAA4rZAp3H3Bf8AAAAASUVORK5CYII=">
-                                </div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Address</div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><i data-v-636522ac=""
-                                        data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
-                                        <!----></i></div>
-                                <!---->
-                            </li>
+                          
                             <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico"><img data-v-636522ac=""
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAASFBMVEUAAACUmJ6UmZ6Ump+Tl56Xl5+Qn5+Vmp+Ump+UmZ+Ump+Ump+Pl5+UmJ2Ump+Ul5+Tm5+Tmp+UmZ6TmZ+UmZ+SmZ2TmZyUmp9rdcsxAAAAF3RSTlMAYIC/QCAQ3+/foJAgcM8wQO+wUHBwUBLyPPgAAAFGSURBVEjH5VTLdsUgCFRRY8zDvFr//08bhNZ7zj1Rum1ZJCwYZ4BR9bfCxgG0kofOGEZcf2aKU1g/7wwYvQwwYPGFn0newKUM/qyUICrlB6Eoiyc7TISTMoUAY0LE3AXAXfWJCYkCEWB72cfyC0AKdx56gFhOrQsce4DlR/iakaDrQf+9sLnsWrAIYApL/35YpkgoSGQ/IE/4IL0Tjo1qpBRsVKI4+uXVqBdtWto38Ca0BDFRGy68WFzvY4MNqNJmjDjjHovOR7e7gdRoeg00TaI1ZxcIcQaCYDuUpVbjeSEuipBZYef5MwwJSQ+ssINwBQLpziJhpxYCUMG2Ob6FRPLAkUJRYN+Nc7SmW69RRayP013f2lzKpNrWxSNZl6e2XcuJPFX4sFbHPfcN6U2uIXlJ6vhZHeoRQ7h/CWQ5AI5pU/88vgBpTCU42BskqQAAAABJRU5ErkJggg==">
                                 </div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Phone number</div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">728367262</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">{{Auth::user()->phone}}</div>
                                 <!---->
+                                <!---->
+                            </li>
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.ChangePass')}}" style="color:white;"><img data-v-636522ac=""
+                                        data-v-cfc9a7fc=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAALVBMVEUAAACVmp+VmJ6Ump+Tl5+Tn5+Ump+Tmp+Ump+TmZ6TmZ+Ump+Tmp6VmZ+Ump+VBBQqAAAADnRSTlMA32DvIBDA78+AoJ/Qf3/KEYwAAACxSURBVDjLYxhWQP0dEhBCkpBDlniMJPEOBRAngWDTUkId4gdMCTmIHzAl7EASD7FIKIIkjCh0VWweqqteKEDEWeTeIbsK5AQHsAQjkInsKiAQBUvogZgIV4Gol2CJvndLUS33evcMynJAlWCFcoEUWkQRIWGHLP4QSUIRWcIISQIV0EQiAFWcBSqR924LqkT0uxdget47DPAILBGIKSGAiCgEQEQUA9M5VPFnUxkGKwAA4rZAp3H3Bf8AAAAASUVORK5CYII=">
+                                </div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Change Password</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></a></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"></div>
                                 <!---->
                             </li>
                         </ul>

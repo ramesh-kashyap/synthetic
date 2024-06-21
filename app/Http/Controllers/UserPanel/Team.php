@@ -84,8 +84,8 @@ class Team extends Controller
     public function LevelTeam(Request $request)
     {
       $user=Auth::user();
-      // print_r($user->username);die();
       $ids=$this->my_level_team($user->id);
+   
       $my_level_team=$this->my_level_team_count($user->id);
       $gen_team1 =  (array_key_exists(1,$my_level_team) ? $my_level_team[1]:array());
       $gen_team2 =  (array_key_exists(2,$my_level_team) ? $my_level_team[2]:array());
@@ -248,34 +248,8 @@ class Team extends Controller
     
         public function leftteam(Request $request)
     {  
-      $user=Auth::user();
-      // print_r($user->username);die();
-      $ids=$this->team_by_position($user->id,'Left');
-       
-        $limit = $request->limit ? $request->limit : 10;
-            $status = $request->status ? $request->status : null;
-            $search = $request->search ? $request->search : null;
-            // $notes = User::where('sponsor',$user->username);
-          $notes = User::whereIn('id',$ids);
-        if($search <> null && $request->reset!="Reset"){
-          $notes = $notes->where(function($q) use($search){
-            $q->orWhere('name', 'LIKE', '%' . $search . '%')          
-            ->orWhere('username', 'LIKE', '%' . $search . '%')
-            ->orWhere('email', 'LIKE', '%' . $search . '%')
-            ->orWhere('phone', 'LIKE', '%' . $search . '%')
-            ->orWhere('jdate', 'LIKE', '%' . $search . '%')
-            ->orWhere('active_status', 'LIKE', '%' . $search . '%');
-          });
       
-        }
-            $notes = $notes->paginate($limit)
-                ->appends([
-                    'limit' => $limit
-                ]);
-       
-          $this->data['direct_team'] =$notes;
-          $this->data['search'] =$search;
-          $this->data['page'] = 'user.team.left-team';
+          $this->data['page'] = 'user.team.Mine';
           return $this->dashboard_layout();
 
     }
@@ -336,81 +310,11 @@ class Team extends Controller
   public function genealogy(Request $request)
   {
      $user=Auth::user();
-      $tuser=$request->user_id;
-      if($tuser==NULL){
-     $suser = @$request->suser;
-      if($suser==""){
-      $username = $user->username;
-      }
-      else{
-          $session_id = $user->id;
-          $username = $suser;
-           $user_id=User::where('username',$username)->first();
-       if($user_id->id>$session_id)
-       {
-        $username= $suser;  
-       }
-       else
-       {
-         $username = $user->username;   
-       }
-      }
-     }
-     else{
-         $username = $tuser;
-        }
+     $userId=$user->id;
 
-         $check=User::where('username',$username)->count();;
-          if($check>0)
-          {
-             $username = $username;  
-          }
-          else
-          {
-           $username = $user->username;    
-          }
-   
-    $complete_tree = array();
-    $pool='users';
-    $user_id=User::where('username',$username)->first();
-    $user_id=@$user_id->id;
-    $mydata =User::where('id',$user_id)->first(); 
-    if ($user_id!="")
-    {
-    $childs_1 =   $this->find_users(@$user_id,'Left');  
-    $childs_2 =   $this->find_users(@$user_id,'Right');  
-     
-     if (!empty($childs_1))
-      {
-     $childs_3 =   $this->find_users(@$childs_1->id,'Left');  
-     $childs_4 =   $this->find_users(@$childs_1->id,'Right'); 
-      } 
-       else
-      {
-      $childs_3=array();
-      $childs_4=array();
-      }
+     $incomes=Income::where('user_id',$userId)->where('remarks',"ROI Bonus")->get();
 
-      if (!empty($childs_2))
-      {
-     $childs_5 =   $this->find_users(@$childs_2->id,'Left');  
-     $childs_6 =   $this->find_users(@$childs_2->id,'Right'); 
-      }
-      else
-      {
-      $childs_5=array();
-      $childs_6=array();
-      }
-
-    }
-
-  $this->data['childs_1'] =$childs_1;
-  $this->data['childs_2'] =$childs_2;
-  $this->data['childs_3'] =$childs_3;
-  $this->data['childs_4'] =$childs_4;
-  $this->data['childs_5'] =$childs_5;
-  $this->data['childs_6'] =$childs_6;
-  $this->data['mydata'] =$mydata;
+  $this->data['datas'] =$incomes;
   $this->data['page'] = 'user.team.tree-view';
   return $this->dashboard_layout();
 
@@ -448,7 +352,7 @@ class Team extends Controller
        
           $this->data['direct_team'] =$notes;
           $this->data['search'] =$search;
-          $this->data['page'] = 'user.team.right-team';
+          $this->data['page'] = 'user.team.market';
           return $this->dashboard_layout();
 
     }
@@ -546,17 +450,292 @@ class Team extends Controller
   public function team()
   {
       
+    $user=Auth::user();
+    $ids=$this->my_level_team($user->id);
+    $my_level_team=$this->my_level_team_count($user->id);
+    $gen_team1 =  (array_key_exists(1,$my_level_team) ? $my_level_team[1]:array());
+    $gen_team2 =  (array_key_exists(2,$my_level_team) ? $my_level_team[2]:array());
+    $gen_team3 =  (array_key_exists(3,$my_level_team) ? $my_level_team[3]:array());
+
+    $notes = User::where(function($query) use($ids)
+            {
+              if(!empty($ids)){
+                foreach ($ids as $key => $value) {
+                //   $f = explode(",", $value);
+                //   print_r($f)."<br>";
+                  $query->orWhere('id', $value);
+                }
+              }else{$query->where('id',null);}
+            })->orderBy('id', 'DESC')->get();
+
+
+
+      
+    $gen_team1 = User::where(function($query) use($gen_team1)
+            {
+              if(!empty($gen_team1)){
+                foreach ($gen_team1 as $key => $value) {
+                //   $f = explode(",", $value);
+                //   print_r($f)."<br>";
+                  $query->orWhere('id', $value);
+                }
+              }else{$query->where('id',null);}
+            })->orderBy('id', 'DESC')->get();
+            
+      $gen_team2 = User::where(function($query) use($gen_team2)
+            {
+              if(!empty($gen_team2)){
+                foreach ($gen_team2 as $key => $value) {
+                //   $f = explode(",", $value);
+                //   print_r($f)."<br>";
+                  $query->orWhere('id', $value);
+                }
+              }else{$query->where('id',null);}
+            })->orderBy('id', 'DESC')->get();
+       $gen_team3 = User::where(function($query) use($gen_team3)
+            {
+              if(!empty($gen_team3)){
+                foreach ($gen_team3 as $key => $value) {
+                //   $f = explode(",", $value);
+                //   print_r($f)."<br>";
+                  $query->orWhere('id', $value);
+                }
+              }else{$query->where('id',null);}
+            })->orderBy('id', 'DESC')->get();
+
+
+      $gen_team1UserName =$gen_team1->pluck('username');
+      $gen_team2UserName =$gen_team2->pluck('username');
+      $gen_team3UserName =$gen_team3->pluck('username');
+
+
+ 
+ 
+   if($gen_team1->isNotEmpty())
+   {
+    
+    $gen_team1Recharge = Investment::where(function($query) use($gen_team1UserName)
+      {
+        if(!empty($gen_team1UserName)){
+          foreach ($gen_team1UserName as $key => $value) {
+          //   $f = explode(",", $value);
+          //   print_r($f)."<br>";
+            $query->orWhere('user_id_fk', $value);
+          }
+        }else{$query->where('user_id_fk',null);}
+      })->where('status','Active')->sum('amount'); 
+
+   $gen_team1Withdraw = Withdraw::where(function($query) use($gen_team1UserName)
+      {
+        if(!empty($gen_team1UserName)){
+          foreach ($gen_team1UserName as $key => $value) {
+          //   $f = explode(",", $value);
+          //   print_r($f)."<br>";
+            $query->orWhere('user_id_fk', $value);
+          }
+        }else{$query->where('user_id_fk',null);}
+      })->where('status','Approved')->sum('amount'); 
+
+  $gen_team1Earning = Income::where(function($query) use($gen_team1UserName)
+      {
+        if(!empty($gen_team1UserName)){
+          foreach ($gen_team1UserName as $key => $value) {
+          //   $f = explode(",", $value);
+          //   print_r($f)."<br>";
+            $query->orWhere('user_id_fk', $value);
+          }
+        }else{$query->where('user_id_fk',null);}
+      })->sum('comm'); 
+
+
+   }
+   else
+   {
+     $gen_team1Recharge =0;  
+     $gen_team1Withdraw =0;
+     $gen_team1Earning =0;
+   }
+     
+if($gen_team2->isNotEmpty())
+   {
+     
+      $gen_team2Recharge = Investment::where(function($query) use($gen_team2UserName)
+      {
+        if(!empty($gen_team2UserName)){
+          foreach ($gen_team2UserName as $key => $value) {
+          //   $f = explode(",", $value);
+          //   print_r($f)."<br>";
+            $query->orWhere('user_id_fk', $value);
+          }
+        }else{$query->where('user_id_fk',null);}
+      })->where('status','Active')->sum('amount'); 
+
+   $gen_team2Withdraw = Withdraw::where(function($query) use($gen_team2UserName)
+      {
+        if(!empty($gen_team2UserName)){
+          foreach ($gen_team2UserName as $key => $value) {
+          //   $f = explode(",", $value);
+          //   print_r($f)."<br>";
+            $query->orWhere('user_id_fk', $value);
+          }
+        }else{$query->where('user_id_fk',null);}
+      })->where('status','Approved')->sum('amount'); 
+
+  $gen_team2Earning = Income::where(function($query) use($gen_team2UserName)
+      {
+        if(!empty($gen_team2UserName)){
+          foreach ($gen_team2UserName as $key => $value) {
+          //   $f = explode(",", $value);
+          //   print_r($f)."<br>";
+            $query->orWhere('user_id_fk', $value);
+          }
+        }else{$query->where('user_id_fk',null);}
+      })->sum('comm'); 
+
+
+
+   }
+    else
+   {
+    $gen_team2Recharge =0;  
+    $gen_team2Withdraw =0;
+    $gen_team2Earning =0;
+   }
    
+    if($gen_team3->isNotEmpty())
+   {
+       
+   
+
+      $gen_team3Recharge = Investment::where(function($query) use($gen_team3UserName)
+      {
+        if(!empty($gen_team3UserName)){
+          foreach ($gen_team3UserName as $key => $value) {
+          //   $f = explode(",", $value);
+          //   print_r($f)."<br>";
+            $query->orWhere('user_id_fk', $value);
+          }
+        }else{$query->where('user_id_fk',null);}
+      })->where('status','Active')->sum('amount'); 
+
+   $gen_team3Withdraw = Withdraw::where(function($query) use($gen_team3UserName)
+      {
+        if(!empty($gen_team3UserName)){
+          foreach ($gen_team3UserName as $key => $value) {
+          //   $f = explode(",", $value);
+          //   print_r($f)."<br>";
+            $query->orWhere('user_id_fk', $value);
+          }
+        }else{$query->where('user_id_fk',null);}
+      })->where('status','Approved')->sum('amount'); 
+
+  $gen_team3Earning = Income::where(function($query) use($gen_team3UserName)
+      {
+        if(!empty($gen_team3UserName)){
+          foreach ($gen_team3UserName as $key => $value) {
+          //   $f = explode(",", $value);
+          //   print_r($f)."<br>";
+            $query->orWhere('user_id_fk', $value);
+          }
+        }else{$query->where('user_id_fk',null);}
+      })->sum('comm'); 
+
+
+      
+   }
+    else
+   {
+    $gen_team3Recharge =0;  
+    $gen_team3Withdraw =0;
+    $gen_team3Earning =0;
+   }
+
+    $teamUserName =$gen_team1->pluck('username');
+    
+      $this->data['gen_team1Recharge'] =$gen_team2Recharge;
+      $this->data['gen_team1Withdraw'] =$gen_team2Withdraw;
+      $this->data['gen_team1Earning'] =$gen_team2Earning;
+
+      $this->data['gen_team2Recharge'] =$gen_team2Recharge;
+      $this->data['gen_team2Withdraw'] =$gen_team2Withdraw;
+      $this->data['gen_team2Earning'] =$gen_team2Earning;
+
+      $this->data['gen_team3Recharge'] =$gen_team3Recharge;
+      $this->data['gen_team3Withdraw'] =$gen_team3Withdraw;
+      $this->data['gen_team3Earning'] =$gen_team3Earning;
+
+
+      $this->data['gen_team1total'] =$gen_team1->count();
+      $this->data['active_gen_team1total'] =$gen_team1->where('active_status','Active')->count();
+      $this->data['gen_team2total'] =$gen_team2->count();
+      $this->data['active_gen_team2total'] =$gen_team2->where('active_status','Active')->count();
+
+      $this->data['gen_team3total'] =$gen_team3->count();
+      $this->data['active_gen_team3total'] =$gen_team3->where('active_status','Active')->count();
+
+      $this->data['todaysuser'] =$notes->where('jdate',date('Y-m-d'))->count();
+      $this->data['totalTeam'] =$notes->count();
+      $this->data['ActivetotalTeam'] =$notes->where('active_status','Active')->count();
+      $this->data['totalLevelIncome'] = \DB::table('incomes')->where('user_id',$user->id)->where('remarks','Team Commission')->sum('comm');
+      $this->data['balance'] =round($user->available_balance(),2);
+    
       $this->data['page'] = 'user.team.team';
       return $this->dashboard_layout();
   } 
 
-  public function list()
+  public function list(Request $request)
   {
-      
+    $user=Auth::user();
    
+    $gen_team=$this->my_level_team($user->id);
+
+
+    // print_r($ids);die;
+      $limit = $request->limit ? $request->limit : paginationLimit();
+      $selected_level = $request->selected_level ? $request->selected_level :1;
+          
+      $search = $request->search ? $request->search : null;
+      // $notes = User::where('sponsor',$user->username);
+          // $notes = User::where('sponsor',$user->username);
+        $notes = User::where(function($query) use($gen_team)
+            {
+              if(!empty($gen_team)){
+                foreach ($gen_team as $key => $value) {
+                //   $f = explode(",", $value);
+                //   print_r($f)."<br>";
+                  $query->orWhere('id', $value);
+                }
+              }else{$query->where('id',null);}
+            })->orderBy('id', 'DESC');
+    
+     if($search <> null && $request->reset!="Reset"){
+      $notes = $notes->where(function($q) use($search){
+        $q->orWhere('name', 'LIKE', '%' . $search . '%')
+        ->orWhere('username', 'LIKE', '%' . $search . '%')
+        ->orWhere('email', 'LIKE', '%' . $search . '%')
+        ->orWhere('phone', 'LIKE', '%' . $search . '%')
+        ->orWhere('jdate', 'LIKE', '%' . $search . '%')
+        ->orWhere('active_status', 'LIKE', '%' . $search . '%');
+      });
+
+    }
+          $notes = $notes->paginate($limit)
+              ->appends([
+                  'limit' => $limit
+              ]);
+
+      $this->data['direct_team'] =$notes;
+      $this->data['search'] =$search;
       $this->data['page'] = 'user.team.list';
       return $this->dashboard_layout();
   } 
 
+
+  public function totalteam()
+  {
+      
+   
+      $this->data['page'] = 'user.team.totalteam';
+      return $this->dashboard_layout();
+  } 
 }

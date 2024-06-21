@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
+use App\Models\PasswordReset;
 use Redirect;
 use Carbon\Carbon;
 use Log;
@@ -32,6 +33,38 @@ class Register extends Controller
     }
 
 
+    public function sendCodeEmail(Request $request)
+    {
+
+        $code = verificationCode(6);
+      
+        $emailId = $request->emailId;
+        if ($emailId!="") 
+        {
+          $emailId = $emailId;
+        }
+      
+       
+        PasswordReset::where('email', $emailId)->delete();
+
+        $password = new PasswordReset();
+        $password->email = $emailId;
+        $password->token = $code;
+        $password->created_at = \Carbon\Carbon::now();
+        $password->save();
+
+        //    sendEmail($emailId, 'Your One-Time Password', [
+        //     'name' => $user->name,
+        //     'code' => $code,
+        //     'purpose' => 'Change Password',
+        //     'viewpage' => 'one_time_password',
+
+        //  ]);
+
+       return true;
+    }
+   
+
    public function find_position($snode,$pos)
     {
         $q=User::select('id')->where('Parentid',$snode)->where('position',$pos)->first();
@@ -54,7 +87,9 @@ class Register extends Controller
             $validation =  Validator::make($request->all(), [
                 'phone' => 'required|unique:users,phone',
                 'password' => 'required|confirmed|min:5',
-                'sponsor' => 'required|exists:users,username',              
+                'sponsor' => 'required|exists:users,username',
+                'emailId' => 'required',
+                'code' => 'required',              
             ]);
 
             
@@ -66,12 +101,10 @@ class Register extends Controller
             }
             //check if email exist
           
-          
-            if (isset($request->captcha)) {
-                if (!captchaVerify($request->captcha, $request->captcha_secret)) {
-                    $notify[] = ['error', "Invalid Captcha"];
-                    return back()->withNotify($notify)->withInput();
-                }
+            $code = $request->code;
+            if (PasswordReset::where('token', $code)->where('email', $request->email)->count() != 1) {
+                $notify[] = ['error', 'Invalid token'];
+                return Redirect::back()->withNotify($notify);
             }
 
             
@@ -88,8 +121,10 @@ class Register extends Controller
            $tpassword =substr(time(),-2).substr(rand(),-2).substr(mt_rand(),-1);
             $post_array  = $request->all();
                 //  
-          
+                $data['email'] = $post_array['emailId'];
+                $data['code'] = $post_array['code'];
             $data['phone'] = $post_array['phone'];
+            $data['email'] = $post_array['email'];
             $data['username'] = $username;
             $data['password'] =   Hash::make($post_array['password']);
             $data['tpassword'] =   Hash::make($tpassword);

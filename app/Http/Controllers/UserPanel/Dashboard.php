@@ -46,6 +46,7 @@ class Dashboard extends Controller
       $weekly_profit = Income::where('user_id',$user->id)
       ->whereBetween('ttime', [Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])->sum('comm');
       $totalIncome = Income::where('user_id',$user->id)->sum('comm');
+      $todaysIncome = Income::where('user_id',$user->id)->where('ttime',Date("Y-m-d"))->sum('comm');
 
         $transaction_data = Income::where('user_id',$user->id)->orderBy('id', 'desc')->take(10)->get();
           $this->data['todaysRoiSum'] = \DB::table('contract')->where('user_id',$user->id)->where('ttime',date('Y-m-d'))->where('c_status','-1')->sum('profit');
@@ -70,6 +71,7 @@ class Dashboard extends Controller
         $this->data['willgetProfit'] =$personal_deposit*200/100;
         $this->data['remaining_amount'] =($personal_deposit*2)-$totalIncome;
         $this->data['totalIncome'] =$percentage;
+        $this->data['todaysIncome'] =$todaysIncome;
   
 
 

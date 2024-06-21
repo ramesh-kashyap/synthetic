@@ -80,6 +80,74 @@
         }
 
     </style>
+    <style>
+blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, menu, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+* {
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+#app {
+    max-width: 8.5rem;
+    width: 100%;
+    min-height: 100%;
+    word-wrap: break-word;
+    word-break: normal;
+    font-family: Poppins, PingFang SC, Microsoft Yahei, sans-serif;
+}
+.tame .tab[data-v-273cf854] {
+    padding: 0 0 .24rem 0;
+    font-size: .32rem;
+    font-weight: 600;
+}
+.tame .it[data-v-273cf854] {
+    margin-bottom: 1.24rem;
+}
+.tame .name[data-v-273cf854] {
+    border-bottom: .02rem solid hsla(0, 0%, 100%, .1);
+    margin-bottom: .24rem;
+    padding-bottom: .24rem;
+}
+.tame .name img[data-v-273cf854] {
+    height: .32rem;
+    vertical-align: middle;
+    margin-left: .14rem;
+}
+.tame .it .db[data-v-273cf854] {
+    text-align: center;
+}
+.tame .it .db li[data-v-273cf854] {
+    padding: 0 .1rem;
+}
+.tame .it .db .s[data-v-273cf854] {
+    font-size: .28rem;
+    margin-bottom: .16rem;
+    font-weight: 600;
+}
+.tame .it .db li[data-v-273cf854] {
+    padding: 0 .1rem;
+}
+.tame .it .db .s[data-v-273cf854] {
+    font-size: .28rem;
+    margin-bottom: .16rem;
+    font-weight: 600;
+}
+.tame .it .db .n[data-v-273cf854] {
+    color: #929292;
+    font-size: .22rem;
+}
+.tame .it .db li[data-v-273cf854] {
+    padding: 0 .1rem;
+}
+.tame .it[data-v-273cf854] {
+    margin-bottom: 1.24rem;
+}
+
+    </style>
     <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload" as="script">
     <link href="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload" as="script">
@@ -140,15 +208,15 @@
                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="container">
                             <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="totalBox">
                                 <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Total Earning</div>
-                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0 USDT </div>
+                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> {{number_format($totalLevelIncome,2)}} USDT </div>
                             </div>
                             <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="sjfxBox">
-                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="cname">
+                                <!-- <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="cname">
                                     <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Data Analysis</div>
                                     <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> Daily Earning: <span
                                             data-v-757d6f7f="" data-v-cfc9a7fc="">0</span></div>
-                                </div>
-                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-1">
+                                </div> -->
+                                <!-- <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-1">
                                     <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="col-1">
                                         <li data-v-757d6f7f="" data-v-cfc9a7fc=""><img data-v-757d6f7f=""
                                                 data-v-cfc9a7fc=""
@@ -159,8 +227,8 @@
                                             data-v-757d6f7f="" data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkAgMAAACcbnALAAAADFBMVEUAAAD///////////84wDuoAAAABHRSTlMAzGZMZ+vIJAAAAEdJREFUGNNjGDhgA8YgcA2Ip4NZVxsYmMLBLNUEBs4IEANIgTggwBTGMLUBonlqUxjUGNXMCCiLMzQBymIKbYDZMg3JvgEEAG9+C4cqfDR2AAAAAElFTkSuQmCC">
                                     </div>
-                                </div>
-                                <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="tuBiao">
+                                </div> -->
+                                <!-- <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="tuBiao">
                                     <div data-v-757d6f7f="" data-v-cfc9a7fc="" _echarts_instance_="ec_1718094184764"
                                         style="width: 100%; height: 5rem; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;">
                                         <div
@@ -187,8 +255,8 @@
                                             <p style="color:#fff">0 People</p>
                                         </div>
                                     </div>
-                                </div>
-                                <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-2">
+                                </div> -->
+                                <!-- <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-2">
                                     <li data-v-757d6f7f="" data-v-cfc9a7fc="">
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">New revenue </div>
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s">0 U</div>
@@ -204,30 +272,120 @@
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Vaild</div>
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0 </div>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="teamData">
                                 <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="cname">
                                     <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Team data</div>
                                     <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"><span data-v-757d6f7f=""
-                                            data-v-cfc9a7fc="">Team List</span></div>
+                                            data-v-cfc9a7fc=""><a href="{{route('user.list')}}" style="color:#fff;">Team List</a></span></div>
                                 </div>
                                 <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-2">
                                     <li data-v-757d6f7f="" data-v-cfc9a7fc="">
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Total member</div>
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0<img data-v-757d6f7f=""
+                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> {{$totalTeam}}<a href="{{route('user.list')}}" style="color:#fff;"><img data-v-757d6f7f=""
                                                 data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAM1BMVEWl/30AAACn/32k/32m/36m/36d/3al/3+n/4Cn/3ym/32m/36n/4CZ/4Cl/32q/46m/325gAPAAAAAEHRSTlMzAJks5U0GMCAc8lkTCrMJhzE5swAAALVJREFUOMuNk1EOhCAMBR8LtEVx1/ufdvtBUlsNOL8zShMK0oJr0CUzwFn6U0CNYQjFoCHQXEAZNzJZcAwfimME9n0saATmY6ESYb76qX5SJMKVcm47DNJAQuCKpgEc1Rec0DEtOgTTQpAxLTLGFe0f43tawTZ9YIPxGBTA/aOGI0od+nFI86pl6lX34Pft6lUnnnkkhG0s3sv9up0HrRZmtXLLpV2s/W/9cN4/PYUEBjd6/fz/ZucIv4aUi7oAAAAASUVORK5CYII=">
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAM1BMVEWl/30AAACn/32k/32m/36m/36d/3al/3+n/4Cn/3ym/32m/36n/4CZ/4Cl/32q/46m/325gAPAAAAAEHRSTlMzAJks5U0GMCAc8lkTCrMJhzE5swAAALVJREFUOMuNk1EOhCAMBR8LtEVx1/ufdvtBUlsNOL8zShMK0oJr0CUzwFn6U0CNYQjFoCHQXEAZNzJZcAwfimME9n0saATmY6ESYb76qX5SJMKVcm47DNJAQuCKpgEc1Rec0DEtOgTTQpAxLTLGFe0f43tawTZ9YIPxGBTA/aOGI0od+nFI86pl6lX34Pft6lUnnnkkhG0s3sv9up0HrRZmtXLLpV2s/W/9cN4/PYUEBjd6/fz/ZucIv4aUi7oAAAAASUVORK5CYII="></a>
                                         </div>
                                     </li>
                                     <li data-v-757d6f7f="" data-v-cfc9a7fc="">
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">Total vaild</div>
-                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> 0<img data-v-757d6f7f=""
+                                        <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> {{$ActivetotalTeam}}<a href="{{route('user.list')}}" style="color:#fff;"><img data-v-757d6f7f=""
                                                 data-v-cfc9a7fc=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAM1BMVEWl/30AAACn/32k/32m/36m/36d/3al/3+n/4Cn/3ym/32m/36n/4CZ/4Cl/32q/46m/325gAPAAAAAEHRSTlMzAJks5U0GMCAc8lkTCrMJhzE5swAAALVJREFUOMuNk1EOhCAMBR8LtEVx1/ufdvtBUlsNOL8zShMK0oJr0CUzwFn6U0CNYQjFoCHQXEAZNzJZcAwfimME9n0saATmY6ESYb76qX5SJMKVcm47DNJAQuCKpgEc1Rec0DEtOgTTQpAxLTLGFe0f43tawTZ9YIPxGBTA/aOGI0od+nFI86pl6lX34Pft6lUnnnkkhG0s3sv9up0HrRZmtXLLpV2s/W/9cN4/PYUEBjd6/fz/ZucIv4aUi7oAAAAASUVORK5CYII=">
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAM1BMVEWl/30AAACn/32k/32m/36m/36d/3al/3+n/4Cn/3ym/32m/36n/4CZ/4Cl/32q/46m/325gAPAAAAAEHRSTlMzAJks5U0GMCAc8lkTCrMJhzE5swAAALVJREFUOMuNk1EOhCAMBR8LtEVx1/ufdvtBUlsNOL8zShMK0oJr0CUzwFn6U0CNYQjFoCHQXEAZNzJZcAwfimME9n0saATmY6ESYb76qX5SJMKVcm47DNJAQuCKpgEc1Rec0DEtOgTTQpAxLTLGFe0f43tawTZ9YIPxGBTA/aOGI0od+nFI86pl6lX34Pft6lUnnnkkhG0s3sv9up0HrRZmtXLLpV2s/W/9cN4/PYUEBjd6/fz/ZucIv4aUi7oAAAAASUVORK5CYII="></a>
                                         </div>
                                     </li>
                                 </ul>
+                            </div>
+                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="tame">
+                                <div data-v-273cf854="" data-v-cfc9a7fc="" class="tab"> Three generations data </div>
+                                <div data-v-273cf854="" data-v-cfc9a7fc="" class="it">
+                                    <div data-v-273cf854="" data-v-cfc9a7fc="" class="name"> First generation data<img
+                                            data-v-273cf854="" data-v-cfc9a7fc=""
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAP1BMVEWl/30AAACm/3+d/3il/32m/32l/3ym/32k/4Cm/32i/3qm/36f/3yo/32o/4Oi/3ym/3um/3yl/3ym/36m/30ryM4pAAAAFHRSTlMzAC0HmeYcTUzyElkgHykpWfKzjNPafGcAAADBSURBVDjLhZPtDoMgDEUvVHAyPtzm+z/rMDEWiqH3J+cQmtLCKGmFEIsFbEnhSSBvwUkkBQ8R3wlkMcQSC8xHA5JL4xSYS+MURH3r8uorhSG0ccf2BoeqkITQGb4K6LIKwyBgagQkTI2IjKlRcDVhXzjfg42mepFNE9zdzuth8YS7G/pYJPOCOOUVB8H3T8srNnbGYSCm0fU8jt/dcdA4ML+We23kSBtabey1xVFWj+TypvZ2xeP6U0jZVphjID79A9E2Cgajy8nQAAAAAElFTkSuQmCC">
+                                    </div>
+                                    <!---->
+                                    <!---->
+                                    <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$active_gen_team1total}}/{{$gen_team1total}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Number of users</div>
+                                        </li>
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Recharge,1)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative recharge
+                                            </div>
+                                        </li>
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> {{number_format($gen_team1Withdraw,2)}} </div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative withdrawal
+                                            </div>
+                                        </li>
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> {{number_format($gen_team1Earning,2)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative earnings
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div data-v-273cf854="" data-v-cfc9a7fc="" class="it">
+                                    <!---->
+                                    <div data-v-273cf854="" data-v-cfc9a7fc="" class="name"> Second generation data<img
+                                            data-v-273cf854="" data-v-cfc9a7fc=""
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAP1BMVEWl/30AAACm/3+d/3il/32m/32l/3ym/32k/4Cm/32i/3qm/36f/3yo/32o/4Oi/3ym/3um/3yl/3ym/36m/30ryM4pAAAAFHRSTlMzAC0HmeYcTUzyElkgHykpWfKzjNPafGcAAADBSURBVDjLhZPtDoMgDEUvVHAyPtzm+z/rMDEWiqH3J+cQmtLCKGmFEIsFbEnhSSBvwUkkBQ8R3wlkMcQSC8xHA5JL4xSYS+MURH3r8uorhSG0ccf2BoeqkITQGb4K6LIKwyBgagQkTI2IjKlRcDVhXzjfg42mepFNE9zdzuth8YS7G/pYJPOCOOUVB8H3T8srNnbGYSCm0fU8jt/dcdA4ML+We23kSBtabey1xVFWj+TypvZ2xeP6U0jZVphjID79A9E2Cgajy8nQAAAAAElFTkSuQmCC">
+                                    </div>
+                                    <!---->
+                                    <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$active_gen_team2total}}/{{$gen_team2total}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Number of users</div>
+                                        </li>
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Recharge,1)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative recharge
+                                            </div>
+                                        </li>
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">  {{number_format($gen_team1Withdraw,2)}}  </div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative withdrawal
+                                            </div>
+                                        </li>
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Earning,2)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative earnings
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div data-v-273cf854="" data-v-cfc9a7fc="" class="it">
+                                    <!---->
+                                    <!---->
+                                    <div data-v-273cf854="" data-v-cfc9a7fc="" class="name"> Third generation data<img
+                                            data-v-273cf854="" data-v-cfc9a7fc=""
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAAP1BMVEWl/30AAACm/3+d/3il/32m/32l/3ym/32k/4Cm/32i/3qm/36f/3yo/32o/4Oi/3ym/3um/3yl/3ym/36m/30ryM4pAAAAFHRSTlMzAC0HmeYcTUzyElkgHykpWfKzjNPafGcAAADBSURBVDjLhZPtDoMgDEUvVHAyPtzm+z/rMDEWiqH3J+cQmtLCKGmFEIsFbEnhSSBvwUkkBQ8R3wlkMcQSC8xHA5JL4xSYS+MURH3r8uorhSG0ccf2BoeqkITQGb4K6LIKwyBgagQkTI2IjKlRcDVhXzjfg42mepFNE9zdzuth8YS7G/pYJPOCOOUVB8H3T8srNnbGYSCm0fU8jt/dcdA4ML+We23kSBtabey1xVFWj+TypvZ2xeP6U0jZVphjID79A9E2Cgajy8nQAAAAAElFTkSuQmCC">
+                                    </div>
+                                    <ul data-v-273cf854="" data-v-cfc9a7fc="" class="db">
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{$active_gen_team2total}}/{{$gen_team2total}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Number of users</div>
+                                        </li>
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Recharge,1)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative recharge
+                                            </div>
+                                        </li>
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s"> {{number_format($gen_team1Withdraw,2)}}  </div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative withdrawal
+                                            </div>
+                                        </li>
+                                        <li data-v-273cf854="" data-v-cfc9a7fc="">
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="s">{{number_format($gen_team1Earning,2)}}</div>
+                                            <div data-v-273cf854="" data-v-cfc9a7fc="" class="n">Cumulative earnings
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div data-v-4c14e1cc="" data-v-757d6f7f="" data-v-cfc9a7fc="">

@@ -1,8 +1,8 @@
-<html lang="en" class="pc" style="font-size: 50px;">
+<html lang="en" style="font-size: 50px;" class="pc">
 
 <head>
     <meta charset="utf-8">
-    <title>Set fund password</title>
+    <title>Withdrawal</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -91,48 +91,29 @@
     <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
     <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
     <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-04a90ad1.aa2f317d.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-04a90ad1.28c21b1a.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-494d233b.50573298.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-494d233b.77bc554e.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a0b1332.9f52f39a.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-273ce16e.debfb5de.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-67098c77.8b942857.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-67098c77.b8c94109.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-21a2b91c.0ed7b871.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-aef56f2a.f587d975.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-aef56f2a.b3c068cc.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-8c0c3ac6.27e1c228.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-8c0c3ac6.576dd3c7.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-65aadf8b.a4cef8a6.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-65aadf8b.59fb6a2e.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8870696.ba836efa.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8870696.d3c72f4a.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-198acc81.38a789e9.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-198acc81.12c44c37.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-494d233b.50573298.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-494d233b.77bc554e.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-0830ec22.59462d6e.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-0830ec22.94ec9a30.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-43a21247.c7b442a8.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-43a21247.bd486532.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-66c4c188.61a42d60.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-66c4c188.806de089.1717187934571.chunk.js"></script>
 </head>
 
-<body class="mein_cn">
+<body class="main_en">
     <div id="app" class="applang">
-        <div data-v-cfc9a7fc="" data-v-9d2ee7be="" class="page">
+        <div data-v-cfc9a7fc="" data-v-7bab1ac4="" class="page">
             <div data-v-cfc9a7fc="" class="headers">
-                <div data-v-397da544="" data-v-9d2ee7be="" class="head" data-v-cfc9a7fc="">
+                <div data-v-397da544="" data-v-7bab1ac4="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> withdrawal </div>
+                        <div data-v-397da544="" class="name tac"> Withdrawal </div>
+                        <form action="{{ route('user.Withdraw-Request') }}" method="POST">
+                            {{ csrf_field() }}
+
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -143,37 +124,126 @@
             </div>
             <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
-                    <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="container">
-                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Email</div>
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
-                                    data-v-cfc9a7fc="" type="text" placeholder="email" ></div>
+                    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="container">
+                    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Currency</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
+                                  
+                                    <select name="paymentMode" autocomplete="off" type="text" class="uni-input-input" style="color: white;
+    width: 100%;
+    background: #131118;">
+                                        <option value="TRC20" id="usdtTrc20" data-icon="usdtTrc20" name="PSys">TRC20</option>
+                                        <option value="BEP20" data-icon="usdtBep20" id="usdtBep20" name="PSys">BEP20</option>
+                                    </select>
+                                    </div>
+                            </div>
                         </div>
+                       
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex" style="
+    margin-bottom: 13px;>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1" >
+                                    <input data-v-cfc9a7fc="" data-v-7bab1ac4=""  type="text" value="{{Auth::user()->usdtTrc20}}" placeholder="Please enter the withdrawal address" name="walletAddress" id="walletAddress" >
+                                </div>
+                            </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal amount</div>
+<div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
+        <input data-v-7bab1ac4="" data-v-cfc9a7fc="" type="text" placeholder="Please enter the withdrawal amount" name="amount" id="withdrawalAmount">
+    </div>
+    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str"></div>
+</div>
+                        </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Transaction Password</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
+                                        data-v-cfc9a7fc="" type="password" placeholder="Please enter the transaction password"
+                                         name="transaction_password"></div>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str">  </div>
+                            </div>
+                        </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tips">
+                                <ul data-v-7bab1ac4="" data-v-cfc9a7fc="">
+                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Arrived quantity</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s blue"><span data-v-7bab1ac4="" data-v-cfc9a7fc="" id="arrivedQuantity">0 USDT</span></div>
+                                    </li>
+                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Withdrawal fee 5%</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4="" data-v-cfc9a7fc="" id="withdrawalFee">0 USDT</span></div>
+                                    </li>
+                                    
+                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Minimum withdrawal amount</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s">10 USDT</div>
+                                    </li>
+                                    <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Maximum withdrawal amount</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4="" data-v-cfc9a7fc="">No Limit</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item"><button data-v-7bab1ac4=""
+                                data-v-cfc9a7fc="" class="btn2" type="submit"> Confirm </button></div>
+                        </form>            
+                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tipss">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Note</div>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="p">
+                                    <p><span style="color:#ffffff">1, the minimum withdrawal for valid members: 50USDT
+                                        </span></p>
+
+                                    <p><span style="color:#ffffff">2. No payment will be made on U.S. statutory holidays
+                                            and weekends </span></p>
+
+                                    <p><span style="color:#ffffff">3. Taxes for each withdrawal: 5% tax&nbsp;</span></p>
+
+                                    <p><span style="color:#ffffff">4, the handling fee on the chain for a single
+                                            withdrawal is 1 USDT. </span></p>
+
+                                    <p><span style="color:#ffffff">5, only supports USDT-TRON withdrawals </span></p>
+
+                                    <p><span style="color:#ffffff">6. Withdrawals need to be confirmed and reviewed by
+                                            multiple nodes, and the withdrawal time will be within 72 hours. Withdrawals
+                                            are only allowed in the capital account. If the account has insufficient
+                                            funds, please transfer the quantitative funds to the capital account and
+                                            then initiate a withdrawal again.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-4c14e1cc="" data-v-7bab1ac4="" data-v-cfc9a7fc="">
                         <!---->
-                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Funding password</div>
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
-                                    data-v-cfc9a7fc="" type="password"
-                                    placeholder="Please enter the transaction password" maxlength="6"
-                                    aria-autocomplete="list"></div>
+                    </div>
+                    <div data-v-2ca52d3c="" data-v-7bab1ac4="" data-v-cfc9a7fc="">
+                        <!---->
+                    </div>
+                    <!---->
+                    <div data-v-4c14e1cc="" data-v-7bab1ac4="" data-v-cfc9a7fc="">
+                        <div class="van-overlay" style="z-index: 2001; display: none;"></div>
+                        <div data-v-4c14e1cc="" class="van-popup van-popup--round van-popup--bottom"
+                            style="background: none; z-index: 2002; display: none;">
+                            <div data-v-4c14e1cc="" class="popup_box">
+                                <div data-v-4c14e1cc="" class="scroll">
+                                    <div data-v-4c14e1cc="" class="ul">
+                                        <div data-v-4c14e1cc="">
+                                            <div data-v-4c14e1cc="" class="item active"> TRC20 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-4c14e1cc="" class="esc">Cancel</div>
+                            </div>
                         </div>
-                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Confirm password</div>
-                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val inp"><input data-v-9d2ee7be=""
-                                    data-v-cfc9a7fc="" type="password" placeholder="Enter the password again to confirm"
-                                    maxlength="6"></div>
-                        </div>
-                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="err" style="color: red;"> Incorrect password
-                            format </div>
                     </div>
                 </div>
             </div>
-            <div data-v-cfc9a7fc="" class="footer">
-                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="container">
-                    <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="go"><button data-v-9d2ee7be="" data-v-cfc9a7fc=""
-                            class="btn2">Confirm</button></div>
-                </div>
-            </div>
+            <!---->
         </div>
         <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
             <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
@@ -181,7 +251,7 @@
                     alt=""></div>
         </div>
         <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
-                src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
+                src="/static/img/start.0aabcda5.gif"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>
@@ -189,6 +259,131 @@
     <script src="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js"></script>
     <script src="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js"></script>
     <script src="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js"></script>
+    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#withdrawalAmount').on('input', function() {
+                let amount = parseFloat($(this).val());
+                if (isNaN(amount)) {
+                    amount = 0;
+                }
+    
+                let withdrawalFee = amount * 0.05;
+                let arrivedQuantity = amount - withdrawalFee ;
+    
+                if (arrivedQuantity < 0) {
+                    arrivedQuantity = 0;
+                }
+    
+                $('#arrivedQuantity').text(arrivedQuantity.toFixed(2) + ' USDT');
+                $('#withdrawalFee').text(withdrawalFee.toFixed(2) + ' USDT');
+            });
+        });
+    </script>
+    <script>
+        $(function(){
+            $('input[name="amount"]').on('change keyup',function () {
+                let str = $(this).val();
+                str = str.replace(',','.');
+                $(this).val(str);
+                let min =  $('#min_withdrawal').val();
+                let max =  $('#max_withdrawal').val();
+
+                let charge = $('#chargeAmt').val();
+          
+                let amount = parseFloat(str);
+            
+            
+              
+             
+                if (amount>=min && amount<=max) 
+                {
+                   
+                $(".submit-btn").prop("disabled", false);
+                $('.submit-btn').removeClass('van-button van-button--default van-button--disabled van-button--normal com-btn on');         
+                $('.submit-btn').addClass('van-button van-button--default  van-button--normal com-btn on');         
+                }
+                else
+                {
+    
+                $(".submit-btn").prop("disabled", true);  
+                $('.submit-btn').removeClass('van-button van-button--default van-button--normal com-btn on');         
+                $('.submit-btn').addClass('van-button van-button--default van-button--disabled van-button--normal com-btn on');         
+                }
+                
+                if(amount<=10)
+                {
+                      $('#ActualAmount').html(amount-amount*50/100+" USDT");  
+                      $('#chargefee').html("5 USDT");  
+                }
+                else
+                {
+                 $('#ActualAmount').html(amount-amount*charge/100+" USDT");
+                    $('#chargefee').html(charge+" %");  
+                }
+              
+                
+            
+                //console.log(summ_usd);
+            });
+    
+          
+
+            $('.code-btn').click(function(e) {
+    var ths = $(this);
+    var emailId = $('#emailId').val();
+
+    if (!emailId) 
+    {
+        iziToast.error({
+                message: 'Invalid Email!',
+                position: "topRight"
+            });
+            return false;
+    }
+    // alert(sponsor); 
+    $.ajax({
+        type: "POST"
+        , url: "{{ route('user.send_code') }}"
+        , data: {
+            "emailId": emailId
+            , "_token": "{{ csrf_token() }}"
+        , }
+        , success: function(response) {
+            // alert(response);      
+            if (response) {
+                // alert("hh");
+                iziToast.success({
+                message: 'Email send Successfully',
+                position: "topRight"
+            });
+            } else {
+                // alert("hi");
+                iziToast.error({
+                message: 'Error!',
+                position: "topRight"
+            });
+            }
+        }
+    });
+});
+    
+    
+        })
+    
+    </script>
+    <script>
+        $('select[name="paymentMode"]').change(function () {
+            let icon = $(this).find('option:selected').data('icon');
+            if (icon == "usdtTrc20") {
+                $('#walletAddress').val('{{Auth::user()->usdtTrc20}}');
+            } else {
+                $('#walletAddress').val('{{Auth::user()->usdtBep20}}');
+            }
+        });
+    </script>
 </body>
+@include('partials.notify')
 
 </html>

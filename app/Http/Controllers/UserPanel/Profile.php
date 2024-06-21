@@ -105,6 +105,13 @@ class Profile extends Controller
 
     }
 
+    public function tpassword()
+    {
+    $this->data['page'] = 'user.withdraw.tpassword';
+    return $this->dashboard_layout();
+
+    }
+
     public function setting()
     {
     $this->data['page'] = 'user.profile.seting';
@@ -369,11 +376,16 @@ public function BankDetail()
                 'newEmail' => 'required|email|unique:users,email,' . $request->newEmail
 
             ]);
+
+
+
             if($validation->fails()) {
                 Log::info($validation->getMessageBag()->first());
 
                 return Redirect::back()->withErrors($validation->getMessageBag()->first())->withInput();
             }
+
+
 
             $code = $request->first_code;
         
@@ -488,7 +500,8 @@ public function BankDetail()
 
        return true;
     }
-   
+
+    
 
     public function change_password_post(Request $request)
     {

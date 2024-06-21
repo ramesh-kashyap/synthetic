@@ -162,7 +162,7 @@
                                         <div data-v-aefda5d2="" data-v-cfc9a7fc="" class="time">30/03/2024 22:20:08
                                         </div>
                                     </div>
-                                    <div data-v-aefda5d2="" data-v-cfc9a7fc="" class="text ellipsis2">BitGrid Online
+                                    <div data-v-aefda5d2="" data-v-cfc9a7fc="" class="text ellipsis2">Online
                                     </div>
                                 </div>
                             </div>

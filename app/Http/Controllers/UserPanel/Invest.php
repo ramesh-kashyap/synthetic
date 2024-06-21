@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 use Log;
 use Redirect;
 use Hash;
@@ -53,9 +54,23 @@ class Invest extends Controller
         $notes = $notes->paginate($limit)->appends(['limit' => $limit ]);
 
       $this->data['search'] =$search;
-      $this->data['deposit_list'] =$notes;
+      $this->data['deposits'] =$notes;
 
-    $this->data['page'] = 'user.invest.records';
+    $this->data['page'] = 'user.fund.fundHistory';
+    return $this->dashboard_layout();
+
+    }
+
+
+    public function showrecord1(Request $request)
+    {
+      $user=Auth::user();
+      
+        $notes = Investment::where('user_id',$user->id)->get();
+      
+      $this->data['deposits'] =$notes;
+
+    $this->data['page'] = 'user.fund.fundHistory';
     return $this->dashboard_layout();
 
     }
@@ -71,6 +86,18 @@ class Invest extends Controller
         $this->data['page'] = 'user.invest.Deposit';
         return $this->dashboard_layout();
     }
+    
+
+    public function depositList()
+    {
+        $user=Auth::user();
+        $invest_check=Investment::where('user_id',$user->id)->where('status','==','Active')->orderBy('id','desc');
+            $todaysIncome = Income::where('user_id',$user->id)->where('ttime',Date("Y-m-d"))->sum('comm');
+
+        $this->data['records'] = ($invest_check)?$invest_check:[];
+        $this->data['page'] = 'user.invest.strategy';
+        return $this->dashboard_layout();
+    }
 
 
     public function package()
@@ -83,12 +110,26 @@ class Invest extends Controller
 
     public function strategy()
     {
-      $notes= DB::table('plans')->get();
+        $user = Auth::user();
+        $todaysIncome = Income::where('user_id',$user->id)->where('ttime',Date("Y-m-d"))->sum('comm');
+        $totalRoi = Income::where('user_id',$user->id)->where('remarks','Trading Bonus')->sum('comm');
 
-      $this->data['data'] =  $notes;
+        $invest_check = Investment::where('user_id', $user->id)
+                                   ->where('status', 'Active')
+                                   ->orderBy('id', 'desc')
+                                   ->get();
+    
+    
+        $notes = DB::table('plans')->get();
+    
+        $this->data['recharges'] = ($invest_check) ? $invest_check : [];
+        $this->data['data'] = $notes;
+        $this->data['todaysIncome'] = $todaysIncome;
+        $this->data['totalRoi'] = $totalRoi;
         $this->data['page'] = 'user.invest.strategy';
         return $this->dashboard_layout();
     }
+    
 
 
 
@@ -178,7 +219,7 @@ public function viewdetail($txnId)
 
     $min_amount = $request->minimum_deposit;
     $max_amount = $request->maximum_deposit;
-    $plan = $request->Plan;
+    $plan = $request->plan;
     $paymentMode = $request->PSys;
     $amount = $request->Sum;
 
@@ -186,16 +227,16 @@ public function viewdetail($txnId)
     
      $invest_check=Investment::where('user_id',$user->id)->where('status','Pending')->first();
 
-    if ($invest_check) 
-    {
-      return  redirect()->route('user.DepositHistory')->withErrors(array('your deposit already pending'));
-    }
+    // if ($invest_check) 
+    // {
+    //   return  redirect()->route('user.DepositHistory')->withErrors(array('your deposit already pending'));
+    // }
    
    
     $amountTotal= $request->Sum;
   
   
-    if($paymentMode=="USDT.BEP20")
+    if($paymentMode=="USDTBEP20")
     {
        $paymentMode= "USDT_BSC"; 
     }
@@ -204,6 +245,7 @@ public function viewdetail($txnId)
       $paymentMode= "USDT_TRX";    
     }
     
+
        $invoice = substr(str_shuffle("0123456789"), 0, 7);
        $apiURL = 'https://plisio.net/api/v1/invoices/new';
         $postInput = [
@@ -256,7 +298,7 @@ public function viewdetail($txnId)
     $this->data['amount'] =$amount;
     $this->data['invoice_total_sum'] =$resultAarray['data']['invoice_total_sum'];
     $this->data['page'] = 'user.invest.confirmDeposit';
-    return $this->dashboard_layout();
+    return $this->dashboard_layout();  
 
   }
   else
@@ -706,7 +748,7 @@ public function viewdetail($txnId)
            $profile = DB::table('plans')->where('id',$id)->first();
 
           
-        return view('user.invest.Deposit')->with('profile',$profile);
+           return view('user.invest.Deposit')->with('profile',$profile)->with('id',$id);
         
           }
 

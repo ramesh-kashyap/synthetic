@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BitGrid</title>
+    <title>{{siteName()}}</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -142,7 +142,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.strategy')}}"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> VIP1 </div>
+                        <div data-v-397da544="" class="name tac"> VIP{{$id}} </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -161,8 +161,11 @@
                             <div data-v-cc3ce6d2="" class="levelBox-head">
                                 <div data-v-cc3ce6d2="" class="left"><img data-v-cc3ce6d2=""
                                         src="{{asset('')}}assets/static/img/v1.7b83cd44.png" style="pointer-events: none;"></div>
-                                <div data-v-cc3ce6d2="" class="more"> Teamlist<img data-v-cc3ce6d2=""
+                                <div data-v-cc3ce6d2="" class="more">
+                                    <a href="{{route('user.recharge')}}">
+                                    Package list<img data-v-cc3ce6d2=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWNxwqAAAAB3RSTlMAgECgUJBwE7RqWgAAAFBJREFUKM9joBtgcoAQcKBeCCHgwL1cAELAAGN5IYSAA3GQrDhpSlhBsqzISsxBsuZISpjLy8AEpgCmFkxDMa1FOIywAgzv4w4gJgUIQUcAAPJCHQUHfZ8eAAAAAElFTkSuQmCC">
+                                    </a>
                                 </div>
                             </div>
                             <div data-v-cc3ce6d2="" class="bann">
@@ -217,14 +220,24 @@
                                     </div> <span class="swiper-notification" aria-live="assertive"
                                         aria-atomic="true"></span>
                                 </div>
-                                <div data-v-cc3ce6d2="" class="swiper-next" tabindex="0" role="button"
-                                    aria-label="Next slide" aria-disabled="false"><img data-v-cc3ce6d2=""
+                                <?php 
+                                  $nextSlide = ($id+1>4)?4:$id+1;
+                                  $previousSlide = ($id-1<1)?1:$id-1;
+                                ?>
+                                <div data-v-cc3ce6d2="" class="swiper-next" tabindex="0"  role="button"
+                                    aria-label="Next slide" aria-disabled="false">
+                                     <a href="{{route('edit',['id'=>$nextSlide])}}">
+                                    <img data-v-cc3ce6d2=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAABNVBMVEUAAAD////////////////////////////////////////////////////+//7////////////////////9//3////+//75/fr////+//73/fj////+//75/vrr+u3Y9dzP89TF8czA78fm+em878S27L77//vs+u3u++/3/fjt++/q+uzT9dnb9t7X9dvT9NjI8s+57cHF8cvA8Mjs+fD4//jD8Mvt/O/W9dv0/PXy/PPv/PHv+/Di9+bi9+Tc9+Db9t/N8tLK8dDI8c/Q89ax67q57cHr/e/1/fb+//7z/PTx+/Pf9+Lm+enh9+XS89ff9+Pe9+LK8dG98MWs6rW37b/m9+j1/Pb+//75/vrn+enx+/Pd9uPy/PPj+Obh+ObO8tP5//v9/f2v7Lq768K067zI8sy7MG6gAAAAZ3RSTlMABwoEDA4QEhYUGhgfJR0gJyEcIjAjKT0rLjos+/TZt6iVjdGGez8zJtHCurCknZeGgYB4NzYzKSXr5+Pfy8nAvqKenJBzcC/t1MrIxbKvrqypjnNraC3t4drSz8XEt7WIfnNgS0E8Y/EC1QAAAzdJREFUSMeN1mV36kAQBuBbKAnRTQLBbr0UaEuFGtRdbt2vu/z/n3BndnYrpzB0vuY8553V7Jv2lUwme55UEuvxazeUkKVld4aEqpdgd0dRKKBSqV6ExHilTArKMAyEyr1KGVCmiVA7XhECYmGBhEBw2CajCIFJY/l/l0zMI8ZmpSAJkOM4duv37W3LVHGdVI9SFiLbtqPa3f7+PsUxjBT0ByhyXbd5MDY2dpe2DIPS2A4l8l0h7ucb5fKBjywl0xhlmqAAhZnDuZGRkfnQSVumapJRFiohMnF1dnh4eK4WEUPVjuk5BOW6mdirXu/s7Mw2XWCmoRivRMbzFmaGhob2cq5vO1Z7Rh3iMpMKYy9YmL64qM8UYiFZh2VLgqOBKVWaGhwcnC56IdsjhtHU275Ul5ubm1PZIA6pRx32skk1sEh4Xi7/fWNj4zIbeB70yITJDWzIFjNekJ8cHR09W8wFXkw9UtjLNDky2aLwcpWJgYGBycUCsNC10xaGJdruEDkyCgsqx6urqxOlt8CwRzaMeoSwuDK+vLx8UioC82IRORazHYHhhMDkVz729/eP57NZZBm3C0soVvnQ19f3DhSkBcDkPOLIePaLFDKcER8ZhXVkFrCf1CKwQiGAneWk9eZnWXH8/dHRMTX5LI2dEj/Mf15ZWflagjS9bMzYaN3Sju/G+ZO1tbUJWABiDndEk0+WO0+bhGYyesXgME7EHm7JT2eLuG7Cxy47OnXa9Fb+tr6+fg4HIA5dfW6YLtXZhuN2/uX09AocnFJ9cDqdN31MRQbc1dbW1lRRd0ms471lmOAiAdfWgrwUDoHpS6E9U46u1hDcdL1en8kJ7BLWgBkdDc/C2z+Ey1VeeE1gDrAUXSb89RrhVV7d297e/lHj7klkD9OCeb4QYfV6d3d3tmbT4KjLtnm6TzlAVxzKn0Do0I+KWDcXAbyXvxyfWTnd56Ozo8htzpfL5RsaGzj2100OIFTtptFo/OMZOcqTEKoFv+ElAxn7DlLPEgMC6YXR+rOkw1Dxjp4zSE1TZkn2uieXfjxpBYx3GlKh4hlBciixEkp1ZQC1TCikw3hIjiQhVN3dizf2c/YfUshakhni7aYAAAAASUVORK5CYII=">
+                                    </a>
                                 </div>
                                 <div data-v-cc3ce6d2="" class="swiper-prev swiper-button-disabled" tabindex="0"
-                                    role="button" aria-label="Previous slide" aria-disabled="true"><img
+                                    role="button" aria-label="Previous slide" aria-disabled="true">
+                                    <a href="{{route('edit',['id'=>$previousSlide])}}">
+                                    <img
                                         data-v-cc3ce6d2=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAABNVBMVEUAAAD////////////////////////////////////////////////////+//7////////////////////9//3////+//75/fr////+//73/fj////+//75/vrr+u3Y9dzP89TF8czA78fm+em878S27L77//vs+u3u++/3/fjt++/q+uzT9dnb9t7X9dvT9NjI8s+57cHF8cvA8Mjs+fD4//jD8Mvt/O/W9dv0/PXy/PPv/PHv+/Di9+bi9+Tc9+Db9t/N8tLK8dDI8c/Q89ax67q57cHr/e/1/fb+//7z/PTx+/Pf9+Lm+enh9+XS89ff9+Pe9+LK8dG98MWs6rW37b/m9+j1/Pb+//75/vrn+enx+/Pd9uPy/PPj+Obh+ObO8tP5//v9/f2v7Lq768K067zI8sy7MG6gAAAAZ3RSTlMABwoEDA4QEhYUGhgfJR0gJyEcIjAjKT0rLjos+/TZt6iVjdGGez8zJtHCurCknZeGgYB4NzYzKSXr5+Pfy8nAvqKenJBzcC/t1MrIxbKvrqypjnNraC3t4drSz8XEt7WIfnNgS0E8Y/EC1QAAAzdJREFUSMeN1mV36kAQBuBbKAnRTQLBbr0UaEuFGtRdbt2vu/z/n3BndnYrpzB0vuY8553V7Jv2lUwme55UEuvxazeUkKVld4aEqpdgd0dRKKBSqV6ExHilTArKMAyEyr1KGVCmiVA7XhECYmGBhEBw2CajCIFJY/l/l0zMI8ZmpSAJkOM4duv37W3LVHGdVI9SFiLbtqPa3f7+PsUxjBT0ByhyXbd5MDY2dpe2DIPS2A4l8l0h7ucb5fKBjywl0xhlmqAAhZnDuZGRkfnQSVumapJRFiohMnF1dnh4eK4WEUPVjuk5BOW6mdirXu/s7Mw2XWCmoRivRMbzFmaGhob2cq5vO1Z7Rh3iMpMKYy9YmL64qM8UYiFZh2VLgqOBKVWaGhwcnC56IdsjhtHU275Ul5ubm1PZIA6pRx32skk1sEh4Xi7/fWNj4zIbeB70yITJDWzIFjNekJ8cHR09W8wFXkw9UtjLNDky2aLwcpWJgYGBycUCsNC10xaGJdruEDkyCgsqx6urqxOlt8CwRzaMeoSwuDK+vLx8UioC82IRORazHYHhhMDkVz729/eP57NZZBm3C0soVvnQ19f3DhSkBcDkPOLIePaLFDKcER8ZhXVkFrCf1CKwQiGAneWk9eZnWXH8/dHRMTX5LI2dEj/Mf15ZWflagjS9bMzYaN3Sju/G+ZO1tbUJWABiDndEk0+WO0+bhGYyesXgME7EHm7JT2eLuG7Cxy47OnXa9Fb+tr6+fg4HIA5dfW6YLtXZhuN2/uX09AocnFJ9cDqdN31MRQbc1dbW1lRRd0ms471lmOAiAdfWgrwUDoHpS6E9U46u1hDcdL1en8kJ7BLWgBkdDc/C2z+Ey1VeeE1gDrAUXSb89RrhVV7d297e/lHj7klkD9OCeb4QYfV6d3d3tmbT4KjLtnm6TzlAVxzKn0Do0I+KWDcXAbyXvxyfWTnd56Ozo8htzpfL5RsaGzj2100OIFTtptFo/OMZOcqTEKoFv+ElAxn7DlLPEgMC6YXR+rOkw1Dxjp4zSE1TZkn2uieXfjxpBYx3GlKh4hlBciixEkp1ZQC1TCikw3hIjiQhVN3dizf2c/YfUshakhni7aYAAAAASUVORK5CYII=">
+                                    </a>
                                 </div>
                                 <div data-v-cc3ce6d2=""
                                     class="pagination swiper-pagination-clickable swiper-pagination-bullets"><span
@@ -246,18 +259,18 @@
                             </div>
                             <ul data-v-cc3ce6d2="">
                                 <li data-v-cc3ce6d2="">
-                                    <div data-v-cc3ce6d2="" class="flex1">Level1</div>
-                                    <div data-v-cc3ce6d2="" class="s"> {{ $profile->level1}}</div>
+                                    <div data-v-cc3ce6d2="" class="flex1">Earning Range</div>
+                                    <div data-v-cc3ce6d2="" class="s"> {{ $profile->profit}}%</div>
                                 </li>
                                 <li data-v-cc3ce6d2="">
-                                    <div data-v-cc3ce6d2="" class="flex1">level2</div>
-                                    <div data-v-cc3ce6d2="" class="s">{{ $profile->level2}}</div>
+                                    <div data-v-cc3ce6d2="" class="flex1">Team Rewards</div>
+                                    <div data-v-cc3ce6d2="" class="s">{{ $profile->level1}}%|{{ $profile->level2}}%|{{ $profile->level1}}%|</div>
                                 </li>
                                 <li data-v-cc3ce6d2="" class="next-level">
-                                    <div data-v-cc3ce6d2="" class="flex1">level3</div>
+                                    <div data-v-cc3ce6d2="" class="flex1">Investment range</div>
                                     <div data-v-cc3ce6d2="" class="s">
                                         <div data-v-cc3ce6d2="" class="teamCount">
-                                            <div data-v-cc3ce6d2=""> {{ $profile->level3}}<img data-v-cc3ce6d2=""
+                                            <div data-v-cc3ce6d2=""> ${{ $profile->min}} -${{ $profile->mix}}<img data-v-cc3ce6d2=""
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAOVBMVEX///8AAAAODg7////////////h4eH///////////+FhYUsLCxqamr///////////+lpaWVlZVKSko8tlaaAAAAE3RSTlOAAIBwEAiAeFBIgICAaDAYgICAwZP9dQAAAMtJREFUOMuV1NEWgyAIBmAyCVzTtr3/w06XR1h4sv6bbr7DoYBgasHEkQAocsJJpREfCCTsDcEAhwT8J34Gk9lrsonQZhMiNUydSrAJY7AS6dQk7MTDSfyP8BkJhSD08nztT8JMUlc4V03KhPvCPeokMomnAmImbXjL0hFAmTSxrosSLYp8nCtGhBBqVYoxgmq7YkSodhm0UUJeOoEyWsinQ9LmKADLGAMo8z4IvrIM45UaL+Z4vcdHMj61Owdb4xkkFMzZj38eNjfJF4TTBjZGDKh+AAAAAElFTkSuQmCC">
                                             </div>
                                             <div data-v-cc3ce6d2="" style="display: none;"> B: 0 People 0/0 <img
@@ -269,9 +282,7 @@
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAS1BMVEUAAACj/3ym/32m/3ym/36m/32l/3yf/4Cf/3Cl/3um/32m/3ym/32l/32n/3qm/30NDQ1ZhUUgKxtGaDeT4W+T4G9tpFNjlEwzSSmgfRuoAAAAD3RSTlMAIO+g39+QEBBg0M+PMGAvI4cvAAAA4ElEQVQ4y63TS5KDMAwEUJCIP3ymPQyT5P4nDSbEVpBxZZFev2oJSm5ynOeBABrYu6aU1hByuFXAjThkdIeKC1Qub0VTFNpMqqPS45JQ5rXPiNOM+xhU8hzFNWKisCjl74otFLfxRRHCbnyao0T4xRZeyVAV6FdC2LMsBQFaSRLzvGgBCHIPYTVKQAz6n6NRgvZ1s8lCrMuQRoj80R7CSJF/nSVpjgLbORgIczsI/vQYGlO/hRjbnYnOpvPuTkQrHklXFFMCqUd3yFijNrX62TNyyIgK2eS5J4B6/rHN1/MAcuUvL+WPD1EAAAAASUVORK5CYII=">
                                             </div>
                                         </div>
-                                        <div data-v-cc3ce6d2=""> balance: 67.3519/300U <img data-v-cc3ce6d2=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAOVBMVEX///8AAAAODg7////////////h4eH///////////+FhYUsLCxqamr///////////+lpaWVlZVKSko8tlaaAAAAE3RSTlOAAIBwEAiAeFBIgICAaDAYgICAwZP9dQAAAMtJREFUOMuV1NEWgyAIBmAyCVzTtr3/w06XR1h4sv6bbr7DoYBgasHEkQAocsJJpREfCCTsDcEAhwT8J34Gk9lrsonQZhMiNUydSrAJY7AS6dQk7MTDSfyP8BkJhSD08nztT8JMUlc4V03KhPvCPeokMomnAmImbXjL0hFAmTSxrosSLYp8nCtGhBBqVYoxgmq7YkSodhm0UUJeOoEyWsinQ9LmKADLGAMo8z4IvrIM45UaL+Z4vcdHMj61Owdb4xkkFMzZj38eNjfJF4TTBjZGDKh+AAAAAElFTkSuQmCC">
-                                        </div>
+                                        
                                     </div>
                                 </li>
                             </ul>
@@ -285,78 +296,42 @@
                             <ul data-v-1fa86597="" data-v-cfc9a7fc="" class="com-1">
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily arbitrage earnings</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> +2% </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> {{ $profile->profit}}% </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Investment range</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 50 - 500 </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> ${{ $profile->min}} -${{ $profile->mix}} </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily execution</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 1 times </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Duration</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> {{ $profile->days}} Days</div>
                                 </li>
                             </ul>
 							
-							<form method="POST"  action="">
-                                  {{ csrf_field() }}
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
-									
-						
-									<select data-v-1fa86597=""
-    data-v-cfc9a7fc="">
-										<option value="50">$50</option>
-										<option value="100">$100</option>
-										<option value="250">$250</option>
-										<option value="500">$500</option>
-										<option value="1000">$1000</option>
-										<option value="2000">$2000</option>
-										<option value="3000">$3000</option>
-										<option value="4999">$4999</option>
-										
-									</select></div><button data-v-1fa86597=""
-                                    data-v-cfc9a7fc="" class="n">Max</button>
-                            </div>
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style="">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons">
-                                    <div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 10px;">
-                                        <div class="van-slider__bar" style="background: rgb(0, 0, 0); width: 0%;">
-                                            <div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="0"
-                                                aria-valuemax="67.3519" aria-orientation="horizontal"
-                                                class="van-slider__button-wrapper">
-                                                <!-- <div class="van-slider__button"></div> -->
-                                            </div>
-                                        </div>
+                            <form method="post" name="add" action="{{ route('user.confirmDeposit') }}" onsubmit="return validateForm()">
+                                {{ csrf_field() }}
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
+                                        <input data-v-1fa86597="" data-v-cfc9a7fc="" id="amount" name="Sum" type="text" style="color:white;" placeholder="Enter Amount">
+                                    </div>
+                                    <input data-v-1fa86597="" data-v-cfc9a7fc="" id="plan" name="plan" type="hidden" value={{ $profile->id }}>
+
+                                </div>
+                                </br></br>
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices" style="height:47px;">
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
+                                        <select data-v-1fa86597="" data-v-cfc9a7fc="" id="payment-system" name="PSys" style="color:white;width:318px;">
+                                            <option value="USDTBEP20">USDT BEP20</option>
+                                            <option value="USDTTRC20">USDT TRC20</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <!-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 0% </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 50% </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 75% </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 100% </div>
-                                </div> -->
-                            </div>
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prompt">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Available investment amount</div>
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"><span data-v-1fa86597=""
-                                        data-v-cfc9a7fc="">0</span>/ 67.3519 </div>
-                            </div>
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="fot">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="flex">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Pending release details</div>
-                                    <img data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAMAAADEfo0+AAAAPFBMVEUAAAC+vr69vb23t7e9vb28vLy9vb2/v7+/v7+7u7u+vr68vLy8vLy/v7+8vLy9vb28vLy8vLy5ubm9vb0vD2FiAAAAE3RSTlMA3+8gj3CAIBBAv7CgMM+vn29Qy54UlQAAAGNJREFUGNONkEkKgDAQBM2+uff//+oIQnqCiH2rgqRCpve5/dCiAV6JGUBgkY2YwiZZwDo2BYDJbIKYOvE8xlT9mWLhRBjm+8hCYn0u5WwkjsIb8dmf3gNpDHx9UFMBWfLMehdSXwVxnLXHTQAAAABJRU5ErkJggg==">
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress"></div>
+                                </br></br></br>
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf">
+                                    <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit"> Create </button>
                                 </div>
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="flex">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Order records</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAMAAADEfo0+AAAAPFBMVEUAAAC+vr69vb23t7e9vb28vLy9vb2/v7+/v7+7u7u+vr68vLy8vLy/v7+8vLy9vb28vLy8vLy5ubm9vb0vD2FiAAAAE3RSTlMA3+8gj3CAIBBAv7CgMM+vn29Qy54UlQAAAGNJREFUGNONkEkKgDAQBM2+uff//+oIQnqCiH2rgqRCpve5/dCiAV6JGUBgkY2YwiZZwDo2BYDJbIKYOvE8xlT9mWLhRBjm+8hCYn0u5WwkjsIb8dmf3gNpDHx9UFMBWfLMehdSXwVxnLXHTQAAAABJRU5ErkJggg==">
-                                </div>
-                            </div>
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf"><button data-v-1fa86597=""
-                                    data-v-cfc9a7fc="" class="btn2" type="submit"> Create </button></div>
-	</form>
+                            </form>
                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="check">
                                 <div data-v-1fa86597="" role="checkbox" tabindex="0" aria-checked="true"
                                     class="van-checkbox" data-v-cfc9a7fc="">
@@ -371,55 +346,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="arcList">
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="cname">Strategy includes strategies</div>
-                            <ul data-v-1fa86597="" data-v-cfc9a7fc="">
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
-                                            data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/848c7f5604a34a54494ac281cb6ad948.png">
-                                    </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Spot Grid</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240304/eb8efa21009c40364f790b0fff9763f9.png"
-                                        class="kimageUrl">
-                                </li>
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
-                                            data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/a2676d23a66645f52ecf7292fa040164.png">
-                                    </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Martingale</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240304/84d52ad9bd37687470cd78b7581e106b.png"
-                                        class="kimageUrl">
-                                </li>
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
-                                            data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/0e082935ea46d96dcf2df1b31a099ab2.png">
-                                    </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Contract Grid</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240304/b65770384d7807fcb22691682fa31832.png"
-                                        class="kimageUrl">
-                                </li>
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="ico"><img data-v-1fa86597=""
-                                            data-v-cfc9a7fc=""
-                                            src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240319/ade106f86322db554a19a20424e91ff7.png">
-                                    </div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Infinite Grid</div><img
-                                        data-v-1fa86597="" data-v-cfc9a7fc=""
-                                        src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240401/dd31dffb566324b6f1d8496bbcf13242.png"
-                                        class="kimageUrl">
-                                </li>
-                            </ul>
-                        </div>
+                      
                     </div>
-                    <!---->
-                    <!---->
+                    
                 </div>
             </div>
+
+            <script>
+                function validateForm() {
+                    var amount = document.getElementById('amount').value;
+                    var minAmount = {{ $profile->min }};
+                    var maxAmount = {{ $profile->mix }};
+            
+                    if (amount === "") {
+                        alert("Amount cannot be empty");
+                        return false;
+                    }
+            
+                    amount = parseFloat(amount);
+            
+                    if (isNaN(amount) || amount < minAmount || amount > maxAmount) {
+                        alert("Amount must be between " + minAmount + " and " + maxAmount);
+                        return false;
+                    }
+            
+                    return true;
+                }
+            </script>
          
             @include('layouts.upnl.footer')

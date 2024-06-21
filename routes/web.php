@@ -30,7 +30,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/dltPayout', [App\Http\Controllers\Cron::class, 'dltPayout'])->name('dltPayout');
-Route::get('/generate_roi', [App\Http\Controllers\Cron::class, 'generate_roi'])->name('generate_roi');
+Route::get('/calculateRoi', [App\Http\Controllers\Cron::class, 'calculateRoi'])->name('calculateRoi');
 Route::get('/rank-update', [App\Http\Controllers\Cron::class, 'rank_update'])->name('rank-update');
 Route::get('/reward_bonus', [App\Http\Controllers\Cron::class, 'reward_bonus'])->name('reward_bonus');
 Route::get('/royalty_bonus', [App\Http\Controllers\Cron::class, 'dailyIncentive'])->name('royalty_bonus');
@@ -55,6 +55,7 @@ Route::get('resetPassword', [App\Http\Controllers\Login::class, 'resetPassword']
 Route::post('/getUserName', [App\Http\Controllers\Register::class, 'getUserNameAjax'])->name('getUserName');
 Route::post('/registers', [App\Http\Controllers\Register::class, 'register'])->name('registers');
 Route::get('/register_sucess', [App\Http\Controllers\Register::class, 'index'])->name('register_sucess');
+Route::post('/sendCodeEmail', [App\Http\Controllers\Register::class, 'sendCodeEmail'])->name('sendCodeEmail');
 
 Route::get('/Index', [App\Http\Controllers\FrontController::class, 'index'])->name('Index');
 Route::get('/about-us', [App\Http\Controllers\FrontController::class, 'about'])->name('about-us');
@@ -63,6 +64,7 @@ Route::get('/contact-us', [App\Http\Controllers\FrontController::class, 'contact
 Route::get('/faq', [App\Http\Controllers\FrontController::class, 'faq'])->name('faq');
 Route::get('/tutorial', [App\Http\Controllers\FrontController::class, 'tutorial'])->name('tutorial');
 Route::get('/team', [App\Http\Controllers\FrontController::class, 'team'])->name('team');
+
 Route::get('/privacy-policy', [App\Http\Controllers\FrontController::class, 'termcandition'])->name('privacy-policy');
 Route::get('/news', [App\Http\Controllers\FrontController::class, 'news'])->name('news');
 Route::get('/change/{lang?}', [App\Http\Controllers\FrontController::class, 'changeLanguage'])->name('lang');
@@ -79,7 +81,6 @@ Route::get('/helpcenter', [App\Http\Controllers\UserPanel\Dashboard::class, 'hel
 Route::get('/tradeOn', [App\Http\Controllers\UserPanel\Dashboard::class, 'tradeOn'])->name('user.tradeOn');
 Route::get('/close-trade', [App\Http\Controllers\UserPanel\Dashboard::class, 'stop_trade'])->name('user.close-trade');
 
-Route::get('/lang', [App\Http\Controllers\UserPanel\Dashboard::class, 'lang'])->name('user.lang');
 Route::get('/news', [App\Http\Controllers\UserPanel\Dashboard::class, 'news'])->name('user.news');
 Route::get('/activities', [App\Http\Controllers\UserPanel\Dashboard::class, 'activities'])->name('user.activities');
 Route::post('/submitActivity', [App\Http\Controllers\UserPanel\Dashboard::class, 'submitActivity'])->name('user.submitActivity');
@@ -108,8 +109,10 @@ Route::post('/update-wallet', [App\Http\Controllers\UserPanel\Profile::class, 'w
 Route::post('/wallet_change', [App\Http\Controllers\UserPanel\Profile::class, 'wallet_change'])->name('user.wallet_change');
 
 Route::post('/sendCode', [App\Http\Controllers\UserPanel\Profile::class, 'sendCode'])->name('user.send_code');
+
 Route::get('/change-trx-password', [App\Http\Controllers\UserPanel\Profile::class, 'change_trx_password'])->name('user.change-trx-password');
 Route::get('/ChangePass', [App\Http\Controllers\UserPanel\Profile::class, 'change_password'])->name('user.ChangePass');
+Route::get('/tpassword', [App\Http\Controllers\UserPanel\Profile::class, 'tpassword'])->name('user.tpassword');
 Route::get('/security-password', [App\Http\Controllers\UserPanel\Profile::class, 'ChangeSecurityPass'])->name('user.security-password');
 Route::get('/share', [App\Http\Controllers\UserPanel\Profile::class, 'share'])->name('user.share');
 Route::get('/ChangeMail', [App\Http\Controllers\UserPanel\Profile::class, 'ChangeMail'])->name('user.ChangeMail');
@@ -131,9 +134,9 @@ Route::get('/quality', [App\Http\Controllers\UserPanel\Invest::class, 'quality']
 Route::get('/quality/records', [App\Http\Controllers\UserPanel\Invest::class, 'records'])->name('user.record');
 // add fund
 
-Route::get('/AddFund', [App\Http\Controllers\UserPanel\AddFund::class, 'index'])->name('user.AddFund');
+Route::get('/wallet', [App\Http\Controllers\UserPanel\AddFund::class, 'index'])->name('user.wallet');
 Route::get('/fundpass', [App\Http\Controllers\UserPanel\AddFund::class, 'fundpass'])->name('user.fundpass');
-Route::get('/fundHistory', [App\Http\Controllers\UserPanel\AddFund::class, 'fundHistory'])->name('user.fundHistory');
+Route::get('/recharge1', [App\Http\Controllers\UserPanel\AddFund::class, 'fundHistory'])->name('user.recharge1');
 Route::any('/SubmitBuyFund', [App\Http\Controllers\UserPanel\AddFund::class, 'SubmitBuyFund'])->name('user.SubmitBuyFund');
 // end add fund
 
@@ -144,7 +147,7 @@ Route::any('/SubmitBuyFund', [App\Http\Controllers\UserPanel\AddFund::class, 'Su
 Route::get('/register/{sponsorCode}', [App\Http\Controllers\Register::class, 'showRegistrationForm']);
 // Route::get('/generate-qr-code', [Register::class, 'generateQrCode']);
 
-Route::get('/record', [App\Http\Controllers\UserPanel\Invest::class, 'showrecord'])->name('user.records');
+Route::get('/recharge', [App\Http\Controllers\UserPanel\Invest::class, 'showrecord'])->name('user.recharge');
 Route::get('/invest', [App\Http\Controllers\UserPanel\Invest::class, 'index'])->name('user.invest');
 Route::get('/edit/{id}', [App\Http\Controllers\UserPanel\Invest::class, 'edit'])->name('edit');
 // Route::get('/packege', [App\Http\Controllers\UserPanel\Invest::class, 'index'])->name('user.invest');
@@ -152,6 +155,7 @@ Route::get('/strategy', [App\Http\Controllers\UserPanel\Invest::class, 'strategy
 Route::get('/package', [App\Http\Controllers\UserPanel\Invest::class, 'package'])->name('user.package');
 Route::get('/viewdetail/{txnId}', [App\Http\Controllers\UserPanel\Invest::class, 'viewdetail'])->name('user.viewdetail');
 Route::get('/deposit', [App\Http\Controllers\UserPanel\Invest::class, 'deposit'])->name('user.deposit');
+
 Route::get('/cancel-payment/{id}', [App\Http\Controllers\UserPanel\Invest::class, 'cancel_payment'])->name('user.cancel-payment');
 Route::post('/fundActivation', [App\Http\Controllers\UserPanel\Invest::class, 'fundActivation'])->name('user.fundActivation');
 Route::any('/confirmDeposit', [App\Http\Controllers\UserPanel\Invest::class, 'confirmDeposit'])->name('user.confirmDeposit');
@@ -184,6 +188,8 @@ Route::get('/tree-view', [App\Http\Controllers\UserPanel\Team::class, 'genealogy
 Route::get('/team', [App\Http\Controllers\UserPanel\Team::class, 'team'])->name('user.team');
 Route::get('/invate', [App\Http\Controllers\UserPanel\Team::class, 'invate'])->name('user.invate');
 Route::get('/list', [App\Http\Controllers\UserPanel\Team::class, 'list'])->name('user.list');
+Route::get('/totalteam', [App\Http\Controllers\UserPanel\Team::class, 'totalteam'])->name('totalteam');
+
 
 Route::any('/UsrBinaryReport',[App\Http\Controllers\UserPanel\BinaryReport::class,'userReport'])->name('UsrBinaryReport');
 //end team

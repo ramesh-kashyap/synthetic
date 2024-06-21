@@ -1,163 +1,350 @@
-<html lang="en" class="van-theme-light pc" style="font-size: 50px;">
+<html lang="en" class="pc" style="font-size: 50px;">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/favicon_1.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Change password</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <link rel="icon" href="/logo1.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="renderer" content="webkit">
     <meta name="robots" content="noindex, nofollow">
-    <title>Change Login Password</title>
-    <script type="module" crossorigin="" src="{{asset('')}}assets/js/index-BR72YH-E.js"></script>
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/vant-3s7b3naM.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/vuei18n-CA58nVJV.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/corejs-C4iS2aBk.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/vuex-MbEfqX8_.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/cryptojs-BILcvZe1.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/qrcodejs2fix-CnmRM6Pf.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/vueclipboard3-C7DdPEQF.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/uaParserJs-QZjeYS1Z.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/vuerouter-7dy5tY0D.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/axios-Cm0UX6qg.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/swiper-C1TWdcvt.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/bignumberjs-DOH-f-tm.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/validator-DnYg83Z5.js">
-    <link rel="modulepreload" crossorigin="" href="{{asset('')}}assets/js/vanttouchemulator-Cv_in60N.js">
-    <link rel="stylesheet" crossorigin="" href="{{asset('')}}assets/css/index-CFWvmehk.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{asset('')}}assets/js/login-CQSdKFaq.js">
-    <link rel="stylesheet" href="{{asset('')}}assets/css/login-CxmahPYR.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{asset('')}}assets/js/PageScroll-CWe5U2pE.js">
-    <link rel="stylesheet" href="{{asset('')}}assets/css/PageScroll-B0U5qQ_M.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{asset('')}}assets/js/InsideHeader-cUb30gWX.js">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{asset('')}}assets/js/icon_back_white-Fd3ZFuzm.js">
-    <link rel="stylesheet" href="{{asset('')}}assets/css/InsideHeader-k_Fsd2wZ.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{asset('')}}assets/js/EmailVerify-BmNRfRYW.js">
-    <link rel="stylesheet" href="{{asset('')}}assets/css/EmailVerify-Dp0-5g_d.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{asset('')}}assets/js/PsdInp-CEndfO3Z.js">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{asset('')}}assets/js/eye_close-DJdVF6pM.js">
-    <link rel="stylesheet" href="{{asset('')}}assets/css/PsdInp-B2SSuLGr.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{asset('')}}assets/js/ComBtn-CB5ONs6P.js">
-    <link rel="stylesheet" href="{{asset('')}}assets/css/ComBtn-CgiT3mnI.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="{{asset('')}}assets/js/FloatingBubble-CfUHYYW9.js">
-    <link rel="stylesheet" href="{{asset('')}}assets/css/FloatingBubble-Dntr2w2Z.css">
+    <meta name="google" content="notranslate">
+    <script>
+        window.addEventListener("error", function (event) {
+            if (event.message.indexOf("Unexpected token '<'") > -1) {
+                location.reload();
+            }
+        });
+        window.onload = function () {
+            document.addEventListener("touchstart", function (event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            });
+            var lastTouchEnd = 0;
+            document.addEventListener(
+                "touchend",
+                function (event) {
+                    var now = new Date().getTime();
+                    if (now - lastTouchEnd <= 300) {
+                        event.preventDefault();
+                    }
+                    lastTouchEnd = now;
+                },
+                false
+            );
+            document.addEventListener("gesturestart", function (event) {
+                event.preventDefault();
+            });
+        };
+
+        if ("standalone" in window.navigator && window.navigator.standalone) {
+            var noddy,
+                remotes = false;
+            document.addEventListener(
+                "click",
+                function (event) {
+                    noddy = event.target;
+                    while (noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+                        noddy = noddy.parentNode;
+                    }
+                    if (
+                        "href" in noddy &&
+                        noddy.href.indexOf("http") !== -1 &&
+                        (noddy.href.indexOf(document.location.host) !== -1 || remotes)
+                    ) {
+                        event.preventDefault();
+                        document.location.href = noddy.href;
+                    }
+                },
+                false
+            );
+        }
+
+    </script>
+    <style>
+        .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.cname {
+    margin-bottom: 5px;
+}
+
+.val {
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding-right: 70px; /* Adjust the padding to fit the button */
+    box-sizing: border-box;
+}
+
+.verify-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    background-color: #4CAF50; /* Adjust color as needed */
+    color: white;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+    </style>
+
+<style>
+    .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.cname {
+    margin-bottom: 5px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+input[type="password"] {
+    flex: 1;
+    padding-right: 100px; /* Adjust the padding to fit the button */
+}
+
+.verify-button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0 10px;
+}
+
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            background-color: #000;
+        }
+
+    </style>
+    <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js" rel="preload" as="script">
+    <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="preload" as="style">
+    <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="preload" as="style">
+    <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="preload" as="style">
+    <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
+    <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
+    <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-aef56f2a.f587d975.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-aef56f2a.b3c068cc.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a0b1332.9f52f39a.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-21a2b91c.0ed7b871.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-4d56d011.d2239d8d.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-4d56d011.55574f9a.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-273ce16e.debfb5de.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-a46085d6.d2823003.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-a46085d6.6a4896cb.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-97c0768a.2ab4315e.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-97c0768a.b8196644.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f31ad6d4.2882463c.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f31ad6d4.836d485b.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-0830ec22.59462d6e.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-0830ec22.94ec9a30.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-73ab94aa.2e0ec155.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-73ab94aa.70e0e268.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-65aadf8b.a4cef8a6.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-65aadf8b.59fb6a2e.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-67098c77.8b942857.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-67098c77.b8c94109.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-529a9802.d4a866bb.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-529a9802.18a0309a.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a326f81.d6e1e630.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a326f81.29676938.1717187934571.chunk.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-04a90ad1.aa2f317d.css">
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-04a90ad1.28c21b1a.1717187934571.chunk.js"></script>
 </head>
 
-<body>
-    <div id="app" data-v-app="">
-        <div class="van-config-provider">
-            <!---->
-        </div>
-        <div data-v-e85f0186="" data-v-f8e71db0="" class="page" style="background-color: rgb(255, 255, 255);">
-            <div data-v-e85f0186="" class="headers">
-                <div data-v-54adc729="" data-v-e85f0186="" class="inside-header">
-                    <div data-v-54adc729="" class="left">
-                        <div data-v-54adc729="" class="back"><a href="{{route('user.profile')}}"><img data-v-54adc729=""
-                                src="data:image/png;base64,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"
-                                class="icon"></a></div>
+<body class="main_en">
+    <div id="app" class="applang">
+        <div data-v-cfc9a7fc="" data-v-9d2ee7be="" class="page">
+            <div data-v-cfc9a7fc="" class="headers">
+                <div data-v-397da544="" data-v-9d2ee7be="" class="head" data-v-cfc9a7fc="">
+                    <div data-v-397da544="" class="container flex">
+                        <div data-v-397da544="" class="back"><a href="{{route('user.profile')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                                <!----></i></a></div>
+                        <!---->
+                        <div data-v-397da544="" class="name tac"> Change  password </div>
+                        <div data-v-397da544="" class="flex1"></div>
+                        <!---->
+                        <!---->
+                        <!---->
+                        <div data-v-397da544="" class="head_right"></div>
                     </div>
                 </div>
             </div>
-            <div data-v-e85f0186="" class="page-container">
-                <div data-v-e85f0186="" class="scroll">
-                    <div data-v-f8e71db0="" class="title_container title_heand">@lang('Change Login Password')</div>
-                    <div data-v-f8e71db0="" class="container">
-                        <div data-v-f8e71db0="" class="boxs">
-                                                          
-                            <div data-v-f8e71db0="" class="box">
-                                <div data-v-f8e71db0="" class="title">@lang('Current Email')</div>
-                                <div data-v-f8e71db0="" class="inp-con">
-                                    <input data-v-f8e71db0="" class="inp" type="email" name="email" readonly=""  value="{{Auth::user()->email}}">
-                                  
-                                </div>
-                            </div>
-                                      
-                            <form method="post" action="{{ route('user.edit-password') }}">
-                                {{ csrf_field() }}
-                            <div data-v-50763054="" class="box">
-                                <div data-v-50763054="" class="title">@lang('Verification Code')</div>
-                              
-                                <div data-v-c7332cfe="" data-v-50763054="" class="inp-con" style="margin-top: 10px">
-                                    <div data-v-c7332cfe="" class="inp"><input data-v-c7332cfe="" name="code" type="text"
-                                            placeholder="Enter verification code">
-                                        <div data-v-c7332cfe="" class="code-btn first-code-send">Get Code</div>
-                                        <div data-v-c7332cfe="" class="count-down" style="display: none;">
-                                            <div data-v-c7332cfe="" role="timer" class="van-count-down"><span
-                                                    data-v-c7332cfe="">0<var data-v-c7332cfe="">s</var></span></div>
-                                        </div>
+            <div data-v-cfc9a7fc="" id="scroll" class="content-container">
+                <div data-v-cfc9a7fc="" id="content" class="content-scroll">
+                    <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="container">
+                        <!-- <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Email</div>
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
+                                    data-v-cfc9a7fc="" type="text" placeholder="Email" ></div>
+                        </div> -->
+                        <!-- <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Verification code</div>
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val flex"><input data-v-9d2ee7be=""
+                                    data-v-cfc9a7fc="" type="text" placeholder="Please enter the verification code"
+                                    class="flex1">
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="str"> Send </div>
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="str" style="display: none;">
+                                    <div data-v-9d2ee7be="" class="van-count-down" data-v-cfc9a7fc=""><span
+                                            data-v-9d2ee7be="" class="c-fff">0 <var data-v-9d2ee7be="">s</var></span>
                                     </div>
                                 </div>
                             </div>
-                            <div data-v-f8e71db0="" class="box">
-                                <div data-v-f8e71db0="" class="title">@lang('New password')</div>
-                                <div data-v-0a0a182e="" data-v-f8e71db0="" class="inp-con">
-                                    <div data-v-0a0a182e="" class="inp">
-                                        <input data-v-0a0a182e="" type="password" name="password" placeholder="Enter your password" required>
-                                        <div data-v-0a0a182e="" class="icon"> 　<img data-v-0a0a182e=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMJSURBVHgB7Zc/VttAEMZnV/BeSucEwA2cLlUskypVnC6pSE6AqQn22jI10NEBJ4BcIFZu4HTpEDdwatBuvkFScIzlWWOcSr/3DPvs0erb0fwTUUVFRcVKUbQExhzWtXYhlhvYqqaU28y3HTvnEixurHUjYw5ieiILCzTGbGq9tovlZ3xqflepBH9ia297uD6hBfAWiI1rEHaUC1sCdb6I0MDHyJiopXUwxPI1LU9dqaDVaDRv4nj4SzIWBUbRYVcpOsXyBT0fiFf1cXv7LQ2H33/MMwwkcQh2Q6sjlESWxiDE7ULcMclwxp44RzFRmhCtI3HsJrzegpd2yI+9TufrsbfAPFOvSQDCLpxL27Afl++zjtgtyk8pY2tV05j90fQPa7Os801JEHfS7R60J8XAeyG8B7HpiLM0/zQ9RHINPcP/V4+0TH/BcSefWCXwnMmF1aJoMGSPo2ifaa0ueZ3tc/97Yq39QgIIiXqvF5m5AtkL8EybRNJe8ViDYO0S8RdOW3By9fuDdrbvQZzFqCRS7fKBSwXi5HxqsTtYG4yyG0fhLHETdB9uTt9IBo86aJcKBC3yoAhm3DQUTGvcrzPb+94swl6kOQJXRprSmJ7APwI5M30uGgwGG5m9FFcqKbyN5KmTF+qKygWmXCzFk6apu89KOfgfDoxweE8yYx4kqEwgZ6aPF5XSO0W2OXf3gQv29I1oojt4JBNle7mT6SlnZifp9w+vPar/OQT8rW9ZoQ7wGDWE314VZci/m6ik09nfevTtLNN8UubxSig56gqPZK9stmPPaa3PPA6L0nW3NWuf0mEhL7JHJFJMy/YiGxaYoB4EegePzKts0aLDQgG3HtSlLq0QHKKHnm7Kfp87D2LijcOwCY0qpBUgiWPEiZpFYjz/iczlcd/zJUkE5cR9Qpk6lQy93kn43aHReINeql7Cm54Ftwx+abp7Z0x35GVNC8JlAw0dsakbPtmZM86GW30+ayh9VoGTZGVE1XFz1DqN9ufy4s3zov0Nb2MWVPGioioqKir+I38APSJ3uwXZp84AAAAASUVORK5CYII=">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-v-f8e71db0="" class="box">
-                                <div data-v-f8e71db0="" class="title">@lang('Confirm password')</div>
-                                <div data-v-0a0a182e="" data-v-f8e71db0="" class="inp-con">
-                                    <div data-v-0a0a182e="" class="inp">
-                                        <input data-v-0a0a182e="" type="password" name="password_confirmation" placeholder="Please confirm the login password" required>
-                                        <div data-v-0a0a182e="" class="icon"> 　<img data-v-0a0a182e=""
-                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMJSURBVHgB7Zc/VttAEMZnV/BeSucEwA2cLlUskypVnC6pSE6AqQn22jI10NEBJ4BcIFZu4HTpEDdwatBuvkFScIzlWWOcSr/3DPvs0erb0fwTUUVFRcVKUbQExhzWtXYhlhvYqqaU28y3HTvnEixurHUjYw5ieiILCzTGbGq9tovlZ3xqflepBH9ia297uD6hBfAWiI1rEHaUC1sCdb6I0MDHyJiopXUwxPI1LU9dqaDVaDRv4nj4SzIWBUbRYVcpOsXyBT0fiFf1cXv7LQ2H33/MMwwkcQh2Q6sjlESWxiDE7ULcMclwxp44RzFRmhCtI3HsJrzegpd2yI+9TufrsbfAPFOvSQDCLpxL27Afl++zjtgtyk8pY2tV05j90fQPa7Os801JEHfS7R60J8XAeyG8B7HpiLM0/zQ9RHINPcP/V4+0TH/BcSefWCXwnMmF1aJoMGSPo2ifaa0ueZ3tc/97Yq39QgIIiXqvF5m5AtkL8EybRNJe8ViDYO0S8RdOW3By9fuDdrbvQZzFqCRS7fKBSwXi5HxqsTtYG4yyG0fhLHETdB9uTt9IBo86aJcKBC3yoAhm3DQUTGvcrzPb+94swl6kOQJXRprSmJ7APwI5M30uGgwGG5m9FFcqKbyN5KmTF+qKygWmXCzFk6apu89KOfgfDoxweE8yYx4kqEwgZ6aPF5XSO0W2OXf3gQv29I1oojt4JBNle7mT6SlnZifp9w+vPar/OQT8rW9ZoQ7wGDWE314VZci/m6ik09nfevTtLNN8UubxSig56gqPZK9stmPPaa3PPA6L0nW3NWuf0mEhL7JHJFJMy/YiGxaYoB4EegePzKts0aLDQgG3HtSlLq0QHKKHnm7Kfp87D2LijcOwCY0qpBUgiWPEiZpFYjz/iczlcd/zJUkE5cR9Qpk6lQy93kn43aHReINeql7Cm54Ftwx+abp7Z0x35GVNC8JlAw0dsakbPtmZM86GW30+ayh9VoGTZGVE1XFz1DqN9ufy4s3zov0Nb2MWVPGioioqKir+I38APSJ3uwXZp84AAAAASUVORK5CYII=">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-v-f8e71db0="" class="bot">
-                                <button data-v-359df9df="" data-v-f8e71db0=""type="submit" class="van-button van-button--default van-button--normal com-btn on">
-                                    <div class="van-button__content">
-                                        <!----><span class="van-button__text">@lang('Confirm')</span>
-                                        <!---->
-                                    </div>
-                                </button></div>
-                        </form>
+                        </div> -->
+                        <form method="post" action="{{ route('user.edit-password') }}">
+                        {{ csrf_field() }}
+                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Email</div>
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
+                                    data-v-cfc9a7fc="" type=""
+                                    placeholder="Please enter the new password" value="{{Auth::user()->email}}"  id="emailId" name="emailId"></div>
                         </div>
-                    </div>
-                </div>
-                <div data-v-8b363259="" data-v-e85f0186="" class="touch-move-con" style="top: 1.88rem; right: 0.2rem;">
-                </div>
-            </div>
-            <!---->
+                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
+    <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Verification Code</div>
+    <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val">
+        <div class="input-container">
+            <input data-v-9d2ee7be="" data-v-cfc9a7fc="" type="password" name="code" id="code"
+                placeholder="Enter verification code" maxlength="">
+            <button class="code-btn verify-button" style="background:#ebd100;">send</button>
         </div>
     </div>
-    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+</div>
 
+                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">New password</div>
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
+                                    data-v-cfc9a7fc="" type="password"
+                                    placeholder="Please enter the new password" name="password"></div>
+                        </div>
+                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Confirm password</div>
+                            <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val inp"><input data-v-9d2ee7be=""
+                                    data-v-cfc9a7fc="" type="password" placeholder="Enter the password again to confirm"
+                                    name="password_confirmation"></div>
+                        </div>
+                        <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="err" style="color:red;"> 
+                             </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-cfc9a7fc="" class="footer">
+                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="container">
+                    <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="go"><button data-v-9d2ee7be="" type="submit" data-v-cfc9a7fc=""
+                            class="btn2">Confirm</button></div>
+                </div>
+            </div>
+        </div>
+    </form>
+        <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
+            <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAMAAAA0X5qLAAAAh1BMVEUAAAAAv44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av46sPT54AAAALHRSTlMA+wXZ+J87JB7ux4lDNRQPCvLq39PNp5BpWRmxgnAvvrnlw5RhT0sqwHRxeP/zXbkAAAGcSURBVDjLjZTXcqtAEAVnyUGIJBAKKFqS7dv//30XsHFJxrD0C0XRxc45TCEDvFsdrvfhxnGWMk1S7c70nI+bZFxdXFC8YG5GVNemxTdte7+3yxUdq4MMMaocsMza6CeSqLRo2A3dffvguPh1WEiDcuWFeN24mSNDdjS85Exs4OLJX7wpyOWJT8A25G+iFMyn2za1jOIAV+kxIU9knDUQ9d8C/EimyH9OXgawNiblrepfXSn8WKax+4wnCEWDC6ptNk5RC9GxgqqNZ1EstXL1tSP/oBQtS1DN5Qp7vbz1sdwu30b0pNAkPIOrd4131E2kAEf0rDqtaJvTY3YDvM+aOS5IH91KrWdUl2LGIhsI9PIDLm2DFmmslT++FyiDu7a5ANV1FoKpkw/gfwUFddDIO7Cl4wqBMf1iRRZJxxb86d5OYCf9fyS/TaYrFcqVeYQK6nmqEQLFPNc7AuZ2lrtYAcEs936kdZdjE97rSAxDEvG8j8wC/E8Zo1Yo/CAv0oyOYKKzN55QWTm9B9WpyGiwyMvFnLbih+M5xjDWf6S2MlzIf04ZAAAAAElFTkSuQmCC"
+                    alt=""></div>
+        </div>
+        <div data-v-e73e51fc="" class="start-page" style="display: none;"><img data-v-e73e51fc=""
+                src="{{asset('')}}assets/static/img/start.0aabcda5.gif"></div>
+    </div>
+
+    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+    @include('partials.notify')
 
     <script>
-    
-            $('.code-btn').click(function(e) {
-                var ths = $(this);
-                var emailId = $('#emailId').val();
-           
-              
-                // alert(sponsor); 
-                $.ajax({
-                    type: "POST"
-                    , url: "{{ route('user.send_code') }}"
-                    , data: {
-                        "emailId": ""
-                        , "_token": "{{ csrf_token() }}"
-                    , }
-                    , success: function(response) {
-                        // alert(response);      
-                        if (response) {
-                            // alert("hh");
-                            iziToast.success({
-                            message: 'Email send Successfully',
-                            position: "topRight"
-                        });
-                        } else {
-                            // alert("hi");
-                            iziToast.error({
-                            message: 'Error!',
-                            position: "topRight"
-                        });
-                        }
-                    }
+    $('.code-btn').click(function(e) {
+        e.preventDefault(); // Prevent the default form submission
+        var emailId = $('#emailId').val();
+        if (emailId=="") 
+        {
+            iziToast.error({
+                        message: 'Enter Email ID!',
+                        position: "topRight"
+                });  
+                return false;
+            
+        }
+        $.ajax({
+            type: "POST",
+            url: "{{ route('sendCodeEmail') }}",
+            data: {
+                emailId: emailId,
+                _token: "{{ csrf_token() }}"
+            },
+            success: function(response) {
+                if (response) {
+                    iziToast.success({
+                        message: 'Email sent successfully',
+                        position: "topRight"
+                    });
+                } else {
+                    iziToast.error({
+                        message: 'Error!',
+                        position: "topRight"
+                    });
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('AJAX Error:', error);
+                iziToast.error({
+                    message: 'Error: ' + xhr.responseText,
+                    position: "topRight"
                 });
-            });
-                </script>
+            }
+        });
+    });
+</script>
+            </script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
+    <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>
+    <script src="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js"></script>
+    <script src="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js"></script>
+    <script src="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js"></script>
+    <script src="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js"></script>
+    <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2004; display: none;"><i
+            class="van-icon van-icon-success van-toast__icon">
+            <!----></i>
+        <div class="van-toast__text">Login successful</div>
+    </div>
+</body>
+
+</html>
