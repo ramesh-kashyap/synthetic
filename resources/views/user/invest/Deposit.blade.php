@@ -314,7 +314,7 @@
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
                                         <input data-v-1fa86597="" data-v-cfc9a7fc="" id="amount" name="Sum" type="text" style="color:white;" placeholder="Enter Amount">
                                     </div>
-                                    <input data-v-1fa86597="" data-v-cfc9a7fc="" id="plan" name="plan" type="hidden" value={{ $profile->id }}>
+                                    <input data-v-1fa86597="" data-v-cfc9a7fc="" id="plan" name="plan" type="hidden" value="{{ $profile->id}}">
 
                                 </div>
                                 </br></br>
