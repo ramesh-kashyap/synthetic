@@ -268,8 +268,8 @@
                                                     <div data-v-211556f9="" role="radio" class="van-radio" tabindex="0"
                                                         aria-checked="false">
 
-                                                        <blade
-                                                            if|(session(%26%2339%3Blang%26%2339%3B)%20%3D%3D%20%24item-%3Ecode)%20%20>
+                                                        <blade>
+                                                        @if(session('lang') == $item->code)  
 
                                                             <div
                                                                 class="van-radio__icon van-radio__icon--round van-radio__icon--checked">

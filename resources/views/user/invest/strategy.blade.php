@@ -239,8 +239,8 @@
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="ico">
                                             <img data-v-167ffb9b="" data-v-cfc9a7fc=""
-                                                data-src="/assets/images/3dc7be2d187bdf6ff56095aa33e5de43.png"
-                                                src="/assets/images/3dc7be2d187bdf6ff56095aa33e5de43.png"
+                                                data-src="/assets/static/image/image_2024_06_21T10_02_21_507Z.png"
+                                                src="/assets/static/image/image_2024_06_21T10_02_21_507Z.png"
                                                 lazy="loaded"></div>
                                         <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex1">
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n1 flex">
