@@ -197,8 +197,70 @@
                                 </tr>
                                
 
+                               
                                 <tbody id="crypto-container">
-
+              
+                                    <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="" style="display: flex; align-items: center;"><img data-v-c079ad96="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/upload/BTCUSDT.png"><span data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName" style="display: inline-block;">BTCUSDT<br data-v-c079ad96="" data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc="" class="sellCoinName" style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc="" class="on">-0.30%</var></td>
+                                </tr>
+                                
+                                  
+                                    <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="" style="display: flex; align-items: center;"><img data-v-c079ad96="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/upload/ETHUSDT.png"><span data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName" style="display: inline-block;">ETHUSDT<br data-v-c079ad96="" data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc="" class="sellCoinName" style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc="" class="on">-1.28%</var></td>
+                                </tr>
+                                
+                                  
+                                    <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="" style="display: flex; align-items: center;"><img data-v-c079ad96="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/upload/BNBUSDT.png"><span data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName" style="display: inline-block;">BNBUSDT<br data-v-c079ad96="" data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc="" class="sellCoinName" style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc="" class="on">-0.67%</var></td>
+                                </tr>
+                                
+                                  
+                                    <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="" style="display: flex; align-items: center;"><img data-v-c079ad96="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/upload/LTCUSDT.png"><span data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName" style="display: inline-block;">LTCUSDT<br data-v-c079ad96="" data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc="" class="sellCoinName" style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc="" class="off">0.20%</var></td>
+                                </tr>
+                                
+                                  
+                                    <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="" style="display: flex; align-items: center;"><img data-v-c079ad96="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/upload/XRPUSDT.png"><span data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName" style="display: inline-block;">XRPUSDT<br data-v-c079ad96="" data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc="" class="sellCoinName" style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc="" class="on">-1.04%</var></td>
+                                </tr>
+                                
+                                  
+                                    <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="" style="display: flex; align-items: center;"><img data-v-c079ad96="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/upload/LINKUSDT.png"><span data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName" style="display: inline-block;">LINKUSDT<br data-v-c079ad96="" data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc="" class="sellCoinName" style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc="" class="on">-0.61%</var></td>
+                                </tr>
+                                
+                                  
+                                    <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="" style="display: flex; align-items: center;"><img data-v-c079ad96="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/upload/DOGEUSDT.png"><span data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName" style="display: inline-block;">DOGEUSDT<br data-v-c079ad96="" data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc="" class="sellCoinName" style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc="" class="off">0.63%</var></td>
+                                </tr>
+                                
+                                  
+                                    <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="" style="display: flex; align-items: center;"><img data-v-c079ad96="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/upload/BCHUSDT.png"><span data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName" style="display: inline-block;">BCHUSDT<br data-v-c079ad96="" data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc="" class="sellCoinName" style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc="" class="off">0.05%</var></td>
+                                </tr>
+                                
+                                  
+                                    <tr data-v-c079ad96="" data-v-cfc9a7fc="">
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="" style="display: flex; align-items: center;"><img data-v-c079ad96="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/upload/DOTUSDT.png"><span data-v-c079ad96="" data-v-cfc9a7fc="" class="buyCoinName" style="display: inline-block;">DOTUSDT<br data-v-c079ad96="" data-v-cfc9a7fc=""><span data-v-c079ad96="" data-v-cfc9a7fc="" class="sellCoinName" style="color: rgba(255, 255, 255, 0.7);">USDT</span></span></td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc="">$0</td>
+                                    <td data-v-c079ad96="" data-v-cfc9a7fc=""><var data-v-c079ad96="" data-v-cfc9a7fc="" class="on">-2.79%</var></td>
+                                </tr>
                                 </tbody>
                              
                                
@@ -208,8 +270,8 @@
                 </div>
             </div>
 
-            {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
-            {{-- <script src="{{asset('')}}assets/js/crypto.js"></script> --}}
-
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="{{asset('')}}assets/js/crypto2.js"></script>
+            <script src="{{asset('')}}assets/js/crypto.js"></script>
 
             @include('layouts.upnl.footer')

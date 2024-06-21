@@ -1,20 +1,19 @@
 $(document).ready(function () {
     const apiUrl = "https://api.binance.com/api/v3/ticker/24hr";
     const cryptoSymbols = ["BTCUSDT", "ETHUSDT", "BNBUSDT", "XRPUSDT", "LTCUSDT","LINKUSDT","BCHUSDT","DOTUSDT","DOGEUSDT"]; // Add more symbols as needed
-    // fetchData();
-    function fetchData() {
-        $.ajax({
-            url: apiUrl,
-            method: "GET",
-            success: function (data) {
-                const filteredData = data.filter(crypto => cryptoSymbols.includes(crypto.symbol));
-                displayCryptoData(filteredData);
-            },
-            error: function (error) {
-                console.error("Error fetching data: ", error);
-            }
-        });
-    }
+
+
+    $.ajax({
+        url: apiUrl,
+        method: "GET",
+        success: function (data) {
+            const filteredData = data.filter(crypto => cryptoSymbols.includes(crypto.symbol));
+            displayCryptoData(filteredData);
+        },
+        error: function (error) {
+            console.error("Error fetching data: ", error);
+        }
+    });
     
 
     function displayCryptoData(data) {
@@ -43,10 +42,4 @@ $(document).ready(function () {
             container.append(cryptoCard);
         });
     }
-
-    fetchData();
-
-    // Fetch data every 5 seconds
-    setInterval(fetchData, 5000);
-
 });
