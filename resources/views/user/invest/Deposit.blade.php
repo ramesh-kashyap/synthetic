@@ -272,7 +272,7 @@
                                 </li>
                                 <li data-v-cc3ce6d2="">
                                     <div data-v-cc3ce6d2="" class="flex1">Team Rewards</div>
-                                    <div data-v-cc3ce6d2="" class="s">{{ $profile->level1}}%|{{ $profile->level2}}%|{{ $profile->level1}}%|</div>
+                                    <div data-v-cc3ce6d2="" class="s">{{ $profile->level1}}%|{{ $profile->level2}}%|{{ $profile->level3}}%|</div>
                                 </li>
                                 <li data-v-cc3ce6d2="" class="next-level">
                                     <div data-v-cc3ce6d2="" class="flex1">Investment range</div>

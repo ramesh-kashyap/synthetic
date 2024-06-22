@@ -137,8 +137,7 @@
                                 <div role="tablist" class="van-tabs__nav van-tabs__nav--line van-tabs__nav--complete">
                                     <div role="tab" aria-selected="true" class="van-tab van-tab--active"><span
                                             class="van-tab__text">FAQ</span></div>
-                                    <div role="tab" class="van-tab"><span class="van-tab__text">Security Related</span>
-                                    </div>
+                                   
                                     <div class="van-tabs__line"
                                         style="transform: translateX(76.5px) translateX(-50%); transition-duration: 0.3s;">
                                     </div>
@@ -174,49 +173,49 @@
                                                     risk control measures due to non-human factors, how to release the
                                                     risk control?</div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
                                                 <div data-v-0c0d492c="" class="flexs">The risk control of the account
                                                     and why the risk control is triggered?</div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Maximizing Bitgrid Income:
+                                                <div data-v-0c0d492c="" class="flexs">Maximizing Synthetic Venture Income:
                                                     Diversified Income Strategy </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Grid strategy adopted by BitGrid
+                                                <div data-v-0c0d492c="" class="flexs">Grid strategy adopted by Synthetic Venture
                                                 </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
                                                 <div data-v-0c0d492c="" class="flexs">What are funds to be released?
                                                 </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Bitgrid Task Strategy Operation
+                                                <div data-v-0c0d492c="" class="flexs">Synthetic Venture Task Strategy Operation
                                                     Guide </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Benefits of executing Bitgrid
+                                                <div data-v-0c0d492c="" class="flexs">Benefits of executing Synthetic Venture
                                                     strategies on a daily basis</div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
@@ -224,56 +223,56 @@
                                                     settlement by mainstream global cryptocurrency trading platforms
                                                 </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Benefits of creating a Bitgrid
+                                                <div data-v-0c0d492c="" class="flexs">Benefits of creating a Synthetic Venture
                                                     community </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
                                                 <div data-v-0c0d492c="" class="flexs">How to activate and become a valid
-                                                    user of Bitgrid </div>
+                                                    user of Synthetic Venture </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">How Bitgrid earns income </div>
+                                                <div data-v-0c0d492c="" class="flexs">How Synthetic Venture earns income </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">How does the Bitgrid platform
+                                                <div data-v-0c0d492c="" class="flexs">How does the Synthetic Venture platform
                                                     ensure that I will have a relatively stable and risk-free security
                                                     income </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Advantages of Bitgrid Artificial
+                                                <div data-v-0c0d492c="" class="flexs">Advantages of Synthetic Venture Artificial
                                                     Intelligence Grid System </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Bitgrid company establishment
+                                                <div data-v-0c0d492c="" class="flexs">Synthetic Venture company establishment
                                                     information </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Bitgrid Company Vision Future
+                                                <div data-v-0c0d492c="" class="flexs">Synthetic Venture Company Vision Future
                                                     Planning </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="van-icon van-icon-arrow">
+                                                        class="">
                                                         <!----></i></div>
                                             </li>
                                         </ul>
