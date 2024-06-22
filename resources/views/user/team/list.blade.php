@@ -116,7 +116,7 @@
                                 </a>
                                 </div>
                             <!---->
-                            <div data-v-397da544="" class="name tac"> Team List </div>
+                            <div data-v-397da544="" class="name tac"> @lang('Team List') </div>
                             <div data-v-397da544="" class="flex1"></div>
                             <!---->
                             <!---->
@@ -163,7 +163,7 @@
                                 <div data-v-a5a9abc4="" data-v-cfc9a7fc="" class="flexs">
                                     <div data-v-a5a9abc4="" class="custom-image van-empty" data-v-cfc9a7fc="">
                                         <div class="van-empty__image"><img src="/static/img/none.66fca9cb.png"></div>
-                                        <p class="van-empty__description">No record yet</p>
+                                        <p class="van-empty__description">@lang('No record yet')</p>
                                     </div>
                                 </div>
                             </div>

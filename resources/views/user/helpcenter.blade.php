@@ -122,7 +122,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Help center </div>
+                        <div data-v-397da544="" class="name tac"> @lang('Help center') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -136,7 +136,7 @@
                             <div class="van-tabs__wrap van-tabs__wrap--scrollable">
                                 <div role="tablist" class="van-tabs__nav van-tabs__nav--line van-tabs__nav--complete">
                                     <div role="tab" aria-selected="true" class="van-tab van-tab--active"><span
-                                            class="van-tab__text">FAQ</span></div>
+                                            class="van-tab__text">@lang('FAQ')</span></div>
                                    
                                     <div class="van-tabs__line"
                                         style="transform: translateX(76.5px) translateX(-50%); transition-duration: 0.3s;">
@@ -159,7 +159,7 @@
                                 <div data-v-0c0d492c="" data-v-cfc9a7fc="" class="flexs">
                                     <div data-v-0c0d492c="" class="custom-image van-empty" data-v-cfc9a7fc="">
                                         <div class="van-empty__image"><img src="/static/img/none.fe897b1e.png"></div>
-                                        <p class="van-empty__description">No record yet</p>
+                                        <p class="van-empty__description">@lang('No record yet')</p>
                                     </div>
                                 </div>
                             </div>
@@ -169,114 +169,91 @@
                                     <div data-v-0c0d492c="" role="feed" class="van-list">
                                         <ul data-v-0c0d492c="" class="list">
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">When your account triggers certain
-                                                    risk control measures due to non-human factors, how to release the
-                                                    risk control?</div>
+                                                <div data-v-0c0d492c="" class="flexs">@lang('When your account triggers certain risk control measures due to nonhuman factors how to release the risk control')</div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">The risk control of the account
-                                                    and why the risk control is triggered?</div>
+                                                <div data-v-0c0d492c="" class="flexs">@lang('The risk control of the account and why the risk control is triggered?')</div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Maximizing Synthetic Venture Income:
-                                                    Diversified Income Strategy </div>
+                                                <div data-v-0c0d492c="" class="flexs">@lang('Maximizing Synthetic Venture Income Diversified Income Strategy') </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Grid strategy adopted by Synthetic Venture
+                                                <div data-v-0c0d492c="" class="flexs">@lang('Synthetic strategy adopted by Synthetic Venture')
                                                 </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">What are funds to be released?
+                                                <div data-v-0c0d492c="" class="flexs">@lang('What are funds to be released?')'
                                                 </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Synthetic Venture Task Strategy Operation
+                                                <div data-v-0c0d492c="" class="flexs">@lang('Synthetic Venture Task Strategy Operation')
                                                     Guide </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Benefits of executing Synthetic Venture
-                                                    strategies on a daily basis</div>
+                                                <div data-v-0c0d492c="" class="flexs">@lang('Benefits of executing Synthetic Venture strategies on a daily basis')</div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Benefits of using USDT for
-                                                    settlement by mainstream global cryptocurrency trading platforms
+                                                <div data-v-0c0d492c="" class="flexs">@lang('Benefits of using USDT for settlement by mainstream global cryptocurrency trading platforms')
                                                 </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Benefits of creating a Synthetic Venture
-                                                    community </div>
+                                                <div data-v-0c0d492c="" class="flexs">@lang('Benefits of creating a Synthetic Ventur community') </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">How to activate and become a valid
-                                                    user of Synthetic Venture </div>
+                                                <div data-v-0c0d492c="" class="flexs">@lang('How to activate and become a valid user of Synthetic Venture') </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">How Synthetic Venture earns income </div>
+                                                <div data-v-0c0d492c="" class="flexs">@lang('How Synthetic Venture earns income') </div>
+                                                <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
+                                                        class="">
+                                                        <!----></i></div>
+                                            </li>
+                                           
+                                          
+                                            <li data-v-0c0d492c="" class="db">
+                                                <div data-v-0c0d492c="" class="flexs">@lang('Synthetic Venture company establishment information') </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                             <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">How does the Synthetic Venture platform
-                                                    ensure that I will have a relatively stable and risk-free security
-                                                    income </div>
-                                                <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="">
-                                                        <!----></i></div>
-                                            </li>
-                                            <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Advantages of Synthetic Venture Artificial
-                                                    Intelligence Grid System </div>
-                                                <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="">
-                                                        <!----></i></div>
-                                            </li>
-                                            <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Synthetic Venture company establishment
-                                                    information </div>
-                                                <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
-                                                        class="">
-                                                        <!----></i></div>
-                                            </li>
-                                            <li data-v-0c0d492c="" class="db">
-                                                <div data-v-0c0d492c="" class="flexs">Synthetic Venture Company Vision Future
-                                                    Planning </div>
+                                                <div data-v-0c0d492c="" class="flexs">@lang('Synthetic Venture Company Vision Future Planning') </div>
                                                 <div data-v-0c0d492c="" class="s"><i data-v-0c0d492c=""
                                                         class="">
                                                         <!----></i></div>
                                             </li>
                                         </ul>
-                                        <div class="van-list__finished-text">No more</div>
+                                        <div class="van-list__finished-text">@lang('No more')</div>
                                         <div class="van-list__placeholder"></div>
                                     </div>
                                 </div>

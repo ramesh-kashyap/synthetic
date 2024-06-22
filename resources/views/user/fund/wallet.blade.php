@@ -253,7 +253,7 @@
                                                             <div data-v-65a522d0="" class="time" style="
                                                             margin-top: 22px;
                                                         ">
-                                                              Received
+                                                              @lang('Received')
                                                             </div>
                                                         </div>
                                                         <!---->

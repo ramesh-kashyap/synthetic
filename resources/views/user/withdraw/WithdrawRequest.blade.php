@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Withdrawal</title>
+    <title>@lang('Withdrawal')</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -117,7 +117,7 @@
                                 style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                     <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Withdrawal </div>
+                        <div data-v-397da544="" class="name tac">@lang('Withdrawal') </div>
                         <form action="{{ route('user.Withdraw-Request') }}" method="POST">
                             {{ csrf_field() }}
 
@@ -175,7 +175,7 @@
                             </div>
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Transaction Password</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Transaction Password')</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
                                         data-v-cfc9a7fc="" type="password"
@@ -221,7 +221,7 @@
                         </form>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tipss">
-                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Note</div>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">@lang('Note')</div>
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="p">
                                     <p><span style="color:#ffffff">1, the minimum withdrawal for valid members: 10USDT
                                         </span></p>
@@ -233,16 +233,11 @@
                                     <p><span style="color:#ffffff">3. Taxes for each withdrawal: 5% tax&nbsp;</span>
                                     </p>
 
-                                    <p><span style="color:#ffffff">4, the handling fee on the chain for a single
-                                            withdrawal is 1 USDT. </span></p>
+                                    <p><span style="color:#ffffff">4, @lang('the handling fee on the chain for a single withdrawal is 1 USDT') </span></p>
 
-                                    <p><span style="color:#ffffff">5, only supports USDT-TRON withdrawals </span></p>
+                                    <p><span style="color:#ffffff">5, @lang('only supports USDT-TRON withdrawals') </span></p>
 
-                                    <p><span style="color:#ffffff">6. Withdrawals need to be confirmed and reviewed by
-                                            multiple nodes, and the withdrawal time will be within 72 hours. Withdrawals
-                                            are only allowed in the capital account. If the account has insufficient
-                                            funds, please transfer the quantitative funds to the capital account and
-                                            then initiate a withdrawal again.</span></p>
+                                    <p><span style="color:#ffffff">6.@lang('Withdrawals need to be confirmed and reviewed by multiple nodes, and the withdrawal time will be within 72 hours. Withdrawal are only allowed in the capital account. If the account has insufficient funds, please transfer the quantitative funds to the capital account and then initiate a withdrawal again')</span></p>
                                 </div>
                             </div>
                         </div>
@@ -266,7 +261,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div data-v-4c14e1cc="" class="esc">Cancel</div>
+                                <div data-v-4c14e1cc="" class="esc">@lang('Cancel')</div>
                             </div>
                         </div>
                     </div>
