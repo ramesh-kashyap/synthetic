@@ -143,7 +143,7 @@
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Strategy account'):</div>
-                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->available_balance(),2)}} USDT</div>
+                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}} USDT</div>
                                         </div>
                                     </li>
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
@@ -187,7 +187,7 @@
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('My team')</div>
                                 </li>
                                 <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.invate')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.invite')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
                                             data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJGSURBVHgB1ZnhkdowEEZfMvkfl7Al0EHUQeggLoEOQgl0AB2EDnAqoAToICUQ6WzuuLUtS7KFzZvZAcFa+mzvrtYAL8oXXo/C2uorr4ETu7F2svbP2ooFI9Z+U4u9KRMWhrG2s3ahLfZuZ+f4jXl5i1dra2u/mvEQf5kJJ660tqeO11ukGZ6ITq4Qgc5Ph8yFJyD0J5dP7IH6jhTN+8fv92TCNGIvxIndNcfqGNfzGCYWuyMuXq/WtviFGNon+E5KVXFXxVWBH81rSCVwuGpQUd/+a4D/Wo2PJJCSXLdG6Ibwk3tEh8k69EB5EJuaXKmsOub2zmeok+tMnNi+5Eplo9Y4+hxjk+suNgf6wpV9jsJwCauoK4GQF+lYW4YO6BLvPpsqBEIoaV+wQYRu8XumoWD4jp3U2hsCEaYVf2+q/lDnUYl/7agw6ZpgjHhD2kNAqXzPJCCEiy8I2/or/ByV/45ExCM+ZTcdilc9z6hnSyGu2/OZT8iadjUbjRDfql4ihRxIy6fR4q983voPkUL03IYJEbVARR23qwAhvu7OkCFMNMJw9xfb3R3IFCax6O6uGvCPuTtZOSkhpcc3uvfORUHcbrlVvkmPaFNQErdtB/fej+T4tdaose8nM6FdkSoCyCH8pxp/9/gaNXYneWUGXHx3bVJ95S0mibMjhIkX4pL4KQjD4kvikvhpCH7xuvfesiCEfvH6s8X9ryMMt8RZmqopEPzi9ywYoV+8YeEIM/09MgXCZ/GLDhON8CF+tt47FWFEmPwHFfDgYXzA3PsAAAAASUVORK5CYII="></a>
                                     </div>
@@ -213,7 +213,7 @@
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/121212.png">
                                         </div>
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.GenerateTicket')}}" style="color:#fff;">@lang('Customer service')
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="https://t.me/synthetic_venture" target="_blank" style="color:#fff;">@lang('Customer service')
                                         @lang('support')</a></div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
                                             <!---->
@@ -222,6 +222,44 @@
                                                 <!----></i></div>
                                     </li>
                                  
+                                    <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico">
+                                            <a href="https://x.com/Synthetic_Vent" target="_blank" style="color:#fff;">
+                                            <img data-v-3d4e4f5e=""
+                                                data-v-cfc9a7fc=""
+                                                src="{{asset('')}}assets/static/img/twitter.png">
+                                        </div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1">@lang('Twitter')</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
+                                            <!---->
+                                            <a href="https://x.com/Synthetic_Vent" target="_blank" style="color:#fff;">
+                                            <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
+                                                class="van-icon van-icon-arrow">
+                                                <!----></i>
+                                            </a>
+                                            
+                                            </div>
+                                    </li>
+
+                                    <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico">
+                                            <a href="https://t.me/synthetic_venture" target="_blank" style="color:#fff;">
+                                            <img data-v-3d4e4f5e=""
+                                                data-v-cfc9a7fc=""
+                                                src="{{asset('')}}assets/static/img/teelgram.png">
+                                        </div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1">@lang('Telegram')</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
+                                            <!---->
+                                            <a href="https://t.me/synthetic_venture" target="_blank" style="color:#fff;">
+                                            <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
+                                                class="van-icon van-icon-arrow">
+                                                <!----></i>
+                                            </a>
+                                            
+                                            </div>
+                                    </li>
+
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
                                                 data-v-cfc9a7fc=""
@@ -234,13 +272,14 @@
                                                 class="van-icon van-icon-arrow">
                                                 <!----></i></div>
                                     </li>
+
                                     <!---->
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/clear.png">
                                         </div>
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.dashboard')}}" style="color:#fff;">@lang('Clear cache')</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{url('/clear')}}" style="color:#fff;">@lang('Clear cache')</a></div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
                                             <!---->
                                             <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""

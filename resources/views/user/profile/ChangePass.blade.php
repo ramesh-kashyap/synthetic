@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Change password</title>
+    <title>@lang('Change password')</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -224,7 +224,7 @@
                                 style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                     <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Change password </div>
+                        <div data-v-397da544="" class="name tac">@lang('Change password') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -257,31 +257,31 @@
                         <form method="post" action="{{ route('user.edit-password') }}">
                             {{ csrf_field() }}
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Email</div>
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">@lang('Email')</div>
                                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
                                         data-v-cfc9a7fc="" type="" placeholder="Please enter the new password"
                                         value="{{ Auth::user()->email }}" id="emailId" name="emailId"></div>
                             </div>
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Verification Code</div>
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">@lang('Verification Code')</div>
                                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val">
                                     <div class="input-container">
                                         <input data-v-9d2ee7be="" data-v-cfc9a7fc="" type="text" style="width: 81%;" name="code"
                                             id="code" placeholder="Enter verification code" maxlength="">
                                       
-                                            <span class="code-btn">Get Code</span>
+                                            <span class="code-btn">@lang('Get Code')</span>
                                     </div>
                                 </div>
                             </div>
 
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">New password</div>
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">@lang('New password')</div>
                                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
                                         data-v-cfc9a7fc="" type="password"
                                         placeholder="Please enter the new password" name="password"></div>
                             </div>
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Confirm password</div>
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">@lang('Confirm password')</div>
                                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val inp"><input data-v-9d2ee7be=""
                                         data-v-cfc9a7fc="" type="password"
                                         placeholder="Enter the password again to confirm"
@@ -295,7 +295,7 @@
             <div data-v-cfc9a7fc="" class="footer">
                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="container">
                     <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="go"><button data-v-9d2ee7be=""
-                            type="submit" data-v-cfc9a7fc="" class="btn2">Confirm</button></div>
+                            type="submit" data-v-cfc9a7fc="" class="btn2">@lang('Confirm')</button></div>
                 </div>
             </div>
         </div>
@@ -364,7 +364,7 @@
     <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2004; display: none;"><i
             class="van-icon van-icon-success van-toast__icon">
             <!----></i>
-        <div class="van-toast__text">Login successful</div>
+        <div class="van-toast__text">@lang('Login successful')</div>
     </div>
 </body>
 

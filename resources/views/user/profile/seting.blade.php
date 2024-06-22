@@ -134,7 +134,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.Mine')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Setting </div>
+                        <div data-v-397da544="" class="name tac">@lang('Setting') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -152,7 +152,7 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAP1BMVEUAAACUmp+Ump+Tl5+UmJ6Ump+UmZ+Wn5+Tl56Ul5+Ump+VmZ+Ump+UmZ6Tm5+Ump+TmZ6Ulp2Tmp6TnJ+Ump+24VaTAAAAFHRSTlMA4O8gYKCAEEAwwLCQcEDPUHDQUBNxwWEAAAFKSURBVEjH7ZTLlgIhDERDmmfTL2fy/986QCvVoMdh6cK7IkpSZUikLx+PW6MS4ahpDM1yRw2lLHJhGbr/NsObZHc3R/UjCbaBKBjJtK6mudqdqKAu5ykH7AgEhjaHKjDVevn7legaA873YjoY3LApjAiV5Hgj2ord+f5RwA2fDdbokIRFKfFEkiDQxqbKw8vbhD0FWyeuilAlpHB/ne3OKD5cwkRsElwTnW1ltPX6cp28P8Ud9w+nWr2578AhGRPIecvdaPi+rcd/wzeXYj4VKyeF3AuzfjsamEcQaxOceRbHugG+USEoaVBT9TOvwRG5bb3L2TrJLdqe17eL7dPF7dE/Xn6nXMpAjVdqWPkcTFV8u1ppwSIBrNleEnRTSQqw021F+On/dTQessNiUfsERS9xjp7AaA+zY58HwEKNw/gJYxyKNX35cP4AcHUnVdtny8AAAAAASUVORK5CYII=">
                                 </div>
-                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.profile')}}" style="color:#fff;">Configure Profile</a></div><i
+                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.profile')}}" style="color:#fff;">@lang('Configure Profile')</a></div><i
                                     data-v-0e1dae04="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
                                     <!----></i>
                             </li>
@@ -161,7 +161,7 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAM1BMVEUAAACTl5+Tn5+Vmp+UmJ+Ump+UmZ+Ump+WmZ6UmZ+Ump6TmZ2Ump+Tmp6TmZ+VmZ+Ump/y5Wn0AAAAEHRSTlMAIBDfYM+gwF+vkIDv0IB/HJsz2QAAAKVJREFUSMftlTkOwzAMBMNDlC3n4P9fGyIwRKRbOl3sadTsACK0oG4Xv8Cv5t4UzpP4ByFQEN8RhvLqkw0SWiSNyeLokOABxeQewALH6LDQI7gSr3E0SDCfKJJfMi/VPMH58fB7fzLQnwFfnaQ4ajWvmbfT9GfzyYAEljQWyCDUSLRHf+zLwF/QCntJ8XqnUdxL43/2kh3plRZ7JfUPBUX3vXRxgDeUFBQiIrBegQAAAABJRU5ErkJggg==">
                                 </div>
-                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.lang')}}" style="color:#fff;">Switch Language</a></div><i
+                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.lang')}}" style="color:#fff;">@lang('Switch Language')</a></div><i
                                     data-v-0e1dae04="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
                                     </i>
                             </li>
@@ -170,7 +170,7 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAPFBMVEUAAACVmp+Sn5+Ump+VmJ6UmZ6UmJ6Ump+Xl5+Pl5+Ump+Tmp+TmZ+Ump+VmZ+TmZ+Tmp6Tmp6Vmp+Ump/GDkY9AAAAE3RSTlMA3xDvYIBwzyAgoO9QwLCA0JAwb2IvQAAAAQ5JREFUSMftlNFugzAMRW/sBJKslG38/78OWyCXWipGlfbU84JafBIn1wIfYlAZlxBjhtDSEiY1AFIfNwh5uUSB9N8JAWpfSyeIVhGCpFYFBHlboJLWy+4tKgxfi8JDTBjs7sTIq26k7IT2UMDk8mQndF2aaGCNB/wUsRPGrRUUfY3bYQt2LemTLB7H+0KS1vfbGgNC2Q6tzx4QiB+OWLEnYSm44O4m3CGkpxR8S0YBDkkkJ1i9DYclwb6lpv/PFfiddeV2cugu+1YoVYyfE0EGI2Mji/1asJwt69cCH9bk8x1uiTN29l+Of/xqEEI0FSaZnYYA1HXwy3KJDLr2uQdQo4ZNT/4OVfM0Ez6E+ANrlT5UQkWl9AAAAABJRU5ErkJggg==">
                                 </div>
-                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.tpassword')}}" style="color:#fff;">Change Tranction Password</a></div><i
+                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.tpassword')}}" style="color:#fff;">@lang('Change Tranction Password')</a></div><i
                                     data-v-0e1dae04="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
     </i>
                             
@@ -179,7 +179,7 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAASFBMVEUAAACUmp+Tm5+Vmp+TmZ6Ul5+UmZ+Pn5+UmZ+Tl52Ump+UmZ2Tmp+Ump+SmZ6UlZ+VmJ6Tmp6Ump+UmZ+Vmp+fn5+Vmp+Ump+ZwjL7AAAAF3RSTlMAv0DfgCCgEI9A73DvsGAwYFDPcDAQz3vS0vQAAAE5SURBVEjH7VVbbsQgDAxvCIXddHfL/W/aOKkKjjFIlfpTdb4S22PDYMPyNxFiUm+lFCX85qbRTkNshQ3jcF8IhOHjI2Sn0Fz8V/rV5udr/31uVp0W1S3ixOmMr8YoBc84XOvjar4rhuG5TCYdnqvAGawffUE0+Pwljar5KSwwAjWxgrt3SIcKILkpbuDPqADO0JVENP+wg/uwZ/AuApwACSKnpJFudkzIaE2JrIjAoEWAardljLXVff3u/dyRVJxN3yYd9f7WzIikBNAOwUD8kCAwIRaOUKUg+j/OD0qoH5gg/wm/QdgIQcE8aK07k3qYdpdHJ61LhcWE0G0NByWYe1cQAsAo9jFwlhIAUu+IsjudEXwKEeYwBY3xHB4JOEVIZXrViYIwLZBpvBkSIvP6snAJZU9y+Sk+AbtVNBMW8XUdAAAAAElFTkSuQmCC">
                                 </div>
-                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.ChangePass')}}" style="color:#fff;">Change Login Password</a></div><i
+                                <div data-v-0e1dae04="" data-v-cfc9a7fc="" class="n flex1"><a href="{{route('user.ChangePass')}}" style="color:#fff;">@lang('Change Login Password')</a></div><i
                                     data-v-0e1dae04="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
                                     </i>
                             </li>
@@ -206,7 +206,7 @@
     <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2004; display: none;"><i
             class="van-icon van-icon-success van-toast__icon">
             <!----></i>
-        <div class="van-toast__text">Login successful</div>
+        <div class="van-toast__text">@lang('Login successful')</div>
     </div>
 </body>
 

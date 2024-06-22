@@ -19,7 +19,8 @@ Route::get('/clear', function() {
    Artisan::call('config:cache');
    Artisan::call('view:clear');
 
-   return "Cleared!";
+   $notify[] = ['success', 'cache Cleared'];
+   return redirect()->back()->withNotify($notify);
 
 });
 
@@ -186,7 +187,7 @@ Route::get('/Mine', [App\Http\Controllers\UserPanel\Team::class, 'leftteam'])->n
 Route::get('/Market', [App\Http\Controllers\UserPanel\Team::class, 'rightteam'])->name('user.Market');
 Route::get('/tree-view', [App\Http\Controllers\UserPanel\Team::class, 'genealogy'])->name('user.tree-view');
 Route::get('/team', [App\Http\Controllers\UserPanel\Team::class, 'team'])->name('user.team');
-Route::get('/invate', [App\Http\Controllers\UserPanel\Team::class, 'invate'])->name('user.invate');
+Route::get('/invite', [App\Http\Controllers\UserPanel\Team::class, 'invate'])->name('user.invite');
 Route::get('/list', [App\Http\Controllers\UserPanel\Team::class, 'list'])->name('user.list');
 Route::get('/totalteam', [App\Http\Controllers\UserPanel\Team::class, 'totalteam'])->name('totalteam');
 

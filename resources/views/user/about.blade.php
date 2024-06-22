@@ -120,7 +120,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> About us </div>
+                        <div data-v-397da544="" class="name tac"> @lang('About us') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -140,51 +140,23 @@
 
                                 <p style="text-align:center"><span style="color:#ffffff"><strong><span
                                                 style="font-size:11pt"><span
-                                                    style="font-family:Arial,sans -serif">Synthetic Venture Corporation is
-                                                    registered in Colorado, USA and is a licensed AI grid strategy
-                                                    income platform. </span></span></strong></span></p>
+                                                    style="font-family:Arial,sans -serif">@lang('Synthetic Venture Corporation is registered in Colorado, USA and is a licensed AI grid strategy income platform') </span></span></strong></span></p>
 
                                 <p> </p>
 
                                 <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                style="font-family:Arial,sans-serif">Synthetic Venture was founded in 2024 and is
-                                                the most Frontier uses one of the self-developed AI financial GPT model
-                                                hedging platforms, focusing on grid strategy capital market research,
-                                                venture capital and risk management. The investment scope involves
-                                                crypto assets, stocks, futures, options, etc. The company's founding
-                                                team is composed of professors from the Wharton School of the University
-                                                of Pennsylvania and Ph.D.s in finance. The underlying strategy is based
-                                                on its profound asset pricing theory and empirical research in
-                                                behavioral finance. </span></span></span></p>
+                                                style="font-family:Arial,sans-serif">@lang('Synthetic Venture was founded in 2024 and is the most Frontier uses one of the self-developed AI financial GPT model hedging platforms, focusing on grid strategy capital market research,venture capital and risk management. The investment scope involves crypto assets, stocks, futures, options, etc. The company founding team is composed of professors from the Wharton School of the University of Pennsylvania and Ph.D.s in finance. The underlying strategy is based on its profound asset pricing theory and empirical research in behavioral finance'). </span></span></span></p>
 
                                 <p> </p>
 
                                 <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                style="font-family:Arial,sans-serif">Synthetic Venture AI is based on grid
-                                                strategy Financial Big Model Synthetic Venture GPT-driven revenue platform,
-                                                dedicated to fusing the latest artificial intelligence technology and
-                                                grid strategies. Supports a variety of mainstream digital asset grid
-                                                arbitrage strategies. Use professional arbitrage tools to buy at low
-                                                prices and sell at high prices on different exchanges, and earn
-                                                risk-free returns after the spread returns. At the same time, it
-                                                supports multiple basic grid strategies for digital assets.
+                                                style="font-family:Arial,sans-serif">@lang('Synthetic Venture AI is based on grid strategy Financial Big Model Synthetic Venture GPT-driven revenue platform,dedicated to fusing the latest artificial intelligence technology and  strategies. Supports a variety of mainstream digital asset grid arbitrage strategies. Use professional arbitrage tools to buy at low prices and sell at high prices on different exchanges, and earn risk-free returns after the spread returns. At the same time, it supports multiple basic grid strategies for digital assets')
                                             </span></span></span></p>
 
                                 <p> </p>
 
                                 <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                style="font-family:Arial,sans-serif">The core of the platform is Synthetic Venture
-                                                GPT. A powerful grid strategy financial model that combines the
-                                                advantages of deep learning, algorithmic trading and big data analysis.
-                                                Through this unique technology-driven approach, the Synthetic Venture AI Grid
-                                                Strategy Income Platform is designed to provide investors with returns
-                                                that exceed traditional market benchmarks while effectively managing
-                                                risk. The platform uses advanced AI analysis capabilities to
-                                                continuously monitor and analyze the complex dynamics of global
-                                                financial markets, aiming to capture investment opportunities and
-                                                achieve long-term stable growth. The Synthetic Venture AI grid strategy income
-                                                platform represents the forefront of financial technology, providing
-                                                investors with a unique and innovative asset management experience.
+                                                style="font-family:Arial,sans-serif">@lang('The core of the platform is Synthetic Venture GPT. A powerful grid strategy financial model that combines the advantages of deep learning, algorithmic trading and big data analysis.Through this unique technology-driven approach, the Synthetic Venture AI Grid Strategy Income Platform is designed to provide investors with returns that exceed traditional market benchmarks while effectively managing risk. The platform uses advanced AI analysis capabilities to continuously monitor and analyze the complex dynamics of global financial markets, aiming to capture investment opportunities and achieve long-term stable growth. The Synthetic Venture AI grid strategy income platform represents the forefront of financial technology, providing investors with a unique and innovative asset management experience')
                                             </span></span></span></p>
 
                                 <p> </p>

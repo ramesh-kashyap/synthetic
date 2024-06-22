@@ -301,7 +301,7 @@
     --CObackgroundLinear5: linear-gradient(90deg,#e7625d,#e24a43)
 }
 
-* {
+body {
     text-transform: capitalize
 }
 

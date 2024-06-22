@@ -167,8 +167,10 @@
                                     </div>
                                     <div data-v-45836ea7="" class="swiper-slide swiper-slide-active"
                                         data-swiper-slide-index="1" style="width: 425px;">
-                                        <div data-v-45836ea7="" class="item"><img data-v-45836ea7=""
-                                                src="{{asset('')}}assets/static/img/21.jpeg">
+                                        <div data-v-45836ea7="" class="item">
+                                                <iframe src="{{asset('assets/static/img/CEO.mp4')}}?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" width="100%" height="100%"  frameborder="0" allow="autoplay; encrypted-media"></iframe>
+
+
                                         </div>
                                     </div>
                                     <div data-v-45836ea7="" class="swiper-slide swiper-slide-next"

@@ -150,7 +150,7 @@
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-left"><span data-v-6df100a6=""
                                         data-v-cfc9a7fc=""><img data-v-6df100a6="" data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAD1BMVEUAAAAE3AAD3AAE2wAE3ABuQteJAAAABHRSTlMAgFBAnsFh3gAAADNJREFUKM9jGAXogEkBQ0jEEV2E0cVFAF2Ri4sjhiJ0ZSogIWcUIRNMISZBIDBgGAUoAABJbwaD+etRRAAAAABJRU5ErkJggg==">
-                                        0% </span><span data-v-6df100a6="" data-v-cfc9a7fc="">(+$0)</span></div>
+                                        {{$percentage}}% </span><span data-v-6df100a6="" data-v-cfc9a7fc="">(+${{number_format($todaysRoi,2)}})</span></div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right">
                                     <!-- <span data-v-6df100a6=""
                                         data-v-cfc9a7fc="">Pending: 0 U</span> -->
