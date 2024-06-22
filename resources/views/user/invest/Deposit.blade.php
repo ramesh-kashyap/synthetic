@@ -163,7 +163,7 @@
                                         src="{{asset('')}}assets/static/img/v{{$id}}.7b83cd44.png" style="pointer-events: none;"></div>
                                 <div data-v-cc3ce6d2="" class="more">
                                     <a href="{{route('user.recharge')}}">
-                                    Package list<img data-v-cc3ce6d2=""
+                                   @lang('Package list')<img data-v-cc3ce6d2=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWNxwqAAAAB3RSTlMAgECgUJBwE7RqWgAAAFBJREFUKM9joBtgcoAQcKBeCCHgwL1cAELAAGN5IYSAA3GQrDhpSlhBsqzISsxBsuZISpjLy8AEpgCmFkxDMa1FOIywAgzv4w4gJgUIQUcAAPJCHQUHfZ8eAAAAAElFTkSuQmCC">
                                     </a>
                                 </div>
@@ -275,17 +275,17 @@
                                     <div data-v-cc3ce6d2="" class="s">{{ $profile->level1}}%|{{ $profile->level2}}%|{{ $profile->level3}}%|</div>
                                 </li>
                                 <li data-v-cc3ce6d2="" class="next-level">
-                                    <div data-v-cc3ce6d2="" class="flex1">Investment range</div>
+                                    <div data-v-cc3ce6d2="" class="flex1">@lang('Investment range')</div>
                                     <div data-v-cc3ce6d2="" class="s">
                                         <div data-v-cc3ce6d2="" class="teamCount">
                                             <div data-v-cc3ce6d2=""> ${{ $profile->min}} -{{ ($profile->mix)?"$".$profile->mix:"Above"}}<img data-v-cc3ce6d2=""
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAOVBMVEX///8AAAAODg7////////////h4eH///////////+FhYUsLCxqamr///////////+lpaWVlZVKSko8tlaaAAAAE3RSTlOAAIBwEAiAeFBIgICAaDAYgICAwZP9dQAAAMtJREFUOMuV1NEWgyAIBmAyCVzTtr3/w06XR1h4sv6bbr7DoYBgasHEkQAocsJJpREfCCTsDcEAhwT8J34Gk9lrsonQZhMiNUydSrAJY7AS6dQk7MTDSfyP8BkJhSD08nztT8JMUlc4V03KhPvCPeokMomnAmImbXjL0hFAmTSxrosSLYp8nCtGhBBqVYoxgmq7YkSodhm0UUJeOoEyWsinQ9LmKADLGAMo8z4IvrIM45UaL+Z4vcdHMj61Owdb4xkkFMzZj38eNjfJF4TTBjZGDKh+AAAAAElFTkSuQmCC">
                                             </div>
-                                            <div data-v-cc3ce6d2="" style="display: none;"> B: 0 People 0/0 <img
+                                            <div data-v-cc3ce6d2="" style="display: none;"> B: 0 @lang('People') 0/0 <img
                                                     data-v-cc3ce6d2=""
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAS1BMVEUAAACj/3ym/32m/3ym/36m/32l/3yf/4Cf/3Cl/3um/32m/3ym/32l/32n/3qm/30NDQ1ZhUUgKxtGaDeT4W+T4G9tpFNjlEwzSSmgfRuoAAAAD3RSTlMAIO+g39+QEBBg0M+PMGAvI4cvAAAA4ElEQVQ4y63TS5KDMAwEUJCIP3ymPQyT5P4nDSbEVpBxZZFev2oJSm5ynOeBABrYu6aU1hByuFXAjThkdIeKC1Qub0VTFNpMqqPS45JQ5rXPiNOM+xhU8hzFNWKisCjl74otFLfxRRHCbnyao0T4xRZeyVAV6FdC2LMsBQFaSRLzvGgBCHIPYTVKQAz6n6NRgvZ1s8lCrMuQRoj80R7CSJF/nSVpjgLbORgIczsI/vQYGlO/hRjbnYnOpvPuTkQrHklXFFMCqUd3yFijNrX62TNyyIgK2eS5J4B6/rHN1/MAcuUvL+WPD1EAAAAASUVORK5CYII=">
                                             </div>
-                                            <div data-v-cc3ce6d2="" style="display: none;"> C: 0 People 0/0 <img
+                                            <div data-v-cc3ce6d2="" style="display: none;"> C: 0 @lang('People') 0/0 <img
                                                     data-v-cc3ce6d2=""
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAS1BMVEUAAACj/3ym/32m/3ym/36m/32l/3yf/4Cf/3Cl/3um/32m/3ym/32l/32n/3qm/30NDQ1ZhUUgKxtGaDeT4W+T4G9tpFNjlEwzSSmgfRuoAAAAD3RSTlMAIO+g39+QEBBg0M+PMGAvI4cvAAAA4ElEQVQ4y63TS5KDMAwEUJCIP3ymPQyT5P4nDSbEVpBxZZFev2oJSm5ynOeBABrYu6aU1hByuFXAjThkdIeKC1Qub0VTFNpMqqPS45JQ5rXPiNOM+xhU8hzFNWKisCjl74otFLfxRRHCbnyao0T4xRZeyVAV6FdC2LMsBQFaSRLzvGgBCHIPYTVKQAz6n6NRgvZ1s8lCrMuQRoj80R7CSJF/nSVpjgLbORgIczsI/vQYGlO/hRjbnYnOpvPuTkQrHklXFFMCqUd3yFijNrX62TNyyIgK2eS5J4B6/rHN1/MAcuUvL+WPD1EAAAAASUVORK5CYII=">
                                             </div>
@@ -299,7 +299,7 @@
                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="title flex"><img data-v-1fa86597=""
                                     data-v-cfc9a7fc=""
                                     src="data:image/png;base64,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">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="flex1"> Arbitrage parameters </div>
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="flex1"> @lang('Arbitrage parameters') </div>
                             </div>
                             <ul data-v-1fa86597="" data-v-cfc9a7fc="" class="com-1">
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
@@ -319,8 +319,8 @@
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> ${{ $profile->min}} - {{ ($profile->mix)?"$".$profile->mix:"Above"}} </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Duration</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> {{ $profile->days}} Days</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Duration')</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> {{ $profile->days}} @lang('Days')</div>
                                 </li>
                             </ul>
 							
@@ -345,7 +345,7 @@
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress"></div>
                                 </br></br></br>
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf">
-                                    <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit"> Create </button>
+                                    <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Create') </button>
                                 </div>
                             </form>
                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="check">
@@ -356,8 +356,8 @@
                                         <i class="van-icon van-icon-success"
                                             style="border-color: rgb(122, 222, 133); background-color: rgb(122, 222, 133);">
                                             <!----></i></div><span class="van-checkbox__label">
-                                        <div data-v-1fa86597=""> Creating a policy means agreeing to <span
-                                                data-v-1fa86597="">[the Fund Agreement]</span></div>
+                                        <div data-v-1fa86597=""> @lang('Creating a policy means agreeing to') <span
+                                                data-v-1fa86597="">[@lang('the Fund Agreement')]</span></div>
                                     </span>
                                 </div>
                             </div>
