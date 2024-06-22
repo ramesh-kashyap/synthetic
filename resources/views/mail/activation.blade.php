@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Forgot Password</title>
+    <title>Activation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
@@ -33,7 +33,7 @@
                               <td class=""
                                   style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size:32px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; display: block; border-radius: 3px 3px 0 0; background-color: #2b282e; margin: 0;text-shadow: 2px 2px #0100c9;font-weight: 700;text-shadow: 3px 1px 0px #c78283;font-size: 40px;margin-top: -40px;"
                                   align="center" bgcolor="#71b6f9" valign="top">
-                                <p> <img style="width:200px" src="https://archive.org/download/favicon-16x16f9e3-2/favicon-16x16f9e3-2.png" alt=""> </p>
+                                <p> <img style="width: 100%;" src="https://syntheticventure.com/assets/static/img/logo1.png" alt=""></p>
                               </td>
                           </tr>
                         <tr

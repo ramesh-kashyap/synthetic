@@ -154,8 +154,7 @@
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex"
-                                style="
-    margin-bottom: 13px;>
+                                style="margin-bottom: 13px;>
                                 <div data-v-7bab1ac4=""
                                 data-v-cfc9a7fc="" class="flex1">
                                 <input data-v-cfc9a7fc="" data-v-7bab1ac4="" type="text"

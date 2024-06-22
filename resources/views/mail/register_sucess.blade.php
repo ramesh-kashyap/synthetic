@@ -29,9 +29,9 @@
                      bgcolor="#fff">
                   <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                       <td class=""
-                          style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size:32px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; display: block; border-radius: 3px 3px 0 0; background-color: #2b282e; margin: 0;text-shadow: 2px 2px #0100c9;font-weight: 700;text-shadow: 3px 1px 0px #c78283;font-size: 40px;margin-top: -40px;"
+                          style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size:32px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; display: block; border-radius: 3px 3px 0 0; background-color: #2b282e; margin: 0;text-shadow: 2px 2px #0100c9;font-weight: 700;text-shadow: 3px 1px 0px #c78283;font-size: 40px;margin-top: -37px;"
                           align="center" bgcolor="#71b6f9" valign="top">
-                        <p> <img style="width:200px" src="https://gstaiq.com/assets/images/logo-2.png" alt=""> </p>
+                        <p> <img style="width: 100%;" src="https://syntheticventure.com/assets/static/img/logo1.png" alt=""> </p>
                       </td>
                   </tr>
                   <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
@@ -44,7 +44,7 @@
                                   <td class="content-block"
                                       style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                       valign="top">
-                                      Dear <strong
+                                      Hi <strong
                                           style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                       {{ $view_message['name'] }}</strong> 
                                   </td>
@@ -53,7 +53,7 @@
                                   <td class="content-block"
                                       style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                       valign="top">
-                                      Welcome to Etriton! 🚀
+                                      Welcome to Synthetic Venture! We're excited to have you on board.
                                       
                                       
                                   </td>
@@ -73,20 +73,20 @@
                                     <table class="invoice-items" cellpadding="0" cellspacing="0"
                                     style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; margin: 0;">
                                  <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                     <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                         valign="top">  <b>Mobile Number</b>  : <span style="color:#9b5fe2">  <b> {{ $view_message['username'] }} </b></span> 
+                                     <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: transparent; border-top-style: solid; margin: 0; padding: 5px 0;"
+                                         valign="top">  <b>Username</b>  : <span style="color:#ffa609">  <b> {{ $view_message['username'] }} </b></span> 
                                      </td>
                                     
                                  </tr>
                                  <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                     <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                         valign="top"> <b>Password</b>  : <span style="color:#9b5fe2">  <b>{{ $view_message['password'] }} </b></span>
+                                     <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: transparent; border-top-style: solid; margin: 0; padding: 5px 0;"
+                                         valign="top"> <b>Password</b>  : <span style="color:#ffa609">  <b>{{ $view_message['password'] }} </b></span>
                                      </td>
                                    
                                  </tr>
                                  <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                    <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                        valign="top"> <b>Transaction Password</b>  : <span style="color:#9b5fe2">  <b>{{ $view_message['tpassword'] }} </b></span>
+                                    <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: transparent; border-top-style: solid; margin: 0; padding: 5px 0;"
+                                        valign="top"> <b>Transaction Password</b>  : <span style="color:#ffa609">  <b>{{ $view_message['tpassword'] }} </b></span>
                                     </td>
                                   
                                 </tr>
@@ -104,7 +104,8 @@
                                       style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                       valign="top">
                                       <br>
-                                  🌐 Diverse Trading Options: Trade over 20 cryptocurrencies across major exchanges.<br>💡 Advanced Algorithms: Capitalize on price discrepancies for maximum profits.<br>📈 Real-Time Analytics: Stay ahead with timely market updates.             
+                                      Thank you for joining us! We look forward to helping you achieve your investment goals.
+
                                   </td>
                               </tr>
 
@@ -112,30 +113,15 @@
                                   <td class="content-block"
                                       style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
                                       valign="top">
-                                      Follow us on Twitter, Facebook, and Instagram for exclusive updates.                      
+                                      Best regards,
+                                    <br>
+                                    The Synthetic Venture Team
+
+
+
                                   </td>
                               </tr>
 
-                              <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                  <td class="content-block"
-                                      style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
-                                      valign="top">
-                                      Explore the platform, boost your returns, and enjoy the journey to profitable trading!
-      
-                                  </td>
-                              </tr>
-
-                            
-
-
-
-                          
-                                 <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                     <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                         valign="top">{{siteName()}} Support Team   :   info@etriton.co
-                                     </td>
-                                    
-                                 </tr>
 
 
                              
@@ -146,20 +132,7 @@
                       </td>
                   </tr>
               </table>
-              <div class=""
-                   style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; clear: both; color: #999; margin: 0; padding: 20px;">
-                  <table width="100%"
-                         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                      <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                          <td class="aligncenter content-block"
-                              style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; color: #999; text-align: center; margin: 0; padding: 0 0 20px;"
-                              align="center" valign="top"><a href="#"
-                                                             style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; color: #999; text-decoration: underline; margin: 0;">Unsubscribe</a>
-                              from these alerts.
-                          </td>
-                      </tr>
-                  </table>
-              </div>
+              
           </div>
       </td>
       <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0;"

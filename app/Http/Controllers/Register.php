@@ -53,13 +53,13 @@ class Register extends Controller
         $password->created_at = \Carbon\Carbon::now();
         $password->save();
 
-        //    sendEmail($emailId, 'Your One-Time Password', [
-        //     'name' => $user->name,
-        //     'code' => $code,
-        //     'purpose' => 'Change Password',
-        //     'viewpage' => 'one_time_password',
+           sendEmail($emailId, 'Your One-Time Password', [
+            'name' =>'',
+            'code' => $code,
+            'purpose' => 'Your OTP for Secure Access',
+            'viewpage' => 'one_time_password',
 
-        //  ]);
+         ]);
 
        return true;
     }
@@ -85,10 +85,10 @@ class Register extends Controller
     {
         try{
             $validation =  Validator::make($request->all(), [
-                'phone' => 'required|unique:users,phone',
+                'phone' => 'required',
                 'password' => 'required|confirmed|min:5',
                 'sponsor' => 'required|exists:users,username',
-                'emailId' => 'required',
+                'email' => 'required|unique:users,email',
                 'code' => 'required',              
             ]);
 
@@ -115,14 +115,12 @@ class Register extends Controller
             }
             $totalID = User::count();
             $totalID++;
-            $username =substr(time(),4).$totalID;
-             $username =substr(rand(),-2).substr(time(),-3).substr(mt_rand(),-2);
+         $username =substr(rand(),-2).substr(time(),-3).substr(mt_rand(),-2);
             
            $tpassword =substr(time(),-2).substr(rand(),-2).substr(mt_rand(),-1);
             $post_array  = $request->all();
                 //  
-                $data['email'] = $post_array['emailId'];
-                $data['code'] = $post_array['code'];
+            $data['name'] = $post_array['name'];
             $data['phone'] = $post_array['phone'];
             $data['email'] = $post_array['email'];
             $data['username'] = $username;
@@ -139,7 +137,7 @@ class Register extends Controller
             $data['created_at'] = Carbon::now();
             $data['remember_token'] = substr(rand(),-7).substr(time(),-5).substr(mt_rand(),-4);
             $sponsor_user =  User::orderBy('id','desc')->limit(1)->first();
-           $data['level'] = $user->level+1;
+             $data['level'] = $user->level+1;
 
          
             $data['ParentId'] =  $sponsor_user->id;
@@ -148,8 +146,16 @@ class Register extends Controller
             $user = User::find($registered_user_id);
             Auth::loginUsingId($registered_user_id);
           
-         
-
+           sendEmail($user->email, 'Welcome to '.siteName(), [
+                'name' => $user->name,
+                'username' => $user->username,
+                'password' => $user->PSR,
+                'tpassword' => $user->TPSR,
+                'viewpage' => 'register_sucess',
+                 'link'=>route('login'),
+            ]);
+            
+            
             return redirect()->route('home');
             //  return redirect()->route('register_sucess')->with('messages', $user);
 
