@@ -160,7 +160,7 @@ text-transform: lowercase !important;
                             </div>
                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="income">
                                 <div data-v-422886cf="" data-v-cfc9a7fc="">Total Commission：<span data-v-422886cf=""
-                                        data-v-cfc9a7fc="">0 USDT</span></div>
+                                        data-v-cfc9a7fc="">{{number_format($teamCommission,2)}} USDT</span></div>
                             </div>
                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="box">
                                 <div data-v-422886cf="" data-v-cfc9a7fc="" class="m">
