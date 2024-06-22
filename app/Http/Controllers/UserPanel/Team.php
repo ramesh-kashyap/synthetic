@@ -441,8 +441,9 @@ class Team extends Controller
 
   public function invate()
   {
-      
-   
+    $user=Auth::user();
+    $teamCommission = Income::where('user_id',$user->id)->where('remarks','Team Commission')->sum('comm');
+      $this->data['teamCommission'] = $teamCommission;
       $this->data['page'] = 'user.team.invate';
       return $this->dashboard_layout();
   } 
