@@ -164,15 +164,13 @@
                             </div>
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal amount</div>
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
-                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
-                                    <input data-v-7bab1ac4="" data-v-cfc9a7fc="" type="text"
-                                        placeholder="Please enter the withdrawal amount" name="amount"
-                                        id="withdrawalAmount">
-                                </div>
-                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str"></div>
-                            </div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Withdrawal amount')</div>
+                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+                    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
+                        <input data-v-7bab1ac4="" data-v-cfc9a7fc="" type="text" placeholder="Please enter the withdrawal amount" name="amount" id="withdrawalAmount">
+                    </div>
+                    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str"></div>
+                </div>
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Transaction Password')</div>
