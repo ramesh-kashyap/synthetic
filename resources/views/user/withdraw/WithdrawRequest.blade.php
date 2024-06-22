@@ -203,9 +203,9 @@
 
                                     <p><span style="color:#ffffff">3. @lang('Taxes for each withdrawal: 5% tax')&nbsp;</span></p>
 
-                                    <p><span style="color:#ffffff">4, @lang('the handling fee on the chain for a single withdrawal is 1 USDT') </span></p>
+                                    <p><span style="color:#ffffff">4. @lang('the handling fee on the chain for a single withdrawal is 1 USDT') </span></p>
 
-                                    <p><span style="color:#ffffff">5, @lang('only supports USDT-TRON withdrawals') </span></p>
+                                    <p><span style="color:#ffffff">5. @lang('only supports USDT-TRON withdrawals') </span></p>
 
                                     <p><span style="color:#ffffff">6.@lang('Withdrawals need to be confirmed and reviewed by multiple nodes, and the withdrawal time will be within 72 hours. Withdrawal are only allowed in the capital account. If the account has insufficient funds, please transfer the quantitative funds to the capital account and then initiate a withdrawal again')</span></p>
                                 </div>
