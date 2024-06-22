@@ -143,7 +143,7 @@
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Strategy account'):</div>
-                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->available_balance(),2)}} USDT</div>
+                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}} USDT</div>
                                         </div>
                                     </li>
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
@@ -213,7 +213,7 @@
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/121212.png">
                                         </div>
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.GenerateTicket')}}" style="color:#fff;">@lang('Customer service')
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="https://t.me/synthetic_venture" target="_blank" style="color:#fff;">@lang('Customer service')
                                         @lang('support')</a></div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
                                             <!---->
@@ -222,6 +222,44 @@
                                                 <!----></i></div>
                                     </li>
                                  
+                                    <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico">
+                                            <a href="https://x.com/Synthetic_Vent" target="_blank" style="color:#fff;">
+                                            <img data-v-3d4e4f5e=""
+                                                data-v-cfc9a7fc=""
+                                                src="{{asset('')}}assets/static/img/twitter.png">
+                                        </div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1">@lang('Twitter')</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
+                                            <!---->
+                                            <a href="https://x.com/Synthetic_Vent" target="_blank" style="color:#fff;">
+                                            <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
+                                                class="van-icon van-icon-arrow">
+                                                <!----></i>
+                                            </a>
+                                            
+                                            </div>
+                                    </li>
+
+                                    <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico">
+                                            <a href="https://t.me/synthetic_venture" target="_blank" style="color:#fff;">
+                                            <img data-v-3d4e4f5e=""
+                                                data-v-cfc9a7fc=""
+                                                src="{{asset('')}}assets/static/img/teelgram.png">
+                                        </div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1">@lang('Telegram')</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
+                                            <!---->
+                                            <a href="https://t.me/synthetic_venture" target="_blank" style="color:#fff;">
+                                            <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
+                                                class="van-icon van-icon-arrow">
+                                                <!----></i>
+                                            </a>
+                                            
+                                            </div>
+                                    </li>
+
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
                                                 data-v-cfc9a7fc=""
@@ -234,13 +272,14 @@
                                                 class="van-icon van-icon-arrow">
                                                 <!----></i></div>
                                     </li>
+
                                     <!---->
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/clear.png">
                                         </div>
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.dashboard')}}" style="color:#fff;">@lang('Clear cache')</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{url('/clear')}}" style="color:#fff;">@lang('Clear cache')</a></div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
                                             <!---->
                                             <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
