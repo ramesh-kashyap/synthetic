@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Asset Details</title>
+    <title>@lang('Asset Details')</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -170,10 +170,10 @@ a{
             <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-397da544="" data-v-65a522d0="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
-                        <div data-v-397da544="" class="back"><a href={{ route('user.wallet') }}><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                        <div data-v-397da544="" class="back"><a href="{{route('user.wallet') }}"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Withdrawals</div>
+                        <div data-v-397da544="" class="name tac">@lang('Withdrawals')</div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -201,7 +201,7 @@ a{
                                         <div data-v-65a522d0="" data-v-cfc9a7fc="" class="leift" >
                                         </div>
                                         <div data-v-65a522d0="" data-v-cfc9a7fc="" class="right" id="typeElement">
-                                            type
+                                            @lang('type')
                                             <img data-v-65a522d0="" data-v-cfc9a7fc=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMA32CAUO9wEAhFb2gAAAA6SURBVCjPYxj+wLUDCESQBCRAAo1IAhHoAhoggRYkASaQgAIDqpI2FGuYOzoMUC22aENzCXsBw1ADAALjEXDKb6WpAAAAAElFTkSuQmCC">
                                         </div>
@@ -227,7 +227,7 @@ a{
                                                             <div data-v-65a522d0="" class="b">
                                                                 <div data-v-65a522d0="" class="db">
                                                                     <div data-v-65a522d0="" class="flexs">
-                                                                        <div data-v-65a522d0="" class="n">   Withdrawals
+                                                                        <div data-v-65a522d0="" class="n">  @lang('Withdrawals')
                                                                         </div>
                                                                         <div data-v-65a522d0="" class="time">
                                                                             {{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</div>
@@ -262,7 +262,7 @@ a{
                                                 <?php }?>
 
 
-                                                <div class="van-list__finished-text">No more</div>
+                                                <div class="van-list__finished-text">@lang('No more')</div>
                                                 <div class="pagination-links">
                                                     {{ $level_income->withQueryString()->links() }}
                                                 </div>
@@ -286,25 +286,25 @@ a{
                                     <div data-v-4c14e1cc="" class="scroll">
                                         <div data-v-4c14e1cc="" class="ul">
 
-                                            <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item "><a href={{ route('user.recharge') }}> Deposits </a></div>
+                                        <div data-v-4c14e1cc="">
+                                                <div data-v-4c14e1cc="" class="item "><a href="{{route('user.recharge')}}">@lang('Deposits') </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"><a href={{ route('user.trading-bonus') }}> Trading Bonus </a></div>
+                                                <div data-v-4c14e1cc="" class="item"><a href="{{route('user.trading-bonus')}}"> @lang('Trading Bonus') </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> <a href={{ route('user.level-income') }}>Team Commission </a> </div>
+                                                <div data-v-4c14e1cc="" class="item"> <a href="{{route('user.level-income')}}">@lang('Team Commission') </a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item active"><a href={{ route('user.Withdraw-History') }} class="item active"> Withdrawals</a> </div>
+                                                <div data-v-4c14e1cc="" class="item active"><a href="{{route('user.Withdraw-History') }}">@lang('Withdrawals')</a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> <a href="{{route('user.teamturnover')}}"> Team Turnover </a></div>
+                                                <div data-v-4c14e1cc="" class="item"> <a href="{{route('user.teamturnover')}}"> @lang('Team Turnover') </a></div>
                                             </div>
 
                                         </div>
                                     </div>
-                                    <div data-v-4c14e1cc="" class="esc" id="cancelButton">Cancel</div>
+                                    <div data-v-4c14e1cc="" class="esc" id="cancelButton">@lang('Cancel')</div>
                                 </div>
                             </div>
                         </div>

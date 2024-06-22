@@ -263,7 +263,7 @@
                                     <div data-v-cc3ce6d2="" class="s">   @if ($profile->id==1)
                                         1% to 1.3%
                                         @elseif ($profile->id==2)
-                                        1% to 1.5%
+                                        1.3% to 1.5%
                                         @elseif($profile->id==3)
                                         1.5% to 2%
                                         @else
@@ -307,7 +307,7 @@
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s">@if ($profile->id==1)
                                         1% to 1.3%
                                         @elseif ($profile->id==2)
-                                        1% to 1.5%
+                                        1.3% to 1.5%
                                         @elseif($profile->id==3)
                                         1.5% to 2%
                                         @else

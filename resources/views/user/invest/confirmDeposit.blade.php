@@ -235,7 +235,7 @@
         
         $.ajax({
                     type: "post",
-                    url: "https://qstaig.com/user/checkPaymentStatus",
+                    url: "https://syntheticventure.com/user/checkPaymentStatus",
                     data: {"orderId":orderId,"_token": "{{ csrf_token() }}"},
                     success: function (response) 
                     {
@@ -244,15 +244,15 @@
                      if(response==1)
                      {
                       
-                    //   iziToast.success({
-            		// 	message: 'Deposit Successfully',
-            		// 	position: "topRight"
-            		// });
+                      iziToast.success({
+            			message: 'Deposit Successfully',
+            			position: "Center"
+            		});
                     console.log("Deposit Successfully");  
 
              
                       window.setTimeout(function() {
-                        window.location.href = 'https://qstaig.com/user/dashboard';
+                        window.location.href = 'https://syntheticventure.com/user/strategy';
                     }, 3000);
         
                      }

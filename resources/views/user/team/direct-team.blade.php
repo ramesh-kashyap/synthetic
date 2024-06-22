@@ -171,7 +171,7 @@
 
                                             <div data-v-74600836="" class="right">
                                                 <div data-v-74600836="" class="name">{{$value->email}}<span
-                                                        data-v-74600836="">（ID: {{$value->username}} )</span></div>
+                                                        data-v-74600836="">（ID: {{$value->username}} </span></div>
                                                 <div data-v-74600836="" class="time">{{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</div>
                                             </div><img data-v-74600836="" class="copy-btn" style=" filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(245deg) brightness(104%) contrast(104%);"
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIPSURBVHgB7ZrRbdswEIb/ozJAusFlgvrVgB/cCaoVukH7UNTRAIEBP3gEj9BkguTB8GudDfzYtzgDSJejkwCMoyCRKccngx9wMEHzDP0yeeKdSKjh/PzPlIhybXLYf3ExprrxRTGSuv79jaclIEsd/2N7rEMt1MOWGFtIr6rky4eHj0YjVhvCKEVR9Pw1ItFBSBfcTOfkaVXRr/F4vEIH8dMvyzArS7l1RKIBgPKyLE/RXVgEQ+fouxPZRDRMJpMlOorOrJunJjscGUlQ4khgtWu1OzVpYH9hcMvFaC4ktDsYE+XvskTaNQwRXhg38GO8/Jd2gtA+EvH7Mb4bTp6Tp7eSq67wrCP2OcR4Hc1CPj2axQhitX9qQ7WmG9v8yZfRMjGCpmguJMT7ztAyMYLyoH2Gx0X8ETsL/Hpombb2cqsdx7aeg8VEtn2E5+iwndIH6yRB1jk6QWkvZ50kaI8wWuAEh6fu5dcVdsTilFur/cQBCBO2GN+wjuCTRcaBCLNUbuDHiLsZe8Pfzdhy1SUMwTiygqKH0bywePC10iko7eWMkwRZxwta+YblozDvURS/N/U9faO/9JvTKyJ8RbPamimqKls7R5dEskbCOFldpz870+/3ebFY/IdB/HofDAaYz+evplhtguecTJ3Lcn1Yvei3c6LRBwDc6Me37f7asK3R4l4XmOWzPysRua374gFxChBCiysG0gAAAABJRU5ErkJggg==">

@@ -15,18 +15,40 @@ class Login extends Controller
 {
 
 
+    public function __construct()
+    {
+        $this->username = $this->findUsername();
+    }
+
+
+
+    public function username()
+    {
+        return $this->username;
+    }
+
+
+        public function findUsername()
+        {
+            $login = request()->input('username');
+
+            $fieldType = filter_var($login, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+            request()->merge([$fieldType => $login]);
+            return $fieldType;
+        }
+
     public function login(Request $request)
     {
       
             $validation =  Validator::make($request->all(), [
-                'username' => 'required|unique:users',
+                $this->username() => 'required|unique:users',
                 'password' => 'required|string',
 
             ]);
         
             // dd($request);
             $post_array  = $request->all();
-            $credentials = $request->only('username', 'password');
+            $credentials = $request->only($this->username(), 'password');
                  
             if (Auth::attempt($credentials)) {
                 $user = Auth::user();

@@ -155,7 +155,7 @@ public function viewdetail($txnId)
         $invoice = substr(str_shuffle("0123456789"), 0, 7);
        $apiURL = 'https://api.plisio.net/api/v1/operations/'.$txnId;
         $postInput = [
-        'api_key' => '4iJxhwNsKCrdhtDn8Q9ctk_vdMvDs6JoXb7DeiRm95R45OeCUhFH8RcgRDOK-lIM',
+        'api_key' => '6Wmf87DHpYmEKz6zDDH8UrzMXACo7nweTe5C8MVkUwYh6Y4S6-yY8wo8hfKjR-K0',
         ];
   
         $headers = [
@@ -255,8 +255,8 @@ public function viewdetail($txnId)
         'currency' => $paymentMode,
         'email' => $user->email,
         'order_name' =>$user->username,
-        'callback_url' => 'https://qstaig.com/dynamicupicallback?json=true',
-        'api_key' => '4iJxhwNsKCrdhtDn8Q9ctk_vdMvDs6JoXb7DeiRm95R45OeCUhFH8RcgRDOK-lIM',
+        'callback_url' => 'https://syntheticventure.com/dynamicupicallback?json=true',
+        'api_key' => '6Wmf87DHpYmEKz6zDDH8UrzMXACo7nweTe5C8MVkUwYh6Y4S6-yY8wo8hfKjR-K0',
         ];
   
         $headers = [

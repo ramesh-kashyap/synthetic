@@ -342,7 +342,7 @@
                                             @if ($value->id==1)
                                             1% to 1.3%
                                             @elseif ($value->id==2)
-                                            1% to 1.5%
+                                            1.3% to 1.5%
                                             @elseif($value->id==3)
                                             1.5% to 2%
                                             @else

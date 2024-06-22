@@ -131,7 +131,7 @@ text-transform: lowercase !important;
                                     class="van-icon van-icon-arrow-left">
                                     <!----></i></a></div>
                             <!---->
-                            <div data-v-397da544="" class="name tac"> Invite friends </div>
+                            <div data-v-397da544="" class="name tac"> @lang('Invite friends') </div>
                             <div data-v-397da544="" class="flex1"></div>
                             <!---->
                             <!---->
@@ -159,7 +159,7 @@ text-transform: lowercase !important;
                                 </div>
                             </div>
                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="income">
-                                <div data-v-422886cf="" data-v-cfc9a7fc="">Total Commission：<span data-v-422886cf=""
+                                <div data-v-422886cf="" data-v-cfc9a7fc="">@lang('Total Commission')：<span data-v-422886cf=""
                                         data-v-cfc9a7fc="">{{number_format($teamCommission,2)}} USDT</span></div>
                             </div>
                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="box">
@@ -172,7 +172,7 @@ text-transform: lowercase !important;
                                 </div>
                                 <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_list">
                                     <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_box">
-                                        <div data-v-422886cf="" data-v-cfc9a7fc="" class="title">Invitation link</div>
+                                        <div data-v-422886cf="" data-v-cfc9a7fc="" class="title">@lang('Invitation link')</div>
                                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_content " >
                                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="link" id="clipboardright2" >{{ asset('') }}register?ref={{ Auth::user()->username }}</div>
                                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="copy" id="copy-button2"><img
@@ -182,7 +182,7 @@ text-transform: lowercase !important;
                                         </div>
                                     </div>
                                     <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_box">
-                                        <div data-v-422886cf="" data-v-cfc9a7fc="" class="title">Invitation code</div>
+                                        <div data-v-422886cf="" data-v-cfc9a7fc="" class="title">@lang('Invitation code')</div>
                                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_content">
                                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="link" id="clipboardright">{{Auth::user()->username}}</div>
                                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="copy " id="copy-button"><img
