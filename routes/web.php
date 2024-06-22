@@ -72,6 +72,11 @@ Route::get('/change/{lang?}', [App\Http\Controllers\FrontController::class, 'cha
 
 
 Route::get('/home', [App\Http\Controllers\UserPanel\Dashboard::class, 'index'])->name('home');
+
+Route::get('/lang', [App\Http\Controllers\UserPanel\Profile::class, 'lang'])->name('user.lang');
+
+
+
 Route::prefix('user')->group(function ()
 {
 Route::middleware('auth')->group(function ()
@@ -95,7 +100,6 @@ Route::get('/meassage', [App\Http\Controllers\UserPanel\Profile::class, 'meassag
 
 
 Route::get('/profile', [App\Http\Controllers\UserPanel\Profile::class, 'index'])->name('user.profile');
-Route::get('/lang', [App\Http\Controllers\UserPanel\Profile::class, 'lang'])->name('user.lang');
 
 Route::get('/setting', [App\Http\Controllers\UserPanel\Profile::class, 'setting'])->name('user.setting');
 Route::get('/showinfo', [App\Http\Controllers\UserPanel\Profile::class, 'showinfo'])->name('user.showinfo');

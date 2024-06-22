@@ -177,7 +177,7 @@
                                             data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA0CAYAAAAqunDVAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE9SURBVHgB7dlvrcIwFAXw817e94eEOgAH4AAJ4AAJ4AAcgAUUAA5wQB2AA+iSkUDH+mfdml1yfslNYLtbdkhLBwOIqE0/aG7i2X8zdfb0jEwNPD3n8lydU6buAXUxtS77n4oQS1PXwHMoZKIQdkGv4UZlXSKPVYj0hzyUqUP52jfckrUVSps6vbwvLnyI6rCzFXNlb22bIkPwTxTeh8ixpm+F+mG1qjlGoydz6ujo3aAaaOvo1xAQyu71XahGYqhfdE8HbmuN64tCRez7R9wn2mavtje47ijukKGSIcfwy+4rQ8Usvif0wxgJ7Hu3vrCXhwrOKSkYSgouvlIw1DeZI+wXq4t3wfTYWcfPXc0cflIwlBQMJQVDScFQUjCUFE2eTy1MzZAm9t+pqOdVTUINkP5QTKFDnFNERESU7gFgPHq2yCjE7QAAAABJRU5ErkJggg=="></a>
                                     </div>
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Activity')</div>
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Bonus')</div>
                                 </li>
                                 <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.team')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
@@ -187,11 +187,11 @@
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('My team')</div>
                                 </li>
                                 <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.invite')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.helpcenter')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
                                             data-v-cfc9a7fc=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJGSURBVHgB1ZnhkdowEEZfMvkfl7Al0EHUQeggLoEOQgl0AB2EDnAqoAToICUQ6WzuuLUtS7KFzZvZAcFa+mzvrtYAL8oXXo/C2uorr4ETu7F2svbP2ooFI9Z+U4u9KRMWhrG2s3ahLfZuZ+f4jXl5i1dra2u/mvEQf5kJJ660tqeO11ukGZ6ITq4Qgc5Ph8yFJyD0J5dP7IH6jhTN+8fv92TCNGIvxIndNcfqGNfzGCYWuyMuXq/WtviFGNon+E5KVXFXxVWBH81rSCVwuGpQUd/+a4D/Wo2PJJCSXLdG6Ibwk3tEh8k69EB5EJuaXKmsOub2zmeok+tMnNi+5Eplo9Y4+hxjk+suNgf6wpV9jsJwCauoK4GQF+lYW4YO6BLvPpsqBEIoaV+wQYRu8XumoWD4jp3U2hsCEaYVf2+q/lDnUYl/7agw6ZpgjHhD2kNAqXzPJCCEiy8I2/or/ByV/45ExCM+ZTcdilc9z6hnSyGu2/OZT8iadjUbjRDfql4ihRxIy6fR4q983voPkUL03IYJEbVARR23qwAhvu7OkCFMNMJw9xfb3R3IFCax6O6uGvCPuTtZOSkhpcc3uvfORUHcbrlVvkmPaFNQErdtB/fej+T4tdaose8nM6FdkSoCyCH8pxp/9/gaNXYneWUGXHx3bVJ95S0mibMjhIkX4pL4KQjD4kvikvhpCH7xuvfesiCEfvH6s8X9ryMMt8RZmqopEPzi9ywYoV+8YeEIM/09MgXCZ/GLDhON8CF+tt47FWFEmPwHFfDgYXzA3PsAAAAASUVORK5CYII="></a>
                                     </div>
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Invitation')</div>
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Help Center')</div>
                                 </li>
                             </ul>
                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="line">

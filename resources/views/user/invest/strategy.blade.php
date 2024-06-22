@@ -270,7 +270,7 @@
                                                 </div>
                                                 <!---->
                                                 <!---->
-                                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="time flex" style="font-size: 13px;">@lang('Contract Time'): <span id="countdown-{{ $recharge->id }}"></span>
+                                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="time flex" style="font-size: 13px;">@lang('Contract Time:') <span id="countdown-{{ $recharge->id }}"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -342,7 +342,7 @@
                                             @if ($value->id==1)
                                             1% to 1.3%
                                             @elseif ($value->id==2)
-                                            1% to 1.5%
+                                            1.3% to 1.5%
                                             @elseif($value->id==3)
                                             1.5% to 2%
                                             @else

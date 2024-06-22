@@ -168,7 +168,7 @@
                                     <div data-v-45836ea7="" class="swiper-slide swiper-slide-active"
                                         data-swiper-slide-index="1" style="width: 425px;">
                                         <div data-v-45836ea7="" class="item">
-                                                <iframe src="{{asset('assets/static/img/CEO.mp4')}}?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" width="100%" height="100%"  frameborder="0" allow="autoplay; encrypted-media"></iframe>
+                                                <iframe src="https://www.youtube.com/embed/D4N5YK6vn_Q?autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1&mute=0" width="100%" height="100%"  frameborder="0" allow="autoplay; encrypted-media"></iframe>
 
 
                                         </div>
@@ -218,7 +218,7 @@
                                         <a href="{{route('user.strategy')}}" style="color:white;">
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/img/12.png">
+                                            src="{{asset('')}}assets/static/img/13.png">
                                        <p data-v-6df716d9="" data-v-cfc9a7fc="" >@lang('Deposit')</a></p>
                                     </div>
                                 </li>
@@ -233,15 +233,15 @@
                                     <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.team')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/5b0695f769089437fccc9fd7b5f0ff47.png">
-                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Team')</a></p>
+                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('My Team')</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.helpcenter')}}" style="color:white;">
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.invite')}}" style="color:white;">
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/15.png">
-                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Help Center')</a></p>
+                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Invitation')</a></p>
                                     </div>
                                 </li>
                             </ul>

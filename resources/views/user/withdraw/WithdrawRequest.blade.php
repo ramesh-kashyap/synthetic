@@ -14,13 +14,13 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="google" content="notranslate">
     <script>
-        window.addEventListener("error", function (event) {
+        window.addEventListener("error", function(event) {
             if (event.message.indexOf("Unexpected token '<'") > -1) {
                 location.reload();
             }
         });
-        window.onload = function () {
-            document.addEventListener("touchstart", function (event) {
+        window.onload = function() {
+            document.addEventListener("touchstart", function(event) {
                 if (event.touches.length > 1) {
                     event.preventDefault();
                 }
@@ -28,7 +28,7 @@
             var lastTouchEnd = 0;
             document.addEventListener(
                 "touchend",
-                function (event) {
+                function(event) {
                     var now = new Date().getTime();
                     if (now - lastTouchEnd <= 300) {
                         event.preventDefault();
@@ -37,7 +37,7 @@
                 },
                 false
             );
-            document.addEventListener("gesturestart", function (event) {
+            document.addEventListener("gesturestart", function(event) {
                 event.preventDefault();
             });
         };
@@ -47,7 +47,7 @@
                 remotes = false;
             document.addEventListener(
                 "click",
-                function (event) {
+                function(event) {
                     noddy = event.target;
                     while (noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
                         noddy = noddy.parentNode;
@@ -64,7 +64,6 @@
                 false
             );
         }
-
     </script>
     <style>
         * {
@@ -78,27 +77,34 @@
             width: 100%;
             background-color: #000;
         }
-
     </style>
-    <link href="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js" rel="preload" as="script">
-    <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="preload" as="style">
-    <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="preload" as="style">
-    <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="preload" as="style">
-    <link href="{{asset('')}}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
-    <link href="{{asset('')}}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
-    <link href="{{asset('')}}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-494d233b.50573298.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-494d233b.77bc554e.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-2a0b1332.9f52f39a.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-273ce16e.debfb5de.css">
-    <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js"></script>
+    <link href="{{ asset('') }}assets/static/js/app.83a7756d.1717187934571.js" rel="preload" as="script">
+    <link href="{{ asset('') }}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js" rel="preload"
+        as="script">
+    <link href="{{ asset('') }}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js" rel="preload"
+        as="script">
+    <link href="{{ asset('') }}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js" rel="preload"
+        as="script">
+    <link href="{{ asset('') }}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js" rel="preload"
+        as="script">
+    <link href="{{ asset('') }}assets/static/css/app.23ae5dc0.css" rel="preload" as="style">
+    <link href="{{ asset('') }}assets/static/css/chunk-vant.d14f5539.css" rel="preload" as="style">
+    <link href="{{ asset('') }}assets/static/css/chunk-vendors.794edbf9.css" rel="preload" as="style">
+    <link href="{{ asset('') }}assets/static/css/chunk-vant.d14f5539.css" rel="stylesheet">
+    <link href="{{ asset('') }}assets/static/css/chunk-vendors.794edbf9.css" rel="stylesheet">
+    <link href="{{ asset('') }}assets/static/css/app.23ae5dc0.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-494d233b.50573298.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-494d233b.77bc554e.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-2a0b1332.9f52f39a.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('') }}assets/static/css/chunk-273ce16e.debfb5de.css">
+    <script charset="utf-8" src="{{ asset('') }}assets/static/js/chunk-273ce16e.6f3f099a.1717187934571.chunk.js">
+    </script>
 </head>
 
 <body class="main_en">
@@ -107,18 +113,19 @@
             <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-397da544="" data-v-7bab1ac4="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
-                        <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
-                                <!----></i></a></div>
+                        <div data-v-397da544="" class="back"><a href="{{ route('user.dashboard') }}"
+                                style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                                    <!----></i></a></div>
                         <!---->
                         <div data-v-397da544="" class="name tac">@lang('Withdrawal') </div>
                         <form action="{{ route('user.Withdraw-Request') }}" method="POST">
                             {{ csrf_field() }}
 
-                        <div data-v-397da544="" class="flex1"></div>
-                        <!---->
-                        <!---->
-                        <!---->
-                        <div data-v-397da544="" class="head_right"></div>
+                            <div data-v-397da544="" class="flex1"></div>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div data-v-397da544="" class="head_right"></div>
                     </div>
                 </div>
             </div>
@@ -129,17 +136,21 @@
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Currency')</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
-                                  
-                                    <select name="paymentMode" autocomplete="off" type="text" class="uni-input-input" style="color: white;
+
+                                    <select name="paymentMode" autocomplete="off" type="text"
+                                        class="uni-input-input"
+                                        style="color: white;
     width: 100%;
     background: #131118;">
-                                        <option value="TRC20" id="usdtTrc20" data-icon="usdtTrc20" name="PSys">TRC20</option>
-                                        <option value="BEP20" data-icon="usdtBep20" id="usdtBep20" name="PSys">BEP20</option>
+                                        <option value="TRC20" id="usdtTrc20" data-icon="usdtTrc20" name="PSys">
+                                            TRC20</option>
+                                        <option value="BEP20" data-icon="usdtBep20" id="usdtBep20" name="PSys">
+                                            BEP20</option>
                                     </select>
-                                    </div>
+                                </div>
                             </div>
                         </div>
-                       
+
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Withdrawal address')</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex" style="
@@ -148,6 +159,7 @@
                                     <input data-v-cfc9a7fc="" data-v-7bab1ac4=""  type="text" value="{{Auth::user()->usdtTrc20}}" placeholder="Please enter the withdrawal address" name="walletAddress" id="walletAddress" >
                                 </div>
                             </div>
+                        </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Withdrawal amount')</div>
 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
@@ -161,9 +173,10 @@
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Transaction Password')</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
-                                        data-v-cfc9a7fc="" type="password" placeholder="Please enter the transaction password"
-                                         name="transaction_password"></div>
-                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str">  </div>
+                                        data-v-cfc9a7fc="" type="password"
+                                        placeholder="Please enter the transaction password"
+                                        name="transaction_password"></div>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str"> </div>
                             </div>
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
@@ -177,7 +190,7 @@
                                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">@lang('Withdrawal fee 5%')</div>
                                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4="" data-v-cfc9a7fc="" id="withdrawalFee">0 USDT</span></div>
                                     </li>
-                                    
+
                                     <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
                                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">@lang('Minimum withdrawal amount')</div>
                                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s">10 USDT</div>
@@ -248,11 +261,11 @@
                 src="/static/img/start.0aabcda5.gif"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/echarts@4.6.0/dist/echarts.js"></script>
-    <script src="{{asset('')}}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>
-    <script src="{{asset('')}}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js"></script>
-    <script src="{{asset('')}}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js"></script>
-    <script src="{{asset('')}}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js"></script>
-    <script src="{{asset('')}}assets/static/js/app.83a7756d.1717187934571.js"></script>
+    <script src="{{ asset('') }}assets/static/js/chunk-vue.2deea45a.1717187934571.chunk.js"></script>
+    <script src="{{ asset('') }}assets/static/js/chunk-echarts.eba990db.1717187934571.chunk.js"></script>
+    <script src="{{ asset('') }}assets/static/js/chunk-vant.9e1db231.1717187934571.chunk.js"></script>
+    <script src="{{ asset('') }}assets/static/js/chunk-vendors.24e8c7cc.1717187934571.chunk.js"></script>
+    <script src="{{ asset('') }}assets/static/js/app.83a7756d.1717187934571.js"></script>
     <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
 
     <script>
@@ -262,118 +275,116 @@
                 if (isNaN(amount)) {
                     amount = 0;
                 }
-    
+
                 let withdrawalFee = amount * 0.05;
-                let arrivedQuantity = amount - withdrawalFee ;
-    
+                let arrivedQuantity = amount - withdrawalFee;
+
                 if (arrivedQuantity < 0) {
                     arrivedQuantity = 0;
                 }
-    
+
                 $('#arrivedQuantity').text(arrivedQuantity.toFixed(2) + ' USDT');
                 $('#withdrawalFee').text(withdrawalFee.toFixed(2) + ' USDT');
             });
         });
     </script>
     <script>
-        $(function(){
-            $('input[name="amount"]').on('change keyup',function () {
+        $(function() {
+            $('input[name="amount"]').on('change keyup', function() {
                 let str = $(this).val();
-                str = str.replace(',','.');
+                str = str.replace(',', '.');
                 $(this).val(str);
-                let min =  $('#min_withdrawal').val();
-                let max =  $('#max_withdrawal').val();
+                let min = $('#min_withdrawal').val();
+                let max = $('#max_withdrawal').val();
 
                 let charge = $('#chargeAmt').val();
-          
+
                 let amount = parseFloat(str);
-            
-            
-              
-             
-                if (amount>=min && amount<=max) 
-                {
-                   
-                $(".submit-btn").prop("disabled", false);
-                $('.submit-btn').removeClass('van-button van-button--default van-button--disabled van-button--normal com-btn on');         
-                $('.submit-btn').addClass('van-button van-button--default  van-button--normal com-btn on');         
+
+
+
+
+                if (amount >= min && amount <= max) {
+
+                    $(".submit-btn").prop("disabled", false);
+                    $('.submit-btn').removeClass(
+                        'van-button van-button--default van-button--disabled van-button--normal com-btn on'
+                        );
+                    $('.submit-btn').addClass(
+                        'van-button van-button--default  van-button--normal com-btn on');
+                } else {
+
+                    $(".submit-btn").prop("disabled", true);
+                    $('.submit-btn').removeClass(
+                        'van-button van-button--default van-button--normal com-btn on');
+                    $('.submit-btn').addClass(
+                        'van-button van-button--default van-button--disabled van-button--normal com-btn on'
+                        );
                 }
-                else
-                {
-    
-                $(".submit-btn").prop("disabled", true);  
-                $('.submit-btn').removeClass('van-button van-button--default van-button--normal com-btn on');         
-                $('.submit-btn').addClass('van-button van-button--default van-button--disabled van-button--normal com-btn on');         
+
+                if (amount <= 10) {
+                    $('#ActualAmount').html(amount - amount * 50 / 100 + " USDT");
+                    $('#chargefee').html("5 USDT");
+                } else {
+                    $('#ActualAmount').html(amount - amount * charge / 100 + " USDT");
+                    $('#chargefee').html(charge + " %");
                 }
-                
-                if(amount<=10)
-                {
-                      $('#ActualAmount').html(amount-amount*50/100+" USDT");  
-                      $('#chargefee').html("5 USDT");  
-                }
-                else
-                {
-                 $('#ActualAmount').html(amount-amount*charge/100+" USDT");
-                    $('#chargefee').html(charge+" %");  
-                }
-              
-                
-            
+
+
+
                 //console.log(summ_usd);
             });
-    
-          
+
+
 
             $('.code-btn').click(function(e) {
-    var ths = $(this);
-    var emailId = $('#emailId').val();
+                var ths = $(this);
+                var emailId = $('#emailId').val();
 
-    if (!emailId) 
-    {
-        iziToast.error({
-                message: 'Invalid Email!',
-                position: "topRight"
+                if (!emailId) {
+                    iziToast.error({
+                        message: 'Invalid Email!',
+                        position: "topRight"
+                    });
+                    return false;
+                }
+                // alert(sponsor); 
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('user.send_code') }}",
+                    data: {
+                        "emailId": emailId,
+                        "_token": "{{ csrf_token() }}",
+                    },
+                    success: function(response) {
+                        // alert(response);      
+                        if (response) {
+                            // alert("hh");
+                            iziToast.success({
+                                message: 'Email send Successfully',
+                                position: "topRight"
+                            });
+                        } else {
+                            // alert("hi");
+                            iziToast.error({
+                                message: 'Error!',
+                                position: "topRight"
+                            });
+                        }
+                    }
+                });
             });
-            return false;
-    }
-    // alert(sponsor); 
-    $.ajax({
-        type: "POST"
-        , url: "{{ route('user.send_code') }}"
-        , data: {
-            "emailId": emailId
-            , "_token": "{{ csrf_token() }}"
-        , }
-        , success: function(response) {
-            // alert(response);      
-            if (response) {
-                // alert("hh");
-                iziToast.success({
-                message: 'Email send Successfully',
-                position: "topRight"
-            });
-            } else {
-                // alert("hi");
-                iziToast.error({
-                message: 'Error!',
-                position: "topRight"
-            });
-            }
-        }
-    });
-});
-    
-    
+
+
         })
-    
     </script>
     <script>
-        $('select[name="paymentMode"]').change(function () {
+        $('select[name="paymentMode"]').change(function() {
             let icon = $(this).find('option:selected').data('icon');
             if (icon == "usdtTrc20") {
-                $('#walletAddress').val('{{Auth::user()->usdtTrc20}}');
+                $('#walletAddress').val('{{ Auth::user()->usdtTrc20 }}');
             } else {
-                $('#walletAddress').val('{{Auth::user()->usdtBep20}}');
+                $('#walletAddress').val('{{ Auth::user()->usdtBep20 }}');
             }
         });
     </script>
