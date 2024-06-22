@@ -125,7 +125,7 @@
                             
                             </div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Trading Bonus </div>
+                        <div data-v-397da544="" class="name tac">@lang('Trading Bonus') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -152,15 +152,15 @@
                                         <div data-v-3de80214="" class="li">
                                             <ul data-v-3de80214="">
                                                 <li data-v-3de80214="">
-                                                    <div data-v-3de80214="" class="n">Investment amount</div>
+                                                    <div data-v-3de80214="" class="n">@lang('Investment amount')</div>
                                                     <div data-v-3de80214="" class="s">{{ $data->amt }} USDT</div>
                                                 </li>
                                                 <li data-v-3de80214="">
-                                                    <div data-v-3de80214="" class="n">User profit</div>
+                                                    <div data-v-3de80214="" class="n">@lang('User profit')</div>
                                                     <div data-v-3de80214="" class="s">{{ $data->comm }} USDT</div>
                                                 </li>
                                                 <li data-v-3de80214="">
-                                                    <div data-v-3de80214="" class="n">Time</div>
+                                                    <div data-v-3de80214="" class="n">@lang('Time')</div>
                                                     <div data-v-3de80214="" class="s">{{ date('D, d M Y H:i:s', strtotime($data->created_at)) }}</div>
                                                 </li>
                                             </ul>
@@ -187,25 +187,25 @@
                                     <div data-v-4c14e1cc="" class="scroll">
                                         <div data-v-4c14e1cc="" class="ul">
 
-                                            <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item "><a href={{ route('user.recharge') }}> Deposits </a></div>
+                                        <div data-v-4c14e1cc="">
+                                                <div data-v-4c14e1cc="" class="item "><a href="{{route('user.recharge')}}">@lang('Deposits') </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"><a href={{ route('user.roi-bonus') }}> Trading Bonus </a></div>
+                                                <div data-v-4c14e1cc="" class="item"><a href="{{route('user.trading-bonus')}}"> @lang('Trading Bonus') </a></div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> <a href={{ route('user.level-income') }}>Team Commission </a> </div>
+                                                <div data-v-4c14e1cc="" class="item"> <a href="{{route('user.level-income')}}">@lang('Team Commission') </a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item active"><a href={{ route('user.Withdraw-History') }}> Withdrawals</a> </div>
+                                                <div data-v-4c14e1cc="" class="item active"><a href="{{route('user.Withdraw-History') }}">@lang('Withdrawals')</a> </div>
                                             </div>
                                             <div data-v-4c14e1cc="">
-                                                <div data-v-4c14e1cc="" class="item"> Team Turnover </div>
+                                                <div data-v-4c14e1cc="" class="item"> <a href="{{route('user.teamturnover')}}"> @lang('Team Turnover') </a></div>
                                             </div>
 
                                         </div>
                                     </div>
-                                    <div data-v-4c14e1cc="" class="esc" id="cancelButton">Cancel</div>
+                                    <div data-v-4c14e1cc="" class="esc" id="cancelButton">@lang('Cancel')</div>
                                 </div>
                             </div>
                         </div>

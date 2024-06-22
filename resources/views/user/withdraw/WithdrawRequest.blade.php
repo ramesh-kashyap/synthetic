@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Withdrawal</title>
+    <title>@lang('Withdrawal')</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -110,7 +110,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Withdrawal </div>
+                        <div data-v-397da544="" class="name tac">@lang('Withdrawal') </div>
                         <form action="{{ route('user.Withdraw-Request') }}" method="POST">
                             {{ csrf_field() }}
 
@@ -126,7 +126,7 @@
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="container">
                     <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Currency</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Currency')</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
                                   
@@ -141,7 +141,7 @@
                         </div>
                        
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Withdrawal address')</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex" style="
     margin-bottom: 13px;>
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1" >
@@ -149,7 +149,7 @@
                                 </div>
                             </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal amount</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Withdrawal amount')</div>
 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
     <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
         <input data-v-7bab1ac4="" data-v-cfc9a7fc="" type="text" placeholder="Please enter the withdrawal amount" name="amount" id="withdrawalAmount">
@@ -158,7 +158,7 @@
 </div>
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Transaction Password</div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Transaction Password')</div>
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1"><input data-v-7bab1ac4=""
                                         data-v-cfc9a7fc="" type="password" placeholder="Please enter the transaction password"
@@ -170,50 +170,44 @@
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tips">
                                 <ul data-v-7bab1ac4="" data-v-cfc9a7fc="">
                                     <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Arrived quantity</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">@lang('Arrived quantity')</div>
                                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s blue"><span data-v-7bab1ac4="" data-v-cfc9a7fc="" id="arrivedQuantity">0 USDT</span></div>
                                     </li>
                                     <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Withdrawal fee 5%</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">@lang('Withdrawal fee 5%')</div>
                                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4="" data-v-cfc9a7fc="" id="withdrawalFee">0 USDT</span></div>
                                     </li>
                                     
                                     <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Minimum withdrawal amount</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">@lang('Minimum withdrawal amount')</div>
                                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s">10 USDT</div>
                                     </li>
                                     <li data-v-7bab1ac4="" data-v-cfc9a7fc="" class="wrap bet">
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Maximum withdrawal amount</div>
-                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4="" data-v-cfc9a7fc="">No Limit</span></div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">@lang('Maximum withdrawal amount')</div>
+                                        <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="s"><span data-v-7bab1ac4="" data-v-cfc9a7fc="">@lang('No Limit')</span></div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item"><button data-v-7bab1ac4=""
-                                data-v-cfc9a7fc="" class="btn2" type="submit"> Confirm </button></div>
+                                data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Confirm') </button></div>
                         </form>            
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tipss">
-                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">Note</div>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">@lang('Note')</div>
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="p">
-                                    <p><span style="color:#ffffff">1, the minimum withdrawal for valid members: 50USDT
+                                    <p><span style="color:#ffffff">1. @lang('The minimum withdrawal for valid members:10 USDT')
                                         </span></p>
 
-                                    <p><span style="color:#ffffff">2. No payment will be made on U.S. statutory holidays
-                                            and weekends </span></p>
+                                    <p><span style="color:#ffffff">2. @lang('No payment will be made on U.S. statutory holidays and weekends') </span></p>
 
-                                    <p><span style="color:#ffffff">3. Taxes for each withdrawal: 5% tax&nbsp;</span></p>
+                                    <p><span style="color:#ffffff">3. @lang('Taxes for each withdrawal: 5% tax')&nbsp;</span></p>
 
-                                    <p><span style="color:#ffffff">4, the handling fee on the chain for a single
-                                            withdrawal is 1 USDT. </span></p>
+                                    <p><span style="color:#ffffff">4, @lang('the handling fee on the chain for a single withdrawal is 1 USDT') </span></p>
 
-                                    <p><span style="color:#ffffff">5, only supports USDT-TRON withdrawals </span></p>
+                                    <p><span style="color:#ffffff">5, @lang('only supports USDT-TRON withdrawals') </span></p>
 
-                                    <p><span style="color:#ffffff">6. Withdrawals need to be confirmed and reviewed by
-                                            multiple nodes, and the withdrawal time will be within 72 hours. Withdrawals
-                                            are only allowed in the capital account. If the account has insufficient
-                                            funds, please transfer the quantitative funds to the capital account and
-                                            then initiate a withdrawal again.</span></p>
+                                    <p><span style="color:#ffffff">6.@lang('Withdrawals need to be confirmed and reviewed by multiple nodes, and the withdrawal time will be within 72 hours. Withdrawal are only allowed in the capital account. If the account has insufficient funds, please transfer the quantitative funds to the capital account and then initiate a withdrawal again')</span></p>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +231,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div data-v-4c14e1cc="" class="esc">Cancel</div>
+                                <div data-v-4c14e1cc="" class="esc">@lang('Cancel')</div>
                             </div>
                         </div>
                     </div>
