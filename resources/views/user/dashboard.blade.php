@@ -136,8 +136,8 @@
                        
                         -->
                     </div>
-                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.meassage')}}"><img data-v-6df716d9="" data-v-cfc9a7fc=""
-                            src="{{ asset('') }}assets/static/img/bell.png">
+                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="ico"><a  target="_blank" href="https://t.me/synthetic_venture"><img data-v-6df716d9="" data-v-cfc9a7fc=""
+                            src="{{ asset('') }}assets/static/img/teelgram.png">
                     </div>
                     <div data-v-6df716d9="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.lang')}}"><img data-v-6df716d9="" data-v-cfc9a7fc=""
                             src="{{ asset('') }}assets/static/img/earth.png"></a> </div>
