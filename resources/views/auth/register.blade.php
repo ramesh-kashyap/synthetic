@@ -211,11 +211,17 @@
                                         </div>
                                     </div>
                                 </div>
+                                @php
+                                      $sponsor = @$_GET['ref'];
+                                      $name = \App\Models\User::where('username', $sponsor)->first();
+                                      @endphp
+                                      
+
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('invitation code')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
-                                                data-v-607a0cfb="" data-v-cfc9a7fc="" name="sponsor" id="sponsor"
+                                                data-v-607a0cfb="" data-v-cfc9a7fc="" name="sponsor" value="{{$sponsor}}" id="sponsor"
                                                 type="text" placeholder="Invitation code cannot be empty"></div>
                                     </div>
                                 </div>
