@@ -14,7 +14,7 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="google" content="notranslate">
     <script>
-        window.addEventListener("error", function (event) {
+        window.addEventListener("er7ror", function (event) {
             if (event.message.indexOf("Unexpected token '<'") > -1) {
                 location.reload();
             }
