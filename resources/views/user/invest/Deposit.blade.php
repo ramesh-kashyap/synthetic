@@ -157,10 +157,10 @@
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="container">
                         <div data-v-cc3ce6d2="" data-v-1fa86597="" class="levelBox" data-v-cfc9a7fc=""><img
-                                data-v-cc3ce6d2="" src="{{asset('')}}assets/static/img/lv1.0c323966.png" class="leve-bg">
+                                data-v-cc3ce6d2="" src="{{asset('')}}assets/static/img/lv{{$id}}.0c323966.png" class="leve-bg">
                             <div data-v-cc3ce6d2="" class="levelBox-head">
                                 <div data-v-cc3ce6d2="" class="left"><img data-v-cc3ce6d2=""
-                                        src="{{asset('')}}assets/static/img/v1.7b83cd44.png" style="pointer-events: none;"></div>
+                                        src="{{asset('')}}assets/static/img/v{{$id}}.7b83cd44.png" style="pointer-events: none;"></div>
                                 <div data-v-cc3ce6d2="" class="more">
                                     <a href="{{route('user.recharge')}}">
                                    @lang('Package list')<img data-v-cc3ce6d2=""
@@ -177,7 +177,7 @@
                                             style="width: 385px;">
                                             <div data-v-cc3ce6d2="" class="item">
                                                 <div data-v-cc3ce6d2="" class="has1"><img data-v-cc3ce6d2=""
-                                                        src="{{asset('')}}assets/static/img/lv1.0c323966.png"
+                                                        src="{{asset('')}}assets/static/img/lv{{$id}}.0c323966.png"
                                                         style="pointer-events: none;"></div>
                                             </div>
                                         </div>
@@ -259,8 +259,16 @@
                             </div>
                             <ul data-v-cc3ce6d2="">
                                 <li data-v-cc3ce6d2="">
-                                    <div data-v-cc3ce6d2="" class="flex1">@lang('Earning Range')</div>
-                                    <div data-v-cc3ce6d2="" class="s"> {{ $profile->profit}}%</div>
+                                    <div data-v-cc3ce6d2="" class="flex1">Earning Range</div>
+                                    <div data-v-cc3ce6d2="" class="s">   @if ($profile->id==1)
+                                        1% to 1.3%
+                                        @elseif ($profile->id==2)
+                                        1% to 1.5%
+                                        @elseif($profile->id==3)
+                                        1.5% to 2%
+                                        @else
+                                        2% to 2.5%
+                                        @endif</div>
                                 </li>
                                 <li data-v-cc3ce6d2="">
                                     <div data-v-cc3ce6d2="" class="flex1">@lang('Team Rewards')</div>
@@ -270,7 +278,7 @@
                                     <div data-v-cc3ce6d2="" class="flex1">@lang('Investment range')</div>
                                     <div data-v-cc3ce6d2="" class="s">
                                         <div data-v-cc3ce6d2="" class="teamCount">
-                                            <div data-v-cc3ce6d2=""> ${{ $profile->min}} -${{ $profile->mix}}<img data-v-cc3ce6d2=""
+                                            <div data-v-cc3ce6d2=""> ${{ $profile->min}} -{{ ($profile->mix)?"$".$profile->mix:"Above"}}<img data-v-cc3ce6d2=""
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAOVBMVEX///8AAAAODg7////////////h4eH///////////+FhYUsLCxqamr///////////+lpaWVlZVKSko8tlaaAAAAE3RSTlOAAIBwEAiAeFBIgICAaDAYgICAwZP9dQAAAMtJREFUOMuV1NEWgyAIBmAyCVzTtr3/w06XR1h4sv6bbr7DoYBgasHEkQAocsJJpREfCCTsDcEAhwT8J34Gk9lrsonQZhMiNUydSrAJY7AS6dQk7MTDSfyP8BkJhSD08nztT8JMUlc4V03KhPvCPeokMomnAmImbXjL0hFAmTSxrosSLYp8nCtGhBBqVYoxgmq7YkSodhm0UUJeOoEyWsinQ9LmKADLGAMo8z4IvrIM45UaL+Z4vcdHMj61Owdb4xkkFMzZj38eNjfJF4TTBjZGDKh+AAAAAElFTkSuQmCC">
                                             </div>
                                             <div data-v-cc3ce6d2="" style="display: none;"> B: 0 @lang('People') 0/0 <img
@@ -295,12 +303,20 @@
                             </div>
                             <ul data-v-1fa86597="" data-v-cfc9a7fc="" class="com-1">
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Daily arbitrage earnings')</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> {{ $profile->profit}}% </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily arbitrage earnings</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s">@if ($profile->id==1)
+                                        1% to 1.3%
+                                        @elseif ($profile->id==2)
+                                        1% to 1.5%
+                                        @elseif($profile->id==3)
+                                        1.5% to 2%
+                                        @else
+                                        2% to 2.5%
+                                        @endif  </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Investment range')</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> ${{ $profile->min}} -${{ $profile->mix}} </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Investment range</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> ${{ $profile->min}} - {{ ($profile->mix)?"$".$profile->mix:"Above"}} </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Duration')</div>
@@ -357,7 +373,10 @@
                     var amount = document.getElementById('amount').value;
                     var minAmount = {{ $profile->min }};
                     var maxAmount = {{ $profile->mix }};
-            
+                    if (maxAmount<=0) 
+                    {
+                        maxAmount = 100000;
+                    }
                     if (amount === "") {
                         alert("Amount cannot be empty");
                         return false;

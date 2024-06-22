@@ -19,7 +19,8 @@ Route::get('/clear', function() {
    Artisan::call('config:cache');
    Artisan::call('view:clear');
 
-   return "Cleared!";
+   $notify[] = ['success', 'cache Cleared'];
+   return redirect()->back()->withNotify($notify);
 
 });
 

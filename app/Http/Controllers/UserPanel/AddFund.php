@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\BuyFund;
 use App\Models\Income;
+use App\Models\Investment;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use Hexters\CoinPayment\CoinPayment;
@@ -20,6 +21,23 @@ class AddFund extends Controller
 
   $user=Auth::user();
   $notes = Income::where('user_id',$user->id)->orderBy('id', 'DESC')->limit(10)->get();
+  $totalPackage = Investment::where('user_id',$user->id)->where('status','Active')->sum("amount");
+  $todaysRoi = Income::where('user_id',$user->id)->where('remarks','Trading Bonus')->where('ttime',Date("Y-m-d"))->sum("comm");
+  $total = $totalPackage;
+  $portion = $todaysRoi;
+  if($totalPackage>0)
+    {
+          $percentage = ($portion / $total) * 100; // 20 
+    }
+    else
+    {
+    $percentage=0;    
+    }
+      
+
+
+  $this->data['percentage'] = $percentage;
+  $this->data['todaysRoi'] = $todaysRoi;
   $this->data['level_income'] = $notes;
   $this->data['page'] = 'user.fund.wallet';
   return $this->dashboard_layout();

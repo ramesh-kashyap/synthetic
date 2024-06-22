@@ -176,11 +176,34 @@ class Bonus extends Controller
 
     public function reward_income(Request $request)
     {
-           $user=Auth::user();
+        $user=Auth::user();
+        $ids=$this->my_level_team($user->id);
+       
+        if (!empty($ids))
+         {
+          $teamBusiness = Investment::where(function($query) use($ids)
+          {
+            if(!empty($ids)){
+              foreach ($ids as $key => $value) {
+              //   $f = explode(",", $value);
+              //   print_r($f)."<br>";
+                $query->orWhere('user_id', $value);
+              }
+            }else{$query->where('user_id',null);}
+          })->where('status','Active')->sum('amount');
+        }
+        else
+        {
+          $teamBusiness= 0;
+        }
+      
 
-    $this->data['first_lvl'] = Reward::where('user_id',$user->id)->where('level',1)->first();
-    $this->data['second_lvl'] = Reward::where('user_id',$user->id)->where('level',2)->first();
-    $this->data['third_lvl'] = Reward::where('user_id',$user->id)->where('level',3)->first();
+      $this->data['first_lvl'] = Reward::where('user_id',$user->id)->where('level',1)->first();
+      $this->data['second_lvl'] = Reward::where('user_id',$user->id)->where('level',2)->first();
+      $this->data['third_lvl'] = Reward::where('user_id',$user->id)->where('level',3)->first();
+      $this->data['teamTurnover'] = Income::where('user_id',$user->id)->where('remarks','Team Turnover')->sum('comm');
+      $this->data['teamBusiness'] = $teamBusiness;
+
     $this->data['page'] = 'user.bonus.reward-bonus';
     return $this->dashboard_layout();
 
