@@ -113,6 +113,19 @@
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-5109cffc.3f1196fb.1717187934571.chunk.js"></script>
 </head>
 
+<style>
+    .popBox .cllist li .img[data-v-167ffb9b] {
+    height: 1.28rem;
+    position: absolute;
+    right: .28rem;
+    bottom: 26px;
+}
+.popBox .cllist li .mini[data-v-167ffb9b] {
+    opacity: .8;
+    margin-bottom: .38rem;
+    margin-top: .1rem;
+}
+</style>
 <body class="mein_cn">
     <div id="app" class="applang">
         <div data-v-cfc9a7fc="" data-v-167ffb9b="" class="page">
@@ -239,8 +252,8 @@
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="ico">
                                             <img data-v-167ffb9b="" data-v-cfc9a7fc=""
-                                                data-src="/assets/static/image/image_2024_06_21T10_02_21_507Z.png"
-                                                src="/assets/static/image/image_2024_06_21T10_02_21_507Z.png"
+                                                data-src="/assets/static/image/image_2024_06_22T06_06_48_469Z.png"
+                                                src="/assets/static/image/image_2024_06_22T06_06_48_469Z.png"
                                                 lazy="loaded"></div>
                                         <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex1">
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n1 flex">
@@ -325,7 +338,20 @@
                                         <div data-v-167ffb9b="" class="mini" style="color:white;">
                                             ${{ $value->min }}-${{ $value->mix}}</div>
                                         <div data-v-167ffb9b="" class="mini" style="color:white;">
-                                            {{ $value->profit }}@lang('Daily Profit')</div>
+
+                                            @if ($value->id==1)
+                                            1% to 1.3%
+                                            @elseif ($value->id==2)
+                                            1% to 1.5%
+                                            @elseif($value->id==3)
+                                            1.5% to 2%
+                                            @else
+                                            2% to 2.5%
+                                            @endif
+
+                                            @lang('Daily Profit')
+                                        
+                                        </div>
                                         <div data-v-167ffb9b="" class="rate">
                                             <div data-v-167ffb9b="" class="s"><span data-v-167ffb9b=""
                                                     style="color:white;">{{ $value->days}}</span><img data-v-167ffb9b=""
@@ -336,7 +362,7 @@
                                         <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b=""
                                                 src="data:image/png;base64,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">VIP{{ $value->id}}
                                         </div><img data-v-167ffb9b=""
-                                            src="{{asset('')}}assets/static/image/image_2024_06_21T10_02_21_507Z.png"
+                                            src="{{asset('')}}assets/static/image/image_2024_06_22T06_06_48_469Z.png"
                                             class="img">
                                     </li>
                                 </a>
