@@ -13,6 +13,21 @@
     <meta name="renderer" content="webkit">
     <meta name="robots" content="noindex, nofollow">
     <meta name="google" content="notranslate">
+
+    <meta itemprop="name" content="{{siteName()}}">
+    <meta itemprop="description"
+        content="Welcome to Synthetic Venture - Your Path to Smart Crypto Investments!">
+    <meta itemprop="image" content="{{asset('assets/static/image/logo.png')}}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+        content="Synthetic Venture">
+    <meta property="og:description"
+        content="Welcome to Synthetic Venture - Your Path to Smart Crypto Investments!">
+    <meta property="og:image" content="{{asset('assets/static/image/logo.png')}}" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:url" content="{{asset('')}}">
+    
     <script>
         window.addEventListener("error", function(event) {
             if (event.message.indexOf("Unexpected token '<'") > -1) {
