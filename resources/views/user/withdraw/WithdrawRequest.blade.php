@@ -223,19 +223,16 @@
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="tipss">
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="n">@lang('Note')</div>
                                 <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="p">
-                                    <p><span style="color:#ffffff">1, the minimum withdrawal for valid members: 10USDT
+                                    <p><span style="color:#ffffff">1. @lang('The minimum withdrawal for valid members:10 USDT')
                                         </span></p>
 
-                                    <p><span style="color:#ffffff">2. No payment will be made on U.S. statutory
-                                            holidays
-                                            and weekends </span></p>
+                                    <p><span style="color:#ffffff">2. @lang('No payment will be made on U.S. statutory holidays and weekends') </span></p>
 
-                                    <p><span style="color:#ffffff">3. Taxes for each withdrawal: 5% tax&nbsp;</span>
-                                    </p>
+                                    <p><span style="color:#ffffff">3. @lang('Taxes for each withdrawal: 5% tax')&nbsp;</span></p>
 
-                                    <p><span style="color:#ffffff">4. @lang('the handling fee on the chain for a single withdrawal is 1 USDT') </span></p>
+                                    <p><span style="color:#ffffff">4, @lang('the handling fee on the chain for a single withdrawal is 1 USDT') </span></p>
 
-                                    <p><span style="color:#ffffff">5. @lang('only supports USDT-TRON withdrawals') </span></p>
+                                    <p><span style="color:#ffffff">5, @lang('only supports USDT-TRON withdrawals') </span></p>
 
                                     <p><span style="color:#ffffff">6.@lang('Withdrawals need to be confirmed and reviewed by multiple nodes, and the withdrawal time will be within 72 hours. Withdrawal are only allowed in the capital account. If the account has insufficient funds, please transfer the quantitative funds to the capital account and then initiate a withdrawal again')</span></p>
                                 </div>
