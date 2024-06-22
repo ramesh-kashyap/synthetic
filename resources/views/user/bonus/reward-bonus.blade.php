@@ -116,7 +116,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.Mine')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Task center </div>
+                        <div data-v-397da544="" class="name tac"> @lang('Task center') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -131,17 +131,17 @@
                         <div data-v-30aca98d="" data-v-cfc9a7fc="" class="bann"><img data-v-30aca98d=""
                                 data-v-cfc9a7fc="" src="{{asset('')}}assets/static/img/leadership.png"></div>
                         <div data-v-30aca98d="" data-v-cfc9a7fc="" class="title flex">
-                            <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n">My Reward：</div>
+                            <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n">@lang('My Reward')：</div>
                             <div data-v-30aca98d="" data-v-cfc9a7fc="" class="s">{{number_format($teamTurnover,2)}} USDT</div>
-                            <div data-v-30aca98d="" data-v-cfc9a7fc="" class="more"> Received </div>
+                            <div data-v-30aca98d="" data-v-cfc9a7fc="" class="more"> @lang('Received') </div>
                         </div>
                         <div data-v-30aca98d="" data-v-cfc9a7fc="" class="con">
                            
                             <div data-v-30aca98d="" data-v-cfc9a7fc="" class="list">
                                 <div data-v-30aca98d="" data-v-cfc9a7fc="" class="title flex" style="border:none;    padding: 0.38rem 0.18rem;">
-                                    <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n" style="    margin-top: 10px;">1% turnover  
+                                    <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n" style="    margin-top: 10px;">1% @lang('turnover') 
                                         <br><br>
-                                        <span>Achieve Goal : {{currency()}}<?php echo ($teamBusiness>=50000)?50000:$teamBusiness;?></span>
+                                        <span>@lang('Achieve Goal') : {{currency()}}<?php echo ($teamBusiness>=50000)?50000:$teamBusiness;?></span>
                                         
                                     </div>
                                     <div data-v-30aca98d="" data-v-cfc9a7fc="" class="s" style="    margin-top: -12px;    margin-left: -41px;"> +$50000</div>
@@ -152,9 +152,9 @@
                             </div>
                             <div data-v-30aca98d="" data-v-cfc9a7fc="" class="list">
                                 <div data-v-30aca98d="" data-v-cfc9a7fc="" class="title flex" style="border:none;    padding: 0.38rem 0.18rem;">
-                                    <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n" style="    margin-top: 10px;">1.5% turnover  
+                                    <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n" style="    margin-top: 10px;">1.5% @lang('turnover') 
                                         <br><br>
-                                        <span>Achieve Goal : {{currency()}}<?php echo ($teamBusiness >= 150000) ? 100000 : (($teamBusiness - 50000 <= 0) ? 0 : $teamBusiness - 50000);?>
+                                        <span>@lang('Achieve Goal') : {{currency()}}<?php echo ($teamBusiness >= 150000) ? 100000 : (($teamBusiness - 50000 <= 0) ? 0 : $teamBusiness - 50000);?>
                                         
                                         
                                         </span>
@@ -168,9 +168,9 @@
                             </div>
                             <div data-v-30aca98d="" data-v-cfc9a7fc="" class="list">
                                 <div data-v-30aca98d="" data-v-cfc9a7fc="" class="title flex" style="border:none;    padding: 0.38rem 0.18rem;">
-                                    <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n" style="    margin-top: 10px;">2% turnover  
+                                    <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n" style="    margin-top: 10px;">2% @lang('turnover') 
                                         <br><br>
-                                        <span>Achieve Goal : {{currency()}}<?php echo ($teamBusiness >= 400000) ? 250000 : (($teamBusiness - 150000 <= 0) ? 0 : $teamBusiness - 150000);?>
+                                        <span>@lang('Achieve Goal') : {{currency()}}<?php echo ($teamBusiness >= 400000) ? 250000 : (($teamBusiness - 150000 <= 0) ? 0 : $teamBusiness - 150000);?>
                                         
                                         
                                         </span>
@@ -185,9 +185,9 @@
 
                             <div data-v-30aca98d="" data-v-cfc9a7fc="" class="list">
                                 <div data-v-30aca98d="" data-v-cfc9a7fc="" class="title flex" style="border:none;    padding: 0.38rem 0.18rem;">
-                                    <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n" style="    margin-top: 10px;">2.5% turnover  
+                                    <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n" style="    margin-top: 10px;">2.5% @lang('turnover') 
                                         <br><br>
-                                        <span>Achieve Goal : {{currency()}}<?php echo ($teamBusiness >= 900000) ? 500000 : (($teamBusiness - 400000 <= 0) ? 0 : $teamBusiness - 400000);?>
+                                        <span>@lang('Achieve Goal') : {{currency()}}<?php echo ($teamBusiness >= 900000) ? 500000 : (($teamBusiness - 400000 <= 0) ? 0 : $teamBusiness - 400000);?>
                                         
                                         
                                         </span>
@@ -208,10 +208,9 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAFVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAASAQCkAAAABnRSTlMAX0AQ3yBuGV3eAAAAhElEQVQoz2MYcMCsimAbwRgsaQIwJmOaM5SllpYIExRLS4KyzNLSBGAK01LhemBKxWDSCDZCFsFBSCKUoimEcNEVQvgQGTSlEIVoSsEK0ZUiFCKUQhQSFkRox7SIoJMQjifkTcwAwQw6zEDGFx1hyBGXjC+KTZATgwOMqYxwSJABw0ADALNxM2ew7aV/AAAAAElFTkSuQmCC">
                                 </div>
-                                <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n">Congratulations on the completion
-                                    of the mission reward</div>
+                                <div data-v-30aca98d="" data-v-cfc9a7fc="" class="n">@lang('Congratulations on the completion of the mission reward')</div>
                                 <div data-v-30aca98d="" data-v-cfc9a7fc="" class="s">0 USDT</div>
-                                <div data-v-30aca98d="" data-v-cfc9a7fc="" class="but"> View Rewards </div>
+                                <div data-v-30aca98d="" data-v-cfc9a7fc="" class="but">@lang('View Rewards') </div>
                             </div>
                         </div>
                     </div>
