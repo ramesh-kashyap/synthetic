@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Deposit</title>
+    <title>@lang('Deposit')</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -120,7 +120,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.strategy')}}" style="color:white;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Deposit </div>
+                        <div data-v-397da544="" class="name tac">@lang('Deposit') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -139,7 +139,7 @@
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-b3422e30="" data-v-cfc9a7fc="" class="container">
                         <div data-v-b3422e30="" data-v-cfc9a7fc="" class="itemBox">
-                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">Amount</div> 
+                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">@lang('Amount')</div> 
                             <div data-v-b3422e30="" data-v-cfc9a7fc="" class="val flex">
                                     
                                 <div data-v-b3422e30="" data-v-cfc9a7fc="" class="flex1"><input name="amount" value="{{$amount}} " readonly></div>
@@ -147,7 +147,7 @@
                             </div>
                         </div>
                         <div data-v-b3422e30="" data-v-cfc9a7fc="" class="itemBox">
-                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">Payment Mode</div>
+                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">@lang('Payment Mode')</div>
                             <div data-v-b3422e30="" data-v-cfc9a7fc="" class="val flex">
                                     
                                 <div data-v-b3422e30="" data-v-cfc9a7fc="" class="flex1"><input name="paymentMode" value="{{$paymentMode}} " readonly></div>
@@ -155,14 +155,14 @@
                             </div>
                         </div>
                         <div data-v-b3422e30="" data-v-cfc9a7fc="" class="itemBox">
-                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">Transaction Id</div>
+                            <div data-v-b3422e30="" data-v-cfc9a7fc="" class="cname">@lang('Transaction Id')</div>
                             <div data-v-b3422e30="" data-v-cfc9a7fc="" class="val flex">
                                     
                                 <div data-v-b3422e30="" data-v-cfc9a7fc="" class="flex1"><input name="transactionId" value="{{$transaction_id}} " readonly></div>
                             </div>
                         </div>
                             <div data-v-b3422e30="" data-v-cfc9a7fc="" class="mbox">
-                                <p data-v-b3422e30="" data-v-cfc9a7fc="">Scan this QR code or Save pictures locally</p>
+                                <p data-v-b3422e30="" data-v-cfc9a7fc="">@lang('Scan this QR code or Save pictures locally')</p>
                                 <div data-v-b3422e30="" data-v-cfc9a7fc="" id="qrcode"
                                     title="{{$walletAddress}}"><canvas width="185" height="185"
                                         style="display: none;"></canvas><img alt="Scan me!"
@@ -180,25 +180,23 @@
                         </div>
                         <div data-v-b3422e30="" data-v-cfc9a7fc="" class="itemBox">
                             <div data-v-b3422e30="" data-v-cfc9a7fc="" class="tips">
-                                <div data-v-b3422e30="" data-v-cfc9a7fc="" class="n">Note</div>
+                                <div data-v-b3422e30="" data-v-cfc9a7fc="" class="n">@lang('Note')</div>
                                 <div data-v-b3422e30="" data-v-cfc9a7fc="" class="p">
                                     <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                    style="font-family:Arial,sans-serif">1, lowest Deposit amount: 10
+                                                    style="font-family:Arial,sans-serif">1,@lang('lowest Deposit amount'): 10
                                                     USDT</span></span></span></p>
 
                                     <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                    style="font-family:Arial,sans-serif">2. Deposit network: USDT-TRON
+                                                    style="font-family:Arial,sans-serif">2.@lang('Deposit network'):USDT-TRON
                                                 </span></span></span></p>
 
                                     <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                    style="font-family:Arial,sans-serif">3, only TRC20 USDT recharge is
+                                                    style="font-family:Arial,sans-serif">3,@lang('only TRC20 USDT recharge is
                                                     supported. Recharge other assets will not be
-                                                    retrieved</span></span></span></p>
+                                                    retrieved')</span></span></span></p>
 
                                     <p><span style="color:#ffffff"><span style="font-size:11pt"><span
-                                                    style="font-family:Arial,sans-serif">4, recharge requires
-                                                    confirmation by the node on the chain , please wait
-                                                    patiently</span></span></span></p>
+                                                    style="font-family:Arial,sans-serif">4,@lang('recharge requires confirmation by the node on the chain , please wait patiently')</span></span></span></p>
 
                                     <p> </p>
                                 </div>

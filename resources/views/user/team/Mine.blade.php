@@ -213,7 +213,7 @@
                                                 data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/121212.png">
                                         </div>
-                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.GenerateTicket')}}" style="color:#fff;">@lang('Customer service')
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="https://t.me/synthetic_venture" style="color:#fff;">@lang('Customer service')
                                         @lang('support')</a></div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
                                             <!---->

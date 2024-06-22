@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Change password</title>
+    <title>@lang('Change password')</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -211,7 +211,7 @@
                                     data-v-397da544="" class="van-icon van-icon-arrow-left">
                                     <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Create Transaction Password </div>
+                        <div data-v-397da544="" class="name tac"> @lang('Create Transaction Password') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -228,7 +228,7 @@
                         <form method="post" action="{{ route('user.change-trxpasswword') }}">
                             {{ csrf_field() }}
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Email</div>
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">@lang('Email')</div>
                                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val">            
                                     <input data-v-f8e71db0="" class="inp" type="email" name="email" readonly=""  value="{{Auth::user()->email}}">
                                 </div>
@@ -236,24 +236,24 @@
 
 
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Verification Code</div>
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">@lang('Verification Code')</div>
                                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val">
                                     <div class="input-container">
                                         <input data-v-9d2ee7be="" data-v-cfc9a7fc="" type="text" style="width: 81%" name="code"
                                             placeholder="Enter verification code" maxlength="">
-                                            <span class="code-btn" style="cursor: pointer">Get Code</span>
+                                            <span class="code-btn" style="cursor: pointer">@lang('Get Code')</span>
                                     </div>
                                 </div>
                             </div>
 
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Transaction password</div>
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">@lang('Transaction password')</div>
                                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val"><input data-v-9d2ee7be=""
                                         data-v-cfc9a7fc="" type="password" placeholder="Please enter the new password"
                                         name="password"></div>
                             </div>
                             <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="item">
-                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">Confirm password</div>
+                                <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="cname">@lang('Confirm password')</div>
                                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="val inp"><input data-v-9d2ee7be=""
                                         data-v-cfc9a7fc="" type="password"
                                         placeholder="Enter the password again to confirm" name="password_confirmation">
@@ -267,7 +267,7 @@
             <div data-v-cfc9a7fc="" class="footer">
                 <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="container">
                     <div data-v-9d2ee7be="" data-v-cfc9a7fc="" class="go"><button data-v-9d2ee7be="" type="submit"
-                            data-v-cfc9a7fc="" class="btn2">Confirm</button></div>
+                            data-v-cfc9a7fc="" class="btn2">@lang('Confirm')</button></div>
                 </div>
             </div>
         </div>

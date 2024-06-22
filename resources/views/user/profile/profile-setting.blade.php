@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Personal information</title>
+    <title>@lang('Personal information')</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="expires" content="0">
@@ -134,7 +134,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.Mine')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Personal information </div>
+                        <div data-v-397da544="" class="name tac">@lang('Personal information') </div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -163,7 +163,7 @@
                         </div>
                         <div data-v-636522ac="" data-v-cfc9a7fc="" class="incomeBox">
                             <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Invitation Code：</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Invitation Code')：</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="right" > <span id="clipboardright">{{Auth::user()->username}}</span><img data-v-636522ac="" id="copy-button" 
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAn2DfgCAQ78+/sJCPUIWfNBMAAACISURBVCjPY6AekHv37vExJD7jOyB4iaLAUHDxO4VcJAUCDKzvBOwcYAoeAwUY3gkASagCU5gAzAQnFAEWoA0wAYSdDigCSkpKDCgCQIIOAgEgihUuwPTOShAIxN8pwPwy7x0YvGCACWTbgfjP3aACCMAKF1AUFISaAhUAaoCaAgX7gByIKdQBAOGIZAwmCV4kAAAAAElFTkSuQmCC">
@@ -176,7 +176,7 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAATlBMVEUAAACUmp+Ump+Ul5+UmZ6Pn5+TmZ6UmJ6TmZ2Tmp6Vmp+UmZ+Vl56Ump+UmZ6UmZ6VmZ+fn5+Ump+TmZ6Tmp+Tmp6Vmp+Tmp6SmZ2Ump8Etc8rAAAAGXRSTlMA798gYBCAcECQn48wz7CgfxC/oFDQz8BwJIuJOgAAAYVJREFUSMfdVduSgyAMJeEiWNTa2m75/x9dQWZiDLoz+9jzFDAcTi5E9Z3wnxEhJRhG5//2tndIO2Cvr91vSeDqSAepATRn/pUeJhNnpWZvpkpwa8t5bHzdrAgGy+bDKomhsHfHbbedONGDjQA1NlWZvPtuJkSXuztBw/jlR+BhPDPJacI1HEXp7O8uCpS/28MFqC6AhZCvaz3vAOvlZNMVQP6elrciTtg2R+FZcfrNhFI+aU8ssyMpkgeoTiPrirjrhCDtyNICu6QFAKekbVnUmUm1wXz+f4AkSTQlIQUtQUEPMq1tyLR2VDhlgB79Arjsus3x1rBVXtEqbN4aZdmRea+9R8UyxSQ4WocyvPx67TORUiwmwdKr1XxU6noXPUjihW0n7k5ApAfZ87oA0WlMFT+aTQj5aoe6uUyv1WPyNGYadQrXgywogQeNSjnR30rCDnK42w9uwcyqhVBT05toV+do+swu9fDhLkEyJfQk/QOXI48gY3fCXcK78QWrL+bf7lfiF/96MN/AnTo+AAAAAElFTkSuQmCC">
                                 </div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Avatar</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Avatar')</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><i data-v-636522ac=""
                                         data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
@@ -198,7 +198,7 @@
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAP1BMVEUAAACUmp+UmZ+TlZ+Ump+Xl5+Pl5+Pn5+Ump+Ump+WmZ6Tmp+UmJ6Vmp6VmZ+Tmp6VmZ+fn5+Vmp+UmZ+Ump9XDmKGAAAAFHRSTlMA34Aw7yAgEKDPX+9wkK+QUBDPjzBvt/oAAADsSURBVEjH7ZRJDoMwDEW/M0OhY+5/1qqJaqNmIF21C94GGf2HLDsEB/+Ev1DsQsFhgz7FXUiDcRQHMJ6FEIdQLEypntFkzk1xHTMaDXTMfAqmYbhTQ4jkqnmKNUGJUcurQkB6NflipTmPUkBIBgSZ4AU1AefXM4DhFZ1RF3z62gNC7vN+qwrS70eeLFoCbDKWIt8UYM3mkMySbwrQhleuZfsdAdcUc+8DcUVXkEaUSvkF+wJU+Qf0BTEUBgQxzIJRAXZe1+WGMUH4teC/EUhGWCKDmzbVEIEFb0byZMFo6mfLW8uGHYVWi4M/4gk7/jGmJvtjTAAAAABJRU5ErkJggg==">
                                 </div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">
-                                    <a href="{{route('user.ChangeMail')}}" style="color:white;"> Change Email</div>
+                                    <a href="{{route('user.ChangeMail')}}" style="color:white;"> @lang('Change Email')</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">
                                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><i data-v-636522ac=""
                                         data-v-cfc9a7fc="" class="van-icon van-icon-arrow" style="color:white;">
@@ -215,7 +215,7 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAASFBMVEUAAACUmJ6UmZ6Ump+Tl56Xl5+Qn5+Vmp+Ump+UmZ+Ump+Ump+Pl5+UmJ2Ump+Ul5+Tm5+Tmp+UmZ6TmZ+UmZ+SmZ2TmZyUmp9rdcsxAAAAF3RSTlMAYIC/QCAQ3+/foJAgcM8wQO+wUHBwUBLyPPgAAAFGSURBVEjH5VTLdsUgCFRRY8zDvFr//08bhNZ7zj1Rum1ZJCwYZ4BR9bfCxgG0kofOGEZcf2aKU1g/7wwYvQwwYPGFn0newKUM/qyUICrlB6Eoiyc7TISTMoUAY0LE3AXAXfWJCYkCEWB72cfyC0AKdx56gFhOrQsce4DlR/iakaDrQf+9sLnsWrAIYApL/35YpkgoSGQ/IE/4IL0Tjo1qpBRsVKI4+uXVqBdtWto38Ca0BDFRGy68WFzvY4MNqNJmjDjjHovOR7e7gdRoeg00TaI1ZxcIcQaCYDuUpVbjeSEuipBZYef5MwwJSQ+ssINwBQLpziJhpxYCUMG2Ob6FRPLAkUJRYN+Nc7SmW69RRayP013f2lzKpNrWxSNZl6e2XcuJPFX4sFbHPfcN6U2uIXlJ6vhZHeoRQ7h/CWQ5AI5pU/88vgBpTCU42BskqQAAAABJRU5ErkJggg==">
                                 </div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Phone number</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Phone number')</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">{{Auth::user()->phone}}</div>
                                 <!---->
                                 <!---->
@@ -225,7 +225,7 @@
                                         data-v-cfc9a7fc=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAALVBMVEUAAACVmp+VmJ6Ump+Tl5+Tn5+Ump+Tmp+Ump+TmZ6TmZ+Ump+Tmp6VmZ+Ump+VBBQqAAAADnRSTlMA32DvIBDA78+AoJ/Qf3/KEYwAAACxSURBVDjLYxhWQP0dEhBCkpBDlniMJPEOBRAngWDTUkId4gdMCTmIHzAl7EASD7FIKIIkjCh0VWweqqteKEDEWeTeIbsK5AQHsAQjkInsKiAQBUvogZgIV4Gol2CJvndLUS33evcMynJAlWCFcoEUWkQRIWGHLP4QSUIRWcIISQIV0EQiAFWcBSqR924LqkT0uxdget47DPAILBGIKSGAiCgEQEQUA9M5VPFnUxkGKwAA4rZAp3H3Bf8AAAAASUVORK5CYII=">
                                 </div>
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Change Password</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Change Password')</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></a></div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><i data-v-636522ac=""
                                     data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
@@ -277,7 +277,7 @@
     <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2004; display: none;"><i
             class="van-icon van-icon-success van-toast__icon">
             <!----></i>
-        <div class="van-toast__text">Login successful</div>
+        <div class="van-toast__text">@lang('Login successful')</div>
     </div>
 </body>
 
