@@ -336,11 +336,9 @@
                                 </br></br>
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices" style="height:47px;">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
-                                        <select data-v-1fa86597="" data-v-cfc9a7fc="" id="payment-system" name="PSys" style="color:white;width:318px;">
-                                            <option value="USDTBEP20">USDT BEP20</option>
-                                            <option value="USDTTRC20">USDT TRC20</option>
-                                        </select>
+                                        <input data-v-1fa86597="" data-v-cfc9a7fc="" id="PSys" name="PSys" type="text" value="USDT_TRX" readonly style="color:white;" placeholder="">
                                     </div>
+                                    
                                 </div>
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress"></div>
                                 </br></br></br>

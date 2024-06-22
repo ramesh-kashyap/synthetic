@@ -282,11 +282,11 @@ class WithdrawRequest extends Controller
                 'wdate' => date("Y-m-d"),
             ];
             $payment = Withdraw::Create($data);
-    
-            return redirect()->back()->with('withdrawalId', $payment['id'])->withNotify(['success', 'Withdrawal successfully']);
+            $notify[] = ['success', 'Withdrawal successfully'];
+            return redirect()->back()->with('withdrawalId', $payment['id'])->withNotify($notify);
         } catch (\Exception $e) {
             Log::info('Error in WithdrawRequest: ' . $e->getMessage());
-            return redirect()->route('user.WithdrawRequest')->withErrors(['error' => $e->getMessage()])->withInput();
+            return redirect()->back()->withErrors(['error' => $e->getMessage()])->withInput();
         }
     }
 

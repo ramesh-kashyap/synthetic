@@ -134,22 +134,16 @@
                     <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="container">
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Currency</div>
-                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
-                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
-
-                                    <select name="paymentMode" autocomplete="off" type="text"
-                                        class="uni-input-input"
-                                        style="color: white;
-    width: 100%;
-    background: #131118;">
-                                        <option value="TRC20" id="usdtTrc20" data-icon="usdtTrc20" name="PSys">
-                                            TRC20</option>
-                                        <option value="BEP20" data-icon="usdtBep20" id="usdtBep20" name="PSys">
-                                            BEP20</option>
-                                    </select>
-                                </div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex"><img data-v-7bab1ac4=""
+                                    data-v-cfc9a7fc=""
+                                    src="{{asset('')}}assets/static/img/bf0d2144a057c38b170af0abdc0b4b43.png"
+                                    class="coinIcon">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">USDT TRC20</div><i
+                                    data-v-7bab1ac4="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow"><!----></i>
                             </div>
                         </div>
+
+                        <input type="hidden" name="paymentMode" value="USDT_TRX">
 
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">Withdrawal address</div>
@@ -165,12 +159,14 @@
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Withdrawal amount')</div>
-                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
-                    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
-                        <input data-v-7bab1ac4="" data-v-cfc9a7fc="" type="text" placeholder="Please enter the withdrawal amount" name="amount" id="withdrawalAmount">
-                    </div>
-                    <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str"></div>
-                </div>
+                            <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="val flex">
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="flex1">
+                                    <input data-v-7bab1ac4="" data-v-cfc9a7fc="" type="text"
+                                        placeholder="Please enter the withdrawal amount" name="amount"
+                                        id="withdrawalAmount">
+                                </div>
+                                <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="str"></div>
+                            </div>
                         </div>
                         <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item">
                             <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="cname">@lang('Transaction Password')</div>
@@ -321,7 +317,7 @@
                     $(".submit-btn").prop("disabled", false);
                     $('.submit-btn').removeClass(
                         'van-button van-button--default van-button--disabled van-button--normal com-btn on'
-                        );
+                    );
                     $('.submit-btn').addClass(
                         'van-button van-button--default  van-button--normal com-btn on');
                 } else {
@@ -331,7 +327,7 @@
                         'van-button van-button--default van-button--normal com-btn on');
                     $('.submit-btn').addClass(
                         'van-button van-button--default van-button--disabled van-button--normal com-btn on'
-                        );
+                    );
                 }
 
                 if (amount <= 10) {
