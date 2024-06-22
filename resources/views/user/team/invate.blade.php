@@ -113,6 +113,13 @@
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-55f99183.e36ebbe6.1717187934571.chunk.js"></script>
 </head>
 
+<style>
+.link
+{
+text-transform: lowercase !important;
+}
+</style>
+
 <body class="mein_cn">
     <div id="app" class="applang">
         <div data-v-422886cf="" class="home">
@@ -143,11 +150,11 @@
                                             src="{{ asset('') }}assets/static/img/logo2.png" style="width:80px;"> 
                                     </div>
                                     <div data-v-422886cf="" data-v-cfc9a7fc="" class="info">
-                                        <div data-v-422886cf="" data-v-cfc9a7fc="" class="n"> riteshkk <img
+                                        <div data-v-422886cf="" data-v-cfc9a7fc="" class="n"> {{Auth::user()->name}} <img
                                                 data-v-422886cf="" data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/lv1.0c323966.png"></div>
                                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="cid"> UID: <span
-                                                data-v-422886cf="" data-v-cfc9a7fc="">119103</span></div>
+                                                data-v-422886cf="" data-v-cfc9a7fc="">{{Auth::user()->username}}</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -158,18 +165,17 @@
                             <div data-v-422886cf="" data-v-cfc9a7fc="" class="box">
                                 <div data-v-422886cf="" data-v-cfc9a7fc="" class="m">
                                     <div data-v-422886cf="" data-v-cfc9a7fc="" class="qrcode"
-                                        title="https://ai.bitgrid.cloud/user/reg2/?inviteCode=4KLYJQ"><canvas
-                                            width="180" height="180" style="display: none;"></canvas><img alt="Scan me!"
-                                            src="data:image/png;base64,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"
+                                        title="{{ asset('') }}register?ref={{ Auth::user()->username }}"><canvas
+                                            width="180" height="180" style="display: none;"></canvas><img alt="Scan me!" style="width: 100%;"
+                                            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{ asset('') }}register?ref={{ Auth::user()->username }}&format=png"
                                             style="display: block;"></div>
                                 </div>
                                 <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_list">
                                     <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_box">
                                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="title">Invitation link</div>
-                                        <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_content">
-                                            <div data-v-422886cf="" data-v-cfc9a7fc="" class="link">
-                                                https://ai.bitgrid.cloud/user/reg2/?inviteCode=4KLYJQ</div>
-                                            <div data-v-422886cf="" data-v-cfc9a7fc="" class="copy"><img
+                                        <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_content " >
+                                            <div data-v-422886cf="" data-v-cfc9a7fc="" class="link" id="clipboardright2" >{{ asset('') }}register?ref={{ Auth::user()->username }}</div>
+                                            <div data-v-422886cf="" data-v-cfc9a7fc="" class="copy" id="copy-button2"><img
                                                     data-v-422886cf="" data-v-cfc9a7fc=""
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAkSNtB1L04di+eKyTzs2acl4VC6s3epBYAAAAkUlEQVQoz53R2QoDIQyFYZe423Zm2vP+r9pQjAvYm/mvAh8RUSXZgFF0SspYEyEPJN2qD95pYICiRiwD7AT1H+gfkLm2kD3gNmDBHRsIwOekDQCJpy3ou/CaIHV4g8VKBQgNeHnNCtAiPisBPs2MSAlIdMgPMdQJTuDq8JygAKaNkUVLCfDUwGGN7yMSMQr9Yb79PxCb2V0yIwAAAABJRU5ErkJggg==">
                                             </div>
@@ -178,8 +184,8 @@
                                     <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_box">
                                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="title">Invitation code</div>
                                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="link_content">
-                                            <div data-v-422886cf="" data-v-cfc9a7fc="" class="link">4KLYJQ</div>
-                                            <div data-v-422886cf="" data-v-cfc9a7fc="" class="copy"><img
+                                            <div data-v-422886cf="" data-v-cfc9a7fc="" class="link" id="clipboardright">{{Auth::user()->username}}</div>
+                                            <div data-v-422886cf="" data-v-cfc9a7fc="" class="copy " id="copy-button"><img
                                                     data-v-422886cf="" data-v-cfc9a7fc=""
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAkSNtB1L04di+eKyTzs2acl4VC6s3epBYAAAAkUlEQVQoz53R2QoDIQyFYZe423Zm2vP+r9pQjAvYm/mvAh8RUSXZgFF0SspYEyEPJN2qD95pYICiRiwD7AT1H+gfkLm2kD3gNmDBHRsIwOekDQCJpy3ou/CaIHV4g8VKBQgNeHnNCtAiPisBPs2MSAlIdMgPMdQJTuDq8JygAKaNkUVLCfDUwGGN7yMSMQr9Yb79PxCb2V0yIwAAAABJRU5ErkJggg==">
                                             </div>
@@ -193,6 +199,46 @@
                 <!---->
             </div>
         </div>
+
+
+     @include('partials.notify')
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+       <script>
+           $(document).ready(function() {
+           $('#copy-button').click(function() {
+               var textToCopy = $('#clipboardright').text();
+               var tempTextarea = $('<textarea>');
+               $('body').append(tempTextarea);
+               tempTextarea.val(textToCopy).select();
+               document.execCommand('copy');
+               tempTextarea.remove();
+               iziToast.success({
+                       message: 'Copied Successfully',
+                       position: "center"
+                   });
+   
+           });
+
+
+           $('#copy-button2').click(function() {
+            var textToCopy = $('#clipboardright2').text(); // Convert text to lowercase
+          
+               var tempTextarea = $('<textarea>');
+               $('body').append(tempTextarea);
+               tempTextarea.val(textToCopy.toLowerCase()).select();
+               document.execCommand('copy');
+               tempTextarea.remove();
+               iziToast.success({
+                       message: 'Copied Successfully',
+                       position: "center"
+                   });
+   
+           });
+
+           });
+       </script>
+
         <div data-v-a7d12cfc="" class="global-loading default" style="display: none;">
             <div data-v-a7d12cfc="" class="global-spinner"><img data-v-a7d12cfc=""
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAMAAAA0X5qLAAAAh1BMVEUAAAAAv44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av44Av46sPT54AAAALHRSTlMA+wXZ+J87JB7ux4lDNRQPCvLq39PNp5BpWRmxgnAvvrnlw5RhT0sqwHRxeP/zXbkAAAGcSURBVDjLjZTXcqtAEAVnyUGIJBAKKFqS7dv//30XsHFJxrD0C0XRxc45TCEDvFsdrvfhxnGWMk1S7c70nI+bZFxdXFC8YG5GVNemxTdte7+3yxUdq4MMMaocsMza6CeSqLRo2A3dffvguPh1WEiDcuWFeN24mSNDdjS85Exs4OLJX7wpyOWJT8A25G+iFMyn2za1jOIAV+kxIU9knDUQ9d8C/EimyH9OXgawNiblrepfXSn8WKax+4wnCEWDC6ptNk5RC9GxgqqNZ1EstXL1tSP/oBQtS1DN5Qp7vbz1sdwu30b0pNAkPIOrd4131E2kAEf0rDqtaJvTY3YDvM+aOS5IH91KrWdUl2LGIhsI9PIDLm2DFmmslT++FyiDu7a5ANV1FoKpkw/gfwUFddDIO7Cl4wqBMf1iRRZJxxb86d5OYCf9fyS/TaYrFcqVeYQK6nmqEQLFPNc7AuZ2lrtYAcEs936kdZdjE97rSAxDEvG8j8wC/E8Zo1Yo/CAv0oyOYKKzN55QWTm9B9WpyGiwyMvFnLbih+M5xjDWf6S2MlzIf04ZAAAAAElFTkSuQmCC"
